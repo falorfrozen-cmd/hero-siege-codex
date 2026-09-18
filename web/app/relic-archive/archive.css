@@ -1,0 +1,326 @@
+.relic-archive {
+  --chapter-accent: #c6a671;
+}
+.relic-archive .stat-archive-title {
+  margin: 12px 0 20px;
+}
+.relic-archive .stat-search input {
+  width: 100%;
+}
+.relic-archive .stat-copy-status {
+  min-height: 22px;
+}
+.relic-archive .book-cover {
+  width: 100%;
+  height: auto;
+  min-height: 760px;
+  padding: 54px 8% 74px;
+  margin: 0;
+}
+.relic-archive .book-spread {
+  height: auto;
+  min-height: 632px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.relic-archive .book-page.relic-leaf {
+  min-height: 632px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 18px 38px;
+}
+.relic-title {
+  text-align: center;
+  padding: 36px 0 20px;
+}
+.relic-title > span,
+.relic-overline {
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #735634;
+}
+.relic-title h2 {
+  color: #392919;
+  font: 600 clamp(32px, 3vw, 48px)/1.08 var(--display);
+  margin: 12px 0 0;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+}
+.relic-specimen {
+  margin: 20px auto 28px;
+  width: 190px;
+  height: 190px;
+  flex-shrink: 0;
+  border: 1px solid #86633c80;
+  border-radius: 50%;
+  outline: 1px solid #86633c36;
+  outline-offset: 7px;
+  background: radial-gradient(circle, #e9d3a477, transparent 75%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.relic-specimen::before {
+  content: '';
+  position: absolute;
+  inset: 9px;
+  border: 1px solid #86633c38;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.relic-specimen img {
+  width: auto;
+  height: auto;
+  max-width: 110px;
+  max-height: 110px;
+  min-width: 70px;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+.relic-specimen figcaption {
+  position: absolute;
+  bottom: 23px;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  color: #775c3c;
+}
+.relic-description {
+  font: 500 26px/1.4 var(--display);
+  color: #3e2d1e;
+  margin: 8px 0 35px;
+  text-align: center;
+  text-wrap: pretty;
+}
+.relic-text-plate {
+  margin: 35px 0;
+  text-align: center;
+  padding: 25px 0;
+  border-block: 1px solid #97734955;
+}
+.relic-text-plate span {
+  font-size: 12px;
+  color: #705a3e;
+}
+.relic-text-plate p {
+  font: 500 30px var(--display);
+}
+.relic-leaf .stat-page-folio {
+  margin-top: auto;
+}
+.relic-leaf .stat-running-head {
+  align-items: center;
+  min-height: 43px;
+}
+.relic-copy {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 44px;
+  border: 0;
+  background: transparent;
+  color: #674923;
+  font-size: 14px;
+  padding: 0;
+}
+.relic-ability {
+  padding-top: 72px;
+  padding-bottom: 40px;
+}
+.relic-ability h3 {
+  color: #392919;
+  font: 600 clamp(30px, 3vw, 42px)/1.12 var(--display);
+  margin: 17px 0 22px;
+  text-wrap: balance;
+}
+.relic-ability p {
+  font-size: 17px;
+  line-height: 1.75;
+  color: #403020;
+  margin: 0;
+}
+.relic-note-rule {
+  margin: 32px 0 15px;
+  width: 65px;
+  height: 1px;
+  background: #83623970;
+}
+.relic-ability .relic-source-note {
+  color: #6e593d;
+  font-size: 12px;
+}
+.relic-leaf .relic-unrecorded {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #69543a;
+}
+.relic-page-turns {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 65px 1.3%;
+  pointer-events: none;
+}
+.relic-turn-track {
+  width: 64px;
+}
+.relic-turn-track button {
+  position: sticky;
+  top: calc(100svh - 105px - env(safe-area-inset-bottom, 0px));
+  width: 100%;
+  min-height: 76px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 10px 2px;
+  pointer-events: auto;
+  color: #f1dbb2;
+  border: 1px solid #c5a577;
+  border-radius: 4px;
+  background: #30271d;
+  box-shadow: inset 0 0 0 3px #b9986333;
+}
+.relic-turn-track button span {
+  font-size: 12px;
+}
+.relic-turn-track button:enabled:hover {
+  background: #443423;
+}
+.relic-turn-track button:disabled {
+  color: #a69981;
+  border-color: #7e6c50;
+  cursor: default;
+}
+.relic-reader-position {
+  text-align: center;
+  font-size: 14px;
+  color: #c9b790;
+  margin: 12px 0;
+}
+.relic-loading {
+  margin: 90px 6% 60px 55%;
+  color: #3b2a1a;
+  background: #efddba;
+  padding: 26px;
+  border-block: 1px solid #916f4270;
+}
+.relic-loading h2 {
+  font: 600 34px/1.1 var(--display);
+}
+.relic-loading p {
+  font-size: 16px;
+}
+.relic-loading button {
+  min-height: 44px;
+  color: #3e2b17;
+  border: 1px solid #927045;
+  background: transparent;
+  padding: 8px 15px;
+}
+.relic-book:focus-visible {
+  outline: 1px solid #c5a471;
+  outline-offset: 3px;
+}
+@media (min-width: 901px) and (max-width: 1200px) {
+  .relic-archive .book-page.relic-leaf {
+    padding-inline: 24px;
+  }
+  .relic-turn-track {
+    width: 52px;
+  }
+}
+@media (max-width: 900px) {
+  .relic-archive.archival .book-cover {
+    background-image: url('/textures/archive-leaf.webp');
+    padding: 62px 20% 76px 9%;
+    min-height: 1120px;
+  }
+  .relic-archive .book-stage {
+    padding-top: 0;
+  }
+  .relic-archive .book-spread {
+    display: block;
+    min-height: 0;
+  }
+  .relic-archive .book-page.relic-leaf {
+    display: flex;
+    min-height: 0;
+    padding: 14px 16px;
+  }
+  .relic-identity-leaf .stat-page-folio,
+  .relic-notes-leaf .stat-running-head > span {
+    display: none;
+  }
+  .relic-archive .relic-notes-leaf .stat-running-head {
+    justify-content: flex-end;
+  }
+  .relic-title {
+    padding-top: 22px;
+  }
+  .relic-specimen {
+    width: 160px;
+    height: 160px;
+    margin: 15px auto 24px;
+  }
+  .relic-specimen img {
+    max-width: 90px;
+    max-height: 85px;
+    min-width: 64px;
+  }
+  .relic-specimen figcaption {
+    bottom: 19px;
+  }
+  .relic-description {
+    margin: 5px 0 12px;
+    font-size: 25px;
+  }
+  .relic-ability {
+    padding-top: 25px;
+  }
+  .relic-ability h3 {
+    margin: 12px 0 18px;
+  }
+  .relic-turn-track {
+    width: 52px;
+  }
+  .relic-loading {
+    margin: 80px 5%;
+  }
+}
+@media (max-width: 480px) {
+  .relic-archive.archival .book-cover {
+    padding-left: 9%;
+    padding-right: 20%;
+  }
+  .relic-archive .book-page.relic-leaf {
+    padding-inline: 12px;
+  }
+  .relic-turn-track {
+    width: 44px;
+  }
+  .relic-turn-track button {
+    min-height: 54px;
+    top: calc(100svh - 82px - env(safe-area-inset-bottom, 0px));
+  }
+  .relic-turn-track button span {
+    display: none;
+  }
+  .relic-page-turns {
+    padding-inline: 0;
+  }
+  .relic-ability p {
+    font-size: 16px;
+  }
+  .relic-title h2 {
+    font-size: 32px;
+  }
+  .relic-leaf .stat-running-head {
+    font-size: 12px;
+    letter-spacing: 0;
+  }
+}

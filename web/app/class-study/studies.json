@@ -1,0 +1,3410 @@
+[
+  {
+    "id": 1,
+    "slug": "viking",
+    "name": "Viking",
+    "title": "Fury of the North",
+    "focus": [
+      "Weapon attacks",
+      "Warcries",
+      "Cold and arcane strikes"
+    ],
+    "description": "Break the enemy line with roaring warcries, crushing charges, and a whirlwind of steel. The Viking strengthens nearby allies while turning brutal weapon strikes, stunning shockwaves, and the cold power of Ymir into relentless pressure.",
+    "image": "/classes/studies/viking.webp",
+    "tone": "#b08b59",
+    "skills": [
+      {
+        "id": 2,
+        "name": "Weapon Master",
+        "description": "Increases your attack damage and attack rating when you are using weapons without a shield.",
+        "sourceKey": "talent_desc_weaponMaster",
+        "icon": "/classes/skills/weaponMaster.8d2a7913bda7.webp"
+      },
+      {
+        "id": 3,
+        "name": "Stoneskin",
+        "description": "Increases your defense rating.",
+        "sourceKey": "talent_desc_stoneskin",
+        "icon": "/classes/skills/stoneskin.57422f277713.webp"
+      },
+      {
+        "id": 4,
+        "name": "Brute Force",
+        "description": "Increases your chance of critical strike and critical strike damage.",
+        "sourceKey": "talent_desc_bruteForce",
+        "icon": "/classes/skills/bruteForce.8f4f45d8ed5e.webp"
+      },
+      {
+        "id": 5,
+        "name": "Norse Resistance",
+        "description": "Increases all of your resistances.",
+        "sourceKey": "talent_desc_norseResistance",
+        "icon": "/classes/skills/norseResistance.044f7a99e52f.webp"
+      },
+      {
+        "id": 6,
+        "name": "Defensive Shout",
+        "description": "Powerful warcry which buffs your and your party members defense rating.",
+        "sourceKey": "talent_desc_defensiveShout",
+        "icon": "/classes/skills/defensiveShout.078c85a3e3dd.webp"
+      },
+      {
+        "id": 7,
+        "name": "Odin's Fury",
+        "description": "Powerful warcry which deals arcane damage and stuns monsters around you.",
+        "sourceKey": "talent_desc_odinsFury",
+        "icon": "/classes/skills/odinsFury.67a7240b9533.webp"
+      },
+      {
+        "id": 8,
+        "name": "Battle Agility",
+        "description": "Increases your movement speed.",
+        "sourceKey": "talent_desc_battleAgility",
+        "icon": "/classes/skills/battleAgility.dc60ae88f434.webp"
+      },
+      {
+        "id": 9,
+        "name": "Combat Orders",
+        "description": "Powerful warcry which buffs your and your party members maximum life and mana.",
+        "sourceKey": "talent_desc_combatOrders",
+        "icon": "/classes/skills/combatOrders.4ee58004ee4b.webp"
+      },
+      {
+        "id": 10,
+        "name": "Seismic Slam",
+        "description": "Smash monsters in front of you dealing damage and knocking them up and stunning them.",
+        "sourceKey": "talent_desc_seismicSlam",
+        "icon": "/classes/skills/seismicSlam.0d7ce184d517.webp"
+      },
+      {
+        "id": 11,
+        "name": "Charge",
+        "description": "Charge forward dealing arcane damage and stunning monsters on impact.",
+        "sourceKey": "talent_desc_charge",
+        "icon": "/classes/skills/charge.95719ff4d3bb.webp"
+      },
+      {
+        "id": 12,
+        "name": "Zeal",
+        "description": "Strike three fast and powerful attacks with increased attack rating.",
+        "sourceKey": "talent_desc_zeal",
+        "icon": "/classes/skills/zeal.cff2c8813854.webp"
+      },
+      {
+        "id": 13,
+        "name": "Throw!",
+        "description": "Pick up and throw a monster which deals area of effect arcane damage and stuns monsters upon landing.",
+        "sourceKey": "talent_desc_monsterThrow",
+        "icon": "/classes/skills/monsterThrow.9fb054e9acb0.webp"
+      },
+      {
+        "id": 14,
+        "name": "Ymir's Champion",
+        "description": "Perform a cold enhanced strike with additive cold damage, Increased attack damage and attack rating. Attacks also freeze monsters and summons a spinning axe that deals additional damage.",
+        "sourceKey": "talent_desc_ymirsChampion",
+        "icon": "/classes/skills/ymirsChampion.bb161fe99d9c.webp"
+      },
+      {
+        "id": 15,
+        "name": "Devastating Charge",
+        "description": "When hitting monsters with Charge release a pulse dealing additional arcane damage and decreasing monster attack rating.",
+        "sourceKey": "talent_desc_devastatingCharge",
+        "icon": "/classes/skills/devastatingCharge.af6004fb30e6.webp"
+      },
+      {
+        "id": 16,
+        "name": "Shockwave",
+        "description": "Smash the ground causing a shockwave that deals area of effect damage and stuns monsters.",
+        "sourceKey": "talent_desc_shockwave",
+        "icon": "/classes/skills/shockwave.3866d689bae0.webp"
+      },
+      {
+        "id": 17,
+        "name": "Whirlwind",
+        "description": "Spin your weapons around you dealing damage to monsters struck.",
+        "sourceKey": "talent_desc_whirlwind",
+        "icon": "/classes/skills/whirlwind.2b7d33fdffac.webp"
+      },
+      {
+        "id": 18,
+        "name": "Berserk",
+        "description": "Every successful hit with berserk increases your attack damage, attack speed and movement speed for berserk stacking up to 8 times.",
+        "sourceKey": "talent_desc_berserk",
+        "icon": "/classes/skills/berserk.51d861318be4.webp"
+      },
+      {
+        "id": 19,
+        "name": "Demolishing Winds",
+        "description": "Whirlwind now unleashes tornadoes dealing portion of the Whirlwinds damage to monsters struck.",
+        "sourceKey": "talent_desc_demolishingWinds",
+        "icon": "/classes/skills/demolishingWinds.163b376b840f.webp"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "pyromancer",
+    "name": "Pyromancer",
+    "title": "The Living Inferno",
+    "focus": [
+      "Fire spells",
+      "Burning",
+      "Enchanted attacks"
+    ],
+    "description": "Leave fire in every footprint and call destruction down from the sky. The Pyromancer fights with burning weapon enchantments or unleashes hydras, volcanic eruptions, and falling meteors, building an inferno that follows every advance.",
+    "image": "/classes/studies/pyromancer.webp",
+    "tone": "#bf785a",
+    "skills": [
+      {
+        "id": 20,
+        "name": "Blazing Trail",
+        "description": "Leave behind a trail of fire dealing fire damage to monsters.",
+        "sourceKey": "talent_desc_blazingTrail",
+        "icon": "/classes/skills/blazingTrail.100488275d22.webp"
+      },
+      {
+        "id": 21,
+        "name": "Fire Enchant",
+        "description": "Enchant your attacks with additive fire damage inflicting burning on monsters. Your spells also apply a stack of Ignite.",
+        "sourceKey": "talent_desc_fireEnchant",
+        "icon": "/classes/skills/fireEnchant.2a5da4c8fea6.webp"
+      },
+      {
+        "id": 22,
+        "name": "Phoenix Flight",
+        "description": "Charge forward through the air dealing area of effect fire damage when landing.",
+        "sourceKey": "talent_desc_phoenixFlight",
+        "icon": "/classes/skills/phoenixFlight.b80642f5229e.webp"
+      },
+      {
+        "id": 23,
+        "name": "Inferno Slash",
+        "description": "Send forward a fire enchanted cleave attack dealing increased damage and additional fire damage.",
+        "sourceKey": "talent_desc_infernoSlash",
+        "icon": "/classes/skills/infernoSlash.c66e77600c11.webp"
+      },
+      {
+        "id": 24,
+        "name": "Ignite",
+        "description": "All fire enchanted attacks add a stack of ignite on the monster, causing them to combust at 10 stacks dealing area of effect fire damage.",
+        "sourceKey": "talent_desc_ignite",
+        "icon": "/classes/skills/ignite.b954966cd600.webp"
+      },
+      {
+        "id": 25,
+        "name": "Fire Shield",
+        "description": "Cast a shield of fire that increases your Physical damage reduction and deals fire damage to monsters around you.",
+        "sourceKey": "talent_desc_fireShield",
+        "icon": "/classes/skills/fireShield.842a6f879387.webp"
+      },
+      {
+        "id": 26,
+        "name": "Searing Chains",
+        "description": "When striking a monster unleash a powerful chain attack dealing increased damage, additional fire damage and stunning monsters struck.",
+        "sourceKey": "talent_desc_searingChains",
+        "icon": "/classes/skills/searingChains.e4c285541fad.webp"
+      },
+      {
+        "id": 27,
+        "name": "Fiery Presence",
+        "description": "Increases your fire skill damage.",
+        "sourceKey": "talent_desc_fieryPresence",
+        "icon": "/classes/skills/fieryPresence.d9f7ff784ff4.webp"
+      },
+      {
+        "id": 28,
+        "name": "Avatar of Fire",
+        "description": "Temporarily turns you into an avatar of fire; Increasing your attack speed, fire damage, spell critical damage and spell critical chance.",
+        "sourceKey": "talent_desc_avatarOfFire",
+        "icon": "/classes/skills/avatarOfFire.ce48e60ed236.webp"
+      },
+      {
+        "id": 29,
+        "name": "Fireball",
+        "description": "Cast a fireball dealing fire damage to monsters.",
+        "sourceKey": "talent_desc_fireBall",
+        "icon": "/classes/skills/fireBall.ebd93cb80661.webp"
+      },
+      {
+        "id": 30,
+        "name": "Breath of Fire",
+        "description": "Breathe burning flames dealing fire damage and inflicting burning on hit.",
+        "sourceKey": "talent_desc_breathOfFire",
+        "icon": "/classes/skills/breathOfFire.ea24e02675f0.webp"
+      },
+      {
+        "id": 31,
+        "name": "Meteor",
+        "description": "Cast a powerful meteor forwards dealing area of effect fire damage on impact.",
+        "sourceKey": "talent_desc_meteor",
+        "icon": "/classes/skills/meteor.f83935a349ba.webp"
+      },
+      {
+        "id": 32,
+        "name": "Scorching Aura",
+        "description": "Scorch monsters around you dealing fire damage.",
+        "sourceKey": "talent_desc_scorchingAura",
+        "icon": "/classes/skills/scorchingAura.bf0fe8a133ad.webp"
+      },
+      {
+        "id": 33,
+        "name": "Hydra",
+        "description": "Spawn a fiery hydra that shoots fireballs with area of effect fire damage towards the closest monster.",
+        "sourceKey": "talent_desc_hydra",
+        "icon": "/classes/skills/hydra.aa85033f1c20.webp"
+      },
+      {
+        "id": 34,
+        "name": "Comet",
+        "description": "Call down a huge comet exploding on impact dealing area of effect fire damage.",
+        "sourceKey": "talent_desc_comet",
+        "icon": "/classes/skills/comet.0858f34a425d.webp"
+      },
+      {
+        "id": 35,
+        "name": "Fire Nova",
+        "description": "Cast a nova of fire around you dealing fire damage.",
+        "sourceKey": "talent_desc_fireNova",
+        "icon": "/classes/skills/fireNova.a7537b9ae44f.webp"
+      },
+      {
+        "id": 36,
+        "name": "Volcano",
+        "description": "Spawn a molten volcano that deals fire damage around it and spews out burning rocks that explode on hit.",
+        "sourceKey": "talent_desc_volcano",
+        "icon": "/classes/skills/volcano.685f1da5f70b.webp"
+      },
+      {
+        "id": 37,
+        "name": "Armageddon",
+        "description": "Call down a rain of meteors from the sky dealing area of effect fire damage to monsters struck.",
+        "sourceKey": "talent_desc_armageddon",
+        "icon": "/classes/skills/armageddon.53857503bb0e.webp"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "marksman",
+    "name": "Marksman",
+    "title": "The Deadly Arsenal",
+    "focus": [
+      "Archery",
+      "Turrets",
+      "Drones"
+    ],
+    "description": "Fill the horizon with arrows or build an arsenal that fights beside you. The Marksman combines mobile ranged attacks with turrets, mines, and a gunner drone, bringing both precision and machinery to the battlefield.",
+    "image": "/classes/studies/marksman.webp",
+    "tone": "#94a07b",
+    "skills": [
+      {
+        "id": 38,
+        "name": "Trickshot",
+        "description": "Shoot an arrow with increased attack rating that bounces from monster to monster dealing increased attack damage.",
+        "sourceKey": "talent_desc_trickShot",
+        "icon": "/classes/skills/trickShot.92ccfab2b3ea.webp"
+      },
+      {
+        "id": 39,
+        "name": "Vault",
+        "description": "Vault in the direction aimed unleashing arrows towards nearby monsters dealing increased damage.",
+        "sourceKey": "talent_desc_vault",
+        "icon": "/classes/skills/vault.1f8bab3a9cca.webp"
+      },
+      {
+        "id": 40,
+        "name": "Multishot",
+        "description": "Fire multiple arrows in an arc dealing increased damage.",
+        "sourceKey": "talent_desc_multishot",
+        "icon": "/classes/skills/multishot.d1c0a46a94b8.webp"
+      },
+      {
+        "id": 41,
+        "name": "Arrow Rain",
+        "description": "Unleash a rain of arrows from the sky dealing increased damage.",
+        "sourceKey": "talent_desc_arrowRain",
+        "icon": "/classes/skills/arrowRain.bc9968eaa2f8.webp"
+      },
+      {
+        "id": 42,
+        "name": "Homing Missile",
+        "description": "Launch a barrage of homing missiles which seeks down its target dealing area of effect arcane and physical damage.",
+        "sourceKey": "talent_desc_homingMissile",
+        "icon": "/classes/skills/homingMissile.9242c44636b7.webp"
+      },
+      {
+        "id": 43,
+        "name": "Critical Accuracy",
+        "description": "Increases your attack rating and critical strike damage.",
+        "sourceKey": "talent_desc_criticalAccuracy",
+        "icon": "/classes/skills/criticalAccuracy.b9089882e2d8.webp"
+      },
+      {
+        "id": 44,
+        "name": "Arrow Rampage",
+        "description": "Unleash a swarm of arrows towards the direction aimed dealing arcane and physical damage.",
+        "sourceKey": "talent_desc_arrowRampage",
+        "icon": "/classes/skills/arrowRampage.6b1c5a02caee.webp"
+      },
+      {
+        "id": 45,
+        "name": "Agility",
+        "description": "Temporarily increases your movement speed and attack speed.",
+        "sourceKey": "talent_desc_agility",
+        "icon": "/classes/skills/agility.515efdd99336.webp"
+      },
+      {
+        "id": 46,
+        "name": "Volatile Shot",
+        "description": "Fire a colossal arrow exploding on hit dealing area of effect damage.",
+        "sourceKey": "talent_desc_volatileShot",
+        "icon": "/classes/skills/volatileShot.c7967c37f593.webp"
+      },
+      {
+        "id": 47,
+        "name": "Arrow Turret",
+        "description": "Build an arrow turret that shoots arrows at the closest monster dealing arcane damage.",
+        "sourceKey": "talent_desc_arrowTurret",
+        "icon": "/classes/skills/arrowTurret.02c7282e3e82.webp"
+      },
+      {
+        "id": 48,
+        "name": "Frag Grenade",
+        "description": "Throw a frag grenade dealing area of effect arcane damage launching shrapnel around.",
+        "sourceKey": "talent_desc_fragGrenade",
+        "icon": "/classes/skills/fragGrenade.022612dc0353.webp"
+      },
+      {
+        "id": 49,
+        "name": "B.E.A.C.O.N.",
+        "description": "Build a beacon that increases nearby allies arcane skill damage and mana replenish.",
+        "sourceKey": "talent_desc_beacon",
+        "icon": "/classes/skills/beacon.10d79b962e68.webp"
+      },
+      {
+        "id": 50,
+        "name": "Cannon Turret",
+        "description": "Build a cannon turret that launches cannonballs towards the nearest monster that explode into shrapnel, dealing area of effect arcane damage.",
+        "sourceKey": "talent_desc_cannonTurret",
+        "icon": "/classes/skills/cannonTurret.eead39a7e852.webp"
+      },
+      {
+        "id": 51,
+        "name": "Turret Mastery",
+        "description": "Increase arcane damage and attack speed of all turrets and drones.",
+        "sourceKey": "talent_desc_turretMastery",
+        "icon": "/classes/skills/turretMastery.af54e6410eb9.webp"
+      },
+      {
+        "id": 52,
+        "name": "Landmine",
+        "description": "Lay down a landmine at the target location exploding shortly after detecting a nearby monster dealing arcane damage.",
+        "sourceKey": "talent_desc_landMine",
+        "icon": "/classes/skills/landMine.50c3ed12470e.webp"
+      },
+      {
+        "id": 53,
+        "name": "Rocket Turret",
+        "description": "Build a rocket turret that shoots rockets towards the nearest monster dealing area of effect arcane damage.",
+        "sourceKey": "talent_desc_rocketTurret",
+        "icon": "/classes/skills/rocketTurret.c04c1278eb47.webp"
+      },
+      {
+        "id": 54,
+        "name": "Master Mechanic",
+        "description": "Temporarily increase the attack speed and arcane damage of all your turrets and drones!",
+        "sourceKey": "talent_desc_masterMechanic",
+        "icon": "/classes/skills/masterMechanic.fce3b9baa96f.webp"
+      },
+      {
+        "id": 55,
+        "name": "Gunner Drone",
+        "description": "Build a gunner drone which follows you and shoots bullets that bounce from monster to monster dealing arcane damage.",
+        "sourceKey": "talent_desc_gunnerDrone",
+        "icon": "/classes/skills/gunnerDrone.959e1f56da5a.webp"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "pirate",
+    "name": "Pirate",
+    "title": "Powder and Riptide",
+    "focus": [
+      "Explosives",
+      "Cold spells",
+      "Naval bombardment"
+    ],
+    "description": "Let the cannons answer, then drag the battle into freezing waters. The Pirate unleashes explosive gunfire and powder trails alongside chilling torrents, a summoned parrot, and bombardments called down from the main ship.",
+    "image": "/classes/studies/pirate-female.webp",
+    "tone": "#ab8265",
+    "skills": [
+      {
+        "id": 56,
+        "name": "Buckshot",
+        "description": "Quick draw your musket and release a ranged buckshot with increased damage and additional fire damage.",
+        "sourceKey": "talent_desc_buckshot",
+        "icon": "/classes/skills/buckshot.ddc351f0fdb5.webp"
+      },
+      {
+        "id": 57,
+        "name": "Grenade Jump",
+        "description": "Blast yourself into the air leaving a cluster of grenades behind dealing fire damage.",
+        "sourceKey": "talent_desc_grenado",
+        "icon": "/classes/skills/grenado.d045a973eea6.webp"
+      },
+      {
+        "id": 58,
+        "name": "Explosive Barrel",
+        "description": "Spawn a barrel of explosives which detonates after some time or when shot with a projectile dealing fire damage.",
+        "sourceKey": "talent_desc_explosiveBarrel",
+        "icon": "/classes/skills/explosiveBarrel.28d803e70918.webp"
+      },
+      {
+        "id": 59,
+        "name": "Cannonball",
+        "description": "Shoot a cannonball that launches in the air on hit and deals area of effect damage when landing.",
+        "sourceKey": "talent_desc_cannonball",
+        "icon": "/classes/skills/cannonball.3f2ab2b512a0.webp"
+      },
+      {
+        "id": 60,
+        "name": "Explosive Bullets",
+        "description": "Striking a monster leaves a charge in them that detonates after a short delay dealing area of effect fire damage and stunning them.",
+        "sourceKey": "talent_desc_explosiveBullet",
+        "icon": "/classes/skills/explosiveBullet.75c81d35360b.webp"
+      },
+      {
+        "id": 61,
+        "name": "Powder Trail",
+        "description": "Throw a keg of gunpowder causing a chain of explosions dealing fire damage.",
+        "sourceKey": "talent_desc_powderTrail",
+        "icon": "/classes/skills/powderTrail.a21416768cc8.webp"
+      },
+      {
+        "id": 62,
+        "name": "Kneecap",
+        "description": "Increases your attack rating and chance for critical strike.",
+        "sourceKey": "talent_desc_kneeCap",
+        "icon": "/classes/skills/kneeCap.5474185670cc.webp"
+      },
+      {
+        "id": 63,
+        "name": "Bomb Barrage",
+        "description": "Start rapidly firing cannonballs dealing area of effect fire damage.",
+        "sourceKey": "talent_desc_bombBarrage",
+        "icon": "/classes/skills/bombBarrage.efe65eaeb26c.webp"
+      },
+      {
+        "id": 64,
+        "name": "Rapid Fire",
+        "description": "Temporarily increase your attack speed and physical damage.",
+        "sourceKey": "talent_desc_rapidFire",
+        "icon": "/classes/skills/rapidFire.0a7fd551ce86.webp"
+      },
+      {
+        "id": 65,
+        "name": "Torrent",
+        "description": "Summon a pool of corrupted water on target location bursting into a massive torrent that knocks up monsters struck dealing cold damage.",
+        "sourceKey": "talent_desc_torrent",
+        "icon": "/classes/skills/torrent.236db27d5c5a.webp"
+      },
+      {
+        "id": 66,
+        "name": "Freezing Chain Shot",
+        "description": "Shoot a piercing chain shot that freezes and deals cold damage to monsters struck.",
+        "sourceKey": "talent_desc_freezeChainShot",
+        "icon": "/classes/skills/freezeChainShot.09cb8a4a5ac2.webp"
+      },
+      {
+        "id": 67,
+        "name": "Frozen Lead",
+        "description": "Use specially hand crafted frozen lead to increase your cold skill damage.",
+        "sourceKey": "talent_desc_frozenLead",
+        "icon": "/classes/skills/frozenLead.5c0790435e1c.webp"
+      },
+      {
+        "id": 68,
+        "name": "Parrot",
+        "description": "Summon a parrot to peck your monsters dealing cold damage.",
+        "sourceKey": "talent_desc_parrot",
+        "icon": "/classes/skills/parrot.5d343da1462d.webp"
+      },
+      {
+        "id": 69,
+        "name": "Set Sail",
+        "description": "Temporarily increases your cold skill damage and mana replenish.",
+        "sourceKey": "talent_desc_setSail",
+        "icon": "/classes/skills/setSail.de10ddf65fca.webp"
+      },
+      {
+        "id": 70,
+        "name": "Remiges",
+        "description": "Increases your parrots cold damage and attack speed.",
+        "sourceKey": "talent_desc_remiges",
+        "icon": "/classes/skills/remiges.e32e3b4a8901.webp"
+      },
+      {
+        "id": 71,
+        "name": "Anchor Swing",
+        "description": "Unleash a massive anchor swinging around you dealing cold damage.",
+        "sourceKey": "talent_desc_anchorSwing",
+        "icon": "/classes/skills/anchorSwing.7039731c713a.webp"
+      },
+      {
+        "id": 72,
+        "name": "Treasure Hunter",
+        "description": "Search for a treasure from the corpses of dead monsters with additional magic find.",
+        "sourceKey": "talent_desc_treasureHunter",
+        "icon": "/classes/skills/treasureHunter.9620b48df536.webp"
+      },
+      {
+        "id": 73,
+        "name": "Land Ahoy!",
+        "description": "Call for the main ship to bombard the targeted area dealing area of effect cold damage.",
+        "sourceKey": "talent_desc_landAhoy",
+        "icon": "/classes/skills/landAhoy.6516f6832a26.webp"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "nomad",
+    "name": "Nomad",
+    "title": "Blade of the Shifting Sands",
+    "focus": [
+      "Sand magic",
+      "Blade attacks",
+      "Bleeding"
+    ],
+    "description": "Move with the sand and strike with the edge of a scimitar. The Nomad draws enemies into arcane vortices, crosses the battlefield through shifting clouds, and carves through the gathering ranks with bleeding cuts and spectral blades.",
+    "image": "/classes/studies/nomad.webp",
+    "tone": "#bba06a",
+    "skills": [
+      {
+        "id": 74,
+        "name": "Sand Carver",
+        "description": "Perform an attack that flings piercing sand at monsters.",
+        "sourceKey": "talent_desc_sandCarver",
+        "icon": "/classes/skills/sandCarver.772da3e440b1.webp"
+      },
+      {
+        "id": 75,
+        "name": "Cloud of Sand",
+        "description": "Unleash a cloud of sand that travels forwards dealing arcane damage, by casting the skill again Nomad will re-locate on the sand clouds position dealing area of effect arcane damage and stunning nearby monsters.",
+        "sourceKey": "talent_desc_cloudOfSand",
+        "icon": "/classes/skills/cloudOfSand.7edc88704d96.webp"
+      },
+      {
+        "id": 76,
+        "name": "Sand Gush",
+        "description": "Unleash a gush of sand that spawns tornadoes dealing arcane damage.",
+        "sourceKey": "talent_desc_sandGush",
+        "icon": "/classes/skills/sandGush.0f6b08a9cee1.webp"
+      },
+      {
+        "id": 77,
+        "name": "Sand Entombment",
+        "description": "Chance on kill to unleash a pulse of sand dealing arcane area of effect damage.",
+        "sourceKey": "talent_desc_sandEntombment",
+        "icon": "/classes/skills/sandEntombment.733a3dca6164.webp"
+      },
+      {
+        "id": 78,
+        "name": "Oasis Aura",
+        "description": "When active, increases your and your party members attack rating, movement speed and arcane damage.",
+        "sourceKey": "talent_desc_oasisAura",
+        "icon": "/classes/skills/oasisAura.395934328433.webp"
+      },
+      {
+        "id": 79,
+        "name": "Sand Tremors",
+        "description": "Strike a target causing sand tremors to hit nearby monsters dealing increased damage.",
+        "sourceKey": "talent_desc_sandTremors",
+        "icon": "/classes/skills/sandTremors.75eada7680dd.webp"
+      },
+      {
+        "id": 80,
+        "name": "Mystic Sand",
+        "description": "Increases your arcane skill damage and cast rate.",
+        "sourceKey": "talent_desc_mysticSand",
+        "icon": "/classes/skills/mysticSand.09e6f9276d08.webp"
+      },
+      {
+        "id": 81,
+        "name": "Dissipating Tornado",
+        "description": "Summon a dissipating tornado around you that pulls nearby monsters and causes you to dodge all attacks and unleash sand at monsters when they strike you dealing arcane damage.",
+        "sourceKey": "talent_desc_dissipatingTornado",
+        "icon": "/classes/skills/dissipatingTornado.084c032c9779.webp"
+      },
+      {
+        "id": 82,
+        "name": "Sand Vortex",
+        "description": "Summon a massive vortex of quick sand that pulls monsters inside dealing arcane damage.",
+        "sourceKey": "talent_desc_sandVortex",
+        "icon": "/classes/skills/sandVortex.c6809fd58a8b.webp"
+      },
+      {
+        "id": 83,
+        "name": "Blade Strike",
+        "description": "Perform a cleave attack with increased chance for critical strike and critical strike damage.",
+        "sourceKey": "talent_desc_bladeStrike",
+        "icon": "/classes/skills/bladeStrike.67424a56321d.webp"
+      },
+      {
+        "id": 84,
+        "name": "Scimitar Charge",
+        "description": "Charge a short distance unleashing scimitar strike around you dealing increased damage to monsters struck.",
+        "sourceKey": "talent_desc_scimitarCharge",
+        "icon": "/classes/skills/scimitarCharge.d7297fe4474f.webp"
+      },
+      {
+        "id": 85,
+        "name": "Eye of Ra",
+        "description": "Perform a light enchanted attack bringing rays of sun down to nearby monsters dealing increased damage.",
+        "sourceKey": "talent_desc_eyeOfRa",
+        "icon": "/classes/skills/eyeOfRa.f57f3e7f9402.webp"
+      },
+      {
+        "id": 86,
+        "name": "Healing Sunrays",
+        "description": "Increases your life and mana stolen per hit.",
+        "sourceKey": "talent_desc_sunRay",
+        "icon": "/classes/skills/sunRay.4c24c6906e2a.webp"
+      },
+      {
+        "id": 87,
+        "name": "Flying Scimitar",
+        "description": "Throw a huge piercing scimitar dealing increased damage to monsters in its path which returns back to you after a short delay.",
+        "sourceKey": "talent_desc_flyingScimitar",
+        "icon": "/classes/skills/flyingScimitar.82bac370976e.webp"
+      },
+      {
+        "id": 88,
+        "name": "Rupture",
+        "description": "Perform a rupturing area of effect attack inflicting bleed to targets on hit.",
+        "sourceKey": "talent_desc_rupture",
+        "icon": "/classes/skills/rupture.544af0326384.webp"
+      },
+      {
+        "id": 89,
+        "name": "Chainslice",
+        "description": "Perform an enhanced attack that causes a sharp blade to chain between nearby monsters dealing damage.",
+        "sourceKey": "talent_desc_chainSlice",
+        "icon": "/classes/skills/chainSlice.84fe8528f0ea.webp"
+      },
+      {
+        "id": 90,
+        "name": "Phantom Blade",
+        "description": "Spawn a ghostly blade that attacks nearby monsters dealing physiical damage and additional arcane damage.",
+        "sourceKey": "talent_desc_phantomBlade",
+        "icon": "/classes/skills/phantomBlade.e59f0450dc0f.webp"
+      },
+      {
+        "id": 91,
+        "name": "Hemorrhage",
+        "description": "Rupture inflicts armor break on all bleeding targets.",
+        "sourceKey": "talent_desc_hemorrhage",
+        "icon": "/classes/skills/hemorrhage.44dc3d1975a0.webp"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "redneck",
+    "name": "Redneck",
+    "title": "Mayhem, Uncorked",
+    "focus": [
+      "Fire and oil",
+      "Explosives",
+      "Chainsaws"
+    ],
+    "description": "Strike a match, spill the moonshine, and let the engine scream. The Redneck ignites oil with burning moonshine, hurls homemade explosives, and brings revved chainsaws and falling trees into the brawl.",
+    "image": "/classes/studies/redneck.webp",
+    "tone": "#9a946a",
+    "skills": [
+      {
+        "id": 92,
+        "name": "Moonshine Molotov",
+        "description": "Throw a bottle of moonshine that ignites the impacted area on fire and sends out burning oil.",
+        "sourceKey": "talent_desc_moonshineMolotov",
+        "icon": "/classes/skills/moonshineMolotov.1e60aaf1169c.webp"
+      },
+      {
+        "id": 93,
+        "name": "Pipe Bombs",
+        "description": "Throw a barrage of handcrafted pipe bombs dealing area of effect fire damage.",
+        "sourceKey": "talent_desc_pipeBombs",
+        "icon": "/classes/skills/pipeBombs.5d73913771bc.webp"
+      },
+      {
+        "id": 94,
+        "name": "Oil Spill",
+        "description": "Spill oil on the ground slowing and lowering monster attack rating. Oil also ignites into flames when coming in contact with Moonshine Molotov dealing additional burning damage.",
+        "sourceKey": "talent_desc_oilSpill",
+        "icon": "/classes/skills/oilSpill.6290d43f2796.webp"
+      },
+      {
+        "id": 95,
+        "name": "Tire Fire",
+        "description": "Throw a truck tire that deals fire damage on hit.",
+        "sourceKey": "talent_desc_tireFire",
+        "icon": "/classes/skills/tireFire.41eb92084069.webp"
+      },
+      {
+        "id": 96,
+        "name": "Spontaneous Combustion",
+        "description": "When igniting oil in flames, also make the monsters combust dealing area of effect fire damage around them.",
+        "sourceKey": "talent_desc_spontaneousCombustion",
+        "icon": "/classes/skills/spontaneousCombustion.25301efa21ca.webp"
+      },
+      {
+        "id": 97,
+        "name": "Hillbilly Rage",
+        "description": "Temporarily increases your fire skill damage.",
+        "sourceKey": "talent_desc_hillbillyRage",
+        "icon": "/classes/skills/hillbillyRage.3a3d7bf0e004.webp"
+      },
+      {
+        "id": 98,
+        "name": "Moonshine Madness",
+        "description": "Increases your Attack Rating, Movement Speed and Faster Cast Rate.",
+        "sourceKey": "talent_desc_moonshineMadness",
+        "icon": "/classes/skills/moonshineMadness.d80a4532da2c.webp"
+      },
+      {
+        "id": 99,
+        "name": "Combustible Oil",
+        "description": "Increases your fire skill damage.",
+        "sourceKey": "talent_desc_combustibleOil",
+        "icon": "/classes/skills/combustibleOil.237f9e27f776.webp"
+      },
+      {
+        "id": 100,
+        "name": "Pickup Raid",
+        "description": "Call your hillbilly friends to siege your opponents in a pickup truck dealing fire damage.",
+        "sourceKey": "talent_desc_pickupRaid",
+        "icon": "/classes/skills/pickupRaid.3ba043a3c5d8.webp"
+      },
+      {
+        "id": 101,
+        "name": "Chainsaw Slash",
+        "description": "Perform an area of effect attack attaching a spinning chainsaw on monsters for a short period of time.",
+        "sourceKey": "talent_desc_chainsawSlash",
+        "icon": "/classes/skills/chainsawSlash.3b23153279f6.webp"
+      },
+      {
+        "id": 102,
+        "name": "Durable Wear",
+        "description": "Increases your defense.",
+        "sourceKey": "talent_desc_durableWear",
+        "icon": "/classes/skills/durableWear.fb14b0782da2.webp"
+      },
+      {
+        "id": 103,
+        "name": "Chainsaw Massacre",
+        "description": "Violently spin your chainsaw dealing damage to monsters around you. Going the full distance unleashes a whirl attack with increased damage and area of effect.",
+        "sourceKey": "talent_desc_chainsawMassacre",
+        "icon": "/classes/skills/chainsawMassacre.292733277293.webp"
+      },
+      {
+        "id": 104,
+        "name": "Chainsaw Mastery",
+        "description": "Increases your damage and attack rating when using a chainsaw.",
+        "sourceKey": "talent_desc_chainsawMastery",
+        "icon": "/classes/skills/chainsawMastery.a55245befc06.webp"
+      },
+      {
+        "id": 105,
+        "name": "Revved Up",
+        "description": "Temporarily increases your attack speed and damage.",
+        "sourceKey": "talent_desc_revvedUp",
+        "icon": "/classes/skills/revvedUp.48d0a3e1d024.webp"
+      },
+      {
+        "id": 106,
+        "name": "Experienced Logger",
+        "description": "Increases your chance for critical strike and critical strike damage.",
+        "sourceKey": "talent_desc_experiencedLogger",
+        "icon": "/classes/skills/experiencedLogger.eae9efec201b.webp"
+      },
+      {
+        "id": 107,
+        "name": "Logger’s Endurance",
+        "description": "Increases your life and life replenish.",
+        "sourceKey": "talent_desc_loggersEndurance",
+        "icon": "/classes/skills/loggersEndurance.b047b0fdb846.webp"
+      },
+      {
+        "id": 108,
+        "name": "Rogue Chainsaw",
+        "description": "Throw a chainsaw on the ground spinning and dealing increased damage and additional arcane damage to monsters struck.",
+        "sourceKey": "talent_desc_rogueChainsaw",
+        "icon": "/classes/skills/rogueChainsaw.561edd64e8bf.webp"
+      },
+      {
+        "id": 109,
+        "name": "Tree Trunk Triumph",
+        "description": "Summon a massive tree and cut it down on nearby monsters dealing increased damage and additional arcane damage.",
+        "sourceKey": "talent_desc_treeTrunkTriumph",
+        "icon": "/classes/skills/treeTrunkTriumph.fbbccee547ca.webp"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "slug": "necromancer",
+    "name": "Necromancer",
+    "title": "Death Answers",
+    "focus": [
+      "Undead summons",
+      "Bone magic",
+      "Poison and corpses"
+    ],
+    "description": "The fallen are only the beginning of your army. The Necromancer raises warriors and mages from corpses, commands vengeful spirits, and turns bone, poison, and the dead themselves into weapons against the living.",
+    "image": "/classes/studies/necromancer.webp",
+    "tone": "#779486",
+    "skills": [
+      {
+        "id": 110,
+        "name": "Bone Shred",
+        "description": "Unleash bone fragments dealing arcane damage to monsters.",
+        "sourceKey": "talent_desc_boneShred",
+        "icon": "/classes/skills/boneShred.4ec7fd32d71d.webp"
+      },
+      {
+        "id": 111,
+        "name": "Meat Shield",
+        "description": "Cast a meat shield reducing physical damage taken.",
+        "sourceKey": "talent_desc_meatShield",
+        "icon": "/classes/skills/meatShield.f1b08eea7849.webp"
+      },
+      {
+        "id": 112,
+        "name": "Meat Bomb",
+        "description": "Throw a huge lump of meat that explodes on impact dealing arcane damage and leaving corpse on the ground.",
+        "sourceKey": "talent_desc_meatBomb",
+        "icon": "/classes/skills/meatBomb.7eca41511777.webp"
+      },
+      {
+        "id": 113,
+        "name": "Poison Breath",
+        "description": "Unleash a rotten breath of toxins dealing poison damage.",
+        "sourceKey": "talent_desc_poisonBreath",
+        "icon": "/classes/skills/poisonBreath.9be3c4176fa7.webp"
+      },
+      {
+        "id": 114,
+        "name": "Bone Spear",
+        "description": "Launch a piercing bone spear dealing arcane damage.",
+        "sourceKey": "talent_desc_boneSpear",
+        "icon": "/classes/skills/boneSpear.9b401ee02380.webp"
+      },
+      {
+        "id": 115,
+        "name": "Cursed Ground",
+        "description": "Corrupt the ground in the target area inflicting poison break on monsters affected area.",
+        "sourceKey": "talent_desc_cursedGround",
+        "icon": "/classes/skills/cursedGround.2e2c53aead27.webp"
+      },
+      {
+        "id": 116,
+        "name": "Bone Spirit",
+        "description": "Spawn a bone spirit that seeks out the nearest monster and explodes on impact, causing an Arcane damage explosion, then seeks out other mobs after the first impact.",
+        "sourceKey": "talent_desc_boneSpirit",
+        "icon": "/classes/skills/boneSpirit.c6550249ec36.webp"
+      },
+      {
+        "id": 117,
+        "name": "Corpse Explosion",
+        "description": "Cause all corpses in target area to explode and deal an explosive arcane damage.",
+        "sourceKey": "talent_desc_corpseExplosion",
+        "icon": "/classes/skills/corpseExplosion.648333442fb9.webp"
+      },
+      {
+        "id": 118,
+        "name": "Poison Nova",
+        "description": "Unleash a toxic poison nova dealing poison damage and inflicting Poisoned on all monsters hit.",
+        "sourceKey": "talent_desc_poisonNova",
+        "icon": "/classes/skills/poisonNova.d2fffbd07fb7.webp"
+      },
+      {
+        "id": 119,
+        "name": "Amplify damage",
+        "description": "Curse monsters in the target area decreasing their damage dealt and inflicting arcane break.",
+        "sourceKey": "talent_desc_amplifyDamage",
+        "icon": "/classes/skills/amplifyDamage.f18d1b063855.webp"
+      },
+      {
+        "id": 120,
+        "name": "Raise Skeleton",
+        "description": "Raise a skeleton warrior from target corpse to fight on your side.",
+        "sourceKey": "talent_desc_raiseSkeletonWarrior",
+        "icon": "/classes/skills/raiseSkeletonWarrior.6715c1465f09.webp"
+      },
+      {
+        "id": 121,
+        "name": "Summon Mastery",
+        "description": "Increases the life and arcane damage of all your summons.",
+        "sourceKey": "talent_desc_skeletonMastery",
+        "icon": "/classes/skills/skeletonMastery.df303d762da6.webp"
+      },
+      {
+        "id": 122,
+        "name": "Raise Skeleton Mage",
+        "description": "Raise a skeleton mage from target corpse to fight on your side.",
+        "sourceKey": "talent_desc_raiseSkeletonMage",
+        "icon": "/classes/skills/raiseSkeletonMage.59a3cd9a87be.webp"
+      },
+      {
+        "id": 123,
+        "name": "Life Tap",
+        "description": "Curse monsters in the target area increasing any attackers life steal when striking the target.",
+        "sourceKey": "talent_desc_lifeTap",
+        "icon": "/classes/skills/lifeTap.05d6a80d2da8.webp"
+      },
+      {
+        "id": 124,
+        "name": "Summon Frenzy",
+        "description": "Temporarily enrage your summons increasing their attack speed and movement speed.",
+        "sourceKey": "talent_desc_summonFrenzy",
+        "icon": "/classes/skills/summonFrenzy.b75bebc1eba2.webp"
+      },
+      {
+        "id": 125,
+        "name": "Summon Damned Legion",
+        "description": "Summon a damned legion to fight on your side.",
+        "sourceKey": "talent_desc_summonDamnedLegion",
+        "icon": "/classes/skills/summonDamnedLegion.a7e0c836cd8b.webp"
+      },
+      {
+        "id": 126,
+        "name": "Summon Resistances",
+        "description": "Increases all resistances and physical damage reduction of your summons.",
+        "sourceKey": "talent_desc_summonResistances",
+        "icon": "/classes/skills/summonResistances.0bab3fd65bb2.webp"
+      },
+      {
+        "id": 127,
+        "name": "Summon Vengeful Spirit",
+        "description": "Summon a vengeful spirit to fight on your side.",
+        "sourceKey": "talent_desc_summonVengefulSpirit",
+        "icon": "/classes/skills/summonVengefulSpirit.7b00da746b2e.webp"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "slug": "samurai",
+    "name": "Samurai",
+    "title": "The Unseen Cut",
+    "focus": [
+      "Rapid sword attacks",
+      "Thrown weapons",
+      "Shadow movement"
+    ],
+    "description": "Cross the battlefield in a flash of steel and vanish before the answer comes. The Samurai combines rapid sword strikes, shadow steps, and thrown explosives, culminating in an untargetable flurry of attacks through Omnislash.",
+    "image": "/classes/studies/samurai.webp",
+    "tone": "#b77d72",
+    "skills": [
+      {
+        "id": 128,
+        "name": "Quickslash",
+        "description": "Perform a quick dash unleashing area of effect slash dealing increased physical damage and knocking up monsters.",
+        "sourceKey": "talent_desc_quickSlash",
+        "icon": "/classes/skills/quickSlash.eda90531a4e3.webp"
+      },
+      {
+        "id": 129,
+        "name": "Battle Glance",
+        "description": "Perform an area of effect attack with increased damage and attack rating.",
+        "sourceKey": "talent_desc_battleGlance",
+        "icon": "/classes/skills/battleGlance.6966a7b9e827.webp"
+      },
+      {
+        "id": 130,
+        "name": "Evasion",
+        "description": "Gain a chance to evade melee and ranged attacks.",
+        "sourceKey": "talent_desc_evasion",
+        "icon": "/classes/skills/evasion.682f521c7e97.webp"
+      },
+      {
+        "id": 131,
+        "name": "Smoke Bomb",
+        "description": "Explode a smoke bomb dealing arcane damage.",
+        "sourceKey": "talent_desc_smokeBomb",
+        "icon": "/classes/skills/smokeBomb.fd157d851b2f.webp"
+      },
+      {
+        "id": 132,
+        "name": "Shuriken Throw",
+        "description": "Throw three piercing Shurikens at your target dealing increased damage.",
+        "sourceKey": "talent_desc_shurikenThrow",
+        "icon": "/classes/skills/shurikenThrow.23adc300683f.webp"
+      },
+      {
+        "id": 133,
+        "name": "Warrior’s Spirit",
+        "description": "Increases your attack speed.",
+        "sourceKey": "talent_desc_warriorsSpirit",
+        "icon": "/classes/skills/warriorsSpirit.8c8f5f6e7f06.webp"
+      },
+      {
+        "id": 134,
+        "name": "Bushido",
+        "description": "Activate to gain a buff that increases your attack damage for every 10% of missing Life.",
+        "sourceKey": "talent_desc_bushido",
+        "icon": "/classes/skills/bushido.9dc19dfcdfce.webp"
+      },
+      {
+        "id": 135,
+        "name": "Explosive Kunai",
+        "description": "Throw an explosive kunai that explodes and splits on impact, causing smaller explosions that deal Arcane damage.",
+        "sourceKey": "talent_desc_explosiveKunai",
+        "icon": "/classes/skills/explosiveKunai.995d8be6b9b7.webp"
+      },
+      {
+        "id": 136,
+        "name": "Live by the Sword",
+        "description": "Temporarily increases your attack speed and movement speed.",
+        "sourceKey": "talent_desc_liveByTheSword",
+        "icon": "/classes/skills/liveByTheSword.6c5a13205db0.webp"
+      },
+      {
+        "id": 137,
+        "name": "Blade Barrier",
+        "description": "Summon a barrier of rotating blades around you dealing Physical Damage and additional Arcane Damage.",
+        "sourceKey": "talent_desc_bladeBarrier",
+        "icon": "/classes/skills/bladeBarrier.68306bfd3e3f.webp"
+      },
+      {
+        "id": 138,
+        "name": "Fan of Knives",
+        "description": "Attacks have a chance to throw knives around you dealing damage physical damage to nearby monsters. Additionally the knives have a chance to ricochet to nearby monsters.",
+        "sourceKey": "talent_desc_fanOfKnives",
+        "icon": "/classes/skills/fanOfKnives.193a5f821777.webp"
+      },
+      {
+        "id": 139,
+        "name": "Omnislash",
+        "description": "Become untargetable and rapidly strike monsters multiple times with increased attack rating dealing increased damage.",
+        "sourceKey": "talent_desc_omnislash",
+        "icon": "/classes/skills/omnislash.a1e8ed3c368b.webp"
+      },
+      {
+        "id": 140,
+        "name": "Exploding Bolas",
+        "description": "Throw bolas that deal arcane damage on impact and again when they explode after a short delay.",
+        "sourceKey": "talent_desc_explodingBolas",
+        "icon": "/classes/skills/explodingBolas.203cb7f2ac7f.webp"
+      },
+      {
+        "id": 141,
+        "name": "Way of the Warrior",
+        "description": "Increases your attack damage and magic skill damage.",
+        "sourceKey": "talent_desc_wayOfTheWarrior",
+        "icon": "/classes/skills/wayOfTheWarrior.143d29b9cfb1.webp"
+      },
+      {
+        "id": 142,
+        "name": "For Honor",
+        "description": "Temporarily increases your attack damage and movement speed.",
+        "sourceKey": "talent_desc_forHonor",
+        "icon": "/classes/skills/forHonor.7a55025e13ec.webp"
+      },
+      {
+        "id": 143,
+        "name": "Shadow Step",
+        "description": "Step into the shadows, re-appearing at the target location dealing Arcane Damage to all nearby monsters.",
+        "sourceKey": "talent_desc_shadowStep",
+        "icon": "/classes/skills/shadowStep.352b77e95a0f.webp"
+      },
+      {
+        "id": 144,
+        "name": "Burst of Speed",
+        "description": "Gain increased movement speed for a short period after killing a monster.",
+        "sourceKey": "talent_desc_burstOfSpeed",
+        "icon": "/classes/skills/burstOfSpeed.cbefd6dfddff.webp"
+      },
+      {
+        "id": 145,
+        "name": "Empire’s Slash",
+        "description": "Perform an area of effect attack blinking a short distance and dealing physical damage to monsters in its path. Empire slash lowers Omnislashes cooldown when it strikes a monster.",
+        "sourceKey": "talent_desc_empiresSlash",
+        "icon": "/classes/skills/empiresSlash.bc286d7305b1.webp"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "slug": "paladin",
+    "name": "Paladin",
+    "title": "Judgment in Light",
+    "focus": [
+      "Lightning attacks",
+      "Holy spells",
+      "Party auras"
+    ],
+    "description": "Carry the storm into battle and answer darkness with holy light. The Paladin channels lightning through weapon attacks, calls down divine bolts and spiraling hammers, and strengthens nearby allies with auras and healing light.",
+    "image": "/classes/studies/paladin.webp",
+    "tone": "#b4a270",
+    "skills": [
+      {
+        "id": 146,
+        "name": "Vengeance",
+        "description": "Strike monsters with a lightning shock that splits towards nearby monsters, dealing physical damage and lightning damage.",
+        "sourceKey": "talent_desc_vengeance",
+        "icon": "/classes/skills/vengeance.60bd44ec9d6c.webp"
+      },
+      {
+        "id": 147,
+        "name": "Thunder Shield",
+        "description": "Cast a shield of thunder reducing damage taken and shocking monsters attacking you dealing lightning damage.",
+        "sourceKey": "talent_desc_thunderShield",
+        "icon": "/classes/skills/thunderShield.06d94b0f303a.webp"
+      },
+      {
+        "id": 148,
+        "name": "Lightning Fury",
+        "description": "Strike monsters with increased attack damage causing lightning to chain between them dealing lightning damage.",
+        "sourceKey": "talent_desc_lightningFury",
+        "icon": "/classes/skills/lightningFury.1bfd4ea8cea4.webp"
+      },
+      {
+        "id": 149,
+        "name": "Holy Shock Aura",
+        "description": "When active shock monsters around you dealing lightning damage.",
+        "sourceKey": "talent_desc_holyShockAura",
+        "icon": "/classes/skills/holyShockAura.e9150fc76760.webp"
+      },
+      {
+        "id": 150,
+        "name": "Divine Storm",
+        "description": "Turn your attack into a divine storm dealing area of effect lightning damage around you.",
+        "sourceKey": "talent_desc_divineStorm",
+        "icon": "/classes/skills/divineStorm.15a0b44d176c.webp"
+      },
+      {
+        "id": 151,
+        "name": "Fanaticism Aura",
+        "description": "When active, increases your and your party members attack speed.",
+        "sourceKey": "talent_desc_fanaticismAura",
+        "icon": "/classes/skills/fanaticismAura.b5114fc71b84.webp"
+      },
+      {
+        "id": 152,
+        "name": "Ball Lightning",
+        "description": "Turn into a ball of lightning and dash towards to the target location, dealing lightning damage to nearby monsters upon landing.",
+        "sourceKey": "talent_desc_ballLightning",
+        "icon": "/classes/skills/ballLightning.3a1b65d38d7c.webp"
+      },
+      {
+        "id": 153,
+        "name": "Eye of the Storm",
+        "description": "Increases your lightning skill damage.",
+        "sourceKey": "talent_desc_eyeOfTheStorm",
+        "icon": "/classes/skills/eyeOfTheStorm.7a0ef32cea25.webp"
+      },
+      {
+        "id": 154,
+        "name": "Thor's Fury",
+        "description": "Temporarily increases your attack speed and lightning skill damage.",
+        "sourceKey": "talent_desc_thorsFury",
+        "icon": "/classes/skills/thorsFury.60540c269fef.webp"
+      },
+      {
+        "id": 155,
+        "name": "Holy Bolt",
+        "description": "Cast a piercing bolt of holy light dealing arcane damage to monsters hit.",
+        "sourceKey": "talent_desc_holyBolt",
+        "icon": "/classes/skills/holyBolt.51a95a528a85.webp"
+      },
+      {
+        "id": 156,
+        "name": "Divine Wisdom",
+        "description": "Increases your mana and mana replenish.",
+        "sourceKey": "talent_desc_divineWisdom",
+        "icon": "/classes/skills/divineWisdom.39f5cf0debc6.webp"
+      },
+      {
+        "id": 157,
+        "name": "Holy Aura",
+        "description": "When active, increases your and your party members attack damage and magic skill damage.",
+        "sourceKey": "talent_desc_holyAura",
+        "icon": "/classes/skills/holyAura.ae4e1ea81848.webp"
+      },
+      {
+        "id": 158,
+        "name": "Holy Hammer",
+        "description": "Summon a holy hammer that spirals outwards dealing arcane damage on hit.",
+        "sourceKey": "talent_desc_holyHammer",
+        "icon": "/classes/skills/holyHammer.d29e9314e7ed.webp"
+      },
+      {
+        "id": 159,
+        "name": "Holy Retribution",
+        "description": "Increases your mana after kill.",
+        "sourceKey": "talent_desc_holyRetribution",
+        "icon": "/classes/skills/holyRetribution.cd654bd97df6.webp"
+      },
+      {
+        "id": 160,
+        "name": "Light's Embrace",
+        "description": "Increases your cast rate.",
+        "sourceKey": "talent_desc_lightsEmbrace",
+        "icon": "/classes/skills/lightsEmbrace.1e9b4802263d.webp"
+      },
+      {
+        "id": 161,
+        "name": "Fist of the Heavens",
+        "description": "Call down a fist of divine energy exploding into multiple Holy Bolts dealing arcane damage.",
+        "sourceKey": "talent_desc_fistOfTheHeavens",
+        "icon": "/classes/skills/fistOfTheHeavens.e0319935bba7.webp"
+      },
+      {
+        "id": 162,
+        "name": "Holy Nova",
+        "description": "Cast a nova of holy light dealing arcane damage to monsters and healing all allies hit.",
+        "sourceKey": "talent_desc_holyNova",
+        "icon": "/classes/skills/holyNova.8a543b578e09.webp"
+      },
+      {
+        "id": 163,
+        "name": "The Venerated One",
+        "description": "Temporarily increases your cast rate and mana replenish.",
+        "sourceKey": "talent_desc_theVeneratedOne",
+        "icon": "/classes/skills/theVeneratedOne.9a744ff30107.webp"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "slug": "amazon",
+    "name": "Amazon",
+    "title": "Venom and Thunder",
+    "focus": [
+      "Poison",
+      "Lightning",
+      "Spear attacks"
+    ],
+    "description": "Strike with the venom of the hunt and the fury of a thunderstorm. The Amazon leaps into battle, rains down poisonous spears, and drives lightning through enemies with swift dashes and rebounding attacks.",
+    "image": "/classes/studies/amazon.webp",
+    "tone": "#8a9e6e",
+    "skills": [
+      {
+        "id": 164,
+        "name": "Noxious Strike",
+        "description": "Unleash a poisonous strike dealing physical damage and  poison damage. Every third strike sends out piercing poisonous projectiles dealing damage and inflicting Poisoned on hit.",
+        "sourceKey": "talent_desc_noxiousStrike",
+        "icon": "/classes/skills/noxiousStrike.e59c217abb27.webp"
+      },
+      {
+        "id": 165,
+        "name": "Caustic Spearhead",
+        "description": "Perform a burst attack dealing increased damage, additional poison damage and inflicting Poisoned on hit.",
+        "sourceKey": "talent_desc_causticSpearhead",
+        "icon": "/classes/skills/causticSpearhead.f646782df814.webp"
+      },
+      {
+        "id": 166,
+        "name": "Leaping Ambush",
+        "description": "Jump towards target location dealing poison damage and knocking up monsters around you upon landing.",
+        "sourceKey": "talent_desc_leapingAmbush",
+        "icon": "/classes/skills/leapingAmbush.7674a95d129f.webp"
+      },
+      {
+        "id": 167,
+        "name": "Death from Above",
+        "description": "Call down a rain of falling spears on target location dealing poison damage and slowing monsters struck.",
+        "sourceKey": "talent_desc_deathFromAbove",
+        "icon": "/classes/skills/deathFromAbove.855e8c4ae12d.webp"
+      },
+      {
+        "id": 168,
+        "name": "Toxic Remains",
+        "description": "Chance on hit to unleash toxic gas inflicting Poisoned on monsters hit.",
+        "sourceKey": "talent_desc_toxicRemains",
+        "icon": "/classes/skills/toxicRemains.1b6df2333011.webp"
+      },
+      {
+        "id": 169,
+        "name": "Master Poisoner",
+        "description": "Increases your poison skill damage.",
+        "sourceKey": "talent_desc_masterPoisoner",
+        "icon": "/classes/skills/masterPoisoner.573db924cddd.webp"
+      },
+      {
+        "id": 170,
+        "name": "Jungle Camouflage",
+        "description": "Temporarily increases your poison skill damage.",
+        "sourceKey": "talent_desc_jungleCamouflage",
+        "icon": "/classes/skills/jungleCamouflage.5173a5d6f38d.webp"
+      },
+      {
+        "id": 171,
+        "name": "Thrill of the Hunt",
+        "description": "Increases your movement speed.",
+        "sourceKey": "talent_desc_thrillOfTheHunt",
+        "icon": "/classes/skills/thrillOfTheHunt.7c41c06c0b43.webp"
+      },
+      {
+        "id": 172,
+        "name": "Envenom",
+        "description": "On monster kill you have a chance to explode toxic fissures on all monsters around thje target dealing poison damage and inflicting Poisoned.",
+        "sourceKey": "talent_desc_envenom",
+        "icon": "/classes/skills/envenom.335be72b9d65.webp"
+      },
+      {
+        "id": 173,
+        "name": "Astrope's Gift",
+        "description": "Perform a lightning enhanced attack dealing physical damage and lightning damage.",
+        "sourceKey": "talent_desc_astropesGift",
+        "icon": "/classes/skills/astropesGift.fe4a31dbd5c1.webp"
+      },
+      {
+        "id": 174,
+        "name": "Feint",
+        "description": "Gain a chance to evade melee and ranged attacks.",
+        "sourceKey": "talent_desc_feint",
+        "icon": "/classes/skills/feint.f3d350e5429a.webp"
+      },
+      {
+        "id": 175,
+        "name": "Rebound",
+        "description": "Perform an attack dealing physical damage and  lightning damage that rebounds to the closest monster.",
+        "sourceKey": "talent_desc_rebound",
+        "icon": "/classes/skills/rebound.97ae2fbee2b4.webp"
+      },
+      {
+        "id": 176,
+        "name": "Spearnage",
+        "description": "Furiously throw lightning enchanted spears towards target location.",
+        "sourceKey": "talent_desc_spearnage",
+        "icon": "/classes/skills/spearnage.502f9351663a.webp"
+      },
+      {
+        "id": 177,
+        "name": "Storm Dash",
+        "description": "Dash towards target location striking nearby monsters with chain lightning.",
+        "sourceKey": "talent_desc_stormDash",
+        "icon": "/classes/skills/stormDash.a0ab03042709.webp"
+      },
+      {
+        "id": 178,
+        "name": "Thunder Goddesses Chosen",
+        "description": "Increases lightning skill damage.",
+        "sourceKey": "talent_desc_thunderGoddessesChosen",
+        "icon": "/classes/skills/thunderGoddessesChosen.4839845ee422.webp"
+      },
+      {
+        "id": 179,
+        "name": "Chooser of the Slain",
+        "description": "Increases your life and mana after kill.",
+        "sourceKey": "talent_desc_chooserOfTheSlain",
+        "icon": "/classes/skills/chooserOfTheSlain.a254f0702db4.webp"
+      },
+      {
+        "id": 180,
+        "name": "Thunder Fury",
+        "description": "Perform an attack dealing physical damage that spreads lightning behind the target.",
+        "sourceKey": "talent_desc_thunderFury",
+        "icon": "/classes/skills/thunderFury.3f4cf1012d73.webp"
+      },
+      {
+        "id": 181,
+        "name": "Astrope's Battle Maiden",
+        "description": "Temporarily increases your lightning skill damage and attack speed.",
+        "sourceKey": "talent_desc_astropesBattleMaiden",
+        "icon": "/classes/skills/astropesBattleMaiden.5b9bd2e28d15.webp"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "slug": "demon-slayer",
+    "name": "Demon Slayer",
+    "title": "The Demon Within",
+    "focus": [
+      "Gunfire",
+      "Sword attacks",
+      "Demonic transformation"
+    ],
+    "description": "Hunt with a hail of bullets, then let the inner demon loose. The Demon Slayer wields relentless gunfire, dashing sword attacks, and stolen life, with a demonic transformation that fuels faster, harder strikes.",
+    "image": "/classes/studies/demon-slayer.webp",
+    "tone": "#ac8574",
+    "skills": [
+      {
+        "id": 182,
+        "name": "Trigger Finger",
+        "description": "Fire a burst shot dealing physical damage.",
+        "sourceKey": "talent_desc_triggerFinger",
+        "icon": "/classes/skills/triggerFinger.346ac293313f.webp"
+      },
+      {
+        "id": 183,
+        "name": "Eagle Eye",
+        "description": "Increases your attack damage, additional physical damage and critical strike damage when using ranged weapons.",
+        "sourceKey": "talent_desc_eagleEye",
+        "icon": "/classes/skills/eagleEye.cfc078a409cb.webp"
+      },
+      {
+        "id": 184,
+        "name": "Execute",
+        "description": "Deal extra attack damage to monsters below 30% Life.",
+        "sourceKey": "talent_desc_execute",
+        "icon": "/classes/skills/execute.67a753aedacf.webp"
+      },
+      {
+        "id": 185,
+        "name": "Bullet Hell",
+        "description": "Fire a barrage of bullets towards the aimed direction dealing physical damage.",
+        "sourceKey": "talent_desc_bulletHell",
+        "icon": "/classes/skills/bulletHell.f15c5dee24ec.webp"
+      },
+      {
+        "id": 186,
+        "name": "Shredder Trap",
+        "description": "Throw a shredder on the ground spinning with deadly speed dealing physical damage.",
+        "sourceKey": "talent_desc_shredderTrap",
+        "icon": "/classes/skills/shredderTrap.1f6ea0ce2736.webp"
+      },
+      {
+        "id": 187,
+        "name": "Possessed Bullet",
+        "description": "Fire a satanic bullet possessed by darkness which explodes into multiple bullets on impact dealing physical damage.",
+        "sourceKey": "talent_desc_possessedBullet",
+        "icon": "/classes/skills/possessedBullet.8f4057dc0f70.webp"
+      },
+      {
+        "id": 188,
+        "name": "Demon´s Presence",
+        "description": "Temporarily increase your attack speed and attack damage.",
+        "sourceKey": "talent_desc_demonsPresence",
+        "icon": "/classes/skills/demonsPresence.12983236e191.webp"
+      },
+      {
+        "id": 189,
+        "name": "Concentration Aura",
+        "description": "When active, increases your and your party members attack rating.",
+        "sourceKey": "talent_desc_concentrationAura",
+        "icon": "/classes/skills/concentrationAura.8c60de8be6c3.webp"
+      },
+      {
+        "id": 190,
+        "name": "Absolute Mayhem",
+        "description": "Harness the power of your inner demon and fire multiple massive bullets in a line dealing physical damage.",
+        "sourceKey": "talent_desc_absoluteMayhem",
+        "icon": "/classes/skills/absoluteMayhem.dc7b3a3ae6c9.webp"
+      },
+      {
+        "id": 191,
+        "name": "Fast Slices",
+        "description": "Perform a series of dashing attacks, dealing area of effect physical damage on second attack and stunning monsters around you on the final attack.",
+        "sourceKey": "talent_desc_fastSlices",
+        "icon": "/classes/skills/fastSlices.acabeea602d0.webp"
+      },
+      {
+        "id": 192,
+        "name": "Demon´s Calling",
+        "description": "Become airborne and smash the ground dealing area of effect arcane damage and stunning monsters around you.",
+        "sourceKey": "talent_desc_demonsCalling",
+        "icon": "/classes/skills/demonsCalling.21344dbc6e12.webp"
+      },
+      {
+        "id": 193,
+        "name": "Heart Attack",
+        "description": "Increases your chance for critical strikes and critical strike damage when using a melee weapon.",
+        "sourceKey": "talent_desc_heartAttack",
+        "icon": "/classes/skills/heartAttack.3da9bbca49c0.webp"
+      },
+      {
+        "id": 194,
+        "name": "Shadow Anomalies",
+        "description": "Casting Demon's Calling now spawns five shadow anomalies that perform Demon's Calling with increased arcane damage.",
+        "sourceKey": "talent_desc_shadowAnomalies",
+        "icon": "/classes/skills/shadowAnomalies.66a97aa5191b.webp"
+      },
+      {
+        "id": 195,
+        "name": "Soul Leech",
+        "description": "Leech life out of monsters in target area dealing arcane damage and healing you.",
+        "sourceKey": "talent_desc_soulLeech",
+        "icon": "/classes/skills/soulLeech.191ee4db325e.webp"
+      },
+      {
+        "id": 196,
+        "name": "Sword Handler",
+        "description": "Increases your life stolen per hit, attack rating and damage when using swords.",
+        "sourceKey": "talent_desc_swordHandler",
+        "icon": "/classes/skills/swordHandler.a9492840658a.webp"
+      },
+      {
+        "id": 197,
+        "name": "Demon´s Shield",
+        "description": "Increases all resistances and movement speed.",
+        "sourceKey": "talent_desc_demonsShield",
+        "icon": "/classes/skills/demonsShield.88462a57037f.webp"
+      },
+      {
+        "id": 198,
+        "name": "Slice of Shadows",
+        "description": "Perform an attack that releases a wave of shadow dealing physical damage.",
+        "sourceKey": "talent_desc_sliceOfShadows",
+        "icon": "/classes/skills/sliceOfShadows.b5e668cb7b06.webp"
+      },
+      {
+        "id": 199,
+        "name": "Demon Form",
+        "description": "Temporarily turn into a demon gaining increased attack damage and attack speed.",
+        "sourceKey": "talent_desc_demonForm",
+        "icon": "/classes/skills/demonForm.e1634011ca10.webp"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "slug": "demonspawn",
+    "name": "Demonspawn",
+    "title": "Blood and Bone",
+    "focus": [
+      "Bone magic",
+      "Blood spells",
+      "Mana protection"
+    ],
+    "description": "Make the battlefield recoil beneath a storm of blood and bone. The Demonspawn impales enemies with rising spikes, channels surges of blood, and sustains its arcane assault through mana restoration and a shield paid for in mana.",
+    "image": "/classes/studies/demonspawn.webp",
+    "tone": "#a7808b",
+    "skills": [
+      {
+        "id": 200,
+        "name": "Bone Fragments",
+        "description": "Cast fragments of bone towards target location dealing arcane damage.",
+        "sourceKey": "talent_desc_boneFragments",
+        "icon": "/classes/skills/boneFragments.0b9df36c821d.webp"
+      },
+      {
+        "id": 201,
+        "name": "Impale",
+        "description": "Summon spikes from the ground impaling monsters in a target area dealing arcane damage and knocking them up.",
+        "sourceKey": "talent_desc_impale",
+        "icon": "/classes/skills/impale.1698a92424ab.webp"
+      },
+      {
+        "id": 202,
+        "name": "Ossification",
+        "description": "Increases your defense and gives you a burst of movement speed after killing a monster.",
+        "sourceKey": "talent_desc_ossification",
+        "icon": "/classes/skills/ossification.bf7871f15b82.webp"
+      },
+      {
+        "id": 203,
+        "name": "Single Out",
+        "description": "Monsters that have no other monsters around them take increased arcane damage.",
+        "sourceKey": "talent_desc_singleOut",
+        "icon": "/classes/skills/singleOut.27835771382e.webp"
+      },
+      {
+        "id": 204,
+        "name": "Bone Storm",
+        "description": "Summon a storm of bone and cartilage surrounding you dealing arcane damage.",
+        "sourceKey": "talent_desc_boneStorm",
+        "icon": "/classes/skills/boneStorm.93f74392b8c1.webp"
+      },
+      {
+        "id": 205,
+        "name": "Cartilage Build Up",
+        "description": "When damaged by cartilage and bone monsters are stacked up and at 10 stacks they explode spreading bone and cartilage around them dealing arcane damage.",
+        "sourceKey": "talent_desc_cartilageBuildUp",
+        "icon": "/classes/skills/cartilageBuildUp.609d53366ead.webp"
+      },
+      {
+        "id": 206,
+        "name": "Ominous Aura",
+        "description": "When active, increases your and your party members arcane skill damage.",
+        "sourceKey": "talent_desc_ominousPresence",
+        "icon": "/classes/skills/ominousPresence.ee6db7396fd1.webp"
+      },
+      {
+        "id": 207,
+        "name": "Spinal Tap",
+        "description": "Rip the spine out of monsters at target location dealing arcane damage.",
+        "sourceKey": "talent_desc_spinalTap",
+        "icon": "/classes/skills/spinalTap.5adba39aea4f.webp"
+      },
+      {
+        "id": 208,
+        "name": "Bone Barrage",
+        "description": "Unleash a barrage of bones in target direction dealing arcane damage.",
+        "sourceKey": "talent_desc_boneBarrage",
+        "icon": "/classes/skills/boneBarrage.cf140d6f7da0.webp"
+      },
+      {
+        "id": 209,
+        "name": "Blood Bolts",
+        "description": "Unleash bolts of blood towards target location dealing arcane damage.",
+        "sourceKey": "talent_desc_bloodBolts",
+        "icon": "/classes/skills/bloodBolts.3eee58705ddf.webp"
+      },
+      {
+        "id": 210,
+        "name": "Gut Spread",
+        "description": "Every 6th cast causes your intestines to boil and burst lumps of blood around you dealing a portion of blood bolts damage as arcane damage.",
+        "sourceKey": "talent_desc_gutSpread",
+        "icon": "/classes/skills/gutSpread.a48040b95857.webp"
+      },
+      {
+        "id": 211,
+        "name": "Manapool Aura",
+        "description": "When active, increases your and your party members mana replenish.",
+        "sourceKey": "talent_desc_manaPoolAura",
+        "icon": "/classes/skills/manaPoolAura.1292dff76c1c.webp"
+      },
+      {
+        "id": 212,
+        "name": "Mana Shield",
+        "description": "When active, create a mana shield around you that reduces magic damage taken and absorbs a portion of damage taken as mana.",
+        "sourceKey": "talent_desc_manaShield",
+        "icon": "/classes/skills/manaShield.cacc38b38c9f.webp"
+      },
+      {
+        "id": 213,
+        "name": "Mana Devour",
+        "description": "Instantly restores a portion of your mana.",
+        "sourceKey": "talent_desc_manaDevour",
+        "icon": "/classes/skills/manaDevour.0ccf824e87ba.webp"
+      },
+      {
+        "id": 214,
+        "name": "Demonic Presence",
+        "description": "Increases your arcane skill damage.",
+        "sourceKey": "talent_desc_demonicPresence",
+        "icon": "/classes/skills/demonicPresence.3d18c96e7c18.webp"
+      },
+      {
+        "id": 215,
+        "name": "Blood Surge",
+        "description": "Channel a massive surge of blood towards target direction dealing arcane damage to enemies in its path.",
+        "sourceKey": "talent_desc_bloodSurge",
+        "icon": "/classes/skills/bloodSurge.04bd72c7c92b.webp"
+      },
+      {
+        "id": 216,
+        "name": "Blood Demons",
+        "description": "Chance on spellcast to summon a blood demon towards the closest monster dealing arcane damage.",
+        "sourceKey": "talent_desc_bloodDemons",
+        "icon": "/classes/skills/bloodDemons.c87523470708.webp"
+      },
+      {
+        "id": 217,
+        "name": "Blood Tendrils",
+        "description": "Blood surge now causes its target to release blood tendrils for a portion of its damage.",
+        "sourceKey": "talent_desc_bloodTendrils",
+        "icon": "/classes/skills/bloodTendrils.3511dab70c3f.webp"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "slug": "shaman",
+    "name": "Shaman",
+    "title": "Voice of the Elements",
+    "focus": [
+      "Earth and wind",
+      "Totems",
+      "Spirit wolves"
+    ],
+    "description": "Call to the earth, and let the elements answer. The Shaman tears open the ground, sends tornadoes through enemy ranks, and gathers elemental totems and spirit wolves into a fighting circle of stone, fire, and lightning.",
+    "image": "/classes/studies/shaman.webp",
+    "tone": "#87a080",
+    "skills": [
+      {
+        "id": 218,
+        "name": "Tectonic Boulder",
+        "description": "Unleash a massive boulder that travels forward dealing arcane damage.",
+        "sourceKey": "talent_desc_tectonicBoulder",
+        "icon": "/classes/skills/tectonicBoulder.52a872df50aa.webp"
+      },
+      {
+        "id": 219,
+        "name": "Twisters",
+        "description": "Unleash small twisters towards target location dealing arcane damage to monsters on their path.",
+        "sourceKey": "talent_desc_twisters",
+        "icon": "/classes/skills/twisters.bfc48c1acea8.webp"
+      },
+      {
+        "id": 220,
+        "name": "Rock Fragments",
+        "description": "Unleash rock fragments towards target location dealing arcane damage.",
+        "sourceKey": "talent_desc_rockFragments",
+        "icon": "/classes/skills/rockFragments.2a8bf63a6cde.webp"
+      },
+      {
+        "id": 221,
+        "name": "Earth Bind",
+        "description": "Raise vines from the ground dealing poison damage, poisoning and rooting monsters in place.",
+        "sourceKey": "talent_desc_earthBind",
+        "icon": "/classes/skills/earthBind.17efb2c67385.webp"
+      },
+      {
+        "id": 222,
+        "name": "Tornado",
+        "description": "Summon a tornado traveling towards target direction dealing arcane damage to monsters on its path.",
+        "sourceKey": "talent_desc_tornado",
+        "icon": "/classes/skills/tornado.deed874908ed.webp"
+      },
+      {
+        "id": 223,
+        "name": "Earth's Grace",
+        "description": "Increases your maximum life and mana.",
+        "sourceKey": "talent_desc_earthsGrace",
+        "icon": "/classes/skills/earthsGrace.1c6f8241906c.webp"
+      },
+      {
+        "id": 224,
+        "name": "Meteor Storm",
+        "description": "Call down a meteor storm on target location dealing arcane damage.",
+        "sourceKey": "talent_desc_meteorStorm",
+        "icon": "/classes/skills/meteorStorm.42afad81f11b.webp"
+      },
+      {
+        "id": 225,
+        "name": "Nature's Prophet",
+        "description": "Increases your arcane skill damage.",
+        "sourceKey": "talent_desc_naturesProphet",
+        "icon": "/classes/skills/naturesProphet.e7b1769273e7.webp"
+      },
+      {
+        "id": 226,
+        "name": "Fissures",
+        "description": "Rip the ground open with magic causing cracks that release fissures dealing arcane damage.",
+        "sourceKey": "talent_desc_fissures",
+        "icon": "/classes/skills/fissures.89e25d7fd880.webp"
+      },
+      {
+        "id": 227,
+        "name": "Earth Totem",
+        "description": "Summon a totem that fires rock fragments that deal area of effect arcane damage on hit.",
+        "sourceKey": "talent_desc_earthTotem",
+        "icon": "/classes/skills/earthTotem.bd152cff8068.webp"
+      },
+      {
+        "id": 228,
+        "name": "Spiritual Guide",
+        "description": "Increases your mana and mana replenish.",
+        "sourceKey": "talent_desc_spiritualGuide",
+        "icon": "/classes/skills/spiritualGuide.7f9de913405c.webp"
+      },
+      {
+        "id": 229,
+        "name": "Storm Totem",
+        "description": "Summon a totem that releases chain lightning on nearby monsters dealing lightning damage.",
+        "sourceKey": "talent_desc_stormTotem",
+        "icon": "/classes/skills/stormTotem.e1c6c228c276.webp"
+      },
+      {
+        "id": 230,
+        "name": "Spirit Wolves",
+        "description": "Spawn a spirit wolf to fight on your side.",
+        "sourceKey": "talent_desc_spiritWolves",
+        "icon": "/classes/skills/spiritWolves.5b2527eda297.webp"
+      },
+      {
+        "id": 231,
+        "name": "Scent of the Wolf",
+        "description": "Increases spirit wolves arcane damage and life.",
+        "sourceKey": "talent_desc_scentOfTheWolf",
+        "icon": "/classes/skills/scentOfTheWolf.9c951eeda7a5.webp"
+      },
+      {
+        "id": 232,
+        "name": "Fire Totem",
+        "description": "Spawn a totem that casts piercing fire projectiles dealing fire damage.",
+        "sourceKey": "talent_desc_fireTotem",
+        "icon": "/classes/skills/fireTotem.624c17fe85e2.webp"
+      },
+      {
+        "id": 233,
+        "name": "Fractal Mind",
+        "description": "Increases your movement speed and magic skill damage.",
+        "sourceKey": "talent_desc_fractalMind",
+        "icon": "/classes/skills/fractalMind.ed9562beaf9f.webp"
+      },
+      {
+        "id": 234,
+        "name": "Astral Intellect",
+        "description": "Cast to move all spawned totems to you. Passively increases the attack range of all totems.",
+        "sourceKey": "talent_desc_astralIntellect",
+        "icon": "/classes/skills/astralIntellect.b65ae79e200c.webp"
+      },
+      {
+        "id": 235,
+        "name": "Chaos Totem",
+        "description": "Summon a totem that rapidly shoots chaos bolts dealing arcane damage.",
+        "sourceKey": "talent_desc_chaosTotem",
+        "icon": "/classes/skills/chaosTotem.3bf2c0cbfa6c.webp"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "slug": "white-mage",
+    "name": "White Mage",
+    "title": "Grace and Damnation",
+    "focus": [
+      "Healing",
+      "Holy protection",
+      "Unholy spells"
+    ],
+    "description": "Offer sanctuary in sacred light, or open the door to something darker. The White Mage heals and shields allies with divine power, while its unholy arts mark enemies, unleash restless spirits, and tear life and mana from souls.",
+    "image": "/classes/studies/white-mage.webp",
+    "tone": "#b7ac95",
+    "skills": [
+      {
+        "id": 236,
+        "name": "Satan’s Mark",
+        "description": "Mark the monsters on target area for satan causing them to unleash pulses of arcane damage when struck by other abilities and attacks.",
+        "sourceKey": "talent_desc_satansMark",
+        "icon": "/classes/skills/satansMark.48393cca00dd.webp"
+      },
+      {
+        "id": 237,
+        "name": "Restless Spirits",
+        "description": "Unleash restless spirits from an unholy dimension to seek new hosts inflicting arcane damage to the target.",
+        "sourceKey": "talent_desc_restlessSpirits",
+        "icon": "/classes/skills/restlessSpirits.ae9cc757054a.webp"
+      },
+      {
+        "id": 238,
+        "name": "Digest Souls",
+        "description": "By sacrificing your victims to the devil temporarily gain increased movement speed and arcane skill damage after killing a monster.",
+        "sourceKey": "talent_desc_digestSouls",
+        "icon": "/classes/skills/digestSouls.7542a92a6be0.webp"
+      },
+      {
+        "id": 239,
+        "name": "Shadow Bolt",
+        "description": "Gather your inner darkness and unleash a powerful piercing shadow bolt that deals arcane damage to monsters on its path. The shadow bolt slows down after hitting a target.",
+        "sourceKey": "talent_desc_shadowBolt",
+        "icon": "/classes/skills/shadowBolt.fe8df1738e29.webp"
+      },
+      {
+        "id": 240,
+        "name": "Soul Spurn",
+        "description": "Rip the souls from nearest monsters dealing arcane damage and restoring your life and mana.",
+        "sourceKey": "talent_desc_soulSpurn",
+        "icon": "/classes/skills/soulSpurn.aebad87a7f30.webp"
+      },
+      {
+        "id": 241,
+        "name": "Martyr",
+        "description": "Sacrifice your own blood when taking damage from any source temporarily increasing your life and mana replenish.",
+        "sourceKey": "talent_desc_martyr",
+        "icon": "/classes/skills/martyr.cf99e1db3d00.webp"
+      },
+      {
+        "id": 242,
+        "name": "Dark Oath",
+        "description": "Conjure an aura that unleashes waves of unholy energy around you inflicting arcane damage to nearby monsters.",
+        "sourceKey": "talent_desc_darkOath",
+        "icon": "/classes/skills/darkOath.ddbda9cd253e.webp"
+      },
+      {
+        "id": 243,
+        "name": "Malediction",
+        "description": "Your unholy essence drives birds into insanity, casts have a chance to send crows towards random nearby monsters exploding into arcane damage on impact.",
+        "sourceKey": "talent_desc_malediction",
+        "icon": "/classes/skills/malediction.7b23ab6385ea.webp"
+      },
+      {
+        "id": 244,
+        "name": "Black Mass",
+        "description": "Summon all the coven's cultists to march in the name of satan inflicting arcane damage to monsters on their path.",
+        "sourceKey": "talent_desc_blackMass",
+        "icon": "/classes/skills/blackMass.e7a20bd52241.webp"
+      },
+      {
+        "id": 245,
+        "name": "Heavenly Fire",
+        "description": "Light the target location into holy fire dealing arcane damage.",
+        "sourceKey": "talent_desc_heavenlyFire",
+        "icon": "/classes/skills/heavenlyFire.4c41a6e02e56.webp"
+      },
+      {
+        "id": 246,
+        "name": "Burst of Light",
+        "description": "Cast a ray of divine light dealing arcane damage and lights monsters on heavenly fire.",
+        "sourceKey": "talent_desc_burstOfLight",
+        "icon": "/classes/skills/burstOfLight.74a82b85bb64.webp"
+      },
+      {
+        "id": 247,
+        "name": "Flash Heal",
+        "description": "Heal yourself and any nearby allies.",
+        "sourceKey": "talent_desc_flashHeal",
+        "icon": "/classes/skills/flashHeal.39358899b99e.webp"
+      },
+      {
+        "id": 248,
+        "name": "Benediction",
+        "description": "When healed by your abilities, smite monsters around you with holy lightning.",
+        "sourceKey": "talent_desc_benediction",
+        "icon": "/classes/skills/benediction.571cc4c1e4bf.webp"
+      },
+      {
+        "id": 249,
+        "name": "Divine Healing",
+        "description": "Using flash heal temporarily increases your life replenish.",
+        "sourceKey": "talent_desc_divineHealing",
+        "icon": "/classes/skills/divineHealing.d3c7a4e52ceb.webp"
+      },
+      {
+        "id": 250,
+        "name": "Chain of Holy Lightning",
+        "description": "Cast a holy lightning jumping from monster to monster dealing arcane damage.",
+        "sourceKey": "talent_desc_chainOfHolyLight",
+        "icon": "/classes/skills/chainOfHolyLight.3733d9235bfd.webp"
+      },
+      {
+        "id": 251,
+        "name": "Holy Shield",
+        "description": "By the power of god bless yourself and any nearby allies with immortality for a short period.",
+        "sourceKey": "talent_desc_holyShield",
+        "icon": "/classes/skills/holyShield.9779adbf6333.webp"
+      },
+      {
+        "id": 252,
+        "name": "Healing Zone",
+        "description": "Bless the area around you with divine energy healing yourself and nearby allies.",
+        "sourceKey": "talent_desc_healingZone",
+        "icon": "/classes/skills/healingZone.21e6c30cdc24.webp"
+      },
+      {
+        "id": 253,
+        "name": "Mana Orb",
+        "description": "Summon a pulsating orb of mana that replenishes mana for players and deals arcane damage to monsters.",
+        "sourceKey": "talent_desc_manaOrb",
+        "icon": "/classes/skills/manaOrb.3f9d67098978.webp"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "slug": "marauder",
+    "name": "Marauder",
+    "title": "Chains of Ruin",
+    "focus": [
+      "Flails and bombs",
+      "Chains and traps",
+      "Bleeding"
+    ],
+    "description": "Turn every chain into a sentence and every bomb into its execution. The Marauder swings heavy flails, scatters explosives, and binds enemies with nets and serrated chains before tearing the trapped ranks apart.",
+    "image": "/classes/studies/marauder.webp",
+    "tone": "#a99a77",
+    "skills": [
+      {
+        "id": 254,
+        "name": "Heavy Ball",
+        "description": "Flail a big chained spike ball dealing physical damage to monsters on its path.",
+        "sourceKey": "talent_desc_heavyBall",
+        "icon": "/classes/skills/heavyBall.8fd156432127.webp"
+      },
+      {
+        "id": 255,
+        "name": "Bouncing Grenade",
+        "description": "Throw a grenade that bounces exploding into shrapnel on impact, dealing area of effect fire damage.",
+        "sourceKey": "talent_desc_bouncingGrenade",
+        "icon": "/classes/skills/bouncingGrenade.f2e8b01f1688.webp"
+      },
+      {
+        "id": 256,
+        "name": "Unstable Bomb",
+        "description": "All bombs scatter small bombs around when exploding dealing fire damage.",
+        "sourceKey": "talent_desc_unstableBomb",
+        "icon": "/classes/skills/unstableBomb.e6bd7a6a42fd.webp"
+      },
+      {
+        "id": 257,
+        "name": "The Big Bo-oM",
+        "description": "Throw a huge bo-omb scattering into shrapnel on impact dealing area of effect fire damage.",
+        "sourceKey": "talent_desc_theBigBoom",
+        "icon": "/classes/skills/theBigBoom.0c0c73771be9.webp"
+      },
+      {
+        "id": 258,
+        "name": "Wrecking Ball",
+        "description": "Increases the damage and range of Heavy Ball.",
+        "sourceKey": "talent_desc_wreckingBall",
+        "icon": "/classes/skills/wreckingBall.8f8ef8e8989f.webp"
+      },
+      {
+        "id": 259,
+        "name": "Crazy Grapple",
+        "description": "Throw a massive spike ball into target location dealing area of effect fire damage and dragging yourself towards it through the air.",
+        "sourceKey": "talent_desc_crazyGrapple",
+        "icon": "/classes/skills/crazyGrapple.705f31bb52cc.webp"
+      },
+      {
+        "id": 260,
+        "name": "Flail Mastery",
+        "description": "Increase attack speed, attack damage and cast rate when using mace weapons.",
+        "sourceKey": "talent_desc_flailMastery",
+        "icon": "/classes/skills/flailMastery.bc34fad5b1d1.webp"
+      },
+      {
+        "id": 261,
+        "name": "Bombardment",
+        "description": "Rapidly throw a barrage of small bombs in target direction dealing area of effect fire damage.",
+        "sourceKey": "talent_desc_bombardment",
+        "icon": "/classes/skills/bombardment.15c9e73b8bc2.webp"
+      },
+      {
+        "id": 262,
+        "name": "Force Overwhelming",
+        "description": "Temporarily increase your attack damage, attack rating and attack speed.",
+        "sourceKey": "talent_desc_forceOverwhelming",
+        "icon": "/classes/skills/forceOverwhelming.dc09862b8a2c.webp"
+      },
+      {
+        "id": 263,
+        "name": "Serrated Chains",
+        "description": "Perform an area of effect attack with increased attack rating and damage attaching serrated chains to monsters.",
+        "sourceKey": "talent_desc_serratedChains",
+        "icon": "/classes/skills/serratedChains.1c2c5a6ebbee.webp"
+      },
+      {
+        "id": 264,
+        "name": "Retiarius Net",
+        "description": "Throw a retiarius net dealing area of effect arcane damage and stunning monsters hit.",
+        "sourceKey": "talent_desc_retiariusNet",
+        "icon": "/classes/skills/retiariusNet.1b66a7da2e7d.webp"
+      },
+      {
+        "id": 265,
+        "name": "Chain Trap",
+        "description": "Throw a chain trap into the target location dealing arcane damage and hooking nearby monsters with chains.",
+        "sourceKey": "talent_desc_chainTrap",
+        "icon": "/classes/skills/chainTrap.da39f31b1e0d.webp"
+      },
+      {
+        "id": 266,
+        "name": "Titanium Chains",
+        "description": "Monsters affected by Serrated Chains explode upon death dealing physical damage.",
+        "sourceKey": "talent_desc_titaniumChains",
+        "icon": "/classes/skills/titaniumChains.b9790aa2c485.webp"
+      },
+      {
+        "id": 267,
+        "name": "Master Trap Maker",
+        "description": "Passively increases the arcane damage dealt by chain traps and provides a chance for critical hits as well as a proc chance for traps to activate rapidly causing the trap and its hooks to travel faster.",
+        "sourceKey": "talent_desc_masterTrapMaker",
+        "icon": "/classes/skills/masterTrapMaker.9ca8b37971c7.webp"
+      },
+      {
+        "id": 268,
+        "name": "Rend Flesh",
+        "description": "Attacks have a chance to inflict bleeding on monsters in a small area around the target.",
+        "sourceKey": "talent_desc_rendFlesh",
+        "icon": "/classes/skills/rendFlesh.c30764abdd4f.webp"
+      },
+      {
+        "id": 269,
+        "name": "Madness Control",
+        "description": "Hook nearby monsters towards you stunning them and dealing arcane damage. Additionally summon a bomb from the sky onto your location creating an explosion that deals arcane damage.",
+        "sourceKey": "talent_desc_madnessControl",
+        "icon": "/classes/skills/madnessControl.0689158da89d.webp"
+      },
+      {
+        "id": 270,
+        "name": "Resilient Gladiator",
+        "description": "Increases your physical damage reduction and life.",
+        "sourceKey": "talent_desc_resilientGladiator",
+        "icon": "/classes/skills/resilientGladiator.ebd255bda7f2.webp"
+      },
+      {
+        "id": 271,
+        "name": "Annihilation",
+        "description": "Violently rip all serrated chains out of monsters dealing area of effect damage. Targets affected by retiarius net take increased damage.",
+        "sourceKey": "talent_desc_annihilation",
+        "icon": "/classes/skills/annihilation.e79c48ab8f75.webp"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "slug": "plague-doctor",
+    "name": "Plague Doctor",
+    "title": "The Fatal Remedy",
+    "focus": [
+      "Poison",
+      "Bleeding",
+      "Life sustain"
+    ],
+    "description": "Prescribe poison and let the diagnosis spread. The Plague Doctor fights with toxic flasks, rats, and leeches, or opens wounds with surgical blades, gaining damage and life steal against bleeding targets.",
+    "image": "/classes/studies/plague-doctor.webp",
+    "tone": "#8c9e72",
+    "skills": [
+      {
+        "id": 272,
+        "name": "Surgical Blood Letting",
+        "description": "Throw a surgical knife with razor sharp accuracy that bounces from monster to monster dealing physical damage.",
+        "sourceKey": "talent_desc_surgicalBloodLetting",
+        "icon": "/classes/skills/surgicalBloodLetting.316900cc9fe4.webp"
+      },
+      {
+        "id": 273,
+        "name": "Malpractice",
+        "description": "Increases the force of surgical blood letting causing targets to bleed.",
+        "sourceKey": "talent_desc_malpractice",
+        "icon": "/classes/skills/malpractice.f14e64fd7df3.webp"
+      },
+      {
+        "id": 274,
+        "name": "Crow Mask's Presence",
+        "description": "Increases your life and all resistances.",
+        "sourceKey": "talent_desc_crowMasksPresence",
+        "icon": "/classes/skills/crowMasksPresence.aea03ee00143.webp"
+      },
+      {
+        "id": 275,
+        "name": "Blood Sustenance",
+        "description": "Gain increased attack damage and life stolen per hit from bleeding targets.",
+        "sourceKey": "talent_desc_bloodSustenance",
+        "icon": "/classes/skills/bloodSustenance.93d9a5d075e1.webp"
+      },
+      {
+        "id": 276,
+        "name": "Miasma",
+        "description": "Empower your attack with a mixture of chemicals causing the monster to release a toxic cloud dealing physical damage.",
+        "sourceKey": "talent_desc_miasma",
+        "icon": "/classes/skills/miasma.e4c5fb14a88e.webp"
+      },
+      {
+        "id": 277,
+        "name": "Booster Shot",
+        "description": "When attacking have a chance to inject yourself with a mRNA gene altering shot temporarily increasing your attack damage and movement speed.",
+        "sourceKey": "talent_desc_boosterShot",
+        "icon": "/classes/skills/boosterShot.2f75a6b6641d.webp"
+      },
+      {
+        "id": 278,
+        "name": "Lifeblood Aura",
+        "description": "When active, increases your and your party members Life and life replenish.",
+        "sourceKey": "talent_desc_lifeBloodAura",
+        "icon": "/classes/skills/lifeBloodAura.61035989549d.webp"
+      },
+      {
+        "id": 279,
+        "name": "Devout Doctor",
+        "description": "Gain physical damage based on your maximum life.",
+        "sourceKey": "talent_desc_devoutDoctor",
+        "icon": "/classes/skills/devoutDoctor.662b6a6721dc.webp"
+      },
+      {
+        "id": 280,
+        "name": "Defunct Surgeon",
+        "description": "Temporarily increase your attack speed and life stolen per hit. When active lose a portion of your maximum life per second (Non-fatal).",
+        "sourceKey": "talent_desc_defunctSurgeon",
+        "icon": "/classes/skills/defunctSurgeon.153aaa7948a5.webp"
+      },
+      {
+        "id": 281,
+        "name": "Plague of Rats",
+        "description": "Send plague rats in target direction dealing poison damage on impact.",
+        "sourceKey": "talent_desc_plagueOfRats",
+        "icon": "/classes/skills/plagueOfRats.3b733ba2db35.webp"
+      },
+      {
+        "id": 282,
+        "name": "Toxic Flask",
+        "description": "Throw a bouncing toxic flask towards target location dealing poison damage.",
+        "sourceKey": "talent_desc_toxicFlask",
+        "icon": "/classes/skills/toxicFlask.d3e849e1c2e7.webp"
+      },
+      {
+        "id": 283,
+        "name": "Crematus",
+        "description": "Unleash a breath of toxic flames dealing poison damage.",
+        "sourceKey": "talent_desc_crematus",
+        "icon": "/classes/skills/crematus.bfb111b5ecf7.webp"
+      },
+      {
+        "id": 284,
+        "name": "Oops",
+        "description": "Toxic flask also leaves a pool of poisonous substance on the ground dealing poison damage, poisoning and slowing monsters. Oops.",
+        "sourceKey": "talent_desc_oops",
+        "icon": "/classes/skills/oops.1a6643485d32.webp"
+      },
+      {
+        "id": 285,
+        "name": "Chant of Weakness",
+        "description": "Poisoned targets take increased poison damage.",
+        "sourceKey": "talent_desc_chantOfWeakness",
+        "icon": "/classes/skills/chantOfWeakness.b10c8f01c435.webp"
+      },
+      {
+        "id": 286,
+        "name": "Exploding Mice",
+        "description": "Plague of Rats explode on impact causing poison damage.",
+        "sourceKey": "talent_desc_explodingMice",
+        "icon": "/classes/skills/explodingMice.19d30bbd08fc.webp"
+      },
+      {
+        "id": 287,
+        "name": "Jar of Leeches",
+        "description": "Throw a glass jar towards target location releasing leeches dealing poison damage on impact.",
+        "sourceKey": "talent_desc_jarOfLeeches",
+        "icon": "/classes/skills/jarOfLeeches.de7a822042ae.webp"
+      },
+      {
+        "id": 288,
+        "name": "Plague Master",
+        "description": "Cause all poisoned targets on target location to spread the plague and deal poison damage to monsters around them.",
+        "sourceKey": "talent_desc_plagueMaster",
+        "icon": "/classes/skills/plagueMaster.61786d646c94.webp"
+      },
+      {
+        "id": 289,
+        "name": "Randy the Rancid Rat",
+        "description": "Summon randy the rancid rat to fight for you dealing poison damage.",
+        "sourceKey": "talent_desc_randyTheRancidRat",
+        "icon": "/classes/skills/randyTheRancidRat.b1867e3d20f2.webp"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "slug": "shield-lancer",
+    "name": "Shield Lancer",
+    "title": "The Unbroken Line",
+    "focus": [
+      "Lance attacks",
+      "Shield counters",
+      "Banners"
+    ],
+    "description": "Plant the banner and make the enemy come to you. The Shield Lancer strengthens allies, pierces the ranks with lance attacks, and turns shield defense, taunts, and counterstrikes into a punishing stand at the front.",
+    "image": "/classes/studies/shield-lancer.webp",
+    "tone": "#a39278",
+    "skills": [
+      {
+        "id": 290,
+        "name": "Glorious Strike",
+        "description": "Perform a powerful attack dealing physical area of effect damage.",
+        "sourceKey": "talent_desc_gloriousStrike",
+        "icon": "/classes/skills/gloriousStrike.2aa07847b008.webp"
+      },
+      {
+        "id": 291,
+        "name": "Commending Banner",
+        "description": "Place a commending banner on the target location increasing nearby players attack speed and attack rating.",
+        "sourceKey": "talent_desc_commendingBanner",
+        "icon": "/classes/skills/commendingBanner.df42890a13ed.webp"
+      },
+      {
+        "id": 292,
+        "name": "Battle Charge",
+        "description": "Charge towards target location knocking monsters up and dealing arcane damage on impact.",
+        "sourceKey": "talent_desc_battleCharge",
+        "icon": "/classes/skills/battleCharge.e1ca070cc30a.webp"
+      },
+      {
+        "id": 293,
+        "name": "Lance Thrust",
+        "description": "Perform a long ranged lance attack piercing monsters in a line dealing physical damage. If the lance comes in contact with a commending banner you get dragged to the banner smashing the ground stunning monsters on impact.",
+        "sourceKey": "talent_desc_lanceThrust",
+        "icon": "/classes/skills/lanceThrust.5da7ebc29b21.webp"
+      },
+      {
+        "id": 294,
+        "name": "Parry",
+        "description": "Gives you a chance to parry incoming attacks.",
+        "sourceKey": "talent_desc_parry",
+        "icon": "/classes/skills/parry.7afd172c4af7.webp"
+      },
+      {
+        "id": 295,
+        "name": "Armor Crush",
+        "description": "Battle charge inflicts armor break and lowers monster attack rating on hit.",
+        "sourceKey": "talent_desc_armorCrush",
+        "icon": "/classes/skills/armorCrush.35646d1f0ec2.webp"
+      },
+      {
+        "id": 296,
+        "name": "Crushing Lance",
+        "description": "Call a crushing lance down from the sky smashing the target location dealing area of effect physical damage.",
+        "sourceKey": "talent_desc_crushingLance",
+        "icon": "/classes/skills/crushingLance.2ca74efd25fd.webp"
+      },
+      {
+        "id": 297,
+        "name": "Lance Throw",
+        "description": "When using any of the abilities, you have a chance to throw a piercing lance at a nearby monster dealing physical damage.",
+        "sourceKey": "talent_desc_lanceThrow",
+        "icon": "/classes/skills/lanceThrow.f5003ea63bba.webp"
+      },
+      {
+        "id": 298,
+        "name": "Glory",
+        "description": "Gain increased attack damage and magic skill damage for a short period.",
+        "sourceKey": "talent_desc_glory",
+        "icon": "/classes/skills/glory.6c8fc49d2ceb.webp"
+      },
+      {
+        "id": 299,
+        "name": "Shield Slam",
+        "description": "Strike with your shield dealing physical damage based on the defense of your shield.",
+        "sourceKey": "talent_desc_shieldSlam",
+        "icon": "/classes/skills/shieldSlam.208bbea24649.webp"
+      },
+      {
+        "id": 300,
+        "name": "Taunt",
+        "description": "Taunt monsters to attack you. Additional points increase the monster amount and duration.",
+        "sourceKey": "talent_desc_taunt",
+        "icon": "/classes/skills/taunt.56f2ab225d3b.webp"
+      },
+      {
+        "id": 301,
+        "name": "Counter",
+        "description": "When active all monster attacks get countered with thrusting lances dealing arcane damage.",
+        "sourceKey": "talent_desc_counter",
+        "icon": "/classes/skills/counter.8b510c5ba659.webp"
+      },
+      {
+        "id": 302,
+        "name": "Knight's Resilience",
+        "description": "Increases your life and all resistances.",
+        "sourceKey": "talent_desc_knightsResilience",
+        "icon": "/classes/skills/knightsResilience.4f3e9d37fd96.webp"
+      },
+      {
+        "id": 303,
+        "name": "Damage Reflect",
+        "description": "Increases your damage return.",
+        "sourceKey": "talent_desc_damageReflect",
+        "icon": "/classes/skills/damageReflect.2ab3333d7c63.webp"
+      },
+      {
+        "id": 304,
+        "name": "Honed Defenses",
+        "description": "Every time you get hit by a monster attack gain stacks. At maximum stacks unleash a huge area of effect pulse dealing arcane damage to monsters around you. Can also be casted early to consume the stacks.",
+        "sourceKey": "talent_desc_honedDefenses",
+        "icon": "/classes/skills/honedDefenses.07438ee35929.webp"
+      },
+      {
+        "id": 305,
+        "name": "Shield Wall",
+        "description": "Cast a wall of shields around you blocking monster projectiles dealing arcane and physical damage on hit. Hitting an enemy with Shield Wall generates a Honed Defenses stack.",
+        "sourceKey": "talent_desc_shieldWall",
+        "icon": "/classes/skills/shieldWall.b79d3012d49b.webp"
+      },
+      {
+        "id": 306,
+        "name": "Knight´s Vigor",
+        "description": "Gain increased maximum life and vitality.",
+        "sourceKey": "talent_desc_knightsVigor",
+        "icon": "/classes/skills/knightsVigor.54e158bed36d.webp"
+      },
+      {
+        "id": 307,
+        "name": "Last Stand",
+        "description": "Restore yourself to full life and temporarily gain increased magic skill damage and physical damage reduction.",
+        "sourceKey": "talent_desc_lastStand",
+        "icon": "/classes/skills/lastStand.8c2c0a105725.webp"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "slug": "jotunn",
+    "name": "Jötunn",
+    "title": "Winter Made Flesh",
+    "focus": [
+      "Cold spells",
+      "Freezing attacks",
+      "Transformation"
+    ],
+    "description": "Bring the frozen tundra crashing into battle. The Jötunn commands blizzards and ice orbs, freezes enemies with brutal leaps and strikes, and invokes Aurgelmir to become a war machine of cold and crushing force.",
+    "image": "/classes/studies/jotunn.webp",
+    "tone": "#8ea9b2",
+    "skills": [
+      {
+        "id": 326,
+        "name": "Frozen Boulder",
+        "description": "Throw a frozen boulder dealing cold damage to monsters on its path.",
+        "sourceKey": "talent_desc_frozenBoulder",
+        "icon": "/classes/skills/frozenBoulder.ac7b27b53a32.webp"
+      },
+      {
+        "id": 327,
+        "name": "Breath of Ice",
+        "description": "Breathe glacial air freezing and dealing cold damage to monsters.",
+        "sourceKey": "talent_desc_breathOfIce",
+        "icon": "/classes/skills/breathOfIce.ec65180bc480.webp"
+      },
+      {
+        "id": 328,
+        "name": "Power of the Ancients",
+        "description": "Gain additional cold skill damage based on your mana.",
+        "sourceKey": "talent_desc_powerOfTheAncients",
+        "icon": "/classes/skills/powerOfTheAncients.528c5584e4d2.webp"
+      },
+      {
+        "id": 329,
+        "name": "Orb of Frost",
+        "description": "Cast a frozen orb traveling in target direction releasing icicles, freezing and dealing cold damage to monsters on its path.",
+        "sourceKey": "talent_desc_orbOfFrost",
+        "icon": "/classes/skills/orbOfFrost.190c687c9602.webp"
+      },
+      {
+        "id": 330,
+        "name": "Frozen Hide",
+        "description": "Cast a frost enhanced shield on yourself reducing incoming physical damage, freezing and dealing cold damage to monsters that attack you.",
+        "sourceKey": "talent_desc_frozenHide",
+        "icon": "/classes/skills/frozenHide.6308d23c5039.webp"
+      },
+      {
+        "id": 331,
+        "name": "Icicles",
+        "description": "Every 5th time you cast a spell also release Icicles dealing cold damage.",
+        "sourceKey": "talent_desc_icicles",
+        "icon": "/classes/skills/icicles.89fcad9cdeb8.webp"
+      },
+      {
+        "id": 332,
+        "name": "Portal of Ice",
+        "description": "Teleport to the target location and release a frost nova dealing cold damage.",
+        "sourceKey": "talent_desc_portalOfIce",
+        "icon": "/classes/skills/portalOfIce.89ef4f9f519f.webp"
+      },
+      {
+        "id": 333,
+        "name": "Avatar of Frost",
+        "description": "Increases your cold skill damage.",
+        "sourceKey": "talent_desc_avatarOfFrost",
+        "icon": "/classes/skills/avatarOfFrost.ff7c21e747e5.webp"
+      },
+      {
+        "id": 334,
+        "name": "Blizzard",
+        "description": "Cast a freezing blizzard dealing area of effect cold damage and freezing monsters in the target area.",
+        "sourceKey": "talent_desc_blizzard",
+        "icon": "/classes/skills/blizzard.df8f5c039bc0.webp"
+      },
+      {
+        "id": 335,
+        "name": "Glacial Tremors",
+        "description": "Every 4th attack unleashes an area of effect blast dealing cold damage.",
+        "sourceKey": "talent_desc_glacialTremors",
+        "icon": "/classes/skills/glacialTremors.eb433f1c8595.webp"
+      },
+      {
+        "id": 336,
+        "name": "Flash Freeze",
+        "description": "Perform an attack enhanced with ice that unleashes a chaining orb of ice, exploding into icicles at the end dealing additional cold damage.",
+        "sourceKey": "talent_desc_flashFreeze",
+        "icon": "/classes/skills/flashFreeze.953fdec2c0b6.webp"
+      },
+      {
+        "id": 337,
+        "name": "Freezing Leap",
+        "description": "Leap through the air into target location freezing and dealing cold damage to monsters when landing.",
+        "sourceKey": "talent_desc_freezingLeap",
+        "icon": "/classes/skills/freezingLeap.c0f0e8b903f4.webp"
+      },
+      {
+        "id": 338,
+        "name": "Permafrost",
+        "description": "Frozen monsters have a chance explode into an area of effect pulse when shattered.",
+        "sourceKey": "talent_desc_permaFrost",
+        "icon": "/classes/skills/permaFrost.2ec995bc733a.webp"
+      },
+      {
+        "id": 339,
+        "name": "Glacial Armor",
+        "description": "Increases your all resistances.",
+        "sourceKey": "talent_desc_glacialArmor",
+        "icon": "/classes/skills/glacialArmor.67b777c0c42e.webp"
+      },
+      {
+        "id": 340,
+        "name": "Frost Sunder",
+        "description": "Unleash a barrage of piercing icicles dealing cold and physical damage freezing on hit.",
+        "sourceKey": "talent_desc_frostSunder",
+        "icon": "/classes/skills/frostSunder.4731a5db5fb7.webp"
+      },
+      {
+        "id": 341,
+        "name": "Avalanche",
+        "description": "Release a bellowing shout dealing cold damage to all monsters around you and freezing them.",
+        "sourceKey": "talent_desc_avalanche",
+        "icon": "/classes/skills/avalanche.1316ac931c23.webp"
+      },
+      {
+        "id": 342,
+        "name": "Absolute Zero",
+        "description": "Applies Cold Break on Attack.",
+        "sourceKey": "talent_desc_absoluteZero",
+        "icon": "/classes/skills/absoluteZero.1e4f11a5537c.webp"
+      },
+      {
+        "id": 343,
+        "name": "The Embodiment of Aurgelmir",
+        "description": "Summon the power of Aurgelmir and temporarily turn into a war machine of the frozen tundra increasing your attack damage, attack speed and life replenish.",
+        "sourceKey": "talent_desc_theEmbodimentOfAurgelmir",
+        "icon": "/classes/skills/theEmbodimentOfAurgelmir.4b947dc61d5f.webp"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "slug": "illusionist",
+    "name": "Illusionist",
+    "title": "The Fractured Hour",
+    "focus": [
+      "Sand Guardians",
+      "Time and space",
+      "Fractal summons"
+    ],
+    "description": "Let the enemy fight a battlefield that refuses to stay real. The Illusionist commands Sand Guardians, bends gravity and time, and summons fractal heroes while slipping through dimensions and leaving an explosive double behind.",
+    "image": "/classes/studies/illusionist.webp",
+    "tone": "#a494b9",
+    "skills": [
+      {
+        "id": 308,
+        "name": "Sand Guardians",
+        "description": "Conjure a Sand Guardian that attacks nearby monsters dealing arcane damage.",
+        "sourceKey": "talent_desc_sandGuardian",
+        "icon": "/classes/skills/sandGuardian.5529bb91aa06.webp"
+      },
+      {
+        "id": 309,
+        "name": "Piercing Sand",
+        "description": "Sand Guardians break monster arcane resistances on attack.",
+        "sourceKey": "talent_desc_piercingSand",
+        "icon": "/classes/skills/piercingSand.87f264a4ec23.webp"
+      },
+      {
+        "id": 310,
+        "name": "Call For War",
+        "description": "Command all Sand Guardians to charge to target area. Passively increases Sand Guardian dash range.",
+        "sourceKey": "talent_desc_callForWar",
+        "icon": "/classes/skills/callForWar.39a4a5a944b5.webp"
+      },
+      {
+        "id": 311,
+        "name": "Link of Sand",
+        "description": "Pull yourself into the closest Sand Guardian in the target location temporarily empowering all nearby Sand Guardians arcane damage.",
+        "sourceKey": "talent_desc_linkOfSand",
+        "icon": "/classes/skills/linkOfSand.faeba84e14f2.webp"
+      },
+      {
+        "id": 312,
+        "name": "Dissipation",
+        "description": "Sand Guardians explode upon expiration dealing area of effect arcane damage.",
+        "sourceKey": "talent_desc_dissipation",
+        "icon": "/classes/skills/dissipation.f7ce7bb323c3.webp"
+      },
+      {
+        "id": 313,
+        "name": "Spirit Link",
+        "description": "Link of Sand increases your magic skill damage and physical damage reduction for a short period.",
+        "sourceKey": "talent_desc_spiritLink",
+        "icon": "/classes/skills/spiritLink.fdba991aca6a.webp"
+      },
+      {
+        "id": 314,
+        "name": "Cheapshot",
+        "description": "Sand Guardians gain a chance to deal a deadly attack with increased arcane damage and stunning their target.",
+        "sourceKey": "talent_desc_cheapShot",
+        "icon": "/classes/skills/cheapShot.d59821bea6a8.webp"
+      },
+      {
+        "id": 315,
+        "name": "Circle of Guardians",
+        "description": "Conjure a circle of Sand Guardians around you increasing Sand Guardians’ arcane damage.",
+        "sourceKey": "talent_desc_circleOfGuardians",
+        "icon": "/classes/skills/circleOfGuardians.6f602dac6afc.webp"
+      },
+      {
+        "id": 316,
+        "name": "Combat Order",
+        "description": "Sand Guardians gain a chance to perform an area of effect attack dealing arcane damage.",
+        "sourceKey": "talent_desc_combatOrder",
+        "icon": "/classes/skills/combatOrder.f37714e3729f.webp"
+      },
+      {
+        "id": 317,
+        "name": "Age Proliferation",
+        "description": "Channel waves of fractal energy on the target monster sending pulses out dealing arcane damage to nearby monsters.",
+        "sourceKey": "talent_desc_ageProliferation",
+        "icon": "/classes/skills/ageProliferation.daf6b63e8bab.webp"
+      },
+      {
+        "id": 318,
+        "name": "Gravitation Slam",
+        "description": "Raise monsters in target location into the air smashing them down with quantum force dealing arcane damage.",
+        "sourceKey": "talent_desc_gravitationalSlam",
+        "icon": "/classes/skills/gravitationalSlam.2f98d1136ea6.webp"
+      },
+      {
+        "id": 319,
+        "name": "Split Reality",
+        "description": "Detach from your quantum self leaving your fractal self behind that explodes when coming in contact with a monster dealing arcane damage.",
+        "sourceKey": "talent_desc_splitReality",
+        "icon": "/classes/skills/splitReality.163d62941654.webp"
+      },
+      {
+        "id": 320,
+        "name": "Sands of Time",
+        "description": "Temporarily increase your arcane skill damage and cast rate.",
+        "sourceKey": "talent_desc_sandsOfTime",
+        "icon": "/classes/skills/sandsOfTime.fb4ac9934c70.webp"
+      },
+      {
+        "id": 321,
+        "name": "Time Deceleration",
+        "description": "Break time and space causing all nearby monsters to take arcane damage and Slowing them.",
+        "sourceKey": "talent_desc_timeDeceleration",
+        "icon": "/classes/skills/timeDeceleration.0cd2bf04c2f5.webp"
+      },
+      {
+        "id": 322,
+        "name": "Dimensional Displacement",
+        "description": "Warp a short distance towards target location temporarily gaining increased movement speed.",
+        "sourceKey": "talent_desc_dimensionalDisplacement",
+        "icon": "/classes/skills/dimensionalDisplacement.413c00a536d2.webp"
+      },
+      {
+        "id": 323,
+        "name": "Precognition",
+        "description": "Increases your arcane skill damage.",
+        "sourceKey": "talent_desc_precognition",
+        "icon": "/classes/skills/precognition.4d519d32a5e9.webp"
+      },
+      {
+        "id": 324,
+        "name": "Expansive Mind",
+        "description": "Increases your mana and mana replenish.",
+        "sourceKey": "talent_desc_expansiveMind",
+        "icon": "/classes/skills/expansiveMind.7158ddaa37a5.webp"
+      },
+      {
+        "id": 325,
+        "name": "Temporal Heroes",
+        "description": "Summon a fractal Viking, Pyromancer and Marksman to fight on your side.",
+        "sourceKey": "talent_desc_temporalHeroes",
+        "icon": "/classes/skills/temporalHeroes.0ddb7fb408b1.webp"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "slug": "exo",
+    "name": "Exo",
+    "title": "Sunfire and Moonfall",
+    "focus": [
+      "Solar fire",
+      "Lunar cold",
+      "Celestial forms"
+    ],
+    "description": "Become the sun that burns, or the moon that draws everything inward. Exo channels solar fire into flares and supernovas, while lunar power summons freezing waves, orbiting moons, and black holes that pull enemies together.",
+    "image": "/classes/studies/exo-female.webp",
+    "tone": "#a2a5bf",
+    "skills": [
+      {
+        "id": 344,
+        "name": "Scorching Whip",
+        "description": "Cast a scorching solar flare that whips forward dealing fire damage to monsters hit.",
+        "sourceKey": "talent_desc_scorchingWhip",
+        "icon": "/classes/skills/scorchingWhip.3a3f72705102.webp"
+      },
+      {
+        "id": 345,
+        "name": "Whiplash",
+        "description": "Scorching Whip now creates a chaining fire ball that bounces between monsters. Fire balls can hit the same target multiple times.",
+        "sourceKey": "talent_desc_whiplash",
+        "icon": "/classes/skills/whiplash.9e7ce4a5d3a5.webp"
+      },
+      {
+        "id": 346,
+        "name": "Solar Flare",
+        "description": "Unleash solar flare projectiles that homes towards monsters.",
+        "sourceKey": "talent_desc_solarFlare",
+        "icon": "/classes/skills/solarFlare.a8c4a267675c.webp"
+      },
+      {
+        "id": 347,
+        "name": "Shine Bright",
+        "description": "Gain increased movement speed and attack speed.",
+        "sourceKey": "talent_desc_shineBright",
+        "icon": "/classes/skills/shineBright.f304c4e5c5d3.webp"
+      },
+      {
+        "id": 348,
+        "name": "Solar Dash",
+        "description": "Turn into a burning ball of fire traveling towards target location dealing fire damage leaving a trail of flames behind you.",
+        "sourceKey": "talent_desc_solarDash",
+        "icon": "/classes/skills/solarDash.127a10723560.webp"
+      },
+      {
+        "id": 349,
+        "name": "Blinding Light",
+        "description": "You emit a blinding light that gives you chance to evade monster attacks. You also have increased cast rate while in Solar Form",
+        "sourceKey": "talent_desc_blindingLight",
+        "icon": "/classes/skills/blindingLight.d44e621357c3.webp"
+      },
+      {
+        "id": 350,
+        "name": "Solar Form",
+        "description": "Turn into a living sun and gain additional fire damage. Every time you cast an active ability in solar form you unleash a fiery pulse around you.",
+        "sourceKey": "talent_desc_solarForm",
+        "icon": "/classes/skills/solarForm.c7e7943b885f.webp"
+      },
+      {
+        "id": 351,
+        "name": "Solar Burst",
+        "description": "When you kill a monster, summon a burning burst of solar fire beneath the dead monster that deals area of effect fire damage.",
+        "sourceKey": "talent_desc_solarBurst",
+        "icon": "/classes/skills/solarBurst.e8ca82d28439.webp"
+      },
+      {
+        "id": 352,
+        "name": "Supernova",
+        "description": "Explode into a supernova dealing fire damage on a large radius.",
+        "sourceKey": "talent_desc_supernova",
+        "icon": "/classes/skills/supernova.06ba511e7206.webp"
+      },
+      {
+        "id": 353,
+        "name": "Collision",
+        "description": "Leap forward from your orbit and smash the ground dealing cold damage in an area. Then dash forward on the surface of earth for short period of time and deal cold damage.",
+        "sourceKey": "talent_desc_collision",
+        "icon": "/classes/skills/collision.f2af17aec5a9.webp"
+      },
+      {
+        "id": 354,
+        "name": "Dark Side of the Moon",
+        "description": "While active, slow monsters around you. Also increases your mana replenish and energy.",
+        "sourceKey": "talent_desc_darkSideofTheMoon",
+        "icon": "/classes/skills/darkSideofTheMoon.8de1995a0bd7.webp"
+      },
+      {
+        "id": 355,
+        "name": "Tsunami",
+        "description": "Direct your lunar mass to cast a wave of tsunami forward dealing cold damage.",
+        "sourceKey": "talent_desc_tsunami",
+        "icon": "/classes/skills/tsunami.560d15d5512b.webp"
+      },
+      {
+        "id": 356,
+        "name": "Asteroid",
+        "description": "Cast down an asteroid from the sky dealing cold damage when landing.",
+        "sourceKey": "talent_desc_asteroid",
+        "icon": "/classes/skills/asteroid.433b22249e75.webp"
+      },
+      {
+        "id": 357,
+        "name": "Lunar Form",
+        "description": "Turn into a living moon and gain additional cold damage. Every time you jump, cast Collision instead.",
+        "sourceKey": "talent_desc_lunarForm",
+        "icon": "/classes/skills/lunarForm.9f375ff49107.webp"
+      },
+      {
+        "id": 358,
+        "name": "Lunar Orbit",
+        "description": "Unleash small moons in your orbit dealing cold damage on hit.",
+        "sourceKey": "talent_desc_lunarOrbit",
+        "icon": "/classes/skills/lunarOrbit.013563e19a61.webp"
+      },
+      {
+        "id": 359,
+        "name": "Blood Moon",
+        "description": "Turn the orbiting moons into blood moons increasing their cold damage and causing them to inflict bleeding on hit.",
+        "sourceKey": "talent_desc_bloodMoon",
+        "icon": "/classes/skills/bloodMoon.0b9f00a9b60f.webp"
+      },
+      {
+        "id": 360,
+        "name": "Moonlight",
+        "description": "Increases your movement speed and cold damage dealt.",
+        "sourceKey": "talent_desc_moonlight",
+        "icon": "/classes/skills/moonlight.6095d578faad.webp"
+      },
+      {
+        "id": 361,
+        "name": "Black Hole",
+        "description": "Cast a black hole on target location that slows and pulls monsters towards it dealing cold damage.",
+        "sourceKey": "talent_desc_blackHole",
+        "icon": "/classes/skills/blackHole.eb18b6812638.webp"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "slug": "butcher",
+    "name": "Butcher",
+    "title": "Hunger Without Mercy",
+    "focus": [
+      "Hooks and bleeding",
+      "Holy and Unholy forms",
+      "Life trade-offs"
+    ],
+    "description": "Drag enemies close with meat hooks and open them with bleeding cuts. The Butcher trades damage for sustain in Holy Form, or sacrifices life for greater damage in Unholy Form, balancing brutality against its own survival.",
+    "image": "/classes/studies/butcher.webp",
+    "tone": "#af8b79",
+    "skills": [
+      {
+        "id": 362,
+        "name": "Slicing Throw",
+        "description": "Throw your weapon like a boomerang returning back to you dealing physical damage to monsters on its path. You can activate Daisy's Call to re-appear where the last thrown slicing throw is at any point in the flight.",
+        "sourceKey": "talent_desc_slicingThrow",
+        "icon": "/classes/skills/slicingThrow.633b3db97ab9.webp"
+      },
+      {
+        "id": 363,
+        "name": "Furious Strike",
+        "description": "Perform a powerful area of effect attack dealing physical damage and infecting monsters struck with a stack of rabies. Each stack of rabies increases attack damage dealt to the monster.",
+        "sourceKey": "talent_desc_furiousStrike",
+        "icon": "/classes/skills/furiousStrike.9521ec63ec05.webp"
+      },
+      {
+        "id": 364,
+        "name": "Holy Form",
+        "description": "Activate Holy Form gaining increased life replenish and life steal at the cost of damage dealt. Any damage dealt while in this form is decreased.",
+        "sourceKey": "talent_desc_holyForm",
+        "icon": "/classes/skills/holyForm.ccca557df500.webp"
+      },
+      {
+        "id": 365,
+        "name": "Unholy Form",
+        "description": "Activate Unholy Form gaining increased damage at the cost inflicting a portion of your max life as damage to your self every time you cast, attack or proc something. Any life replenish when in this form is lowered.",
+        "sourceKey": "talent_desc_unholyForm",
+        "icon": "/classes/skills/unholyForm.4aef905ec3aa.webp"
+      },
+      {
+        "id": 366,
+        "name": "Sacrilegious Scorn",
+        "description": "While in Holy Form gain increased attack speed and while in Unholy Form gain increased Critical damage.",
+        "sourceKey": "talent_desc_sacrilegiousScorn",
+        "icon": "/classes/skills/sacrilegiousScorn.05ba5e693a81.webp"
+      },
+      {
+        "id": 367,
+        "name": "Ending Fate",
+        "description": "While in Holy Form gain increased base life regen after killing a monster and while in Unholy Form rip the monster apart after killing a monster causing huge area of effect damage.",
+        "sourceKey": "talent_desc_endingFate",
+        "icon": "/classes/skills/endingFate.f4fd82314f99.webp"
+      },
+      {
+        "id": 368,
+        "name": "Spiritual Duality",
+        "description": "While in Holy Form increases your life Per Hit and while in Unholy Form increases your attack damage.",
+        "sourceKey": "talent_desc_spiritualDuality",
+        "icon": "/classes/skills/spiritualDuality.96beb78a055b.webp"
+      },
+      {
+        "id": 369,
+        "name": "Awakening Fury",
+        "description": "On hit gain a chance to increase your attack damage for a short duration.",
+        "sourceKey": "talent_desc_awakeningFury",
+        "icon": "/classes/skills/awakeningFury.bf0c94f41cc8.webp"
+      },
+      {
+        "id": 370,
+        "name": "Insatiable Hunger",
+        "description": "Awaken the full potential of both holy and unholy to gain both benefits for a short period of time with increased effectiveness.",
+        "sourceKey": "talent_desc_insatiableHunger",
+        "icon": "/classes/skills/insatiableHunger.88dbc2061b64.webp"
+      },
+      {
+        "id": 371,
+        "name": "Chain Rip",
+        "description": "Perform a powerful attack pulling all nearby monsters infront of you.",
+        "sourceKey": "talent_desc_chainRip",
+        "icon": "/classes/skills/chainRip.dded71f16682.webp"
+      },
+      {
+        "id": 372,
+        "name": "Brutalizing Slash",
+        "description": "Attack with brutalizing area of effect attack causing monsters to bleed.",
+        "sourceKey": "talent_desc_brutalizingSlash",
+        "icon": "/classes/skills/brutalizingSlash.0d9e7129d15b.webp"
+      },
+      {
+        "id": 373,
+        "name": "Fuel to Fire",
+        "description": "Increase your damage dealt for a short period of time. Every corpse close to you will be siphoned for additional damage.",
+        "sourceKey": "talent_desc_fuelToFire",
+        "icon": "/classes/skills/fuelToFire.8cb559c3954a.webp"
+      },
+      {
+        "id": 374,
+        "name": "Hunger For Blood",
+        "description": "Deal increased damage to bleeding targets.",
+        "sourceKey": "talent_desc_hungerForBlood",
+        "icon": "/classes/skills/hungerForBlood.b519a4963061.webp"
+      },
+      {
+        "id": 375,
+        "name": "Butchers Hook",
+        "description": "Flail a huge meat hook around you gathering all monsters struck then pulling and stunning them infront of you.",
+        "sourceKey": "talent_desc_butchersHook",
+        "icon": "/classes/skills/butchersHook.1319ab63d4e0.webp"
+      },
+      {
+        "id": 376,
+        "name": "Chain Swing",
+        "description": "Throw a meat hook that pulls you into it when connecting with monster or environment. Additionally fires chains to nearby monsters when landing.",
+        "sourceKey": "talent_desc_chainSwing",
+        "icon": "/classes/skills/chainSwing.7d1db06fc61c.webp"
+      },
+      {
+        "id": 377,
+        "name": "Submerged Knives",
+        "description": "Smash the ground pushing waves of butchers knives out of the ground dealing massive damage and knocking them up. Deals extra damage to bleeding targets.",
+        "sourceKey": "talent_desc_submergedKnives",
+        "icon": "/classes/skills/submergedKnives.3f33ff9e70b5.webp"
+      },
+      {
+        "id": 378,
+        "name": "Enraged Mania",
+        "description": "Increase attack area of effect range and attack speed.",
+        "sourceKey": "talent_desc_enragedMania",
+        "icon": "/classes/skills/enragedMania.e505ec145ff2.webp"
+      },
+      {
+        "id": 379,
+        "name": "Blender",
+        "description": "Swing two huge butchers knives around you dealing physical damage.",
+        "sourceKey": "talent_desc_blender",
+        "icon": "/classes/skills/blender.7635efd7e3d2.webp"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "slug": "stormweaver",
+    "name": "Stormweaver",
+    "title": "The Gathering Storm",
+    "focus": [
+      "Lightning spells",
+      "Storm clouds",
+      "Teleportation"
+    ],
+    "description": "Weave the sky's fury into every cast. The Stormweaver fills the battlefield with charged bolts, chain lightning, and thunderclouds, teleporting into position to call down thunderbolts that can strike again when enemies fall.",
+    "image": "/classes/studies/stormweaver.webp",
+    "tone": "#8ea7b9",
+    "skills": [
+      {
+        "id": 380,
+        "name": "Charged Bolts",
+        "description": "Unleash multiple sparking bolts of electricity dealing lightning damage on hit.",
+        "sourceKey": "talent_desc_chargedBolts",
+        "icon": "/classes/skills/chargedBolts.3a3310268028.webp"
+      },
+      {
+        "id": 381,
+        "name": "Manafiend",
+        "description": "Reduce the mana cost of all skills.",
+        "sourceKey": "talent_desc_manaFiend",
+        "icon": "/classes/skills/manaFiend.1f82124c0e03.webp"
+      },
+      {
+        "id": 382,
+        "name": "Pulsing Charge",
+        "description": "Charged bolts pulse when hitting a monster.",
+        "sourceKey": "talent_desc_pulsingCharge",
+        "icon": "/classes/skills/pulsingCharge.3cc9521028c9.webp"
+      },
+      {
+        "id": 383,
+        "name": "Lightning Surge",
+        "description": "Unleash a surge of lightning dealing lightning damage.",
+        "sourceKey": "talent_desc_lightningSurge",
+        "icon": "/classes/skills/lightningSurge.c12a23627237.webp"
+      },
+      {
+        "id": 384,
+        "name": "Gateway",
+        "description": "Instantly teleport to target spot.",
+        "sourceKey": "talent_desc_gateway",
+        "icon": "/classes/skills/gateway.159aa66123b2.webp"
+      },
+      {
+        "id": 385,
+        "name": "Chain Lightning",
+        "description": "Lightning Surge now unleashes chain lightning when colliding with a monster.",
+        "sourceKey": "talent_desc_chainLightning",
+        "icon": "/classes/skills/chainLightning.72a76a93ec43.webp"
+      },
+      {
+        "id": 386,
+        "name": "Static Shock",
+        "description": "Shock target location with static electricity inflicting monsters with static shock dealing lightning damage over time.",
+        "sourceKey": "talent_desc_staticShock",
+        "icon": "/classes/skills/staticShock.205eca069b46.webp"
+      },
+      {
+        "id": 387,
+        "name": "Storm Cloud",
+        "description": "Conjure a storm cloud at target location striking monsters with surges of lightning dealing lightning damage.",
+        "sourceKey": "talent_desc_stormCloud",
+        "icon": "/classes/skills/stormCloud.b203b2c2e4e0.webp"
+      },
+      {
+        "id": 388,
+        "name": "Symphony of Thunder",
+        "description": "Gain increased lightning damage for a short period of time also zapping all monsters with thunderbolts when hit by a lightning skill.",
+        "sourceKey": "talent_desc_symphonyOfThunder",
+        "icon": "/classes/skills/symphonyOfThunder.5c1846b8a9d3.webp"
+      },
+      {
+        "id": 389,
+        "name": "Electric Cells",
+        "description": "Gain increased flat mana replenish and energy.",
+        "sourceKey": "talent_desc_electricCells",
+        "icon": "/classes/skills/electricCells.c4214d8e59c0.webp"
+      },
+      {
+        "id": 390,
+        "name": "Storm Bolt",
+        "description": "Unleash a bolt of lightning dealing area of effect lightning damage.",
+        "sourceKey": "talent_desc_stormBolt",
+        "icon": "/classes/skills/stormBolt.fac9cb0c0830.webp"
+      },
+      {
+        "id": 391,
+        "name": "High Voltage Aura",
+        "description": "Increases your and party members lightning skill damage.",
+        "sourceKey": "talent_desc_highVoltageAura",
+        "icon": "/classes/skills/highVoltageAura.0b3f6f4ad33c.webp"
+      },
+      {
+        "id": 392,
+        "name": "Loaded Pulse",
+        "description": "Storm Bolt now creates an additional static pulse dealing increased area of effect lightning damage.",
+        "sourceKey": "talent_desc_loadedPulse",
+        "icon": "/classes/skills/loadedPulse.751db8de4127.webp"
+      },
+      {
+        "id": 393,
+        "name": "Wave Length",
+        "description": "Increases the projectile speed of all skills.",
+        "sourceKey": "talent_desc_waveLength",
+        "icon": "/classes/skills/waveLength.7b6ade823b30.webp"
+      },
+      {
+        "id": 394,
+        "name": "The Battery Within",
+        "description": "Gain increased life, mana and all resistances.",
+        "sourceKey": "talent_desc_theBatteryWithin",
+        "icon": "/classes/skills/theBatteryWithin.3102d72e5bfe.webp"
+      },
+      {
+        "id": 395,
+        "name": "Hyper Charged",
+        "description": "Chance on Cast to gain increased faster cast rate for a short period of time.",
+        "sourceKey": "talent_desc_hyperCharged",
+        "icon": "/classes/skills/hyperCharged.f4e2a6186dfd.webp"
+      },
+      {
+        "id": 396,
+        "name": "Apocalyptic Thunder",
+        "description": "Cast a high voltage thunder bolt on target spot stunning and dealing massive area of effect damage.",
+        "sourceKey": "talent_desc_apocalypticThunder",
+        "icon": "/classes/skills/apocalypticThunder.d070c3fb4de0.webp"
+      },
+      {
+        "id": 397,
+        "name": "Aftershock",
+        "description": "Chance on kill to cast Apocalyptic Thunder on the closest monster with increased lightning damage.",
+        "sourceKey": "talent_desc_afterShock",
+        "icon": "/classes/skills/afterShock.077d32d325f0.webp"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "slug": "bard",
+    "name": "Bard",
+    "title": "The Last Encore",
+    "focus": [
+      "Lightning riffs",
+      "Physical attacks",
+      "Moshpit summons"
+    ],
+    "description": "Make the battlefield your stage and the last note their warning. The Bard weaponizes amplifiers and lightning riffs, then dives into the crowd with physical strikes, pyrotechnics, and a summoned death metal moshpit.",
+    "image": "/classes/studies/bard.webp",
+    "tone": "#ac91b0",
+    "skills": [
+      {
+        "id": 398,
+        "name": "Slaying Riffs",
+        "description": "Drop an amplifier from the sky smashing the ground and send notes towards enemies dealing lightning damage. Dropping an amplifier on another one causes the first one to explode.",
+        "sourceKey": "talent_desc_slayingRiffs",
+        "icon": "/classes/skills/slayingRiffs.c99a61dbde34.webp"
+      },
+      {
+        "id": 399,
+        "name": "Insane Riff",
+        "description": "Every fifth spell cast is empowered with increased lightning damage.",
+        "sourceKey": "talent_desc_insaneRiff",
+        "icon": "/classes/skills/insaneRiff.372d0abb2a69.webp"
+      },
+      {
+        "id": 400,
+        "name": "Visceral Growl",
+        "description": "Unleash a visceral growl in a frontal cone dealing lightning damage.",
+        "sourceKey": "talent_desc_visceralGrowl",
+        "icon": "/classes/skills/visceralGrowl.0493712ff06a.webp"
+      },
+      {
+        "id": 401,
+        "name": "Amping Up",
+        "description": "Chance on spellhit or strike to gain a stack of amping up increasing your cast rate for a short duration.",
+        "sourceKey": "talent_desc_ampingUp",
+        "icon": "/classes/skills/ampingUp.eed98fec5c85.webp"
+      },
+      {
+        "id": 402,
+        "name": "Sacrilegious Symphony",
+        "description": "Channel for a brief moment before unleashing a massive area of effect pulse around you dealing lightning damage.",
+        "sourceKey": "talent_desc_sacrilegiousSymphony",
+        "icon": "/classes/skills/sacrilegiousSymphony.3d3da32e8700.webp"
+      },
+      {
+        "id": 403,
+        "name": "Satan´s Melody",
+        "description": "Gain increased lightning skill damage for a short duration and a chance to unleash guitar picks in an arc on hit.",
+        "sourceKey": "talent_desc_satansMelody",
+        "icon": "/classes/skills/satansMelody.702c62ce3dc7.webp"
+      },
+      {
+        "id": 404,
+        "name": "Sounds of Silence",
+        "description": "Converts a portion of your intelligence into lightning skill damage.",
+        "sourceKey": "talent_desc_soundsOfSilence",
+        "icon": "/classes/skills/soundsOfSilence.5cab9747d4d3.webp"
+      },
+      {
+        "id": 405,
+        "name": "High dB",
+        "description": "Notes have a chance to unleash a sonar pulse on hit dealing increased lightning damage.",
+        "sourceKey": "talent_desc_highDb",
+        "icon": "/classes/skills/highDb.ba625db4ceb6.webp"
+      },
+      {
+        "id": 406,
+        "name": "Progenies of the Great Cataclysm",
+        "description": "Summon a massive amplifier playing black metal at high volume sending piercing notes towards nearby monsters bouncing from terrain dealing lightning damage. If you are too far from the amplifier it is pulled back to your position.",
+        "sourceKey": "talent_desc_progeniesOfTheGreatCataclysm",
+        "icon": "/classes/skills/progeniesOfTheGreatCataclysm.d185cdab477f.webp"
+      },
+      {
+        "id": 407,
+        "name": "Headbanger",
+        "description": "Every third attack unleashes a headbang dealing area of effect damage.",
+        "sourceKey": "talent_desc_headBanger",
+        "icon": "/classes/skills/headBanger.ebbd03760f89.webp"
+      },
+      {
+        "id": 408,
+        "name": "Crowd Pummeler",
+        "description": "Chance to unleash notes from monsters on hit dealing physical damage.",
+        "sourceKey": "talent_desc_crowdPummeler",
+        "icon": "/classes/skills/crowdPummeler.bf678fbb5d1c.webp"
+      },
+      {
+        "id": 409,
+        "name": "Crowd Dive",
+        "description": "Charge towards target location knocking monsters up on hit dealing physical damage.",
+        "sourceKey": "talent_desc_crowdDiver",
+        "icon": "/classes/skills/crowdDiver.1baa5ff44f63.webp"
+      },
+      {
+        "id": 410,
+        "name": "Adrenaline Momentum",
+        "description": "chance to gain a stack of adrenaline momentum on hit increasing your movement speed and attack speed.",
+        "sourceKey": "talent_desc_adrenalineMomentum",
+        "icon": "/classes/skills/adrenalineMomentum.fc9f0dfb8cbe.webp"
+      },
+      {
+        "id": 411,
+        "name": "Craving For Attention",
+        "description": "Gain fire skill damage for a portion of your total enhanced damage.",
+        "sourceKey": "talent_desc_cravingForAttention",
+        "icon": "/classes/skills/cravingForAttention.fb27688129c4.webp"
+      },
+      {
+        "id": 412,
+        "name": "Pyro Technician",
+        "description": "Blink into the closest monster to target location unleashing an area of effect attack dealing physical and fire damage.",
+        "sourceKey": "talent_desc_pyroTechnician",
+        "icon": "/classes/skills/pyroTechnician.9540aa49391f.webp"
+      },
+      {
+        "id": 413,
+        "name": "Craving For Another Killing",
+        "description": "Increases your attack damage, life per hit and attack speed for a short duration.",
+        "sourceKey": "talent_desc_cravingForAnotherKilling",
+        "icon": "/classes/skills/cravingForAnotherKilling.886d8bd3a903.webp"
+      },
+      {
+        "id": 414,
+        "name": "Antisocial Pit Fighter",
+        "description": "Chance to apply increased magic find on kill.",
+        "sourceKey": "talent_desc_antiSocialPitFighter",
+        "icon": "/classes/skills/antiSocialPitFighter.47496c6a78e0.webp"
+      },
+      {
+        "id": 415,
+        "name": "Moshpit Massacre",
+        "description": "Summon a death metal crowd to fight monsters within the area radius draining a portion of your maximum mana over time dealing physical damage.",
+        "sourceKey": "talent_desc_moshpitMassacre",
+        "icon": "/classes/skills/moshpitMassacre.a35328919e0f.webp"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "slug": "prophet",
+    "name": "Prophet",
+    "title": "The Wild Unbound",
+    "focus": [
+      "Nature summons",
+      "Poison",
+      "Shapeshifting"
+    ],
+    "description": "Call the forest to war, or wear its fury as your own flesh. The Prophet summons ravens and towering ents, spreads poisonous roots, and transforms into a wendigo, an ent, or a storm hawk that unleashes lightning.",
+    "image": "/classes/studies/prophet.webp",
+    "tone": "#89a187",
+    "skills": [
+      {
+        "id": 416,
+        "name": "Carrion Worm",
+        "description": "Summons a carrion worm frequently attacking nearby monsters.",
+        "sourceKey": "talent_desc_carrionWorm",
+        "icon": "/classes/skills/carrionWorm.312c273602a8.webp"
+      },
+      {
+        "id": 417,
+        "name": "Thorned Roots",
+        "description": "Unleash a swarm of roots dealing poison damage on hit.",
+        "sourceKey": "talent_desc_thornedRoots",
+        "icon": "/classes/skills/thornedRoots.5ab574313a0e.webp"
+      },
+      {
+        "id": 418,
+        "name": "Summon Raven",
+        "description": "Summon a raven circling around you attacking nearby monsters.",
+        "sourceKey": "talent_desc_raven",
+        "icon": "/classes/skills/raven.9502715ba2df.webp"
+      },
+      {
+        "id": 419,
+        "name": "Blessed Nature",
+        "description": "Increases poison skill damage.",
+        "sourceKey": "talent_desc_blessedNature",
+        "icon": "/classes/skills/blessedNature.3a0786bfdfae.webp"
+      },
+      {
+        "id": 420,
+        "name": "Summon Ent",
+        "description": "Summons an ent to fight by your side.",
+        "sourceKey": "talent_desc_summonEnt",
+        "icon": "/classes/skills/summonEnt.8646b4b367e6.webp"
+      },
+      {
+        "id": 421,
+        "name": "Thorned Branch",
+        "description": "Throw a thorned branch dealing poison damage on hit.",
+        "sourceKey": "talent_desc_thornedBranch",
+        "icon": "/classes/skills/thornedBranch.616ba2b18f05.webp"
+      },
+      {
+        "id": 422,
+        "name": "Summon Spirit of The Forest",
+        "description": "Summons a spirit of the forest increasing life and mana for you and your party. Only one spirit can be summoned.",
+        "sourceKey": "talent_desc_spiritOfForest",
+        "icon": "/classes/skills/spiritOfForest.9219abef622f.webp"
+      },
+      {
+        "id": 423,
+        "name": "Deep Rooted",
+        "description": "Increases all resistances.",
+        "sourceKey": "talent_desc_deepRooted",
+        "icon": "/classes/skills/deepRooted.7dd5d09bcb66.webp"
+      },
+      {
+        "id": 424,
+        "name": "Summon Ent Colossus",
+        "description": "Summons an ent colossus to fight by your side.",
+        "sourceKey": "talent_desc_entColossus",
+        "icon": "/classes/skills/entColossus.c4e8b29b3958.webp"
+      },
+      {
+        "id": 425,
+        "name": "Spirit of The Wendigo",
+        "description": "Morph into a wendigo gaining increased combat stats.",
+        "sourceKey": "talent_desc_spiritOfWendigo",
+        "icon": "/classes/skills/spiritOfWendigo.933b37da1654.webp"
+      },
+      {
+        "id": 426,
+        "name": "Wounding Paw",
+        "description": "Strike monsters with increased damage with a chance to unleash a ripple of blood.",
+        "sourceKey": "talent_desc_woundingPaw",
+        "icon": "/classes/skills/woundingPaw.bf371a827d9f.webp"
+      },
+      {
+        "id": 427,
+        "name": "Skinwalker",
+        "description": "A portion of your life is added as physical damage.",
+        "sourceKey": "talent_desc_skinWalker",
+        "icon": "/classes/skills/skinWalker.1916dc65505e.webp"
+      },
+      {
+        "id": 428,
+        "name": "Leaping Charge",
+        "description": "Perform a charging leap forward inflicting physical damage to monsters on hit.",
+        "sourceKey": "talent_desc_leapingCharge",
+        "icon": "/classes/skills/leapingCharge.b9a0b20f9ca9.webp"
+      },
+      {
+        "id": 429,
+        "name": "Spirit of the Ent",
+        "description": "Morph into an Ent with a chance to knock monsters back on hit stunning and dealing additional damage when colliding with terrain.",
+        "sourceKey": "talent_desc_spiritOfEnt",
+        "icon": "/classes/skills/spiritOfEnt.51d83e1f521b.webp"
+      },
+      {
+        "id": 430,
+        "name": "Maelstrom of Frost",
+        "description": "Summon a maelstrom of frost around you inflicting cold and physical damage on hit.",
+        "sourceKey": "talent_desc_maelstromOfFrost",
+        "icon": "/classes/skills/maelstromOfFrost.af210dbc692b.webp"
+      },
+      {
+        "id": 431,
+        "name": "Swamp´s Essence",
+        "description": "Increases your maximum life.",
+        "sourceKey": "talent_desc_swampsEssence",
+        "icon": "/classes/skills/swampsEssence.a2a414ffcd17.webp"
+      },
+      {
+        "id": 432,
+        "name": "Manadwelling",
+        "description": "Adds a portion of your mana as physical damage.",
+        "sourceKey": "talent_desc_manaDwelling",
+        "icon": "/classes/skills/manaDwelling.1f9027608736.webp"
+      },
+      {
+        "id": 433,
+        "name": "Storm Hawk",
+        "description": "Morph into a storm hawk gaining flying and convert a portion of your physical damage into lightning damage. Your Basic Attacks and Wounding Paw now fire an arc of lightning bolts, unleashing a Chain Lightning effect.",
+        "sourceKey": "talent_desc_spiritOfHawk",
+        "icon": "/classes/skills/spiritOfHawk.45ad2a2ccc5c.webp"
+      }
+    ]
+  }
+]

@@ -1,0 +1,672 @@
+/* Generated raster metalwork frames the original game sprite and live text. */
+.archival .relic-nameplate {
+  --plate-left: 33%;
+  --plate-width: 58%;
+  --plate-top: 31%;
+  --plate-height: 37%;
+  --rail-top: 24%;
+  --rail-height: 52%;
+  --sprite-left: 7.5%;
+  --sprite-top: 24%;
+  --sprite-width: 15%;
+  --sprite-height: 52%;
+}
+.archival .entry-main.relic-nameplate {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1000 / 294;
+  margin: 0 0 4px;
+  isolation: isolate;
+}
+.archival .identity-frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: -1;
+  pointer-events: none;
+}
+.archival .relic-nameplate .item-portrait {
+  position: absolute;
+  left: var(--sprite-left);
+  top: var(--sprite-top);
+  width: var(--sprite-width);
+  height: var(--sprite-height);
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  isolation: isolate;
+}
+.archival .relic-nameplate .item-portrait::before {
+  content: '';
+  position: absolute;
+  inset: -9%;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse at 50% 55%,
+    color-mix(in srgb, var(--chapter-accent) 22%, transparent),
+    transparent 69%
+  );
+}
+.archival .relic-nameplate .item-portrait::after {
+  content: '';
+  position: absolute;
+  left: 12%;
+  right: 12%;
+  bottom: -2%;
+  height: 11%;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(ellipse, #0008, transparent 72%);
+}
+.archival[data-rarity='normal'] .item-portrait::before {
+  opacity: 0.5;
+}
+.archival .relic-nameplate .item-sprite {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 3px 3px #0009);
+}
+.archival .relic-nameplate .entry-copy {
+  position: absolute;
+  left: var(--plate-left);
+  width: var(--plate-width);
+  top: var(--plate-top);
+  height: var(--plate-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  text-align: center;
+}
+.archival .relic-nameplate .entry-copy h2 {
+  color: var(--chapter-accent);
+  margin: 0;
+  padding: 0;
+  font-size: 26px;
+  width: 100%;
+  line-height: 1.12;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  text-shadow: 0 1px 1px #0004;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+  text-decoration: none;
+  background: transparent;
+}
+.archival .frame-angelic {
+  --plate-left: 32%;
+  --plate-width: 57%;
+  --plate-top: 34%;
+  --plate-height: 32%;
+  --rail-top: 26%;
+  --rail-height: 47%;
+}
+.archival .frame-heroic {
+  --plate-top: 32%;
+  --plate-height: 34%;
+}
+.archival .frame-unholy {
+  --plate-left: 34%;
+  --plate-width: 54%;
+  --plate-top: 32%;
+  --plate-height: 35%;
+  --sprite-left: 12%;
+  --sprite-width: 12%;
+  --sprite-top: 29%;
+  --sprite-height: 42%;
+}
+.archival .frame-satanic,
+.archival .frame-runeword,
+.archival .frame-normal {
+  --sprite-left: 10%;
+  --sprite-width: 12.5%;
+  --sprite-top: 29%;
+  --sprite-height: 42%;
+}
+.nameplate-sheen {
+  position: absolute;
+  left: var(--plate-left);
+  top: var(--rail-top);
+  width: var(--plate-width);
+  height: var(--rail-height);
+  overflow: hidden;
+  pointer-events: none;
+  /* Light touches the metal rails, keeping the live name area clear. */
+  mask-image: linear-gradient(#000 0 7%, transparent 7% 93%, #000 93%);
+}
+.nameplate-sheen::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    110deg,
+    transparent 38%,
+    #fff3cc8c 49%,
+    transparent 62%
+  );
+  opacity: 0;
+  transform: translateX(-110%);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .book-entry:focus-within .nameplate-sheen::after {
+    animation: nameplate-glint 420ms ease-out both;
+  }
+}
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .archival .relic-nameplate .item-sprite {
+    transition: transform 180ms cubic-bezier(0.2, 0.7, 0.3, 1);
+  }
+  .archival .relic-nameplate:hover .item-sprite {
+    transform: translateY(-2px);
+  }
+  .relic-nameplate:hover .nameplate-sheen::after {
+    animation: nameplate-glint 420ms ease-out both;
+  }
+}
+@keyframes nameplate-glint {
+  0% {
+    opacity: 0;
+    transform: translateX(-110%);
+  }
+  18%,
+  65% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(110%);
+  }
+}
+.archival .frame-archive {
+  --sprite-height: 51%;
+}
+.archival .item-image-fallback {
+  color: #d9c7a6;
+  font-size: 8px;
+}
+.archival .item-image-fallback svg {
+  width: 28px;
+  height: 28px;
+}
+.archival .entry-affiliation {
+  margin: 0 0 8px;
+}
+.archival .entry-affiliation .item-tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: var(--chapter-ink);
+  margin: 0 0 4px;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+}
+.archival .entry-variant {
+  display: block;
+  text-align: center;
+  font-size: 10px;
+}
+.archival .set-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  margin: 4px 0 0;
+  padding: 4px;
+  color: #38502d;
+  font: 600 16px/1.15 var(--display);
+  text-align: left;
+  border: 1px solid #64744344;
+  border-radius: 3px;
+  background: #7180470a;
+}
+.set-seal {
+  display: inline-flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  font: 600 10px/1 var(--display);
+  letter-spacing: 0.02em;
+}
+.set-seal small {
+  font:
+    500 8px/1.2 'Manrope',
+    sans-serif;
+  margin-top: 2px;
+}
+.archival .set-link > span > small {
+  display: block;
+  font:
+    10px/1.2 'Manrope',
+    sans-serif;
+  margin-top: 2px;
+}
+.archival .set-link:hover {
+  background: #71804716;
+}
+.archival .stat-lines .signature-stat {
+  font-weight: 750;
+}
+.archival .signature-mark {
+  font-size: 7px;
+  margin-right: 5px;
+  vertical-align: middle;
+  color: var(--chapter-ink);
+}
+.archival .signature-stat dd {
+  color: var(--chapter-ink);
+}
+.archival .stat-lines .negative-stat dd {
+  color: #852d25;
+}
+.archival .signature-effect {
+  font-weight: 650;
+}
+.archival .signature-effect .effect-marker {
+  color: var(--chapter-ink);
+}
+.archival .entry-acquisition {
+  margin-top: 9px;
+  padding-top: 7px;
+  border-top: 1px solid #80683e35;
+}
+.archival .entry-acquisition .small-label {
+  color: var(--chapter-ink);
+  font-size: 10px;
+}
+.archival .entry-acquisition .craftable-badge {
+  color: #35532e;
+}
+.archival .entry-acquisition > div {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 4px;
+  font-size: 12px;
+  color: #584c35;
+}
+.archival .entry-acquisition button {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  margin-left: auto;
+  padding: 3px 0 3px 6px;
+  color: #544323;
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.craftable-badge {
+  display: inline-flex;
+  padding: 2px 6px;
+  border: 1px solid currentColor;
+  border-radius: 3px;
+  font-size: 10px;
+  line-height: 1.2;
+}
+.set-discovery-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  color: #c7d9a7;
+}
+.set-discovery-title .set-seal {
+  width: 42px;
+  height: 42px;
+  font-size: 13px;
+}
+.set-discovery-title h4 {
+  margin: 0;
+  font: 500 1.6rem/1.1 var(--display);
+}
+.set-discovery-title p {
+  margin-top: 4px;
+  font-size: 12px;
+}
+.set-discovery .related-entry:disabled {
+  opacity: 0.8;
+  cursor: default;
+  background: #303428;
+}
+.set-bonuses-title {
+  margin: 20px 0 8px;
+  color: #d7bb85;
+  font-size: 13px;
+}
+.recorded-bonuses {
+  display: grid;
+  gap: 12px;
+  font-size: 14px;
+}
+.acquisition-route {
+  padding: 14px;
+  margin-bottom: 10px;
+  border: 1px solid #65553a;
+  border-radius: 5px;
+  background: #27241d;
+}
+.acquisition-route > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #e2c898;
+  font-size: 14px;
+}
+.acquisition-route p {
+  color: #e4dac5;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 10px 0;
+  overflow-wrap: anywhere;
+}
+.acquisition-route > small {
+  display: block;
+  color: #aaa38e;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/* Ornament yields space to the record; no truncation or inner scroll areas. */
+.archival .density-showcase .relic-nameplate {
+  margin: 18px 0 14px;
+}
+.archival .density-showcase .curator-note {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.archival .density-showcase .entry-lore {
+  margin-top: 20px;
+}
+.archival .density-showcase .entry-lore blockquote {
+  font-size: 22px;
+  line-height: 1.35;
+}
+.archival .density-compact .entry-affiliation {
+  margin-bottom: 5px;
+}
+.archival .density-compact .curator-note {
+  margin-bottom: 6px;
+}
+.archival .density-compact .entry-lore {
+  margin-top: 6px;
+  padding-top: 6px;
+}
+.archival .density-compact .entry-footnote {
+  padding-top: 6px;
+}
+.archival .density-compact .ruled-heading {
+  margin-bottom: 5px;
+}
+.archival .density-compact .entry-effects {
+  margin-top: 6px;
+}
+.archival .density-compact .entry-acquisition {
+  margin-top: 5px;
+  padding-top: 5px;
+}
+.archival.fit-screen .density-compact {
+  min-height: 680px;
+}
+@media (max-width: 900px) {
+  .archival.fit-screen .book-page {
+    min-height: 580px;
+  }
+  .archival.fit-screen .density-compact {
+    min-height: 580px;
+  }
+  .archival .relic-nameplate .entry-copy h2 {
+    font-size: 27px;
+  }
+}
+/* One binding size per viewport, with a safe text rectangle on each leaf. */
+.archival {
+  --ink-muted: #51412e;
+}
+.archival .book-cover,
+.archival.fit-screen .book-cover {
+  height: 1000px;
+  padding: 54px 126px 90px;
+}
+.archival .book-spread {
+  height: 100% !important;
+  min-height: 0 !important;
+  grid-template-rows: minmax(0, 1fr);
+}
+.archival .book-page,
+.archival.fit-screen .book-page {
+  height: 100%;
+  min-height: 0 !important;
+  padding: 16px 46px 16px 68px;
+}
+.archival .book-page.page-right,
+.archival.fit-screen .book-page.page-right {
+  padding: 16px 68px 16px 46px;
+}
+.archival .page-running-head {
+  flex-shrink: 0;
+  padding-bottom: 8px;
+}
+.entry-window {
+  flex: 1;
+  min-height: 0;
+  position: relative;
+}
+.archival .entry-window .book-entry {
+  --entry-type: 0.8;
+  flex: none;
+  min-height: 0;
+  padding: 10px 0 0;
+}
+.archival .book-page .entry-main.relic-nameplate {
+  max-width: 420px;
+  margin: 0 auto 6px;
+}
+.archival .book-page .relic-nameplate .entry-copy h2 {
+  font-size: 27px;
+}
+.archival .book-page .curator-note,
+.archival .book-page .stat-lines > div,
+.archival .book-page .entry-effects li,
+.archival .book-page .empty-properties {
+  font-size: calc(18px * var(--entry-type));
+  line-height: 1.35;
+}
+.archival .book-page .stat-lines > div {
+  padding-block: 2px;
+  gap: 10px;
+}
+.archival .book-page .stat-lines dt,
+.archival .book-page .curator-note,
+.archival .book-page .entry-effects li {
+  color: #443523;
+}
+.archival .book-page .curator-note {
+  margin-bottom: 9px;
+}
+.archival .book-page .entry-lore {
+  margin-top: 9px;
+  padding-top: 7px;
+}
+.archival .book-page .entry-lore blockquote {
+  display: flow-root;
+  font-size: calc(23px * var(--entry-type));
+  line-height: 1.32;
+  color: #503b26;
+  margin: 5px 0;
+}
+.archival .book-page .entry-footnote {
+  margin-top: 8px;
+  padding-top: 0;
+  font-size: 11px;
+}
+.archival .book-page .page-folio {
+  flex-shrink: 0;
+  margin-top: 12px;
+  padding: 8px 0 0;
+}
+.archival .show-lore-toggle {
+  flex-shrink: 0;
+  min-height: 36px;
+  padding: 6px 9px;
+  gap: 6px;
+  margin-left: 8px;
+  color: #bfb5a0;
+  font-size: 13px;
+}
+.archival .show-lore-toggle[aria-pressed='true'] {
+  color: #f3dfb6;
+  background: #7f6b3a26;
+}
+.lore-toggle-state {
+  min-width: 21px;
+  font-size: 10px;
+  opacity: 0.8;
+}
+.archival .archive-actions {
+  flex-shrink: 1;
+}
+.archival .archive-imprint {
+  margin-left: auto;
+}
+@media (max-width: 1100px) {
+  .archival .archive-imprint {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .archival .book-cover,
+  .archival.fit-screen .book-cover {
+    height: 1040px;
+    padding: 48px 132px 78px 26px;
+  }
+  .archival .book-page,
+  .archival .book-page.page-right,
+  .archival.fit-screen .book-page,
+  .archival.fit-screen .book-page.page-right {
+    padding: 14px 26px 14px 38px;
+  }
+  .archival:not(.fit-screen) .book-cover {
+    padding: 6% 19% 10% 4%;
+    height: 1120px;
+  }
+  .archival:not(.fit-screen) .book-page {
+    padding: 14px 18px 14px 25px;
+  }
+  .archival:not(.fit-screen) .stat-lines {
+    columns: 1;
+  }
+  .archival:not(.fit-screen) .relic-nameplate .entry-copy h2 {
+    font-size: clamp(14px, 4vw, 24px);
+  }
+  .archival .archive-toolbar {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 600px) {
+  .archival .compact-action-label {
+    display: none;
+  }
+  .archival .archive-actions,
+  .archival.fit-screen .archive-actions {
+    width: auto;
+    gap: 1px;
+  }
+  .archival.fit-screen .archive-actions > button {
+    padding-inline: 6px;
+  }
+  .archival .show-lore-toggle {
+    margin-left: auto;
+    padding-inline: 5px;
+    gap: 4px;
+    font-size: 12px;
+  }
+  .archival .lore-toggle-state {
+    display: none;
+  }
+  .archival .show-lore-toggle > svg {
+    width: 13px;
+  }
+}
+
+.archival .book-page .stat-lines > div {
+  padding-block: 1px;
+  line-height: 1.24;
+  border-bottom: 1px solid #77603e25;
+}
+.archival .book-page .stat-lines dt {
+  color: #54432f;
+  font-weight: 450;
+}
+.archival .book-page .stat-lines dd {
+  color: #2d241b;
+  font-weight: 600;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+.archival .book-page .stat-lines .signature-stat dt {
+  color: #40311e;
+  font-weight: 600;
+}
+.archival .book-page .stat-lines .signature-stat dd {
+  color: var(--chapter-ink);
+}
+.archival .book-page .stat-lines .negative-stat dd {
+  color: #852d25;
+}
+.archival .book-page .ruled-heading {
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+.archival .book-page .ruled-heading::after {
+  background: linear-gradient(90deg, #876b3d55, #876b3d12);
+}
+.archival .book-page .ruled-heading small {
+  font-variant-numeric: tabular-nums;
+  color: #786445;
+}
+.archival .book-page .entry-effects li {
+  line-height: 1.25;
+}
+.archival .book-page .entry-effects ul {
+  gap: 3px;
+  margin-top: 3px;
+}
+.archival .book-page .curator-note {
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+.archival .book-page .entry-lore {
+  margin-top: 6px;
+  padding-top: 5px;
+}
+.archival .book-page .entry-lore blockquote {
+  line-height: 1.24;
+}
+.archival .book-page .entry-acquisition {
+  margin-top: 5px;
+  padding-top: 4px;
+}
+.archival .book-page .entry-acquisition > div {
+  margin-top: 1px;
+}
+.archival .book-page .entry-footnote {
+  margin-top: 5px;
+}
+@media (max-width: 380px) {
+  .archival .narrow-action-label {
+    display: none;
+  }
+}

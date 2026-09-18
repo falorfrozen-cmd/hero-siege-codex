@@ -1,0 +1,129 @@
+{
+  "season": "Season 10",
+  "total": 1990,
+  "chapters": [
+    {
+      "name": "Angelic",
+      "count": 31,
+      "path": "/catalog/angelic.67a81c0cbe.json",
+      "categories": {
+        "Weapon": 14,
+        "Belt": 2,
+        "Body Armor": 2,
+        "Charm": 5,
+        "Flask": 1,
+        "Gloves": 1,
+        "Helmet": 2,
+        "Ring": 2,
+        "Shield": 2
+      }
+    },
+    {
+      "name": "Unholy",
+      "count": 19,
+      "path": "/catalog/unholy.2ebf55bba0.json",
+      "categories": {
+        "Amulet": 1,
+        "Belt": 1,
+        "Body Armor": 1,
+        "Boots": 2,
+        "Charm": 8,
+        "Flask": 1,
+        "Gloves": 1,
+        "Ring": 1,
+        "Weapon": 3
+      }
+    },
+    {
+      "name": "Heroic",
+      "count": 220,
+      "path": "/catalog/heroic.203cbae4f0.json",
+      "categories": {
+        "Weapon": 65,
+        "Amulet": 14,
+        "Belt": 11,
+        "Body Armor": 17,
+        "Boots": 19,
+        "Charm": 23,
+        "Flask": 3,
+        "Gloves": 18,
+        "Helmet": 15,
+        "Ring": 23,
+        "Shield": 12
+      }
+    },
+    {
+      "name": "Satanic",
+      "count": 673,
+      "path": "/catalog/satanic.36d4b2e313.json",
+      "categories": {
+        "Weapon": 146,
+        "Amulet": 62,
+        "Belt": 43,
+        "Body Armor": 85,
+        "Boots": 61,
+        "Charm": 60,
+        "Flask": 18,
+        "Gloves": 46,
+        "Helmet": 74,
+        "Ring": 35,
+        "Shield": 43
+      }
+    },
+    {
+      "name": "Runeword",
+      "count": 100,
+      "path": "/catalog/runeword.d3e8e18f20.json",
+      "categories": {
+        "Runeword": 100
+      }
+    },
+    {
+      "name": "Normal",
+      "count": 947,
+      "path": "/catalog/normal.7b1a08b64f.json",
+      "categories": {
+        "Amulet": 25,
+        "Belt": 15,
+        "Body Armor": 20,
+        "Boots": 15,
+        "Boss Part / Tarot": 65,
+        "Charm": 60,
+        "Flask": 16,
+        "Gloves": 20,
+        "Helmet": 15,
+        "Key": 44,
+        "Material": 74,
+        "Potion / Codex": 25,
+        "Relic": 156,
+        "Ring": 30,
+        "Rune / Gem / Orb": 144,
+        "Shield": 18,
+        "Weapon": 205
+      }
+    }
+  ],
+  "index": "/catalog/index.6b781b609a.json",
+  "loreCount": 262,
+  "itemTextCount": 241,
+  "categories": [
+    "Amulet",
+    "Belt",
+    "Body Armor",
+    "Boots",
+    "Boss Part / Tarot",
+    "Charm",
+    "Flask",
+    "Gloves",
+    "Helmet",
+    "Key",
+    "Material",
+    "Potion / Codex",
+    "Relic",
+    "Ring",
+    "Rune / Gem / Orb",
+    "Runeword",
+    "Shield",
+    "Weapon"
+  ]
+}

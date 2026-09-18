@@ -1,0 +1,23 @@
+[package]
+name = "hero-siege-item-codex"
+version = "0.4.0"
+description = "Offline test edition of the Hero Siege Item Codex"
+authors = ["FalorFrozen"]
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "=2.6.3", features = [] }
+
+[dependencies]
+serde_json = "1"
+tauri = { version = "=2.11.5", features = [] }
+tauri-plugin-single-instance = { version = "=2.4.3", features = ["deep-link"] }
+tauri-plugin-deep-link = "=2.4.10"
+tauri-plugin-opener = "=2.5.5"
+
+[profile.release]
+opt-level = "s"
+lto = "thin"
+codegen-units = 1
+strip = true
+panic = "abort"

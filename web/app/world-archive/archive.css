@@ -1,0 +1,370 @@
+.world-archive {
+  --chapter-accent: #c7ae78;
+}
+.world-archive .world-title {
+  margin: 20px 0 16px;
+}
+.world-volumes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 0 auto 22px;
+}
+.world-volumes a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  color: #c9b893;
+  border: 1px solid #ae91554a;
+  border-radius: 3px;
+  font-size: 16px;
+  text-decoration: none;
+  min-height: 48px;
+  background: #191b17;
+}
+.world-volumes a[aria-current] {
+  background: #c9ab711a;
+  color: #f3dfb4;
+  border-color: #b79a68;
+}
+.world-volumes a span {
+  font-size: 12px;
+  color: #bcaa88;
+}
+.world-filters {
+  max-width: 1000px;
+  margin: 12px auto 8px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.world-filters label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 14px;
+  color: #c2b397;
+}
+.world-filters select {
+  background: #181b16;
+  color: #e6d4af;
+  min-height: 44px;
+  max-width: 290px;
+  padding: 9px 28px 9px 12px;
+  border: 1px solid #ae915550;
+  border-radius: 3px;
+  font: inherit;
+}
+.world-filters > span {
+  font-size: 12px;
+  color: #b1a187;
+  margin-left: auto;
+}
+.world-archive.archival .book-cover {
+  height: auto;
+  min-height: 920px;
+  padding-block: 58px 94px;
+}
+.world-archive .book-spread {
+  /* Item pages use a fixed binding; journal entries must grow with their text. */
+  height: auto !important;
+  min-height: 768px !important;
+}
+.world-archive .book-page.world-leaf {
+  min-height: 768px !important;
+  padding: 18px 38px;
+}
+.world-record-seal {
+  display: grid;
+  place-items: center;
+  width: 96px;
+  height: 96px;
+  border: 1px solid #95734860;
+  outline: 1px solid #95734838;
+  outline-offset: 6px;
+  border-radius: 50%;
+  margin: 46px auto 28px;
+  color: #7c5c31;
+}
+.world-entry-title {
+  text-align: center;
+}
+.world-entry-title > p,
+.world-reference-title > p {
+  color: #785a33;
+  font-size: 13px;
+  margin: 0 0 14px;
+}
+.world-entry-title h2 {
+  color: #3d2b18;
+  font: 600 clamp(32px, 3.2vw, 47px)/1.08 var(--display);
+  margin: 0;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+}
+.world-ink-rule {
+  width: 62px;
+  height: 1px;
+  background: #8c693957;
+  margin: 28px auto;
+}
+.world-entry-text h3 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #7a5b35;
+  margin: 0 0 12px;
+  font-weight: 500;
+}
+.world-entry-text > p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #44321d;
+  margin: 0 0 28px;
+  white-space: pre-line;
+}
+.world-archive[data-volume='ether'] .world-entry-text > p {
+  font: 500 27px/1.5 var(--display);
+}
+.world-reading-note {
+  color: #725c3f;
+  font-size: 12px;
+  line-height: 1.6;
+  margin: 0 0 24px;
+}
+.world-entry-text kbd {
+  display: inline;
+  font: inherit;
+  font-size: 0.88em;
+  color: #563a14;
+  border-bottom: 1px solid #94704477;
+  padding: 1px 3px;
+  box-decoration-break: clone;
+}
+.world-variable {
+  color: #6c522f;
+  font-style: italic;
+}
+.world-reference-title {
+  padding: 39px 0 21px;
+}
+.world-reference-title h3 {
+  font: 600 34px/1.12 var(--display);
+  margin: 0;
+  color: #3d2b18;
+  text-wrap: balance;
+}
+.world-related {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.world-related li {
+  border-top: 1px solid #91724544;
+}
+.world-related button {
+  background: none;
+  border: 0;
+  color: #43311c;
+  padding: 17px 0;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  font: 600 24px/1.15 var(--display);
+}
+.world-related button > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.world-related svg {
+  flex-shrink: 0;
+  color: #8b693b;
+}
+.world-related small {
+  display: block;
+  font: 400 12px/1.5 var(--font-manrope, 'Manrope', sans-serif);
+  color: #796344;
+  margin-top: 5px;
+}
+.world-related button:hover {
+  color: #815815;
+}
+.world-chapter-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 44px;
+  font-size: 14px;
+  text-align: left;
+  padding: 12px 0;
+  border: 0;
+  background: none;
+  color: #694c21;
+  margin: 18px 0 26px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.world-chapter-link svg {
+  flex-shrink: 0;
+}
+.world-objectives {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.world-objectives li {
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr);
+  gap: 10px;
+  border-top: 1px solid #91724544;
+  padding: 13px 0;
+  align-items: baseline;
+}
+.world-objectives li > span {
+  font: 500 20px/1.4 var(--display);
+  color: #86683d;
+}
+.world-objectives p {
+  font-size: 16px;
+  line-height: 1.65;
+  color: #45321f;
+  margin: 0;
+}
+.world-no-objectives {
+  color: #6b5437;
+  font-size: 16px;
+  line-height: 1.7;
+}
+.world-leaf .stat-page-folio {
+  padding-top: 14px;
+}
+.world-archive .stat-index-heading > button {
+  margin-left: auto;
+}
+.world-archive .stat-index button[aria-current] {
+  background: #c3a47115;
+  color: #f5e1b7;
+}
+.world-archive :is(a, button, input, select):focus-visible {
+  outline: 2px solid #d4b67d;
+  outline-offset: 3px;
+}
+.world-leaf :is(a, button):focus-visible {
+  outline-color: #805724;
+}
+@media (min-width: 901px) and (max-width: 1200px) {
+  .world-archive .book-page.world-leaf {
+    padding-inline: 22px;
+  }
+  .world-entry-title h2 {
+    font-size: 34px;
+  }
+  .world-entry-text > p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  .world-related button {
+    font-size: 22px;
+    padding-block: 14px;
+  }
+  .world-reference-title h3 {
+    font-size: 30px;
+  }
+  .world-record-seal {
+    margin-top: 34px;
+  }
+}
+@media (max-width: 900px) {
+  .world-archive.archival .book-cover {
+    min-height: 1160px;
+    padding: 62px 20% 160px 9%;
+  }
+  .world-archive .book-spread {
+    min-height: 0 !important;
+  }
+  .world-archive .book-page.world-leaf {
+    min-height: 0 !important;
+    padding: 14px 16px;
+  }
+  .world-record .stat-page-folio,
+  .world-reference .stat-running-head > span {
+    display: none;
+  }
+  .world-record-seal {
+    width: 78px;
+    height: 78px;
+    margin: 28px auto;
+  }
+  .world-record-seal svg {
+    width: 46px;
+    height: 46px;
+  }
+  .world-entry-title h2 {
+    font-size: 36px;
+  }
+  .world-reference-title {
+    padding-top: 26px;
+  }
+  .world-entry-text > p {
+    font-size: 17px;
+  }
+  .world-reference .stat-running-head {
+    justify-content: flex-end;
+  }
+  .world-filters > span {
+    flex-basis: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .world-volumes a {
+    padding: 10px 20px;
+  }
+  .world-filters {
+    gap: 10px;
+  }
+  .world-filters label {
+    align-items: flex-start;
+    flex-direction: column;
+    flex: 1 1 150px;
+    gap: 5px;
+  }
+  .world-filters select {
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+  }
+  .world-archive .book-page.world-leaf {
+    padding-inline: 12px;
+  }
+  .world-entry-title h2 {
+    font-size: 32px;
+  }
+  .world-entry-text > p {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+  .world-related button {
+    font-size: 23px;
+  }
+  .world-archive[data-volume='ether'] .world-entry-text > p {
+    font-size: 25px;
+  }
+  .world-reference-title h3 {
+    font-size: 30px;
+  }
+  .world-objectives li {
+    grid-template-columns: 22px minmax(0, 1fr);
+    gap: 8px;
+  }
+  .world-objectives p {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,2616 @@
+{
+  "entries": [
+    {
+      "slug": "rat",
+      "name": "Rat Champion",
+      "category": "world",
+      "location": null,
+      "search": "rat champion rat champion plague rat freak of nature rat den",
+      "file": "/creatures/records/rat-5039b04c23d3.json"
+    },
+    {
+      "slug": "spider",
+      "name": "Arachnid",
+      "category": "world",
+      "location": null,
+      "search": "arachnid arachnid broodmother theraphosidae outskirts of inoya rat den",
+      "file": "/creatures/records/spider-179d39f4b335.json"
+    },
+    {
+      "slug": "cave-spider",
+      "name": "Cave Spider",
+      "category": "world",
+      "location": null,
+      "search": "cave spider cave spider venomous skitter toxic lurker corrupted cave",
+      "file": "/creatures/records/cave-spider-d66d7c93b460.json"
+    },
+    {
+      "slug": "skeleton",
+      "name": "Bone Champion",
+      "category": "world",
+      "location": null,
+      "search": "bone champion bone champion skeletal ancestor risen god",
+      "file": "/creatures/records/skeleton-d8d9af5d3863.json"
+    },
+    {
+      "slug": "skeleton-archer",
+      "name": "Fallen Marksman",
+      "category": "world",
+      "location": null,
+      "search": "fallen marksman fallen marksman undead sharpshooter rotten archer",
+      "file": "/creatures/records/skeleton-archer-255ccc0580de.json"
+    },
+    {
+      "slug": "skeleton-mage",
+      "name": "Skeletal Archmage",
+      "category": "world",
+      "location": null,
+      "search": "skeletal archmage skeletal archmage unholy priest satanic pagan king's garden northern post old mausoleum king’s tomb king's throne",
+      "file": "/creatures/records/skeleton-mage-2a1898ecfd0c.json"
+    },
+    {
+      "slug": "skeleton-mage-fire",
+      "name": "Burning Mage",
+      "category": "world",
+      "location": null,
+      "search": "burning mage burning mage flame wizard infernal mystic forsaken catacombs  the cathedral the depths of hell fallen inoya",
+      "file": "/creatures/records/skeleton-mage-fire-a209686e4593.json"
+    },
+    {
+      "slug": "skeleton-mage-frost",
+      "name": "Frost Mage",
+      "category": "world",
+      "location": null,
+      "search": "frost mage frost mage chilling occultist permafrozen pagan chilling cavern freezing steppes chamber of ice ancient city level 1 ancient city level 2 ancient city level 3 frozen cellar level 2",
+      "file": "/creatures/records/skeleton-mage-frost-01b45c3adcc4.json"
+    },
+    {
+      "slug": "essence-of-fire",
+      "name": "Essence of Pyre",
+      "category": "world",
+      "location": null,
+      "search": "essence of pyre essence of pyre flaming spirit ruby gardens",
+      "file": "/creatures/records/essence-of-fire-4504eee6da43.json"
+    },
+    {
+      "slug": "skeleton-mage-lightning",
+      "name": "Lightning Mage",
+      "category": "world",
+      "location": null,
+      "search": "lightning mage lightning mage thunder caller storm wizard emperor´s garden  temple of zamjo underground trench the sacred temple emperor’s chamber temple trapdoor 2",
+      "file": "/creatures/records/skeleton-mage-lightning-6b8a5117bf87.json"
+    },
+    {
+      "slug": "scarecrow",
+      "name": "Scarecrow",
+      "category": "world",
+      "location": null,
+      "search": "scarecrow scarecrow scarecrow undead harvester witching river the pumpkin patch pumpkin cellar",
+      "file": "/creatures/records/scarecrow-96822ca1cd4b.json"
+    },
+    {
+      "slug": "pumpkin-mage",
+      "name": "Pumpkin Wraith",
+      "category": "world",
+      "location": null,
+      "search": "pumpkin wraith pumpkin wraith pumpkin wraith hallowing pumpkin the pumpkin patch pumpkin cellar",
+      "file": "/creatures/records/pumpkin-mage-563400219384.json"
+    },
+    {
+      "slug": "maggot",
+      "name": "Blood Maggot",
+      "category": "world",
+      "location": null,
+      "search": "blood maggot blood maggot corpse maggot devouring worm fields of battle",
+      "file": "/creatures/records/maggot-12c5e35e2a0e.json"
+    },
+    {
+      "slug": "wendigo",
+      "name": "Wendigo Scavenger",
+      "category": "world",
+      "location": null,
+      "search": "wendigo scavenger wendigo scavenger throngcroft mist stalker the pumpkin patch village of lamia woodhill plains",
+      "file": "/creatures/records/wendigo-944c42541a08.json"
+    },
+    {
+      "slug": "undying",
+      "name": "Undying",
+      "category": "world",
+      "location": null,
+      "search": "undying undying faceless horror unknown outskirts of inoya river of inoya pumpkin cellar vanaheim",
+      "file": "/creatures/records/undying-48f8f6ce57aa.json"
+    },
+    {
+      "slug": "ent",
+      "name": "Ent Sapling",
+      "category": "world",
+      "location": null,
+      "search": "ent sapling ent sapling horror branch deadwood the pumpkin patch woodhill plains king's garden river of inoya",
+      "file": "/creatures/records/ent-2db15c7ff56c.json"
+    },
+    {
+      "slug": "ent-valhalla",
+      "name": "Boreal Oakling",
+      "category": "world",
+      "location": null,
+      "search": "boreal oakling boreal oakling boreal branch grimwood ent flooded plains",
+      "file": "/creatures/records/ent-valhalla-2217aad7eaf4.json"
+    },
+    {
+      "slug": "goblin",
+      "name": "Goblin Captain",
+      "category": "world",
+      "location": null,
+      "search": "goblin captain goblin captain tinker da bling witching river fields of battle woodhill plains king's garden vanaheim",
+      "file": "/creatures/records/goblin-2ff23763140b.json"
+    },
+    {
+      "slug": "imp",
+      "name": "Nether Imp",
+      "category": "world",
+      "location": null,
+      "search": "nether imp nether imp devil breed arch demon the depths of hell hollowing sanctuary pathway to hell",
+      "file": "/creatures/records/imp-9b739385a833.json"
+    },
+    {
+      "slug": "dragon-whelp",
+      "name": "Dragon Whelp",
+      "category": "world",
+      "location": null,
+      "search": "dragon whelp dragon whelp red drake pinky lava trail  the highland mines old copper mine rift of fortune ruby gardens",
+      "file": "/creatures/records/dragon-whelp-7b38930466d2.json"
+    },
+    {
+      "slug": "yeti",
+      "name": "Tundra Yeti",
+      "category": "world",
+      "location": null,
+      "search": "tundra yeti tundra yeti gargantuan beast mountain monstrosity valley of spirits  snowy mountains frozen cellar level 1",
+      "file": "/creatures/records/yeti-de7aeba3feb8.json"
+    },
+    {
+      "slug": "nautilus",
+      "name": "Nautilus",
+      "category": "world",
+      "location": null,
+      "search": "nautilus nautilus sea hunter colossal nautilus",
+      "file": "/creatures/records/nautilus-1d7de509563d.json"
+    },
+    {
+      "slug": "horror",
+      "name": "Sleeping Horror",
+      "category": "world",
+      "location": null,
+      "search": "sleeping horror sleeping horror slumbering demon master of limbo the glacial trail chamber of ice death’s breach",
+      "file": "/creatures/records/horror-49294c47bee8.json"
+    },
+    {
+      "slug": "chilling-head",
+      "name": "Chilling Head",
+      "category": "world",
+      "location": null,
+      "search": "chilling head chilling head frozen curse ancient apparition the glacial trail death’s breach niflheim",
+      "file": "/creatures/records/chilling-head-322aec17b7ec.json"
+    },
+    {
+      "slug": "jormungar",
+      "name": "Ravenous Jormungar",
+      "category": "world",
+      "location": null,
+      "search": "ravenous jormungar ravenous jormungar tundra crawler burrowing ambusher arctic tundra valley of spirits  snowy mountains",
+      "file": "/creatures/records/jormungar-b33ef09dfae7.json"
+    },
+    {
+      "slug": "bride",
+      "name": "Dead Bride",
+      "category": "world",
+      "location": null,
+      "search": "dead bride dead bride ghost spouse widow anomaly the glacial trail death’s breach",
+      "file": "/creatures/records/bride-d36490258d76.json"
+    },
+    {
+      "slug": "fetish-doll",
+      "name": "Fetish Doll",
+      "category": "world",
+      "location": null,
+      "search": "fetish doll fetish doll fetish shaman cursed doll curacan hollow sewers of mos’arathim ra’s labyrinth tomb of ancients tomb of the fallen king",
+      "file": "/creatures/records/fetish-doll-7791962562c0.json"
+    },
+    {
+      "slug": "parasect",
+      "name": "Parasect",
+      "category": "world",
+      "location": null,
+      "search": "parasect parasect hellspawn abomination colossal parasect abandoned mine the nightmare the devil's breach",
+      "file": "/creatures/records/parasect-600925eac9f0.json"
+    },
+    {
+      "slug": "fungus-monster",
+      "name": "Fungus Monster",
+      "category": "world",
+      "location": null,
+      "search": "fungus monster fungus monster faceless mushroom caclauschex",
+      "file": "/creatures/records/fungus-monster-0cc258228606.json"
+    },
+    {
+      "slug": "desert-skeleton",
+      "name": "Desert Legion",
+      "category": "world",
+      "location": null,
+      "search": "desert legion desert legion legion captain desert commander path of ancients  buried pathway  pyramid level 1 pyramid level 2 sewers of mos’arathim ra’s labyrinth tomb of ancients tomb of the fallen king forgotten city level 1",
+      "file": "/creatures/records/desert-skeleton-7439b4b311d2.json"
+    },
+    {
+      "slug": "burning-legion",
+      "name": "Burning Legion",
+      "category": "world",
+      "location": null,
+      "search": "burning legion burning legion risen archer fallen legion path of ancients  buried pathway  pyramid level 1 pyramid level 2 sewers of mos’arathim ra’s labyrinth tomb of ancients tomb of the fallen king cauflax tomb level 3 forgotten city level 1",
+      "file": "/creatures/records/burning-legion-32241c3fd1fc.json"
+    },
+    {
+      "slug": "mummy",
+      "name": "Mummy",
+      "category": "world",
+      "location": null,
+      "search": "mummy mummy deceased demon embalmed king path of ancients  buried pathway  pyramid level 1 pyramid level 2 curacan hollow sewers of mos’arathim ra’s labyrinth tomb of ancients tomb of the fallen king cauflax tomb level 1 cauflax tomb level 2 cauflax tomb level 3 forgotten city level 1",
+      "file": "/creatures/records/mummy-115b14de8e46.json"
+    },
+    {
+      "slug": "desert-beast",
+      "name": "Desert Beast",
+      "category": "world",
+      "location": null,
+      "search": "desert beast desert beast sand goliath colossal behemoth dry hills mos'arathim desert sand cave",
+      "file": "/creatures/records/desert-beast-2cef80ea60f7.json"
+    },
+    {
+      "slug": "earth-elemental",
+      "name": "Earth Elemental",
+      "category": "world",
+      "location": null,
+      "search": "earth elemental earth elemental monument of stone avalachion",
+      "file": "/creatures/records/earth-elemental-77d1af35609e.json"
+    },
+    {
+      "slug": "sand-wasp",
+      "name": "Sand Wasp",
+      "category": "world",
+      "location": null,
+      "search": "sand wasp sand wasp desert bee wasp queen dry hills mos'arathim desert cauflax tomb level 1 cauflax tomb level 2 cauflax tomb level 3 valley of cauflax wormhole",
+      "file": "/creatures/records/sand-wasp-e36a13590813.json"
+    },
+    {
+      "slug": "dust-feeder",
+      "name": "Dust Feeder",
+      "category": "world",
+      "location": null,
+      "search": "dust feeder dust feeder devourer colossal devourer dry hills",
+      "file": "/creatures/records/dust-feeder-c49d9c98487c.json"
+    },
+    {
+      "slug": "karp",
+      "name": "Karp",
+      "category": "world",
+      "location": null,
+      "search": "karp karp frenzied karp karpoga fuji coast sea of karponia temple of zamjo temple of fishes underground trench the sacred temple emperor’s chamber underground garden",
+      "file": "/creatures/records/karp-6e56aa0db042.json"
+    },
+    {
+      "slug": "forest-wasp",
+      "name": "Forest Wasp",
+      "category": "world",
+      "location": null,
+      "search": "forest wasp forest wasp toxic stinger furious killerfly misty swamp fuji coast eternal battlefield underground garden",
+      "file": "/creatures/records/forest-wasp-c87e60b5fccb.json"
+    },
+    {
+      "slug": "treasure-goblin",
+      "name": "Treasure Goblin",
+      "category": "world",
+      "location": null,
+      "search": "treasure goblin treasure goblin treasure hoarder treasure master vorpal escape",
+      "file": "/creatures/records/treasure-goblin-57c3d781513c.json"
+    },
+    {
+      "slug": "goblin-rune",
+      "name": "Rune Goblin",
+      "category": "world",
+      "location": null,
+      "search": "rune goblin rune goblin rune fiddler",
+      "file": "/creatures/records/goblin-rune-13483a1b2cfc.json"
+    },
+    {
+      "slug": "goblin-shadow",
+      "name": "Shadow Goblin",
+      "category": "world",
+      "location": null,
+      "search": "shadow goblin shadow goblin shadow hoarder",
+      "file": "/creatures/records/goblin-shadow-d61d5dc216e4.json"
+    },
+    {
+      "slug": "goblin-ore",
+      "name": "Ore Goblin",
+      "category": "world",
+      "location": null,
+      "search": "ore goblin ore goblin",
+      "file": "/creatures/records/goblin-ore-25474c7a723e.json"
+    },
+    {
+      "slug": "goblin-orb",
+      "name": "Orb Goblin",
+      "category": "world",
+      "location": null,
+      "search": "orb goblin orb goblin",
+      "file": "/creatures/records/goblin-orb-01680ffe36eb.json"
+    },
+    {
+      "slug": "fly",
+      "name": "Fly",
+      "category": "world",
+      "location": null,
+      "search": "fly fly frenzied fly diseased mosquito",
+      "file": "/creatures/records/fly-7866bbb41c15.json"
+    },
+    {
+      "slug": "sheep",
+      "name": "Sheep",
+      "category": "world",
+      "location": null,
+      "search": "sheep sheep chaos mutton demonhorn enforcer sheeponia",
+      "file": "/creatures/records/sheep-cf2bc0f3d497.json"
+    },
+    {
+      "slug": "cursed-doll",
+      "name": "Cursed Doll",
+      "category": "world",
+      "location": null,
+      "search": "cursed doll cursed doll fetish voodoo doll stygian puppet abandoned mine corrupted cave the devil's breach maze of shadows chamber of burning souls devil's hole mists of chaos",
+      "file": "/creatures/records/cursed-doll-e66ac456decc.json"
+    },
+    {
+      "slug": "hollow-stump",
+      "name": "Hollow Stump",
+      "category": "world",
+      "location": null,
+      "search": "hollow stump hollow stump hollow terror deepwood horror",
+      "file": "/creatures/records/hollow-stump-881d1847ca86.json"
+    },
+    {
+      "slug": "damned-legion",
+      "name": "Damned Legion",
+      "category": "world",
+      "location": null,
+      "search": "damned legion damned legion forsaken soldier satanic commander forsaken catacombs  the cathedral hellspawn station  prison dungeon hollowing sanctuary sacrilegious chapel pathway to hell seventh layer of hell fallen inoya",
+      "file": "/creatures/records/damned-legion-49e1575cdf99.json"
+    },
+    {
+      "slug": "levitating-horror",
+      "name": "Levitating Horror",
+      "category": "world",
+      "location": null,
+      "search": "levitating horror levitating horror soul horror soul cancer highland graveyard",
+      "file": "/creatures/records/levitating-horror-0184bcdb6b68.json"
+    },
+    {
+      "slug": "goblin-cannoneer",
+      "name": "Goblin Cannoneer",
+      "category": "world",
+      "location": null,
+      "search": "goblin cannoneer goblin cannoneer crazy bombardier explosion expert",
+      "file": "/creatures/records/goblin-cannoneer-340815633025.json"
+    },
+    {
+      "slug": "ghost-skeleton-archer",
+      "name": "Archer Anomaly",
+      "category": "world",
+      "location": null,
+      "search": "archer anomaly archer anomaly lost ghost awaken horror cauflax market  corrupted oasis",
+      "file": "/creatures/records/ghost-skeleton-archer-fcf740ca4f44.json"
+    },
+    {
+      "slug": "ghost-skeleton",
+      "name": "Skeletal Ghost",
+      "category": "world",
+      "location": null,
+      "search": "skeletal ghost skeletal ghost wandering soul lost anomaly cauflax market  corrupted oasis",
+      "file": "/creatures/records/ghost-skeleton-58a078dd02ae.json"
+    },
+    {
+      "slug": "frost-dragon",
+      "name": "Frozen Whelpling",
+      "category": "world",
+      "location": null,
+      "search": "frozen whelpling frozen whelpling chilling drake awoken frostburn howling stream  chilling lake valley of spirits  snowy mountains",
+      "file": "/creatures/records/frost-dragon-0bba69d3753d.json"
+    },
+    {
+      "slug": "frost-goblin",
+      "name": "Tundra Goblin",
+      "category": "world",
+      "location": null,
+      "search": "tundra goblin tundra goblin chilling tinker da frozen bling caravan valley  crystal village howling stream  chilling lake frozen cellar level 1",
+      "file": "/creatures/records/frost-goblin-816c95462073.json"
+    },
+    {
+      "slug": "ice-elemental",
+      "name": "Ice Elemental",
+      "category": "world",
+      "location": null,
+      "search": "ice elemental ice elemental dark ice magician frost apparition the glacial trail chilling cavern niflheim",
+      "file": "/creatures/records/ice-elemental-b94e545e12e0.json"
+    },
+    {
+      "slug": "shade-of-ice",
+      "name": "Essence of Ice",
+      "category": "world",
+      "location": null,
+      "search": "essence of ice essence of ice frost essence shade of ice caravan valley  crystal village howling stream  chilling lake valley of spirits  snowy mountains the glacial trail freezing steppes chamber of ice death’s breach",
+      "file": "/creatures/records/shade-of-ice-166a3d109d26.json"
+    },
+    {
+      "slug": "pyramid-guardian",
+      "name": "Pyramid Guardian",
+      "category": "world",
+      "location": null,
+      "search": "pyramid guardian pyramid guardian tomb legion anubis worshipper",
+      "file": "/creatures/records/pyramid-guardian-023932c04ddf.json"
+    },
+    {
+      "slug": "frost-skeleton",
+      "name": "Frost Legion",
+      "category": "world",
+      "location": null,
+      "search": "frost legion frost legion dark commander frozen champion caravan valley  crystal village howling stream  chilling lake arctic tundra valley of spirits  snowy mountains the glacial trail chilling cavern freezing steppes chamber of ice death’s breach ancient city level 1 ancient city level 2 ancient city level 3 frozen cellar level 2",
+      "file": "/creatures/records/frost-skeleton-04fa2dc3e17a.json"
+    },
+    {
+      "slug": "goblin-devilkin",
+      "name": "Devilkin",
+      "category": "world",
+      "location": null,
+      "search": "devilkin devilkin slave master hellspawn shaman abandoned mine hiker´s end  old mining village lava trail  the highland mines old copper mine rift of fortune ruby gardens",
+      "file": "/creatures/records/goblin-devilkin-7127291fab4d.json"
+    },
+    {
+      "slug": "goblin-bomber",
+      "name": "Goblin Bomber",
+      "category": "world",
+      "location": null,
+      "search": "goblin bomber goblin bomber bomb engineer manic bomber hiker´s end  old mining village old copper mine",
+      "file": "/creatures/records/goblin-bomber-aa08f40350cc.json"
+    },
+    {
+      "slug": "organic-anomaly",
+      "name": "Organic Anomaly",
+      "category": "world",
+      "location": null,
+      "search": "organic anomaly organic anomaly sack of flesh flesh of satan unmarked grave",
+      "file": "/creatures/records/organic-anomaly-48265053cbff.json"
+    },
+    {
+      "slug": "skeleton-samurai",
+      "name": "Skeletal Samurai",
+      "category": "world",
+      "location": null,
+      "search": "skeletal samurai skeletal samurai ancient zen legion samurai warlord emperor´s garden  mt. fuji misty swamp coastal shoreline  fuji coast temple of zamjo temple of fishes underground trench the sacred temple eternal battlefield fuji crater level 1 kaojin temple 1 kaojin temple 2 temple trapdoor 1 temple trapdoor 2",
+      "file": "/creatures/records/skeleton-samurai-a598e7d30e6f.json"
+    },
+    {
+      "slug": "piranha",
+      "name": "Piranha",
+      "category": "world",
+      "location": null,
+      "search": "piranha piranha frenzied piranha colossal piranha sea of karponia temple of zamjo temple of fishes underground trench the sacred temple emperor’s chamber",
+      "file": "/creatures/records/piranha-c633b720b385.json"
+    },
+    {
+      "slug": "rift-grunt",
+      "name": "Rift Grunt",
+      "category": "world",
+      "location": null,
+      "search": "rift grunt rift grunt astral warrior rift commander",
+      "file": "/creatures/records/rift-grunt-96171de56cc1.json"
+    },
+    {
+      "slug": "corrosive-ooze",
+      "name": "Corrosive Ooze",
+      "category": "world",
+      "location": null,
+      "search": "corrosive ooze corrosive ooze unstable matter devouring slime",
+      "file": "/creatures/records/corrosive-ooze-1c946c8dec7c.json"
+    },
+    {
+      "slug": "corrupted-monk",
+      "name": "Corrupted Monk",
+      "category": "world",
+      "location": null,
+      "search": "corrupted monk corrupted monk enlightened horror shaolin demigod",
+      "file": "/creatures/records/corrupted-monk-587bd2b3cca7.json"
+    },
+    {
+      "slug": "giant",
+      "name": "Astral Giant",
+      "category": "world",
+      "location": null,
+      "search": "astral giant astral giant rift walker gorgon giant",
+      "file": "/creatures/records/giant-538a9c87cd17.json"
+    },
+    {
+      "slug": "headless-butler",
+      "name": "Headless Butler",
+      "category": "world",
+      "location": null,
+      "search": "headless butler headless butler butler of death corpse assistant manor garden  parallel dimension subconscious mind the verge of insanity the labyrinth",
+      "file": "/creatures/records/headless-butler-0da2541a1eba.json"
+    },
+    {
+      "slug": "haunted-book",
+      "name": "Haunted Book",
+      "category": "world",
+      "location": null,
+      "search": "haunted book haunted book horror diary corrupted necronomicon subconscious mind the void pathway of souls the waiting room the verge of insanity",
+      "file": "/creatures/records/haunted-book-656fa5d52a85.json"
+    },
+    {
+      "slug": "flesh-plant",
+      "name": "Flesh Plant",
+      "category": "world",
+      "location": null,
+      "search": "flesh plant flesh plant carnivorous fertilized horror",
+      "file": "/creatures/records/flesh-plant-6c2a31fcff62.json"
+    },
+    {
+      "slug": "spider-sibling",
+      "name": "Spider Sibling",
+      "category": "world",
+      "location": null,
+      "search": "spider sibling spider sibling giant spider arachnid mother",
+      "file": "/creatures/records/spider-sibling-526d449bd7cf.json"
+    },
+    {
+      "slug": "slime",
+      "name": "Slime",
+      "category": "world",
+      "location": null,
+      "search": "slime slime slime champion toxic waste rat den",
+      "file": "/creatures/records/slime-285d235487ce.json"
+    },
+    {
+      "slug": "hell-beast",
+      "name": "Hell Beast",
+      "category": "world",
+      "location": null,
+      "search": "hell beast hell beast goliath of hell sacrilegious goliath forsaken catacombs  the cathedral the depths of hell sacrilegious chapel",
+      "file": "/creatures/records/hell-beast-d4d26b6cac50.json"
+    },
+    {
+      "slug": "skull-crawler",
+      "name": "Skull Crawler",
+      "category": "world",
+      "location": null,
+      "search": "skull crawler skull crawler bonecrab bonecrab lava trail  the highland mines",
+      "file": "/creatures/records/skull-crawler-2201ff658333.json"
+    },
+    {
+      "slug": "cave-slime",
+      "name": "Cave Slime",
+      "category": "world",
+      "location": null,
+      "search": "cave slime cave slime toxic mucus toxic mucus lava trail  the highland mines",
+      "file": "/creatures/records/cave-slime-ad7ef721abac.json"
+    },
+    {
+      "slug": "cyclops",
+      "name": "Cyclops",
+      "category": "world",
+      "location": null,
+      "search": "cyclops cyclops cyclops goliath cyclops goliath",
+      "file": "/creatures/records/cyclops-1c4a53ce1624.json"
+    },
+    {
+      "slug": "rift-skeleton",
+      "name": "Rift Skeleton",
+      "category": "world",
+      "location": null,
+      "search": "rift skeleton rift skeleton shadow champion rift legion",
+      "file": "/creatures/records/rift-skeleton-668353b45996.json"
+    },
+    {
+      "slug": "ooze",
+      "name": "Nightmare Ooze",
+      "category": "world",
+      "location": null,
+      "search": "nightmare ooze nightmare ooze corrosive nightmare sleep paralysis",
+      "file": "/creatures/records/ooze-9fb1ee225ae5.json"
+    },
+    {
+      "slug": "grave-skeleton",
+      "name": "Grave Skeleton",
+      "category": "world",
+      "location": null,
+      "search": "grave skeleton grave skeleton",
+      "file": "/creatures/records/grave-skeleton-513e73ed7421.json"
+    },
+    {
+      "slug": "grave-zombie",
+      "name": "Grave Zombie",
+      "category": "world",
+      "location": null,
+      "search": "grave zombie grave zombie",
+      "file": "/creatures/records/grave-zombie-fae8ac0a3f8a.json"
+    },
+    {
+      "slug": "curcan-legion",
+      "name": "Curacan Legion",
+      "category": "world",
+      "location": null,
+      "search": "curacan legion curacan legion curacan warchief curacan hollow",
+      "file": "/creatures/records/curcan-legion-fd606f4aee34.json"
+    },
+    {
+      "slug": "curacan-marksman",
+      "name": "Curacan Marksman",
+      "category": "world",
+      "location": null,
+      "search": "curacan marksman curacan marksman curacan stinger curacan hollow",
+      "file": "/creatures/records/curacan-marksman-9d9273f99655.json"
+    },
+    {
+      "slug": "zombie-crawler",
+      "name": "Zombie Crawler",
+      "category": "world",
+      "location": null,
+      "search": "zombie crawler zombie crawler diseased gnawler putrid monstrosity old mausoleum king’s tomb king's throne",
+      "file": "/creatures/records/zombie-crawler-2de8192b6f12.json"
+    },
+    {
+      "slug": "undead-priest",
+      "name": "Undead Priest",
+      "category": "world",
+      "location": null,
+      "search": "undead priest undead priest fallen bishop satan worshiper highland graveyard forsaken catacombs  the cathedral the depths of hell pathway to hell seventh layer of hell unmarked grave",
+      "file": "/creatures/records/undead-priest-b5a29c5e9846.json"
+    },
+    {
+      "slug": "shade",
+      "name": "Shade",
+      "category": "world",
+      "location": null,
+      "search": "shade shade dark shade shadow of evil the nightmare the devil's breach lair of corruption maze of shadows altar of lost souls devil's hole",
+      "file": "/creatures/records/shade-3fb52cbb8756.json"
+    },
+    {
+      "slug": "shadow-anomaly",
+      "name": "Shadow Anomaly",
+      "category": "world",
+      "location": null,
+      "search": "shadow anomaly shadow anomaly dark lurker ancient zealot cauflax market  corrupted oasis buried pathway  pyramid level 1 pyramid level 2",
+      "file": "/creatures/records/shadow-anomaly-cdafeb730e60.json"
+    },
+    {
+      "slug": "monk",
+      "name": "Monk",
+      "category": "world",
+      "location": null,
+      "search": "monk monk shaolin fighter high monk mt. fuji misty swamp",
+      "file": "/creatures/records/monk-a21de6d2a127.json"
+    },
+    {
+      "slug": "armored-knight",
+      "name": "Armored Knight",
+      "category": "world",
+      "location": null,
+      "search": "armored knight armored knight horned trooper legion officer the nightmare the devil's breach lair of corruption chamber of burning souls altar of lost souls",
+      "file": "/creatures/records/armored-knight-db5f5dcc40fe.json"
+    },
+    {
+      "slug": "prison-guard",
+      "name": "Prison Guard",
+      "category": "world",
+      "location": null,
+      "search": "prison guard prison guard jail officer dungeon marauder hellspawn station  prison dungeon steam train arm storage ancient colosseum",
+      "file": "/creatures/records/prison-guard-0627c0d9f411.json"
+    },
+    {
+      "slug": "triangle",
+      "name": "Triangle Charger",
+      "category": "world",
+      "location": null,
+      "search": "triangle charger triangle charger champion triangle monstrous triangle event horizon the black hole",
+      "file": "/creatures/records/triangle-f2e2ccf6fff1.json"
+    },
+    {
+      "slug": "propeller",
+      "name": "Propeller",
+      "category": "world",
+      "location": null,
+      "search": "propeller propeller flying shape abnormal geocube distorted timeline  deep space the black hole distorted horizon 3",
+      "file": "/creatures/records/propeller-52c08295ba8a.json"
+    },
+    {
+      "slug": "cube",
+      "name": "Cube Fighter",
+      "category": "world",
+      "location": null,
+      "search": "cube fighter cube fighter warrior box betawave crusher distorted timeline  deep space the black hole distorted horizon 3",
+      "file": "/creatures/records/cube-42e11494eaa5.json"
+    },
+    {
+      "slug": "ball",
+      "name": "Geoball",
+      "category": "world",
+      "location": null,
+      "search": "geoball geoball fractured orb fractal monstrosity the black hole",
+      "file": "/creatures/records/ball-3212df464aba.json"
+    },
+    {
+      "slug": "samurai-archer",
+      "name": "Samurai Marksman",
+      "category": "world",
+      "location": null,
+      "search": "samurai marksman samurai marksman legion marksman master of arrows emperor´s garden  mt. fuji misty swamp coastal shoreline  fuji coast sea of karponia temple of fishes underground trench the sacred temple emperor’s chamber eternal battlefield fuji crater level 1 kaojin temple 1 kaojin temple 2 temple trapdoor 1 temple trapdoor 2",
+      "file": "/creatures/records/samurai-archer-1a733bb92a53.json"
+    },
+    {
+      "slug": "gnarler",
+      "name": "Gnarler",
+      "category": "world",
+      "location": null,
+      "search": "gnarler gnarler paralyzed horror subconcious demon manor garden  parallel dimension subconscious mind the void pathway of souls the waiting room the verge of insanity the labyrinth",
+      "file": "/creatures/records/gnarler-82be3da8fd7b.json"
+    },
+    {
+      "slug": "casket-horror",
+      "name": "Casket Horror",
+      "category": "world",
+      "location": null,
+      "search": "casket horror casket horror casket horror meat logger manor garden  parallel dimension subconscious mind the verge of insanity mists of chaos the labyrinth",
+      "file": "/creatures/records/casket-horror-1c37f43e5966.json"
+    },
+    {
+      "slug": "nightmare-priest",
+      "name": "Nightmare Priest",
+      "category": "world",
+      "location": null,
+      "search": "nightmare priest nightmare priest nightmare priest hallucinated baptist manor garden  parallel dimension subconscious mind the void pathway of souls the waiting room the verge of insanity mists of chaos the labyrinth",
+      "file": "/creatures/records/nightmare-priest-d8d7da77dd50.json"
+    },
+    {
+      "slug": "tundra-hog",
+      "name": "Tundra Hog",
+      "category": "world",
+      "location": null,
+      "search": "tundra hog tundra hog mountain swine elder swine forest of the slain gladsheim halls 2",
+      "file": "/creatures/records/tundra-hog-72b36e5fd8d0.json"
+    },
+    {
+      "slug": "forest-troll",
+      "name": "Forest Troll",
+      "category": "world",
+      "location": null,
+      "search": "forest troll forest troll swamp roamer mold eater forest of the slain forgotten caves plains of ida gladsheim halls 1 gladsheim halls 2 muspelheim",
+      "file": "/creatures/records/forest-troll-51a08a03e4fe.json"
+    },
+    {
+      "slug": "mountain-troll",
+      "name": "Mountain Troll",
+      "category": "world",
+      "location": null,
+      "search": "mountain troll mountain troll cave troll troll colossus forgotten caves plains of ida",
+      "file": "/creatures/records/mountain-troll-0bd84b218587.json"
+    },
+    {
+      "slug": "corrupted-viking",
+      "name": "Corrupted Viking",
+      "category": "world",
+      "location": null,
+      "search": "corrupted viking corrupted viking lost drengr fallen berserker forgotten caves camp of souls helheim ruins of helheim helheim channel vault of ancients throne of helheim river gjöll asgard gladsheim halls 1 gladsheim halls 2 muspelheim niflheim niflhel rift of fortune",
+      "file": "/creatures/records/corrupted-viking-f307ab3cc489.json"
+    },
+    {
+      "slug": "naga-warrior",
+      "name": "Naga Warrior",
+      "category": "world",
+      "location": null,
+      "search": "naga warrior naga warrior reptilian champion slither commander flooded plains helheim river gjöll asgard naga temple 1 naga temple 2",
+      "file": "/creatures/records/naga-warrior-e3e3835640ea.json"
+    },
+    {
+      "slug": "raging-bear-name-record",
+      "name": "Raging Bear",
+      "category": "world",
+      "location": null,
+      "search": "raging bear raging bear mauling bear alpha bear",
+      "file": "/creatures/records/raging-bear-name-record-0410fb6ad464.json"
+    },
+    {
+      "slug": "naga-archer",
+      "name": "Naga Archer",
+      "category": "world",
+      "location": null,
+      "search": "naga archer naga archer reptilian bowman slither marksman flooded plains helheim river gjöll asgard naga temple 1 naga temple 2",
+      "file": "/creatures/records/naga-archer-3d42909de5ff.json"
+    },
+    {
+      "slug": "colossal-golem",
+      "name": "Ancient Golem",
+      "category": "world",
+      "location": null,
+      "search": "ancient golem ancient golem",
+      "file": "/creatures/records/colossal-golem-8a6e89f838dc.json"
+    },
+    {
+      "slug": "colossal-skeleton",
+      "name": "Ancient Skeleton",
+      "category": "world",
+      "location": null,
+      "search": "ancient skeleton ancient skeleton",
+      "file": "/creatures/records/colossal-skeleton-6360968174e6.json"
+    },
+    {
+      "slug": "colossal-spider",
+      "name": "Ancient Spider",
+      "category": "world",
+      "location": null,
+      "search": "ancient spider ancient spider",
+      "file": "/creatures/records/colossal-spider-14f7bb4cda15.json"
+    },
+    {
+      "slug": "colossal-zombie",
+      "name": "Ancient Zombie",
+      "category": "world",
+      "location": null,
+      "search": "ancient zombie ancient zombie",
+      "file": "/creatures/records/colossal-zombie-cc2fafc1fddc.json"
+    },
+    {
+      "slug": "orc-warrior",
+      "name": "Orc Warrior",
+      "category": "world",
+      "location": null,
+      "search": "orc warrior orc warrior grunt champion warchief dry hills mos'arathim desert sand cave",
+      "file": "/creatures/records/orc-warrior-c841caac6a06.json"
+    },
+    {
+      "slug": "orc-hunter",
+      "name": "Orc Hunter",
+      "category": "world",
+      "location": null,
+      "search": "orc hunter orc hunter boulderer stone slinger mos'arathim desert sand cave",
+      "file": "/creatures/records/orc-hunter-7c3010f70381.json"
+    },
+    {
+      "slug": "alien-melee",
+      "name": "Alien Grunt",
+      "category": "world",
+      "location": null,
+      "search": "alien grunt alien grunt astral commander glitch demon distorted timeline  deep space event horizon distorted horizon 1 distorted horizon 2 distorted horizon 3",
+      "file": "/creatures/records/alien-melee-d6e304042ea6.json"
+    },
+    {
+      "slug": "alien-ranged",
+      "name": "Alien Trooper",
+      "category": "world",
+      "location": null,
+      "search": "alien trooper alien trooper vector marksman triggershot distorted timeline  deep space event horizon distorted horizon 1 distorted horizon 2 distorted horizon 3",
+      "file": "/creatures/records/alien-ranged-3fe09e510264.json"
+    },
+    {
+      "slug": "alien-devourer",
+      "name": "Unknown Beast",
+      "category": "world",
+      "location": null,
+      "search": "unknown beast unknown beast fatal experiment spectral malfunction event horizon distorted horizon 1 distorted horizon 2",
+      "file": "/creatures/records/alien-devourer-71e419822a6f.json"
+    },
+    {
+      "slug": "skeletal-trooper",
+      "name": "Skeletal Trooper",
+      "category": "world",
+      "location": null,
+      "search": "skeletal trooper skeletal trooper bone commander skeletal warlord hellspawn station  prison dungeon steam train arm storage ancient colosseum",
+      "file": "/creatures/records/skeletal-trooper-094f39f8bde9.json"
+    },
+    {
+      "slug": "skeletal-marksman",
+      "name": "Skeletal Marksman",
+      "category": "world",
+      "location": null,
+      "search": "skeletal marksman skeletal marksman guerilla ambusher bone maker hellspawn station  prison dungeon steam train seventh layer of hell arm storage ancient colosseum fallen inoya",
+      "file": "/creatures/records/skeletal-marksman-2cb64ed262e4.json"
+    },
+    {
+      "slug": "grave-ghoul",
+      "name": "Grave Ghoul",
+      "category": "world",
+      "location": null,
+      "search": "grave ghoul grave ghoul lurking horror frenzied anomaly highland graveyard unmarked grave",
+      "file": "/creatures/records/grave-ghoul-c22a9c165606.json"
+    },
+    {
+      "slug": "essence-of-agony",
+      "name": "Essence of Agony",
+      "category": "world",
+      "location": null,
+      "search": "essence of agony essence of agony agonizing anomaly burdened agony hollowing sanctuary sacrilegious chapel unmarked grave",
+      "file": "/creatures/records/essence-of-agony-fed7b5d4e02a.json"
+    },
+    {
+      "slug": "disturbed-spirit",
+      "name": "Disturbed Soul",
+      "category": "world",
+      "location": null,
+      "search": "disturbed soul disturbed soul distorted anima fractured ego corrupted cave lair of corruption maze of shadows chamber of burning souls altar of lost souls devil's hole",
+      "file": "/creatures/records/disturbed-spirit-ca92251dbcf7.json"
+    },
+    {
+      "slug": "chilling-marksman",
+      "name": "Chilling Marksman",
+      "category": "world",
+      "location": null,
+      "search": "chilling marksman chilling marksman frosted sharpshooter white death caravan valley  crystal village arctic tundra chilling cavern freezing steppes chamber of ice ancient city level 1 ancient city level 2 ancient city level 3 frozen cellar level 1 frozen cellar level 2",
+      "file": "/creatures/records/chilling-marksman-7b6f58e2cca9.json"
+    },
+    {
+      "slug": "ogre-warrior",
+      "name": "Ogre Warrior",
+      "category": "world",
+      "location": null,
+      "search": "ogre warrior ogre warrior ogre champion battle warchief ancient colosseum",
+      "file": "/creatures/records/ogre-warrior-1d34383256c3.json"
+    },
+    {
+      "slug": "amazon-spear",
+      "name": "Amazon Warrior",
+      "category": "world",
+      "location": null,
+      "search": "amazon warrior amazon warrior tribal commander amazon matriarch great marsh wormhole",
+      "file": "/creatures/records/amazon-spear-47260b184e45.json"
+    },
+    {
+      "slug": "unholy-monstrosity",
+      "name": "Unholy Monstrosity",
+      "category": "world",
+      "location": null,
+      "search": "unholy monstrosity unholy monstrosity malevolent anomaly satanic mutation highland graveyard hellspawn station  prison dungeon mists of chaos fallen inoya",
+      "file": "/creatures/records/unholy-monstrosity-2b24adc85535.json"
+    },
+    {
+      "slug": "crypt-skeleton",
+      "name": "Fallen Trooper",
+      "category": "world",
+      "location": null,
+      "search": "fallen trooper fallen trooper moldy champion fallen legion northern post old mausoleum king’s tomb king's throne black tower",
+      "file": "/creatures/records/crypt-skeleton-e61ea3857656.json"
+    },
+    {
+      "slug": "crypt-archer",
+      "name": "Fallen Archer",
+      "category": "world",
+      "location": null,
+      "search": "fallen archer fallen archer moldy legion decaying marksman northern post old mausoleum king’s tomb king's throne black tower",
+      "file": "/creatures/records/crypt-archer-f66bb91771df.json"
+    },
+    {
+      "slug": "crypt-doll",
+      "name": "Crypt Doll",
+      "category": "world",
+      "location": null,
+      "search": "crypt doll crypt doll devil child demon's offspring king’s tomb black tower",
+      "file": "/creatures/records/crypt-doll-2fc6348073e8.json"
+    },
+    {
+      "slug": "scavenger",
+      "name": "Cave Scavenger",
+      "category": "world",
+      "location": null,
+      "search": "cave scavenger cave scavenger mine lurker swamp lurker hiker´s end  old mining village",
+      "file": "/creatures/records/scavenger-cedd6a38a364.json"
+    },
+    {
+      "slug": "cyclops-ghost",
+      "name": "Ghostly Brute",
+      "category": "world",
+      "location": null,
+      "search": "ghostly brute ghostly brute haunting giant spectral colossus cauflax market  corrupted oasis",
+      "file": "/creatures/records/cyclops-ghost-327fbcf7d854.json"
+    },
+    {
+      "slug": "zombie-pyramid",
+      "name": "Rotten Corpse",
+      "category": "world",
+      "location": null,
+      "search": "rotten corpse rotten corpse tomb horror rotting nightmare pyramid level 2 sewers of mos’arathim ra’s labyrinth tomb of ancients tomb of the fallen king",
+      "file": "/creatures/records/zombie-pyramid-f020184e6f8d.json"
+    },
+    {
+      "slug": "royal-skeleton",
+      "name": "Skeleton Knight",
+      "category": "world",
+      "location": null,
+      "search": "skeleton knight skeleton knight royal guard undead commander",
+      "file": "/creatures/records/royal-skeleton-db5cffb64553.json"
+    },
+    {
+      "slug": "legion-skeleton",
+      "name": "Skeletal Legion",
+      "category": "world",
+      "location": null,
+      "search": "skeletal legion skeletal legion rattling bonelord hulking skullster outskirts of inoya witching river fields of battle village of lamia woodhill plains king's garden river of inoya old tarethiel vanaheim",
+      "file": "/creatures/records/legion-skeleton-0f9c75a6bead.json"
+    },
+    {
+      "slug": "royal-archer",
+      "name": "Rattling Archer",
+      "category": "world",
+      "location": null,
+      "search": "rattling archer rattling archer royal arrowskull king's skullguard",
+      "file": "/creatures/records/royal-archer-e15fbb76277e.json"
+    },
+    {
+      "slug": "legion-archer",
+      "name": "Legion Marksman",
+      "category": "world",
+      "location": null,
+      "search": "legion marksman legion marksman hulking archer bony deadshot outskirts of inoya witching river fields of battle village of lamia woodhill plains king's garden vanaheim",
+      "file": "/creatures/records/legion-archer-7aa5231c9a9d.json"
+    },
+    {
+      "slug": "fears-essence",
+      "name": "Fear’s Essence",
+      "category": "world",
+      "location": null,
+      "search": "fear’s essence fear’s essence spectral harbringer reaper of seven sins reaper's breach shadow realm",
+      "file": "/creatures/records/fears-essence-c62cad80a1a6.json"
+    },
+    {
+      "slug": "lurking-shadow",
+      "name": "Lurking Shadow",
+      "category": "world",
+      "location": null,
+      "search": "lurking shadow lurking shadow eclipse assassin shade of eternal night reaper's breach shadow realm",
+      "file": "/creatures/records/lurking-shadow-b0bcfeac83ac.json"
+    },
+    {
+      "slug": "mask-of-terror",
+      "name": "Mask of Terror",
+      "category": "world",
+      "location": null,
+      "search": "mask of terror mask of terror visage of the damned cursed veil of torment reaper's breach shadow realm",
+      "file": "/creatures/records/mask-of-terror-d94b6f1030eb.json"
+    },
+    {
+      "slug": "shadow-legion",
+      "name": "Shadow Legion",
+      "category": "world",
+      "location": null,
+      "search": "shadow legion shadow legion dreadlord of shadows souldbound shade reaper's breach shadow realm",
+      "file": "/creatures/records/shadow-legion-f30859a1993f.json"
+    },
+    {
+      "slug": "lurking-horror",
+      "name": "Lurking Horror",
+      "category": "world",
+      "location": null,
+      "search": "lurking horror lurking horror cauflax horror rotting tombwalker valley of cauflax wormhole",
+      "file": "/creatures/records/lurking-horror-ea227d542eba.json"
+    },
+    {
+      "slug": "rotting-mummy",
+      "name": "Rotting Mummy",
+      "category": "world",
+      "location": null,
+      "search": "rotting mummy rotting mummy decaying offspring defiling carcass valley of cauflax wormhole",
+      "file": "/creatures/records/rotting-mummy-72d14c3e9cd4.json"
+    },
+    {
+      "slug": "tomb-warrior",
+      "name": "Tomb Warrior",
+      "category": "world",
+      "location": null,
+      "search": "tomb warrior tomb warrior cauflax guard cursed commander valley of cauflax wormhole",
+      "file": "/creatures/records/tomb-warrior-ce0026fe9af4.json"
+    },
+    {
+      "slug": "scorching-archer",
+      "name": "Scorching Archer",
+      "category": "world",
+      "location": null,
+      "search": "scorching archer scorching archer fleshmelter spellburned marksman valley of cauflax wormhole",
+      "file": "/creatures/records/scorching-archer-5827f388fa2b.json"
+    },
+    {
+      "slug": "dark-knight",
+      "name": "Dark Knight",
+      "category": "world",
+      "location": null,
+      "search": "dark knight dark knight unholy templar reanimated knight chapel catacomb’s wormhole",
+      "file": "/creatures/records/dark-knight-8803ef22fd64.json"
+    },
+    {
+      "slug": "fears-embodiment",
+      "name": "Fear’s Embodiment",
+      "category": "world",
+      "location": null,
+      "search": "fear’s embodiment fear’s embodiment faces of destruction doomsday prophecy",
+      "file": "/creatures/records/fears-embodiment-cd231d68ebba.json"
+    },
+    {
+      "slug": "pagan-preacher",
+      "name": "Pagan Preacher",
+      "category": "world",
+      "location": null,
+      "search": "pagan preacher pagan preacher exalted priest fallen saint",
+      "file": "/creatures/records/pagan-preacher-6ef6a2aef19e.json"
+    },
+    {
+      "slug": "sacrilegious-legion",
+      "name": "Sacrilegious Legion",
+      "category": "world",
+      "location": null,
+      "search": "sacrilegious legion sacrilegious legion keeper of blasphemy brimstone commander",
+      "file": "/creatures/records/sacrilegious-legion-57149fb0b666.json"
+    },
+    {
+      "slug": "spider-critter",
+      "name": "Spider Critter",
+      "category": "world",
+      "location": null,
+      "search": "spider critter spider critter spider critter spider critter",
+      "file": "/creatures/records/spider-critter-d771ac055a58.json"
+    },
+    {
+      "slug": "helheim-spider",
+      "name": "Helheim Arachnid",
+      "category": "world",
+      "location": null,
+      "search": "helheim arachnid helheim arachnid helheim arachnid helheim arachnid",
+      "file": "/creatures/records/helheim-spider-8b32e4fbb677.json"
+    },
+    {
+      "slug": "corrupted-archer",
+      "name": "Corrupted Archer",
+      "category": "world",
+      "location": null,
+      "search": "corrupted archer corrupted archer freljord marksman frostbitten sharpshooter camp of souls helheim ruins of helheim helheim channel vault of ancients throne of helheim river gjöll asgard gladsheim halls 1 gladsheim halls 2 muspelheim niflheim rift of fortune",
+      "file": "/creatures/records/corrupted-archer-7dbe78822eff.json"
+    },
+    {
+      "slug": "tribal-doll",
+      "name": "Tribal Doll",
+      "category": "world",
+      "location": null,
+      "search": "tribal doll tribal doll voodoo lurker tikitaki great marsh wormhole",
+      "file": "/creatures/records/tribal-doll-13bda842e83f.json"
+    },
+    {
+      "slug": "harpy",
+      "name": "Harpy",
+      "category": "world",
+      "location": null,
+      "search": "harpy harpy wind gusher furyclaw great marsh wormhole",
+      "file": "/creatures/records/harpy-52bea025a378.json"
+    },
+    {
+      "slug": "mech-pirate",
+      "name": "Mech Pirate",
+      "category": "world",
+      "location": null,
+      "search": "mech pirate mech pirate dreadnaut ironcut trooper sky’s reach wormhole",
+      "file": "/creatures/records/mech-pirate-33deb22d7aff.json"
+    },
+    {
+      "slug": "mech-gunner",
+      "name": "Flintlock Gunner",
+      "category": "world",
+      "location": null,
+      "search": "flintlock gunner flintlock gunner blazecannoner gunsworn sharpshooter sky’s reach wormhole",
+      "file": "/creatures/records/mech-gunner-24f28b730585.json"
+    },
+    {
+      "slug": "valhalla-bear",
+      "name": "Grizzlepaw Bruin",
+      "category": "world",
+      "location": null,
+      "search": "grizzlepaw bruin grizzlepaw bruin freljord usant raging ursus forest of the slain forgotten caves plains of ida",
+      "file": "/creatures/records/valhalla-bear-3d108db85a2c.json"
+    },
+    {
+      "slug": "crab",
+      "name": "Clawlasher",
+      "category": "world",
+      "location": null,
+      "search": "clawlasher clawlasher coralcrusher razorshell coastal shoreline  fuji coast sea of karponia temple of zamjo temple of fishes underground trench the sacred temple emperor’s chamber underground garden",
+      "file": "/creatures/records/crab-52b07ec399b0.json"
+    },
+    {
+      "slug": "valhalla-wraith",
+      "name": "Wraith",
+      "category": "world",
+      "location": null,
+      "search": "wraith wraith helheim corruptor soulfeaster camp of souls ruins of helheim helheim channel vault of ancients throne of helheim",
+      "file": "/creatures/records/valhalla-wraith-8e16913ecb11.json"
+    },
+    {
+      "slug": "bog-mushroom",
+      "name": "Shroomer",
+      "category": "world",
+      "location": null,
+      "search": "shroomer shroomer big cap colossal shroom the witch bog",
+      "file": "/creatures/records/bog-mushroom-0b592798f744.json"
+    },
+    {
+      "slug": "cursed-elf",
+      "name": "Cursed Elf",
+      "category": "world",
+      "location": null,
+      "search": "cursed elf cursed elf possessed elf damned elf north pole santa's hut",
+      "file": "/creatures/records/cursed-elf-1b291f2accc8.json"
+    },
+    {
+      "slug": "bog-naga-warrior",
+      "name": "Forest Naga",
+      "category": "world",
+      "location": null,
+      "search": "forest naga forest naga bogplain reptile molding slither the witch bog",
+      "file": "/creatures/records/bog-naga-warrior-298a45f44a76.json"
+    },
+    {
+      "slug": "bog-parasect",
+      "name": "Shrub Parasite",
+      "category": "world",
+      "location": null,
+      "search": "shrub parasite shrub parasite toxicating anomaly leeching monstrosity the witch bog",
+      "file": "/creatures/records/bog-parasect-754e7d0e5c54.json"
+    },
+    {
+      "slug": "bell-crawler",
+      "name": "Bell Crawler",
+      "category": "world",
+      "location": null,
+      "search": "bell crawler bell crawler timefueled crab timelost lobster shattered realm fallen realm wormhole",
+      "file": "/creatures/records/bell-crawler-a30025047a01.json"
+    },
+    {
+      "slug": "fallen-legion",
+      "name": "Fallen Legion",
+      "category": "world",
+      "location": null,
+      "search": "fallen legion fallen legion commander of time void general shattered realm fallen realm wormhole",
+      "file": "/creatures/records/fallen-legion-db23e4c4a8d3.json"
+    },
+    {
+      "slug": "fallen-mage",
+      "name": "Tickering Magi",
+      "category": "world",
+      "location": null,
+      "search": "tickering magi tickering magi timeless mystic horizon seeker shattered realm fallen realm wormhole",
+      "file": "/creatures/records/fallen-mage-44a712ca1946.json"
+    },
+    {
+      "slug": "abyssal-hatred-cultist",
+      "name": "Abyssal Hatred Cultist",
+      "category": "world",
+      "location": null,
+      "search": "abyssal hatred cultist abyssal hatred cultist malevolent zealot high cultist of the abyss chamber of existence the circle of hatred",
+      "file": "/creatures/records/abyssal-hatred-cultist-66b30bbb63b4.json"
+    },
+    {
+      "slug": "hatredclad-rattlebone",
+      "name": "Hatredclad Rattlebone Warrior",
+      "category": "world",
+      "location": null,
+      "search": "hatredclad rattlebone warrior hatredclad rattlebone warrior dreadforged warrior of malice vengeance legionnaire chamber of existence the circle of hatred",
+      "file": "/creatures/records/hatredclad-rattlebone-4db53ae60932.json"
+    },
+    {
+      "slug": "shadowborne-wraith",
+      "name": "Shadowborne Wraith of Hatred",
+      "category": "world",
+      "location": null,
+      "search": "shadowborne wraith of hatred shadowborne wraith of hatred umbral specter harbringer of wrath chamber of existence the circle of hatred",
+      "file": "/creatures/records/shadowborne-wraith-e595f63d76d4.json"
+    },
+    {
+      "slug": "vengeful-sentinel",
+      "name": "Vengeful Sentinel",
+      "category": "world",
+      "location": null,
+      "search": "vengeful sentinel vengeful sentinel horned guardian hateforged colossus chamber of existence the circle of hatred",
+      "file": "/creatures/records/vengeful-sentinel-59331edd5073.json"
+    },
+    {
+      "slug": "wrathshot-bone-marksman",
+      "name": "Wrathshot Bone Marksman",
+      "category": "world",
+      "location": null,
+      "search": "wrathshot bone marksman wrathshot bone marksman cursed spine archer necrostorm arbalest chamber of existence the circle of hatred",
+      "file": "/creatures/records/wrathshot-bone-marksman-0fcad86c54a1.json"
+    },
+    {
+      "slug": "evil-steve",
+      "name": "Stickman Steve",
+      "category": "world",
+      "location": null,
+      "search": "stickman steve stickman steve stickman steve senior ancient stickman steve",
+      "file": "/creatures/records/evil-steve-4eb454978808.json"
+    },
+    {
+      "slug": "aztec-ranged-skeleton",
+      "name": "Aztec Ranger",
+      "category": "world",
+      "location": null,
+      "search": "aztec ranger aztec ranger aztec ranger tribal ambusher abyss jungle volcanic island aztec pyramid",
+      "file": "/creatures/records/aztec-ranged-skeleton-d34e070e0d4e.json"
+    },
+    {
+      "slug": "aztec-giant",
+      "name": "Bouldering Colossus",
+      "category": "world",
+      "location": null,
+      "search": "bouldering colossus bouldering colossus bouldering colossus moss covered golem aztec pyramid",
+      "file": "/creatures/records/aztec-giant-80550c5467f1.json"
+    },
+    {
+      "slug": "aztec-stone-idol",
+      "name": "Tribal Idol",
+      "category": "world",
+      "location": null,
+      "search": "tribal idol tribal idol tribal idol tribal idol volcanic island aztec pyramid",
+      "file": "/creatures/records/aztec-stone-idol-c1ae0667c194.json"
+    },
+    {
+      "slug": "aztec-sword-skeleton",
+      "name": "Aztec Swordsman",
+      "category": "world",
+      "location": null,
+      "search": "aztec swordsman aztec swordsman aztec swordsman ancient slasher abyss jungle volcanic island aztec pyramid",
+      "file": "/creatures/records/aztec-sword-skeleton-537f4df62afa.json"
+    },
+    {
+      "slug": "boreal-bell-crawler",
+      "name": "Boreal Crawler",
+      "category": "world",
+      "location": null,
+      "search": "boreal crawler boreal crawler boreal crawler pincer shell boreal island permafrozen chamber boreal cave",
+      "file": "/creatures/records/boreal-bell-crawler-f5b13e8166d4.json"
+    },
+    {
+      "slug": "dagon",
+      "name": "Dagon",
+      "category": "world",
+      "location": null,
+      "search": "dagon dagon dagon dagon abyss realm ether´s edge belly of the beast",
+      "file": "/creatures/records/dagon-2466ac6eca4f.json"
+    },
+    {
+      "slug": "demon-chimp",
+      "name": "Demon Chimpanzee",
+      "category": "world",
+      "location": null,
+      "search": "demon chimpanzee demon chimpanzee demon chimpanzee raging chimpspawn abyss jungle",
+      "file": "/creatures/records/demon-chimp-e5a7bf412002.json"
+    },
+    {
+      "slug": "demon-dagger-skeleton",
+      "name": "Demonic Doll",
+      "category": "world",
+      "location": null,
+      "search": "demonic doll demonic doll demonic doll possessed stabber aztec pyramid cult hideout",
+      "file": "/creatures/records/demon-dagger-skeleton-2a74aa3fab41.json"
+    },
+    {
+      "slug": "demon-gorilla",
+      "name": "Demon Gorilla",
+      "category": "world",
+      "location": null,
+      "search": "demon gorilla demon gorilla demon gorilla hulking jungle beast abyss jungle",
+      "file": "/creatures/records/demon-gorilla-62e44361edad.json"
+    },
+    {
+      "slug": "demon-yeti",
+      "name": "Demon Yeti",
+      "category": "world",
+      "location": null,
+      "search": "demon yeti demon yeti demon yeti boreal carnage boreal island permafrozen chamber boreal cave",
+      "file": "/creatures/records/demon-yeti-dfc5319719ba.json"
+    },
+    {
+      "slug": "jungle-spider",
+      "name": "Jungle Spider",
+      "category": "world",
+      "location": null,
+      "search": "jungle spider jungle spider jungle spider mosscovered arachnid abyss jungle aztec pyramid skull cave",
+      "file": "/creatures/records/jungle-spider-a6c97fc633e3.json"
+    },
+    {
+      "slug": "jungle-wasp",
+      "name": "Jungle Wasp",
+      "category": "world",
+      "location": null,
+      "search": "jungle wasp jungle wasp jungle wasp creeping stinger wasp´s nest",
+      "file": "/creatures/records/jungle-wasp-3db725a23993.json"
+    },
+    {
+      "slug": "reef-crab",
+      "name": "Reef Crab",
+      "category": "world",
+      "location": null,
+      "search": "reef crab reef crab reef crab enraged reef crab shipwreck cove tormented reef",
+      "file": "/creatures/records/reef-crab-29348573dcdb.json"
+    },
+    {
+      "slug": "reef-crab-giant",
+      "name": "Reef Colossus",
+      "category": "world",
+      "location": null,
+      "search": "reef colossus reef colossus reef colossus giantshell crab shipwreck cove tormented reef",
+      "file": "/creatures/records/reef-crab-giant-8a64ff79a09d.json"
+    },
+    {
+      "slug": "squid-man",
+      "name": "Squidman",
+      "category": "world",
+      "location": null,
+      "search": "squidman squidman squidman squidman abyss realm ether´s edge",
+      "file": "/creatures/records/squid-man-bb42ae90c5c5.json"
+    },
+    {
+      "slug": "ranged-ghost-pirate",
+      "name": "Ghostly Buccaneer",
+      "category": "world",
+      "location": null,
+      "search": "ghostly buccaneer ghostly buccaneer ghostly buccaneer reefwalker captain shipwreck cove ebontharn shores secret chamber skull cave",
+      "file": "/creatures/records/ranged-ghost-pirate-5dbefb5bfa8d.json"
+    },
+    {
+      "slug": "sword-ghost-pirate",
+      "name": "Ghostly Pirate",
+      "category": "world",
+      "location": null,
+      "search": "ghostly pirate ghostly pirate ghostly pirate haunted pillager shipwreck cove ebontharn shores secret chamber skull cave",
+      "file": "/creatures/records/sword-ghost-pirate-23543f2ea773.json"
+    },
+    {
+      "slug": "giant-ghost-pirate",
+      "name": "Ghostbeard",
+      "category": "world",
+      "location": null,
+      "search": "ghostbeard ghostbeard ghostbeard ghostbeard shipwreck cove skull cave",
+      "file": "/creatures/records/giant-ghost-pirate-aca0c4ad995f.json"
+    },
+    {
+      "slug": "tentacle-zombie",
+      "name": "Reef Lurker",
+      "category": "world",
+      "location": null,
+      "search": "reef lurker reef lurker reef lurker reef lurker",
+      "file": "/creatures/records/tentacle-zombie-8823154e25eb.json"
+    },
+    {
+      "slug": "tentacle-zombie-acid",
+      "name": "Reef Lurker",
+      "category": "world",
+      "location": null,
+      "search": "reef lurker reef lurker reef lurker lurking acidspitter tormented reef",
+      "file": "/creatures/records/tentacle-zombie-acid-84b13eb0b01b.json"
+    },
+    {
+      "slug": "tentacle-zombie-giant",
+      "name": "Reef Zombie",
+      "category": "world",
+      "location": null,
+      "search": "reef zombie reef zombie reef zombie reef zombie colossus tormented reef",
+      "file": "/creatures/records/tentacle-zombie-giant-94a7dd88bab1.json"
+    },
+    {
+      "slug": "blood-abomination",
+      "name": "Blood Abomination",
+      "category": "world",
+      "location": null,
+      "search": "blood abomination blood abomination blood abomination bloating monstrosity belly of the beast",
+      "file": "/creatures/records/blood-abomination-bd49257277ff.json"
+    },
+    {
+      "slug": "cultist-worshipper",
+      "name": "Cultist Fanatic",
+      "category": "world",
+      "location": null,
+      "search": "cultist fanatic cultist fanatic cultist fanatic cultist fanatic",
+      "file": "/creatures/records/cultist-worshipper-8f7b6fe5bc33.json"
+    },
+    {
+      "slug": "tentacle-zombie-blood",
+      "name": "Flesh Walker",
+      "category": "world",
+      "location": null,
+      "search": "flesh walker flesh walker flesh walker rotten flesh cult hideout belly of the beast",
+      "file": "/creatures/records/tentacle-zombie-blood-f23be28e689c.json"
+    },
+    {
+      "slug": "magma-slime",
+      "name": "Magma Slime",
+      "category": "world",
+      "location": null,
+      "search": "magma slime magma slime magma slime molten ooze volcanic island",
+      "file": "/creatures/records/magma-slime-154d592c33df.json"
+    },
+    {
+      "slug": "commander-albert",
+      "name": "Commander Albert",
+      "category": "special",
+      "location": null,
+      "search": "commander albert commander albert",
+      "file": "/creatures/records/commander-albert-3ca43b184af5.json"
+    },
+    {
+      "slug": "forgemaster",
+      "name": "Forge Master",
+      "category": "special",
+      "location": null,
+      "search": "forge master forge master",
+      "file": "/creatures/records/forgemaster-8017d58a2202.json"
+    },
+    {
+      "slug": "arch-wizard-antero",
+      "name": "Arch Wizard Antero",
+      "category": "special",
+      "location": null,
+      "search": "arch wizard antero arch wizard antero",
+      "file": "/creatures/records/arch-wizard-antero-ef238ef2b5c7.json"
+    },
+    {
+      "slug": "forsaken-harvester",
+      "name": "Forsaken Harvester",
+      "category": "special",
+      "location": null,
+      "search": "forsaken harvester forsaken harvester",
+      "file": "/creatures/records/forsaken-harvester-722acc639887.json"
+    },
+    {
+      "slug": "colossal-pumpkin",
+      "name": "Colossal Pumpkin",
+      "category": "special",
+      "location": null,
+      "search": "colossal pumpkin colossal pumpkin",
+      "file": "/creatures/records/colossal-pumpkin-011b345a3672.json"
+    },
+    {
+      "slug": "undead-miner",
+      "name": "Undead Miner",
+      "category": "special",
+      "location": null,
+      "search": "undead miner undead miner",
+      "file": "/creatures/records/undead-miner-bbfed7eaf86a.json"
+    },
+    {
+      "slug": "nugget",
+      "name": "Nugget",
+      "category": "special",
+      "location": null,
+      "search": "nugget nugget",
+      "file": "/creatures/records/nugget-f10430725f98.json"
+    },
+    {
+      "slug": "am-shaegar",
+      "name": "Amshaegar",
+      "category": "special",
+      "location": null,
+      "search": "amshaegar amshaegar",
+      "file": "/creatures/records/am-shaegar-54ce641e9bd6.json"
+    },
+    {
+      "slug": "damien-chain",
+      "name": "Soul Chain",
+      "category": "special",
+      "location": null,
+      "search": "soul chain soul chain",
+      "file": "/creatures/records/damien-chain-4f0d33deef42.json"
+    },
+    {
+      "slug": "yoshi-miyamoto",
+      "name": "Yoshi Miyamoto",
+      "category": "special",
+      "location": null,
+      "search": "yoshi miyamoto yoshi miyamoto",
+      "file": "/creatures/records/yoshi-miyamoto-139222b09615.json"
+    },
+    {
+      "slug": "scorchwood",
+      "name": "Scorchwood",
+      "category": "special",
+      "location": null,
+      "search": "scorchwood scorchwood",
+      "file": "/creatures/records/scorchwood-22379a8bd2a6.json"
+    },
+    {
+      "slug": "fragrat",
+      "name": "Fragrat",
+      "category": "special",
+      "location": {
+        "name": "Rat Den"
+      },
+      "search": "fragrat fragrat rat den rat den",
+      "file": "/creatures/records/fragrat-fa1083004eb4.json"
+    },
+    {
+      "slug": "evil-pumpkin",
+      "name": "Malformed Pumpkin",
+      "category": "special",
+      "location": null,
+      "search": "malformed pumpkin malformed pumpkin",
+      "file": "/creatures/records/evil-pumpkin-e035feb1671e.json"
+    },
+    {
+      "slug": "collector-of-bones",
+      "name": "Collector of Bones",
+      "category": "special",
+      "location": null,
+      "search": "collector of bones collector of bones",
+      "file": "/creatures/records/collector-of-bones-dc40b2648981.json"
+    },
+    {
+      "slug": "crusher",
+      "name": "Crusher",
+      "category": "special",
+      "location": null,
+      "search": "crusher crusher",
+      "file": "/creatures/records/crusher-44e5e0cf56ad.json"
+    },
+    {
+      "slug": "trasher",
+      "name": "Trasher",
+      "category": "special",
+      "location": null,
+      "search": "trasher trasher",
+      "file": "/creatures/records/trasher-ef59514f6b2b.json"
+    },
+    {
+      "slug": "king-tuna",
+      "name": "King Tuna",
+      "category": "special",
+      "location": null,
+      "search": "king tuna king tuna",
+      "file": "/creatures/records/king-tuna-5a823929177e.json"
+    },
+    {
+      "slug": "carnage",
+      "name": "Carnage",
+      "category": "special",
+      "location": null,
+      "search": "carnage carnage",
+      "file": "/creatures/records/carnage-3d5bf26d347a.json"
+    },
+    {
+      "slug": "quest-squishy",
+      "name": "Squishy the Delicious",
+      "category": "special",
+      "location": null,
+      "search": "squishy the delicious squishy the delicious",
+      "file": "/creatures/records/quest-squishy-ab6c8dba8817.json"
+    },
+    {
+      "slug": "quest-xor",
+      "name": "Xor",
+      "category": "special",
+      "location": null,
+      "search": "xor xor",
+      "file": "/creatures/records/quest-xor-909747eef4ae.json"
+    },
+    {
+      "slug": "quest-njal",
+      "name": "Njal",
+      "category": "special",
+      "location": null,
+      "search": "njal njal",
+      "file": "/creatures/records/quest-njal-35b225c1f1b4.json"
+    },
+    {
+      "slug": "odin-pillar",
+      "name": "Corrupted Beacon",
+      "category": "special",
+      "location": null,
+      "search": "corrupted beacon corrupted beacon repel wave",
+      "file": "/creatures/records/odin-pillar-623d0ddc2ede.json"
+    },
+    {
+      "slug": "mimic",
+      "name": "Mimic",
+      "category": "special",
+      "location": null,
+      "search": "mimic mimic",
+      "file": "/creatures/records/mimic-8e3a3fb55c92.json"
+    },
+    {
+      "slug": "huginn",
+      "name": "Huginn",
+      "category": "special",
+      "location": null,
+      "search": "huginn huginn fearful thoughts",
+      "file": "/creatures/records/huginn-1f68603fa6bf.json"
+    },
+    {
+      "slug": "muninn",
+      "name": "Muninn",
+      "category": "special",
+      "location": null,
+      "search": "muninn muninn corrupted memories",
+      "file": "/creatures/records/muninn-833878516eb5.json"
+    },
+    {
+      "slug": "shadow-lantern",
+      "name": "Shadow Lantern",
+      "category": "special",
+      "location": null,
+      "search": "shadow lantern shadow lantern",
+      "file": "/creatures/records/shadow-lantern-8389420cd0af.json"
+    },
+    {
+      "slug": "mevius-ball",
+      "name": "Chain of Mevius",
+      "category": "special",
+      "location": null,
+      "search": "chain of mevius chain of mevius",
+      "file": "/creatures/records/mevius-ball-1348ea6b760d.json"
+    },
+    {
+      "slug": "wandering-soul",
+      "name": "Wandering Soul",
+      "category": "special",
+      "location": null,
+      "search": "wandering soul wandering soul",
+      "file": "/creatures/records/wandering-soul-31c9b273c79e.json"
+    },
+    {
+      "slug": "akora-wrapping",
+      "name": "Demonic Wrapping",
+      "category": "special",
+      "location": null,
+      "search": "demonic wrapping demonic wrapping",
+      "file": "/creatures/records/akora-wrapping-68de180ab47e.json"
+    },
+    {
+      "slug": "agony-of-akora",
+      "name": "Agony of Akora",
+      "category": "special",
+      "location": null,
+      "search": "agony of akora agony of akora",
+      "file": "/creatures/records/agony-of-akora-898a1372e579.json"
+    },
+    {
+      "slug": "black-stone-defender",
+      "name": "Blackstone Defender",
+      "category": "special",
+      "location": null,
+      "search": "blackstone defender blackstone defender",
+      "file": "/creatures/records/black-stone-defender-f78c9d44805b.json"
+    },
+    {
+      "slug": "sir-ungar",
+      "name": "Sir Ungar",
+      "category": "special",
+      "location": null,
+      "search": "sir ungar sir ungar",
+      "file": "/creatures/records/sir-ungar-4a07fdcb541a.json"
+    },
+    {
+      "slug": "arch-bishop-simon",
+      "name": "Arch Bishop Simon",
+      "category": "special",
+      "location": null,
+      "search": "arch bishop simon arch bishop simon",
+      "file": "/creatures/records/arch-bishop-simon-36230f7d098b.json"
+    },
+    {
+      "slug": "undead-raider",
+      "name": "Undead Raider",
+      "category": "special",
+      "location": null,
+      "search": "undead raider undead raider",
+      "file": "/creatures/records/undead-raider-17d449f3b4d2.json"
+    },
+    {
+      "slug": "man-crusher",
+      "name": "MANCRUSHER",
+      "category": "special",
+      "location": null,
+      "search": "mancrusher mancrusher",
+      "file": "/creatures/records/man-crusher-0b9ec44d3197.json"
+    },
+    {
+      "slug": "garden-colossus",
+      "name": "Garden Colossus",
+      "category": "special",
+      "location": null,
+      "search": "garden colossus garden colossus",
+      "file": "/creatures/records/garden-colossus-99e08efb5d25.json"
+    },
+    {
+      "slug": "helgrom-brute",
+      "name": "Helgrom Brute",
+      "category": "special",
+      "location": null,
+      "search": "helgrom brute helgrom brute",
+      "file": "/creatures/records/helgrom-brute-3131919ba550.json"
+    },
+    {
+      "slug": "helgrom-chieftain",
+      "name": "Helgrom Chieftain",
+      "category": "special",
+      "location": null,
+      "search": "helgrom chieftain helgrom chieftain",
+      "file": "/creatures/records/helgrom-chieftain-211b0e3ab5c2.json"
+    },
+    {
+      "slug": "soul-pillar",
+      "name": "Soul Pillar",
+      "category": "special",
+      "location": null,
+      "search": "soul pillar soul pillar",
+      "file": "/creatures/records/soul-pillar-4f8103769b42.json"
+    },
+    {
+      "slug": "blood-of-ra",
+      "name": "Amun Ra´s Blood",
+      "category": "special",
+      "location": null,
+      "search": "amun ra´s blood amun ra´s blood",
+      "file": "/creatures/records/blood-of-ra-4b894eb99234.json"
+    },
+    {
+      "slug": "shade-of-sobek",
+      "name": "Shade of Sobek",
+      "category": "special",
+      "location": null,
+      "search": "shade of sobek shade of sobek",
+      "file": "/creatures/records/shade-of-sobek-4903ca7d547f.json"
+    },
+    {
+      "slug": "shade-of-thoth",
+      "name": "Shade of Thoth",
+      "category": "special",
+      "location": null,
+      "search": "shade of thoth shade of thoth",
+      "file": "/creatures/records/shade-of-thoth-77ec9f03582c.json"
+    },
+    {
+      "slug": "anubis-heart",
+      "name": "Heart of Amun Ra",
+      "category": "special",
+      "location": null,
+      "search": "heart of amun ra heart of amun ra",
+      "file": "/creatures/records/anubis-heart-fdff52733580.json"
+    },
+    {
+      "slug": "crocolisk",
+      "name": "Crocolisk",
+      "category": "special",
+      "location": null,
+      "search": "crocolisk crocolisk",
+      "file": "/creatures/records/crocolisk-861bc3588289.json"
+    },
+    {
+      "slug": "nest-uber-anubis",
+      "name": "Corrupted Sarkofagus",
+      "category": "special",
+      "location": null,
+      "search": "corrupted sarkofagus corrupted sarkofagus",
+      "file": "/creatures/records/nest-uber-anubis-20720675c956.json"
+    },
+    {
+      "slug": "nest-anubis",
+      "name": "Anubis Sarkofagus",
+      "category": "special",
+      "location": null,
+      "search": "anubis sarkofagus anubis sarkofagus",
+      "file": "/creatures/records/nest-anubis-67d5d4b70b89.json"
+    },
+    {
+      "slug": "satan-left-hand",
+      "name": "Satan's Left Hand",
+      "category": "special",
+      "location": null,
+      "search": "satan's left hand satan's left hand satan’s left hand",
+      "file": "/creatures/records/satan-left-hand-3194a10aa33d.json"
+    },
+    {
+      "slug": "satan-right-hand",
+      "name": "Satan's Right Hand",
+      "category": "special",
+      "location": null,
+      "search": "satan's right hand satan's right hand satan’s right hand",
+      "file": "/creatures/records/satan-right-hand-a6870f2cca70.json"
+    },
+    {
+      "slug": "damien-head",
+      "name": "Damien's Head",
+      "category": "special",
+      "location": null,
+      "search": "damien's head damien's head",
+      "file": "/creatures/records/damien-head-878858bf6215.json"
+    },
+    {
+      "slug": "damiens-mask",
+      "name": "Damien’s Mirror",
+      "category": "special",
+      "location": null,
+      "search": "damien’s mirror damien’s mirror",
+      "file": "/creatures/records/damiens-mask-e9a2e6bd69ce.json"
+    },
+    {
+      "slug": "black-plague",
+      "name": "Black Plague",
+      "category": "special",
+      "location": null,
+      "search": "black plague black plague",
+      "file": "/creatures/records/black-plague-0727b4782b2a.json"
+    },
+    {
+      "slug": "ronin-marksman",
+      "name": "Ronin Marksman",
+      "category": "special",
+      "location": null,
+      "search": "ronin marksman ronin marksman",
+      "file": "/creatures/records/ronin-marksman-37d7d2b91b7c.json"
+    },
+    {
+      "slug": "karp-spawn",
+      "name": "Karpspawn",
+      "category": "special",
+      "location": null,
+      "search": "karpspawn karpspawn",
+      "file": "/creatures/records/karp-spawn-47a80a274709.json"
+    },
+    {
+      "slug": "blood-seeker",
+      "name": "Bloodseeker",
+      "category": "special",
+      "location": null,
+      "search": "bloodseeker bloodseeker",
+      "file": "/creatures/records/blood-seeker-8e27f7fe342f.json"
+    },
+    {
+      "slug": "damned-commander",
+      "name": "Damned Commander",
+      "category": "special",
+      "location": null,
+      "search": "damned commander damned commander",
+      "file": "/creatures/records/damned-commander-c46814b6f732.json"
+    },
+    {
+      "slug": "clamping-distortion",
+      "name": "Clamping Distortion",
+      "category": "special",
+      "location": null,
+      "search": "clamping distortion clamping distortion",
+      "file": "/creatures/records/clamping-distortion-5ae36a1b479e.json"
+    },
+    {
+      "slug": "reaking-agony",
+      "name": "Reaking Agony",
+      "category": "special",
+      "location": null,
+      "search": "reaking agony reaking agony",
+      "file": "/creatures/records/reaking-agony-2105e9466057.json"
+    },
+    {
+      "slug": "the-grand-butler",
+      "name": "The Grand Butler",
+      "category": "special",
+      "location": null,
+      "search": "the grand butler the grand butler",
+      "file": "/creatures/records/the-grand-butler-d6361312043b.json"
+    },
+    {
+      "slug": "ancient-ronin",
+      "name": "Ancient Ronin",
+      "category": "special",
+      "location": null,
+      "search": "ancient ronin ancient ronin",
+      "file": "/creatures/records/ancient-ronin-5f869d716441.json"
+    },
+    {
+      "slug": "fallen-heretic",
+      "name": "Fallen Heretic",
+      "category": "special",
+      "location": null,
+      "search": "fallen heretic fallen heretic",
+      "file": "/creatures/records/fallen-heretic-200c976c29db.json"
+    },
+    {
+      "slug": "rogue-champion",
+      "name": "Rogue Champion",
+      "category": "special",
+      "location": null,
+      "search": "rogue champion rogue champion",
+      "file": "/creatures/records/rogue-champion-3a72606ef203.json"
+    },
+    {
+      "slug": "odin-ancient-skeleton",
+      "name": "Guardian of Helheim",
+      "category": "special",
+      "location": null,
+      "search": "guardian of helheim guardian of helheim",
+      "file": "/creatures/records/odin-ancient-skeleton-883f730a9e3e.json"
+    },
+    {
+      "slug": "mortal-bride",
+      "name": "Mortal Bride",
+      "category": "special",
+      "location": null,
+      "search": "mortal bride mortal bride",
+      "file": "/creatures/records/mortal-bride-2681e42b3017.json"
+    },
+    {
+      "slug": "sassy-the-sasquach",
+      "name": "Sassy the Sasquach",
+      "category": "special",
+      "location": null,
+      "search": "sassy the sasquach sassy the sasquach",
+      "file": "/creatures/records/sassy-the-sasquach-5536d537f238.json"
+    },
+    {
+      "slug": "wandering-captain",
+      "name": "Wandering Captain",
+      "category": "special",
+      "location": null,
+      "search": "wandering captain wandering captain",
+      "file": "/creatures/records/wandering-captain-07f9c614c06c.json"
+    },
+    {
+      "slug": "queen-bee",
+      "name": "Queen Bee",
+      "category": "special",
+      "location": null,
+      "search": "queen bee queen bee",
+      "file": "/creatures/records/queen-bee-85307f02d577.json"
+    },
+    {
+      "slug": "scorching-legion",
+      "name": "Scorching Legion",
+      "category": "special",
+      "location": null,
+      "search": "scorching legion scorching legion",
+      "file": "/creatures/records/scorching-legion-890428c5020e.json"
+    },
+    {
+      "slug": "molten-breath",
+      "name": "Molten Breath",
+      "category": "special",
+      "location": null,
+      "search": "molten breath molten breath",
+      "file": "/creatures/records/molten-breath-cf3fdd22d44d.json"
+    },
+    {
+      "slug": "skin-walker",
+      "name": "Skinwalker",
+      "category": "special",
+      "location": null,
+      "search": "skinwalker skinwalker",
+      "file": "/creatures/records/skin-walker-9534360acdcf.json"
+    },
+    {
+      "slug": "storm-anomaly",
+      "name": "Storm Anomaly",
+      "category": "special",
+      "location": null,
+      "search": "storm anomaly storm anomaly",
+      "file": "/creatures/records/storm-anomaly-70a1e5e2bfee.json"
+    },
+    {
+      "slug": "commander-of-damned",
+      "name": "Commander of the Damned",
+      "category": "special",
+      "location": null,
+      "search": "commander of the damned commander of the damned",
+      "file": "/creatures/records/commander-of-damned-bc030c020be5.json"
+    },
+    {
+      "slug": "hell-spawn-guardsman",
+      "name": "Hellspawn Guardsman",
+      "category": "special",
+      "location": null,
+      "search": "hellspawn guardsman hellspawn guardsman",
+      "file": "/creatures/records/hell-spawn-guardsman-caee90ff60ba.json"
+    },
+    {
+      "slug": "servant-of-devil",
+      "name": "Servant of the Devil",
+      "category": "special",
+      "location": null,
+      "search": "servant of the devil servant of the devil",
+      "file": "/creatures/records/servant-of-devil-a5ae39d92119.json"
+    },
+    {
+      "slug": "grizz-maw",
+      "name": "Grizzmaw",
+      "category": "special",
+      "location": null,
+      "search": "grizzmaw grizzmaw",
+      "file": "/creatures/records/grizz-maw-85dd4e6db604.json"
+    },
+    {
+      "slug": "scale-tip",
+      "name": "Scaletip",
+      "category": "special",
+      "location": null,
+      "search": "scaletip scaletip",
+      "file": "/creatures/records/scale-tip-1ea175708c15.json"
+    },
+    {
+      "slug": "moss-walk-troll",
+      "name": "Mosswalk Troll",
+      "category": "special",
+      "location": null,
+      "search": "mosswalk troll mosswalk troll",
+      "file": "/creatures/records/moss-walk-troll-5ef321ea6f00.json"
+    },
+    {
+      "slug": "abomination",
+      "name": "Gluttony",
+      "category": "special",
+      "location": null,
+      "search": "gluttony gluttony",
+      "file": "/creatures/records/abomination-7768fb4375dc.json"
+    },
+    {
+      "slug": "colossal-mummy",
+      "name": "Pyramid Terror",
+      "category": "special",
+      "location": null,
+      "search": "pyramid terror pyramid terror",
+      "file": "/creatures/records/colossal-mummy-d58ec2865212.json"
+    },
+    {
+      "slug": "gargantum-guardsman",
+      "name": "Gargantum Guardsman",
+      "category": "special",
+      "location": null,
+      "search": "gargantum guardsman gargantum guardsman",
+      "file": "/creatures/records/gargantum-guardsman-fa242b339364.json"
+    },
+    {
+      "slug": "time-lost-mercenary",
+      "name": "Time-Lost Mercenary",
+      "category": "special",
+      "location": null,
+      "search": "time-lost mercenary time-lost mercenary",
+      "file": "/creatures/records/time-lost-mercenary-5398a0b9862c.json"
+    },
+    {
+      "slug": "earth-shatter",
+      "name": "Earth Shatter",
+      "category": "special",
+      "location": null,
+      "search": "earth shatter earth shatter",
+      "file": "/creatures/records/earth-shatter-96462af266ac.json"
+    },
+    {
+      "slug": "essence-of-corruption",
+      "name": "Essence of Corruption",
+      "category": "special",
+      "location": null,
+      "search": "essence of corruption essence of corruption",
+      "file": "/creatures/records/essence-of-corruption-c472a78cca7c.json"
+    },
+    {
+      "slug": "rotting-snapper",
+      "name": "Rotting Snapper",
+      "category": "special",
+      "location": null,
+      "search": "rotting snapper rotting snapper",
+      "file": "/creatures/records/rotting-snapper-3e12766f7c23.json"
+    },
+    {
+      "slug": "cult-leader",
+      "name": "Cult Leader",
+      "category": "special",
+      "location": null,
+      "search": "cult leader cult leader",
+      "file": "/creatures/records/cult-leader-2b8564a87518.json"
+    },
+    {
+      "slug": "shrouded-shade",
+      "name": "Shrouded Shade",
+      "category": "special",
+      "location": null,
+      "search": "shrouded shade shrouded shade",
+      "file": "/creatures/records/shrouded-shade-f23db85f720c.json"
+    },
+    {
+      "slug": "mechanical-monstrosity",
+      "name": "Mechanical Monstrosity",
+      "category": "special",
+      "location": null,
+      "search": "mechanical monstrosity mechanical monstrosity",
+      "file": "/creatures/records/mechanical-monstrosity-b2a9ac93c26d.json"
+    },
+    {
+      "slug": "primal-silver-back",
+      "name": "Primal Silverback",
+      "category": "special",
+      "location": null,
+      "search": "primal silverback primal silverback",
+      "file": "/creatures/records/primal-silver-back-b9869d5d30fb.json"
+    },
+    {
+      "slug": "abyss-servant",
+      "name": "Abyss Servant",
+      "category": "special",
+      "location": null,
+      "search": "abyss servant abyss servant",
+      "file": "/creatures/records/abyss-servant-45013b0d97e7.json"
+    },
+    {
+      "slug": "colossal-armada",
+      "name": "Colossal Armada",
+      "category": "special",
+      "location": null,
+      "search": "colossal armada colossal armada",
+      "file": "/creatures/records/colossal-armada-fd93c2a8c713.json"
+    },
+    {
+      "slug": "plundering-apparation",
+      "name": "Plundering Apparation",
+      "category": "special",
+      "location": null,
+      "search": "plundering apparation plundering apparation",
+      "file": "/creatures/records/plundering-apparation-24310eeb8743.json"
+    },
+    {
+      "slug": "bloating-corroder",
+      "name": "Bloating Corroder",
+      "category": "special",
+      "location": null,
+      "search": "bloating corroder bloating corroder",
+      "file": "/creatures/records/bloating-corroder-5109937ff209.json"
+    },
+    {
+      "slug": "giant-blood-clot",
+      "name": "Giant Blood Clot",
+      "category": "special",
+      "location": null,
+      "search": "giant blood clot giant blood clot",
+      "file": "/creatures/records/giant-blood-clot-fece4140b78c.json"
+    },
+    {
+      "slug": "sung-lees-herald",
+      "name": "Sung Lee’s Herald",
+      "category": "special",
+      "location": null,
+      "search": "sung lee’s herald sung lee’s herald",
+      "file": "/creatures/records/sung-lees-herald-281665ddadb0.json"
+    },
+    {
+      "slug": "krampus",
+      "name": "Krampus",
+      "category": "bosses",
+      "location": null,
+      "search": "krampus krampus",
+      "file": "/creatures/records/krampus-97b0ee33d30c.json"
+    },
+    {
+      "slug": "corrupted-valkyrie",
+      "name": "Corrupted Valkyrie",
+      "category": "bosses",
+      "location": null,
+      "search": "corrupted valkyrie corrupted valkyrie impale unholy blast call of the valkyrie rain of spears",
+      "file": "/creatures/records/corrupted-valkyrie-0881bc3fa47b.json"
+    },
+    {
+      "slug": "enraged-odin",
+      "name": "Enraged Odin",
+      "category": "bosses",
+      "location": null,
+      "search": "enraged odin enraged odin ground smash meteor shower shove engulfing flames last stand",
+      "file": "/creatures/records/enraged-odin-82aa2e7f890a.json"
+    },
+    {
+      "slug": "grimbone",
+      "name": "Grimbone",
+      "category": "bosses",
+      "location": {
+        "name": "Niflhel"
+      },
+      "search": "grimbone grimbone summon undead pincer charge shadow cleave grim fissure niflhel niflhel",
+      "file": "/creatures/records/grimbone-ca1af76d7f26.json"
+    },
+    {
+      "slug": "jadestone-gazer",
+      "name": "Jadestone Gazer",
+      "category": "bosses",
+      "location": null,
+      "search": "jadestone gazer jadestone gazer jadestone roots stone guards deadly gaze",
+      "file": "/creatures/records/jadestone-gazer-2dca0f7acec9.json"
+    },
+    {
+      "slug": "red-beard",
+      "name": "Red Beard",
+      "category": "bosses",
+      "location": null,
+      "search": "red beard red beard anchor strike bomb barrage shiver me timbers",
+      "file": "/creatures/records/red-beard-453fe8fbd7f5.json"
+    },
+    {
+      "slug": "akora",
+      "name": "Akora",
+      "category": "bosses",
+      "location": null,
+      "search": "akora akora demonic wrappings grasp of horror siphon essence",
+      "file": "/creatures/records/akora-4cd6626a701e.json"
+    },
+    {
+      "slug": "demon-zealot",
+      "name": "Demon Zealot",
+      "category": "bosses",
+      "location": null,
+      "search": "demon zealot demon zealot demonic charge wandering soul soul harvest",
+      "file": "/creatures/records/demon-zealot-66d4871d7f0e.json"
+    },
+    {
+      "slug": "king-rakhul",
+      "name": "King Rakhul",
+      "category": "bosses",
+      "location": null,
+      "search": "king rakhul king rakhul raging charge arena traps colossal slam shockwave",
+      "file": "/creatures/records/king-rakhul-56d6b733246c.json"
+    },
+    {
+      "slug": "sung-lee",
+      "name": "Sung Lee",
+      "category": "bosses",
+      "location": null,
+      "search": "sung lee sung lee lethal smash earthquake rain of doom summon weapon",
+      "file": "/creatures/records/sung-lee-7383d4bdccf3.json"
+    },
+    {
+      "slug": "gabriel-the-fallen-angel",
+      "name": "Gabriel the Fallen Angel",
+      "category": "bosses",
+      "location": null,
+      "search": "gabriel the fallen angel gabriel the fallen angel gabriel’s shadow defile fallen heretic annihilation leap strike",
+      "file": "/creatures/records/gabriel-the-fallen-angel-db08ac53477a.json"
+    },
+    {
+      "slug": "sheep-king",
+      "name": "The Sheep King",
+      "category": "bosses",
+      "location": null,
+      "search": "the sheep king the sheep king wooly charge waves of wool sheepacolypse",
+      "file": "/creatures/records/sheep-king-c920b9683fc1.json"
+    },
+    {
+      "slug": "rogue-chaos-tower",
+      "name": "Rogue Chaos Tower",
+      "category": "bosses",
+      "location": null,
+      "search": "rogue chaos tower rogue chaos tower waves of blood chaos turrets corrosive rain time to reap",
+      "file": "/creatures/records/rogue-chaos-tower-32f7ad7756e8.json"
+    },
+    {
+      "slug": "lord-gaben",
+      "name": "Lord Gaben",
+      "category": "bosses",
+      "location": null,
+      "search": "lord gaben lord gaben",
+      "file": "/creatures/records/lord-gaben-619ed4f9eeac.json"
+    },
+    {
+      "slug": "shade-of-death",
+      "name": "Shade of Death",
+      "category": "bosses",
+      "location": null,
+      "search": "shade of death shade of death pentagram slam scythe strike shadow skull execution shadow lantern",
+      "file": "/creatures/records/shade-of-death-f496dab896ca.json"
+    },
+    {
+      "slug": "mevius",
+      "name": "Mevius",
+      "category": "bosses",
+      "location": {
+        "name": "The Verge of Insanity"
+      },
+      "search": "mevius mevius dimension portal summon disciples wall of tentacles the verge of insanity the verge of insanity",
+      "file": "/creatures/records/mevius-7f5a89095a88.json"
+    },
+    {
+      "slug": "satan",
+      "name": "Satan",
+      "category": "bosses",
+      "location": null,
+      "search": "satan satan spawn minions lava storm wall of agony",
+      "file": "/creatures/records/satan-dbda34aaa90a.json"
+    },
+    {
+      "slug": "karp-king",
+      "name": "The Karp King",
+      "category": "bosses",
+      "location": null,
+      "search": "the karp king the karp king balls of doom megabeam zen pools",
+      "file": "/creatures/records/karp-king-a678e9d3309f.json"
+    },
+    {
+      "slug": "grim-reaper",
+      "name": "Grim Reaper",
+      "category": "bosses",
+      "location": {
+        "name": "Death’s Breach",
+        "act": "Act II"
+      },
+      "search": "grim reaper grim reaper death coil soul eruption soul pillar death’s breach act ii death’s breach",
+      "file": "/creatures/records/grim-reaper-dbb8ef60d043.json"
+    },
+    {
+      "slug": "damien",
+      "name": "Damien",
+      "category": "bosses",
+      "location": null,
+      "search": "damien damien unleashed agony mirror’s of darkness masked agony blood surge pools of agony",
+      "file": "/creatures/records/damien-f5e77e4e321c.json"
+    },
+    {
+      "slug": "anubis",
+      "name": "Anubis",
+      "category": "bosses",
+      "location": null,
+      "search": "anubis anubis meteor shower wall of thunder wrath of anubis",
+      "file": "/creatures/records/anubis-7d9b3b29cdd3.json"
+    },
+    {
+      "slug": "endrixia",
+      "name": "Endrixia",
+      "category": "bosses",
+      "location": null,
+      "search": "endrixia endrixia pillars of destruction falling sky dragonflight",
+      "file": "/creatures/records/endrixia-26160db2b276.json"
+    },
+    {
+      "slug": "amun-ra",
+      "name": "Amun Ra",
+      "category": "bosses",
+      "location": null,
+      "search": "amun ra amun ra crushing meteor decaying wall corrupted sarkofagi amun ra´s curse unholy voltage blood of amun ra",
+      "file": "/creatures/records/amun-ra-0ae68344fe5c.json"
+    },
+    {
+      "slug": "possessed-luna",
+      "name": "Possessed Luna",
+      "category": "bosses",
+      "location": null,
+      "search": "possessed luna possessed luna crystal ball black hole starstruck cosmic winds starshower",
+      "file": "/creatures/records/possessed-luna-25dbb4f6250e.json"
+    },
+    {
+      "slug": "gurag",
+      "name": "Gurag the Fallen King",
+      "category": "bosses",
+      "location": {
+        "name": "King's Throne",
+        "act": "Act I"
+      },
+      "search": "gurag the fallen king gurag the fallen king earthen fury avalanche totems grow king's throne act i king's throne",
+      "file": "/creatures/records/gurag-625f823fe0dd.json"
+    },
+    {
+      "slug": "horror-branch",
+      "name": "Horror Branch",
+      "category": "bosses",
+      "location": null,
+      "search": "horror branch horror branch conjured forest living forest trunkade crackling",
+      "file": "/creatures/records/horror-branch-8614c26f747d.json"
+    },
+    {
+      "slug": "puppet-queen",
+      "name": "Puppet Queen",
+      "category": "bosses",
+      "location": null,
+      "search": "puppet queen puppet queen rain of judgement time of reckoning showtime",
+      "file": "/creatures/records/puppet-queen-dce3bab4b808.json"
+    },
+    {
+      "slug": "king-steve",
+      "name": "King Steve",
+      "category": "bosses",
+      "location": null,
+      "search": "king steve king steve",
+      "file": "/creatures/records/king-steve-ca93193a028e.json"
+    },
+    {
+      "slug": "mimic-colossus",
+      "name": "Mimic Colossus",
+      "category": "bosses",
+      "location": null,
+      "search": "mimic colossus mimic colossus",
+      "file": "/creatures/records/mimic-colossus-150414506199.json"
+    },
+    {
+      "slug": "jormungandr",
+      "name": "Jormungandr",
+      "category": "bosses",
+      "location": null,
+      "search": "jormungandr jormungandr serpent's surge shadow barrage seismic screech call of the world serpent final breath",
+      "file": "/creatures/records/jormungandr-0e0858ad8b88.json"
+    },
+    {
+      "slug": "architect-of-ruin",
+      "name": "Architect of Ruin",
+      "category": "bosses",
+      "location": null,
+      "search": "architect of ruin architect of ruin vector shards rift collapse fractured time vorpal chains temporal storm vorpal looping chains minor collapse",
+      "file": "/creatures/records/architect-of-ruin-0f8c7b8efc0e.json"
+    },
+    {
+      "slug": "uber-architect-clone",
+      "name": "Mirror of Ruin",
+      "category": "bosses",
+      "location": null,
+      "search": "mirror of ruin mirror of ruin",
+      "file": "/creatures/records/uber-architect-clone-2da146dc4b57.json"
+    },
+    {
+      "slug": "papa-legba",
+      "name": "Papa Legba",
+      "category": "bosses",
+      "location": null,
+      "search": "papa legba papa legba",
+      "file": "/creatures/records/papa-legba-32bf3412a23a.json"
+    },
+    {
+      "slug": "uber-damien",
+      "name": "Fallen Damien",
+      "category": "bosses",
+      "location": null,
+      "search": "fallen damien fallen damien",
+      "file": "/creatures/records/uber-damien-45fa12b2142a.json"
+    },
+    {
+      "slug": "cthulhu",
+      "name": "Cthulhu",
+      "category": "bosses",
+      "location": null,
+      "search": "cthulhu cthulhu legion of ether ethereal destruction void tether ether´s construct vorpal strike",
+      "file": "/creatures/records/cthulhu-baa15270871b.json"
+    },
+    {
+      "slug": "captain-grimtide",
+      "name": "Captain Grimtide",
+      "category": "bosses",
+      "location": null,
+      "search": "captain grimtide captain grimtide anchor swing ship crew ghost armada underwater grave",
+      "file": "/creatures/records/captain-grimtide-66edeeadc80d.json"
+    },
+    {
+      "slug": "blood-maiden",
+      "name": "Blood Maiden",
+      "category": "bosses",
+      "location": null,
+      "search": "blood maiden blood maiden parasitic tentacles sonar pulse heart surge parasitic swarm",
+      "file": "/creatures/records/blood-maiden-bd0c5ec9c0d6.json"
+    },
+    {
+      "slug": "phantom-leviathan",
+      "name": "Phantom Leviathan",
+      "category": "bosses",
+      "location": null,
+      "search": "phantom leviathan phantom leviathan skeletal armada deadly slice cursed cannonfodder slicing crush",
+      "file": "/creatures/records/phantom-leviathan-6fc0e3a6badf.json"
+    },
+    {
+      "slug": "kaelith",
+      "name": "Kaelith",
+      "category": "bosses",
+      "location": null,
+      "search": "kaelith kaelith dimensional strike tentacle storm summon cultist pools of ether",
+      "file": "/creatures/records/kaelith-dc12018ddcc6.json"
+    },
+    {
+      "slug": "corrupted-odin",
+      "name": "Corrupted Odin",
+      "category": "bosses",
+      "location": null,
+      "search": "corrupted odin corrupted odin lightning burn shadow orb storm break summon raven",
+      "file": "/creatures/records/corrupted-odin-1026124e93b9.json"
+    }
+  ]
+}

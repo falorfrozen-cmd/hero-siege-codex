@@ -1,0 +1,937 @@
+{
+  "source": {
+    "file": "translationsAttributes.csv",
+    "sha256": "a8c51220b40f2c87cc7cf5e1fd60516ad97673e8801274a017c4b2aa41a33181",
+    "section": "[Stat Explanations]",
+    "language": "en"
+  },
+  "categories": [
+    {
+      "id": "attributes",
+      "label": "Core Attributes",
+      "numeral": "I"
+    },
+    {
+      "id": "combat",
+      "label": "Attacks & Combat",
+      "numeral": "II"
+    },
+    {
+      "id": "elements",
+      "label": "Elements & Skills",
+      "numeral": "III"
+    },
+    {
+      "id": "defense",
+      "label": "Defense & Resistance",
+      "numeral": "IV"
+    },
+    {
+      "id": "recovery",
+      "label": "Life, Mana & Recovery",
+      "numeral": "V"
+    },
+    {
+      "id": "utility",
+      "label": "Exploration & Fortune",
+      "numeral": "VI"
+    },
+    {
+      "id": "professions",
+      "label": "Professions",
+      "numeral": "VII"
+    }
+  ],
+  "entries": [
+    {
+      "slug": "strength",
+      "label": "Strength",
+      "category": "attributes",
+      "text": "Every point in Strength increases your Attack Damage by 1%.",
+      "sourceKey": "stat_desc_strength",
+      "sourceLine": 749,
+      "labelKey": "strength",
+      "statKey": 33
+    },
+    {
+      "slug": "dexterity",
+      "label": "Dexterity",
+      "category": "attributes",
+      "text": "Every point in Dexterity increases your Attack Rating by 8 and your Critical Damage by 0.125%.",
+      "sourceKey": "stat_desc_dexterity",
+      "sourceLine": 750,
+      "labelKey": "dexterity",
+      "statKey": 36
+    },
+    {
+      "slug": "intelligence",
+      "label": "Intelligence",
+      "category": "attributes",
+      "text": "Every point in Intelligence increases Magic Skill Damage dealt.",
+      "sourceKey": "stat_desc_intelligence",
+      "sourceLine": 751,
+      "labelKey": "intelligence",
+      "statKey": 42
+    },
+    {
+      "slug": "energy",
+      "label": "Energy",
+      "category": "attributes",
+      "text": "Every point in Energy increases your Mana by 4. Mana gained from Energy also increases your base Mana Replenish.",
+      "sourceKey": "stat_desc_energy",
+      "sourceLine": 752,
+      "labelKey": "energy",
+      "statKey": 39
+    },
+    {
+      "slug": "armor",
+      "label": "Armor",
+      "category": "attributes",
+      "text": "Every point in Armor increases your Defense by 5.",
+      "sourceKey": "stat_desc_armor",
+      "sourceLine": 753,
+      "labelKey": "armor",
+      "statKey": 45
+    },
+    {
+      "slug": "vitality",
+      "label": "Vitality",
+      "category": "attributes",
+      "text": "Every point in Vitality increases your Life by 5. Life gained from Vitality also increases your base Life Replenish.",
+      "sourceKey": "stat_desc_vitality",
+      "sourceLine": 754,
+      "labelKey": "vitality",
+      "statKey": 48
+    },
+    {
+      "slug": "points-left",
+      "label": "Points Left",
+      "category": "attributes",
+      "text": "Points left to allocate into any of the primary stats. You can allocate 4 points by pressing [input_attribute_add_multi].",
+      "sourceKey": "stat_desc_pointsLeft",
+      "sourceLine": 756,
+      "labelKey": "stat_pointsLeft",
+      "statKey": null
+    },
+    {
+      "slug": "damage",
+      "label": "Damage",
+      "category": "combat",
+      "text": "The amount of damage your attacks deal.",
+      "sourceKey": "stat_desc_damage",
+      "sourceLine": 763,
+      "labelKey": "damage",
+      "statKey": 22
+    },
+    {
+      "slug": "aps",
+      "label": "Attacks per Second",
+      "category": "combat",
+      "text": "Amount of attacks performed in a second.",
+      "sourceKey": "stat_desc_aps",
+      "sourceLine": 746,
+      "labelKey": "attacks_per_second",
+      "statKey": 23
+    },
+    {
+      "slug": "attack-speed",
+      "label": "Attack Speed",
+      "category": "combat",
+      "text": "Amount of increased Attack Speed. Percentual Attack Speed is always calculated using 0.75 Attacks Per Second.",
+      "sourceKey": "stat_desc_attack_speed",
+      "sourceLine": 747,
+      "labelKey": "attack_speed",
+      "statKey": 68
+    },
+    {
+      "slug": "attack-rating",
+      "label": "Attack Rating",
+      "category": "combat",
+      "text": "Increases your chance of hitting enemies with attacks.",
+      "sourceKey": "stat_desc_attack_rating",
+      "sourceLine": 764,
+      "labelKey": "attack_rating",
+      "statKey": 74
+    },
+    {
+      "slug": "critical-chance",
+      "label": "Chance for Critical Strike",
+      "category": "combat",
+      "text": "Chance for a Critical Strike when striking. Only affects physical attacks.",
+      "sourceKey": "stat_desc_critical_chance",
+      "sourceLine": 768,
+      "labelKey": "critical_chance",
+      "statKey": 72
+    },
+    {
+      "slug": "critical-damage",
+      "label": "Critical Strike Damage",
+      "category": "combat",
+      "text": "Amount of your Critical Strike damage. Only affects physical attacks.",
+      "sourceKey": "stat_desc_critical_damage",
+      "sourceLine": 767,
+      "labelKey": "critical_damage",
+      "statKey": 73
+    },
+    {
+      "slug": "physical-damage",
+      "label": "Flat Physical Damage",
+      "category": "combat",
+      "text": "Physical Damage added to your attacks.",
+      "sourceKey": "stat_desc_physical_damage",
+      "sourceLine": 769,
+      "labelKey": "physical_damage",
+      "statKey": 128
+    },
+    {
+      "slug": "skill-damage",
+      "label": "Magic Skill Damage",
+      "category": "combat",
+      "text": "Increases the damage of your Skills excluding skills which deal Attack Damage. This stat is calculated on top of the final value.",
+      "sourceKey": "stat_desc_skill_damage",
+      "sourceLine": 766,
+      "labelKey": "skill_damage",
+      "statKey": 101
+    },
+    {
+      "slug": "faster-cast-rate",
+      "label": "Faster Cast Rate",
+      "category": "combat",
+      "text": "Increases your Casting speed. Faster Cast Rate is always calculated using 1 Cast Per Second.",
+      "sourceKey": "stat_desc_faster_cast_rate",
+      "sourceLine": 765,
+      "labelKey": "faster_cast_rate",
+      "statKey": 196
+    },
+    {
+      "slug": "deadly-blow",
+      "label": "Deadly Blow",
+      "category": "combat",
+      "text": "Deadly Blow increases your Physical Damage by 35%",
+      "sourceKey": "stat_desc_deadly_blow",
+      "sourceLine": 814,
+      "labelKey": "deadly_blow",
+      "statKey": 95
+    },
+    {
+      "slug": "crushing-blow",
+      "label": "Crushing Blow",
+      "category": "combat",
+      "text": "Crushing Blow breaks enemy armor by 10% stacking up to 5 times increasing physical damage taken by enemies.",
+      "sourceKey": "stat_desc_crushing_blow",
+      "sourceLine": 815,
+      "labelKey": "crushing_blow",
+      "statKey": 97
+    },
+    {
+      "slug": "open-wounds",
+      "label": "Open Wounds",
+      "category": "combat",
+      "text": "Open Wounds bleeds target enemy for 20% of your Physical Damage.",
+      "sourceKey": "stat_desc_open_wounds",
+      "sourceLine": 816,
+      "labelKey": "open_wounds",
+      "statKey": 99
+    },
+    {
+      "slug": "ignore-defense",
+      "label": "Ignore Target Defense",
+      "category": "combat",
+      "text": "Ignores enemy Defense rating making it easier to hit the target.",
+      "sourceKey": "stat_desc_ignore_defense",
+      "sourceLine": 817,
+      "labelKey": "ignore_defense",
+      "statKey": 94
+    },
+    {
+      "slug": "slow-target",
+      "label": "Slow Target",
+      "category": "combat",
+      "text": "Attacks slow enemy Movement and Attack Speed.",
+      "sourceKey": "stat_desc_slow_target",
+      "sourceLine": 818,
+      "labelKey": "slow_target",
+      "statKey": 78
+    },
+    {
+      "slug": "charge-damage-strength",
+      "label": "Points in strength added as damage to charge skills",
+      "category": "combat",
+      "text": "A portion of your strength is added as damage for charge skills.",
+      "sourceKey": "stat_desc_charge_damage_strength",
+      "sourceLine": 828,
+      "labelKey": "charge_damage_strength",
+      "statKey": null
+    },
+    {
+      "slug": "unarmed-damage",
+      "label": "Increased damage while unarmed",
+      "category": "combat",
+      "text": "Amount of damage increased while unarmed.",
+      "sourceKey": "stat_desc_unarmed_damage",
+      "sourceLine": 829,
+      "labelKey": "unarmed_damage",
+      "statKey": null
+    },
+    {
+      "slug": "unarmed-damage-strength",
+      "label": "Points in strength added as weapon damage while unarmed",
+      "category": "combat",
+      "text": "A portion of your strength is added as flat physical damage while unarmed.",
+      "sourceKey": "stat_desc_unarmed_damage_strength",
+      "sourceLine": 830,
+      "labelKey": "unarmed_damage_strength",
+      "statKey": null
+    },
+    {
+      "slug": "all-skills",
+      "label": "to All Skills",
+      "category": "elements",
+      "text": "Increases the level of all Skills.",
+      "sourceKey": "stat_desc_all_skills",
+      "sourceLine": 755,
+      "labelKey": "stat_all_skills",
+      "statKey": 201
+    },
+    {
+      "slug": "physical-skills",
+      "label": "Physical Skills",
+      "category": "elements",
+      "text": "Increases the level of all Physical Skills.",
+      "sourceKey": "stat_desc_physical_skills",
+      "sourceLine": 762,
+      "labelKey": "physical_skills",
+      "statKey": 222
+    },
+    {
+      "slug": "cold-skills",
+      "label": "Cold Skills",
+      "category": "elements",
+      "text": "Increases the level of all Cold Skills.",
+      "sourceKey": "stat_desc_cold_skills",
+      "sourceLine": 757,
+      "labelKey": "cold_skills",
+      "statKey": 223
+    },
+    {
+      "slug": "fire-skills",
+      "label": "Fire Skills",
+      "category": "elements",
+      "text": "Increases the level of all Fire Skills.",
+      "sourceKey": "stat_desc_fire_skills",
+      "sourceLine": 759,
+      "labelKey": "fire_skills",
+      "statKey": 225
+    },
+    {
+      "slug": "lightning-skills",
+      "label": "Lightning Skills",
+      "category": "elements",
+      "text": "Increases the level of all Lightning Skills.",
+      "sourceKey": "stat_desc_lightning_skills",
+      "sourceLine": 758,
+      "labelKey": "lightning_skills",
+      "statKey": 226
+    },
+    {
+      "slug": "magic-skills",
+      "label": "to Arcane Skills",
+      "category": "elements",
+      "text": "Increases the level of all Arcane Skills.",
+      "sourceKey": "stat_desc_magic_skills",
+      "sourceLine": 760,
+      "labelKey": "stat_magic_skills",
+      "statKey": 224
+    },
+    {
+      "slug": "poison-skills",
+      "label": "Poison Skills",
+      "category": "elements",
+      "text": "Increases the level of all Poison Skills.",
+      "sourceKey": "stat_desc_poison_skills",
+      "sourceLine": 761,
+      "labelKey": "poison_skills",
+      "statKey": 227
+    },
+    {
+      "slug": "cold-damage",
+      "label": "Additive Cold Damage",
+      "category": "elements",
+      "text": "Cold Damage added to your attacks.",
+      "sourceKey": "stat_desc_cold_damage",
+      "sourceLine": 771,
+      "labelKey": "cold_damage",
+      "statKey": 136
+    },
+    {
+      "slug": "fire-damage",
+      "label": "Additive Fire Damage",
+      "category": "elements",
+      "text": "Fire Damage added to your attacks.",
+      "sourceKey": "stat_desc_fire_damage",
+      "sourceLine": 772,
+      "labelKey": "fire_damage",
+      "statKey": 132
+    },
+    {
+      "slug": "lightning-damage",
+      "label": "Additive Lightning Damage",
+      "category": "elements",
+      "text": "Lightning Damage added to your attacks.",
+      "sourceKey": "stat_desc_lightning_damage",
+      "sourceLine": 774,
+      "labelKey": "lightning_damage",
+      "statKey": 144
+    },
+    {
+      "slug": "magic-damage",
+      "label": "Additive Arcane Damage",
+      "category": "elements",
+      "text": "Arcane Damage added to your attacks.",
+      "sourceKey": "stat_desc_magic_damage",
+      "sourceLine": 770,
+      "labelKey": "magic_damage",
+      "statKey": 140
+    },
+    {
+      "slug": "poison-damage",
+      "label": "Additive Poison Damage",
+      "category": "elements",
+      "text": "Poison Damage added to your attacks.",
+      "sourceKey": "stat_desc_poison_damage",
+      "sourceLine": 773,
+      "labelKey": "poison_damage",
+      "statKey": 148
+    },
+    {
+      "slug": "cold-damage-p",
+      "label": "Cold Skill Damage",
+      "category": "elements",
+      "text": "Increases the damage of your Cold skills. This stat is calculated on top of the final value.",
+      "sourceKey": "stat_desc_cold_damage_p",
+      "sourceLine": 776,
+      "labelKey": "cold_damage_p",
+      "statKey": 138
+    },
+    {
+      "slug": "fire-damage-p",
+      "label": "Fire Skill Damage",
+      "category": "elements",
+      "text": "Increases the damage of your Fire skills. This stat is calculated on top of the final value.",
+      "sourceKey": "stat_desc_fire_damage_p",
+      "sourceLine": 777,
+      "labelKey": "fire_damage_p",
+      "statKey": 134
+    },
+    {
+      "slug": "lightning-damage-p",
+      "label": "Lightning Skill Damage",
+      "category": "elements",
+      "text": "Increases the damage of your Lightning skills. This stat is calculated on top of the final value.",
+      "sourceKey": "stat_desc_lightning_damage_p",
+      "sourceLine": 779,
+      "labelKey": "lightning_damage_p",
+      "statKey": 146
+    },
+    {
+      "slug": "magic-damage-p",
+      "label": "Arcane Skill Damage",
+      "category": "elements",
+      "text": "Increases the damage of your Arcane skills. This stat is calculated on top of the final value.",
+      "sourceKey": "stat_desc_magic_damage_p",
+      "sourceLine": 775,
+      "labelKey": "magic_damage_p",
+      "statKey": 142
+    },
+    {
+      "slug": "poison-damage-p",
+      "label": "Poison Skill Damage",
+      "category": "elements",
+      "text": "Increases the damage of your Poison skills. This stat is calculated on top of the final value.",
+      "sourceKey": "stat_desc_poison_damage_p",
+      "sourceLine": 778,
+      "labelKey": "poison_damage_p",
+      "statKey": 150
+    },
+    {
+      "slug": "ignore-cold-resist",
+      "label": "Ignore Cold Resistance",
+      "category": "elements",
+      "text": "The amount of enemy Cold resistance ignored when dealing Cold Damage.",
+      "sourceKey": "stat_desc_ignore_cold_resist",
+      "sourceLine": 823,
+      "labelKey": "ignore_cold_resist",
+      "statKey": 139
+    },
+    {
+      "slug": "ignore-fire-resist",
+      "label": "Ignore Fire Resistance",
+      "category": "elements",
+      "text": "The amount of enemy Fire resistance ignored when dealing Fire Damage.",
+      "sourceKey": "stat_desc_ignore_fire_resist",
+      "sourceLine": 824,
+      "labelKey": "ignore_fire_resist",
+      "statKey": 135
+    },
+    {
+      "slug": "ignore-lightning-resist",
+      "label": "Ignore Lightning Resistance",
+      "category": "elements",
+      "text": "The amount of enemy Lightning resistance ignored when dealing Lightning Damage.",
+      "sourceKey": "stat_desc_ignore_lightning_resist",
+      "sourceLine": 826,
+      "labelKey": "ignore_lightning_resist",
+      "statKey": 147
+    },
+    {
+      "slug": "ignore-magic-resist",
+      "label": "Ignore Arcane Resistance",
+      "category": "elements",
+      "text": "The amount of enemy Arcane resistance ignored when dealing Arcane Damage.",
+      "sourceKey": "stat_desc_ignore_magic_resist",
+      "sourceLine": 822,
+      "labelKey": "ignore_magic_resist",
+      "statKey": 143
+    },
+    {
+      "slug": "ignore-poison-resist",
+      "label": "Ignore Poison Resistance",
+      "category": "elements",
+      "text": "The amount of enemy Poison resistance ignored when dealing Poison Damage.",
+      "sourceKey": "stat_desc_ignore_poison_resist",
+      "sourceLine": 825,
+      "labelKey": "ignore_poison_resist",
+      "statKey": 151
+    },
+    {
+      "slug": "defense",
+      "label": "Defense",
+      "category": "defense",
+      "text": "Defense lowers the chance of enemies hitting you with Physical Attacks or Projectiles.",
+      "sourceKey": "stat_desc_defense",
+      "sourceLine": 794,
+      "labelKey": "defense",
+      "statKey": 154
+    },
+    {
+      "slug": "block-rate",
+      "label": "Chance to Block attacks",
+      "category": "defense",
+      "text": "The chance to block incoming attacks and projectiles.",
+      "sourceKey": "stat_desc_block_rate",
+      "sourceLine": 792,
+      "labelKey": "block_rate",
+      "statKey": 157
+    },
+    {
+      "slug": "dodge-chance",
+      "label": "Dodge Chance",
+      "category": "defense",
+      "text": "The chance to dodge incoming attacks and projectiles.",
+      "sourceKey": "stat_desc_dodge_chance",
+      "sourceLine": 793,
+      "labelKey": "dodge_chance",
+      "statKey": null
+    },
+    {
+      "slug": "spell-suppression",
+      "label": "Chance to suppress incoming spell hits",
+      "category": "defense",
+      "text": "Chance on spell hit to mitigate 50% of the incoming damage.",
+      "sourceKey": "stat_desc_spell_suppression",
+      "sourceLine": 745,
+      "labelKey": "spell_suppression",
+      "statKey": null
+    },
+    {
+      "slug": "reduction",
+      "label": "Physical damage reduction",
+      "category": "defense",
+      "text": "Reduces incoming Physical Damage",
+      "sourceKey": "stat_desc_reduction",
+      "sourceLine": 796,
+      "labelKey": "reduction",
+      "statKey": 159
+    },
+    {
+      "slug": "magic-reduction",
+      "label": "Magic damage reduction",
+      "category": "defense",
+      "text": "Reduces incoming Magic Damage such as Cold, Fire, Lightning, Poison and Arcane",
+      "sourceKey": "stat_desc_magic_reduction",
+      "sourceLine": 797,
+      "labelKey": "magic_reduction",
+      "statKey": 160
+    },
+    {
+      "slug": "damage-reduced",
+      "label": "Damage reduced",
+      "category": "defense",
+      "text": "Reduces a flat amount of damage from every source. This stat is additive and does not scale from anything.",
+      "sourceKey": "stat_desc_damage_reduced",
+      "sourceLine": 795,
+      "labelKey": "damage_reduced",
+      "statKey": 162
+    },
+    {
+      "slug": "damage-return",
+      "label": "Damage Return",
+      "category": "defense",
+      "text": "Amount of damage returned to the attacker.",
+      "sourceKey": "stat_desc_damage_return",
+      "sourceLine": 798,
+      "labelKey": "damage_return",
+      "statKey": 171
+    },
+    {
+      "slug": "faster-hit-recovery",
+      "label": "Faster Hit Recovery",
+      "category": "defense",
+      "text": "Increases the speed of recovery after being hit by an attack or projectile.",
+      "sourceKey": "stat_desc_faster_hit_recovery",
+      "sourceLine": 827,
+      "labelKey": "faster_hit_recovery",
+      "statKey": 170
+    },
+    {
+      "slug": "all-resistances",
+      "label": "All Resistances",
+      "category": "defense",
+      "text": "Increases your resistance against damage from All Elements.",
+      "sourceKey": "stat_desc_all_resistances",
+      "sourceLine": 799,
+      "labelKey": "all_resistance",
+      "statKey": 173
+    },
+    {
+      "slug": "cold-resistance",
+      "label": "Cold Resistance",
+      "category": "defense",
+      "text": "Increases your resistance to Cold damage.",
+      "sourceKey": "stat_desc_cold_resistance",
+      "sourceLine": 801,
+      "labelKey": "cold_resistance",
+      "statKey": 177
+    },
+    {
+      "slug": "fire-resistance",
+      "label": "Fire Resistance",
+      "category": "defense",
+      "text": "Increases your resistance to Fire damage.",
+      "sourceKey": "stat_desc_fire_resistance",
+      "sourceLine": 802,
+      "labelKey": "fire_resistance",
+      "statKey": 175
+    },
+    {
+      "slug": "lightning-resistance",
+      "label": "Lightning Resistance",
+      "category": "defense",
+      "text": "Increases your resistance to Lightning damage.",
+      "sourceKey": "stat_desc_lightning_resistance",
+      "sourceLine": 804,
+      "labelKey": "lightning_resistance",
+      "statKey": 179
+    },
+    {
+      "slug": "magic-resistance",
+      "label": "to Arcane Resistance",
+      "category": "defense",
+      "text": "Increases your resistance to Arcane damage.",
+      "sourceKey": "stat_desc_magic_resistance",
+      "sourceLine": 800,
+      "labelKey": "stat_magic_resistance",
+      "statKey": 181
+    },
+    {
+      "slug": "poison-resistance",
+      "label": "Poison Resistance",
+      "category": "defense",
+      "text": "Increases your resistance to Poison damage.",
+      "sourceKey": "stat_desc_poison_resistance",
+      "sourceLine": 803,
+      "labelKey": "poison_resistance",
+      "statKey": 183
+    },
+    {
+      "slug": "cold-absorb",
+      "label": "Cold Absorption",
+      "category": "defense",
+      "text": "Absorbs a portion of all incoming Cold Damage as healing.",
+      "sourceKey": "stat_desc_cold_absorb",
+      "sourceLine": 808,
+      "labelKey": "cold_absorb",
+      "statKey": 192
+    },
+    {
+      "slug": "fire-absorb",
+      "label": "Fire Absorption",
+      "category": "defense",
+      "text": "Absorbs a portion of all incoming Fire Damage as healing.",
+      "sourceKey": "stat_desc_fire_absorb",
+      "sourceLine": 807,
+      "labelKey": "fire_absorb",
+      "statKey": 191
+    },
+    {
+      "slug": "lightning-absorb",
+      "label": "Lightning Absorption",
+      "category": "defense",
+      "text": "Absorbs a portion of all incoming Lightning Damage as healing.",
+      "sourceKey": "stat_desc_lightning_absorb",
+      "sourceLine": 809,
+      "labelKey": "lightning_absorb",
+      "statKey": 194
+    },
+    {
+      "slug": "arcane-absorb",
+      "label": "Arcane Absorption",
+      "category": "defense",
+      "text": "Absorbs a portion of all incoming Arcane Damage as healing.",
+      "sourceKey": "stat_desc_arcane_absorb",
+      "sourceLine": 805,
+      "labelKey": "arcane_absorb",
+      "statKey": 195
+    },
+    {
+      "slug": "poison-absorb",
+      "label": "Poison Absorption",
+      "category": "defense",
+      "text": "Absorbs a portion of all incoming Poison Damage as healing.",
+      "sourceKey": "stat_desc_poison_absorb",
+      "sourceLine": 806,
+      "labelKey": "poison_absorb",
+      "statKey": 193
+    },
+    {
+      "slug": "poison-length-reduced",
+      "label": "Poison Length Reduced",
+      "category": "defense",
+      "text": "Lowered poison debuff duration.",
+      "sourceKey": "stat_desc_poison_length_reduced",
+      "sourceLine": 821,
+      "labelKey": "poison_length_reduced",
+      "statKey": 289
+    },
+    {
+      "slug": "life",
+      "label": "to Life",
+      "category": "recovery",
+      "text": "Your Maximum Life.",
+      "sourceKey": "stat_desc_life",
+      "sourceLine": 780,
+      "labelKey": "stat_life",
+      "statKey": 52
+    },
+    {
+      "slug": "mana",
+      "label": "to Mana",
+      "category": "recovery",
+      "text": "Your Maximum Mana.",
+      "sourceKey": "stat_desc_mana",
+      "sourceLine": 781,
+      "labelKey": "stat_mana",
+      "statKey": 60
+    },
+    {
+      "slug": "life-replenish",
+      "label": "Life Replenish",
+      "category": "recovery",
+      "text": "Amount of Life replenished each second.",
+      "sourceKey": "stat_desc_life_replenish",
+      "sourceLine": 782,
+      "labelKey": "tal_life_replenish",
+      "statKey": 58
+    },
+    {
+      "slug": "mana-replenish",
+      "label": "Mana Replenish",
+      "category": "recovery",
+      "text": "Amount of Mana replenished each second.",
+      "sourceKey": "stat_desc_mana_replenish",
+      "sourceLine": 783,
+      "labelKey": "tal_mana_replenish",
+      "statKey": 65
+    },
+    {
+      "slug": "life-per-hit",
+      "label": "Life stolen per Hit",
+      "category": "recovery",
+      "text": "Amount of Life replenished when striking an enemy.",
+      "sourceKey": "stat_desc_life_per_hit",
+      "sourceLine": 784,
+      "labelKey": "life_per_hit",
+      "statKey": 57
+    },
+    {
+      "slug": "mana-per-hit",
+      "label": "Mana stolen per Hit",
+      "category": "recovery",
+      "text": "Amount of Mana replenished when striking an enemy.",
+      "sourceKey": "stat_desc_mana_per_hit",
+      "sourceLine": 785,
+      "labelKey": "mana_per_hit",
+      "statKey": 64
+    },
+    {
+      "slug": "life-after-kill",
+      "label": "Life After Kill",
+      "category": "recovery",
+      "text": "Amount of Life replenished after killing a monster.",
+      "sourceKey": "stat_desc_life_after_kill",
+      "sourceLine": 788,
+      "labelKey": "tal_life_after_kill",
+      "statKey": 59
+    },
+    {
+      "slug": "mana-after-kill",
+      "label": "Mana After Kill",
+      "category": "recovery",
+      "text": "Amount of Mana replenished after killing a monster.",
+      "sourceKey": "stat_desc_mana_after_kill",
+      "sourceLine": 789,
+      "labelKey": "tal_mana_after_kill",
+      "statKey": 66
+    },
+    {
+      "slug": "cooldown-reduction",
+      "label": "Skill Haste",
+      "category": "recovery",
+      "text": "Increases cooldown recovery rate.",
+      "sourceKey": "stat_desc_cooldown_reduction",
+      "sourceLine": 786,
+      "labelKey": "cooldown_reduction",
+      "statKey": 198
+    },
+    {
+      "slug": "cooldown-reduction-potion",
+      "label": "Flask Skill Haste",
+      "category": "recovery",
+      "text": "Increases Flask cooldown recovery rate.",
+      "sourceKey": "stat_desc_cooldown_reduction_potion",
+      "sourceLine": 787,
+      "labelKey": "cooldown_reduction_potion",
+      "statKey": 199
+    },
+    {
+      "slug": "flask-regen-life",
+      "label": "Increased life replenish while a flask effect is active",
+      "category": "recovery",
+      "text": "Amount of increased life regeneration from potions.",
+      "sourceKey": "stat_desc_flask_regen_life",
+      "sourceLine": 831,
+      "labelKey": "flask_regen_life",
+      "statKey": null
+    },
+    {
+      "slug": "flask-damage-taken",
+      "label": "Portion of incoming damage mitigated while a flask effect is active",
+      "category": "recovery",
+      "text": "Amount of damage taken reduced when regenerating from a potion.",
+      "sourceKey": "stat_desc_flask_damage_taken",
+      "sourceLine": 832,
+      "labelKey": "flask_damage_taken",
+      "statKey": null
+    },
+    {
+      "slug": "movement-speed",
+      "label": "Movement Speed",
+      "category": "utility",
+      "text": "Amount of increased Movement Speed.",
+      "sourceKey": "stat_desc_movement_speed",
+      "sourceLine": 748,
+      "labelKey": "movement_speed",
+      "statKey": 25
+    },
+    {
+      "slug": "jumping-power",
+      "label": "Jumping Power",
+      "category": "utility",
+      "text": "Increases how far you can jump.",
+      "sourceKey": "stat_desc_jumping_power",
+      "sourceLine": 833,
+      "labelKey": "jumping_power",
+      "statKey": 27
+    },
+    {
+      "slug": "light-radius",
+      "label": "Light Radius",
+      "category": "utility",
+      "text": "Effects your visibility range and base movement speed scaling.",
+      "sourceKey": "stat_desc_light_radius",
+      "sourceLine": 810,
+      "labelKey": "light_radius",
+      "statKey": 281
+    },
+    {
+      "slug": "experience-gain",
+      "label": "Experience Gain Increased by",
+      "category": "utility",
+      "text": "Increases your experience gained from killing monsters.",
+      "sourceKey": "stat_desc_experience_gain",
+      "sourceLine": 790,
+      "labelKey": "tal_experience_gain",
+      "statKey": 282
+    },
+    {
+      "slug": "magic-find",
+      "label": "Magic Find",
+      "category": "utility",
+      "text": "Increased chance of finding magic items. (Mercenary’s Magic Find is added to player Magic Find on kills).",
+      "sourceKey": "stat_desc_magic_find",
+      "sourceLine": 791,
+      "labelKey": "magic_find",
+      "statKey": 284
+    },
+    {
+      "slug": "extra-gold",
+      "label": "Extra Gold from kills",
+      "category": "utility",
+      "text": "Extra gold dropped from monsters when killed.",
+      "sourceKey": "stat_desc_extra_gold",
+      "sourceLine": 819,
+      "labelKey": "extra_gold",
+      "statKey": 286
+    },
+    {
+      "slug": "merchant-prices",
+      "label": "Merchant prices",
+      "category": "utility",
+      "text": "Discounted prices when buying from the Merchant.",
+      "sourceKey": "stat_desc_merchant_prices",
+      "sourceLine": 820,
+      "labelKey": "merchant_prices",
+      "statKey": 290
+    },
+    {
+      "slug": "mining",
+      "label": "Mining",
+      "category": "professions",
+      "text": "Your Mining skill level.",
+      "sourceKey": "stat_desc_mining",
+      "sourceLine": 811,
+      "labelKey": "stat_desc_mining",
+      "statKey": null
+    },
+    {
+      "slug": "jewelcrafting",
+      "label": "Jewelcrafting",
+      "category": "professions",
+      "text": "Your Jewelcrafting skill level.",
+      "sourceKey": "stat_desc_jewelcrafting",
+      "sourceLine": 812,
+      "labelKey": "stat_desc_jewelcrafting",
+      "statKey": null
+    },
+    {
+      "slug": "herbalism",
+      "label": "Herbalism",
+      "category": "professions",
+      "text": "Your Herbalism skill level.",
+      "sourceKey": "stat_desc_herbalism",
+      "sourceLine": 813,
+      "labelKey": "stat_desc_herbalism",
+      "statKey": null
+    }
+  ]
+}

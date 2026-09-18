@@ -1,0 +1,66 @@
+/* Sticky corner controls: no scroll handlers or animation loop. */
+.book-edge-navigation {
+  position: absolute;
+  inset: 0;
+  z-index: 6;
+  display: flex;
+  justify-content: space-between;
+  padding: 65px 1.3%;
+  pointer-events: none;
+}
+.book-edge-track {
+  width: 64px;
+}
+.book-edge-track button {
+  position: sticky;
+  top: calc(100svh - 105px - env(safe-area-inset-bottom, 0px));
+  width: 100%;
+  min-height: 76px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 10px 2px;
+  pointer-events: auto;
+  color: #f1dbb2;
+  border: 1px solid #c5a577;
+  border-radius: 4px;
+  background: #30271d;
+  box-shadow: inset 0 0 0 3px #b9986333;
+}
+.book-edge-track button span {
+  font-size: 12px;
+}
+.book-edge-track button:enabled:hover {
+  background: #443423;
+}
+.book-edge-track button:focus-visible {
+  outline: 2px solid #efd8a6;
+  outline-offset: 3px;
+}
+.book-edge-track button:disabled {
+  color: #a69981;
+  border-color: #7e6c50;
+  cursor: default;
+}
+@media (max-width: 1200px) {
+  .book-edge-track {
+    width: 52px;
+  }
+}
+@media (max-width: 480px) {
+  .book-edge-navigation {
+    padding-inline: 0;
+  }
+  .book-edge-track {
+    width: 44px;
+  }
+  .book-edge-track button {
+    min-height: 54px;
+    top: calc(100svh - 82px - env(safe-area-inset-bottom, 0px));
+  }
+  .book-edge-track button span {
+    display: none;
+  }
+}

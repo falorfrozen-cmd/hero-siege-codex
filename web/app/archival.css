@@ -1,0 +1,604 @@
+/* A single original book plate carries the physical material and edge detail. */
+.archival {
+  --ink: #342b20;
+  --ink-muted: #69553d;
+  --chapter-ink: color-mix(in srgb, var(--chapter-accent) 28%, #302015);
+}
+.archival .book-page {
+  color: var(--ink);
+  background: #ead8af url('/textures/vellum.webp') repeat;
+  box-shadow: inset -18px 0 25px -24px #30180a;
+}
+.archival .book-page.page-right {
+  background: #ead8af url('/textures/vellum.webp') repeat;
+  box-shadow: inset 18px 0 25px -24px #30180a;
+}
+.archival .entry-copy h2,
+.archival .stat-lines dd {
+  color: var(--ink);
+}
+.archival .page-running-head,
+.archival .item-identity,
+.archival .item-tags,
+.archival .curator-note,
+.archival .stat-lines dt,
+.archival .entry-lore blockquote,
+.archival .entry-effects li,
+.archival .entry-footnote,
+.archival .page-folio {
+  color: var(--ink-muted);
+}
+.archival .ruled-heading,
+.archival .entry-lore .small-label,
+.archival .effect-marker {
+  color: var(--chapter-ink);
+}
+
+.archival .book-stage {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+}
+.archival .book-cover {
+  width: calc(100% - 144px);
+  padding: 48px 112px 78px;
+  margin-right: 144px;
+  border: 0;
+  border-radius: 0;
+  background: url('/textures/archive-book.webp') center / 100% 100% no-repeat;
+  box-shadow: none;
+}
+.archival .book-cover::before,
+.archival .book-cover::after,
+.archival .book-page::before {
+  display: none;
+}
+.archival .book-page,
+.archival .book-page.page-right {
+  padding: 22px 28px 18px;
+  min-height: 740px;
+  background: transparent;
+  box-shadow: none;
+  border: 0;
+}
+.archival .book-page {
+  padding-right: 40px;
+}
+.archival .book-page.page-right {
+  padding-left: 40px;
+  padding-right: 28px;
+}
+.archival .leaf-face > .book-page,
+.archival .stationary-leaf > .book-page {
+  min-height: 100%;
+  background: #e9d6b0 url('/textures/archive-book.webp') 16% 48% / 245% 117%
+    no-repeat;
+}
+.archival .leaf-face > .page-right,
+.archival .stationary-leaf > .page-right {
+  background-position: 85% 48%;
+}
+.archival .leaf-face {
+  box-shadow: -4px 0 10px #24130630;
+}
+.archival .page-travel-shadow {
+  position: absolute;
+  inset: 0;
+  z-index: 6;
+  pointer-events: none;
+  opacity: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 15%,
+    #27160b 50%,
+    transparent 85%
+  );
+}
+.archival .page-running-head {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  border-color: #76553255;
+}
+.archival .page-running-head > span:first-child,
+.archival .page-running-head svg {
+  color: var(--chapter-ink);
+}
+.archival .entry-copy h2 {
+  font-weight: 600;
+  color: #4b291e;
+  text-shadow: 0 1px #fff4;
+}
+.archival .item-tags {
+  color: var(--chapter-ink);
+}
+.archival .set-name {
+  color: #405638;
+}
+.archival .portrait-seal {
+  color: var(--chapter-ink);
+  background: radial-gradient(ellipse, #80562e17, transparent 72%);
+  border-color: #805b3455;
+  outline-color: #805b3426;
+}
+.archival .item-sprite {
+  filter: drop-shadow(0 5px 3px #38271755);
+}
+.archival .ruled-heading small,
+.archival .folio-ornament,
+.archival .empty-properties,
+.archival .entry-variant,
+.archival .saved-caption {
+  color: var(--ink-muted);
+}
+.archival .negative-stat dt,
+.archival .negative-stat dd {
+  color: #8b2e26;
+}
+.archival .empty-leaf {
+  color: var(--ink-muted);
+}
+.archival .empty-leaf h3 {
+  color: var(--ink);
+}
+.archival .entry-lore {
+  border-color: #76553240;
+}
+.archival .narrative-lore blockquote {
+  font-style: normal;
+}
+.archival .narrative-lore blockquote::first-letter {
+  float: left;
+  font: 500 3.1em/0.79 var(--display);
+  padding: 5px 7px 0 0;
+  color: #6a3828;
+}
+.archival .bookmark-ribbon {
+  background: #674137;
+  color: #ead2a8;
+  box-shadow:
+    inset 4px 0 #ffffff09,
+    inset -4px 0 #1a080b16;
+}
+.archival .bookmark-ribbon.is-saved {
+  background: #75372e;
+  color: #ffe8b1;
+}
+.archival .bookmark-ribbon:hover {
+  background: #8d5940;
+}
+.archival .page-corner {
+  position: absolute;
+  bottom: 9%;
+  width: 46px;
+  height: 46px;
+  z-index: 8;
+  display: grid;
+  place-items: center;
+  border: 0;
+  background: transparent;
+  color: #765235;
+  cursor: pointer;
+}
+.archival .page-corner-next {
+  right: 9%;
+}
+.archival .page-corner-previous {
+  left: 9%;
+}
+.archival .page-corner > span {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    transparent 49%,
+    #c7a676 50%,
+    #f5e4c0 75%
+  );
+  transform-origin: bottom right;
+  transform: scale(0.4);
+  opacity: 0.55;
+  transition:
+    transform 180ms ease-out,
+    opacity 180ms ease-out;
+}
+.archival .page-corner-previous > span {
+  background: linear-gradient(
+    225deg,
+    transparent 49%,
+    #c7a676 50%,
+    #f5e4c0 75%
+  );
+  transform-origin: bottom left;
+}
+.archival .page-corner > svg {
+  position: relative;
+  opacity: 0.6;
+}
+.archival .page-corner:hover > span,
+.archival .page-corner:focus-visible > span {
+  transform: scale(1) translateY(-3px);
+  opacity: 1;
+}
+.archival .page-corner:disabled {
+  visibility: hidden;
+}
+.archival .page-corner:focus-visible {
+  outline: 2px solid #744d28;
+  outline-offset: 2px;
+}
+.archival .rarity-chapters {
+  position: absolute;
+  left: calc(100% - 174px);
+  top: 80px;
+  width: 140px;
+  max-width: none;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  z-index: 9;
+}
+.archival .rarity-chapters button {
+  justify-content: flex-start;
+  min-height: 54px;
+  padding: 7px 14px 7px 18px;
+  gap: 9px;
+  border: 0;
+  border-radius: 0;
+  background:
+    linear-gradient(90deg, #0009, transparent 18%),
+    linear-gradient(#ffffff0a 1px, transparent 1px) 0 0 / 100% 3px,
+    color-mix(in srgb, var(--ribbon) 16%, #302425);
+  box-shadow:
+    2px 4px 5px #0004,
+    inset 0 4px #ffffff06,
+    inset 0 -4px #0002;
+  color: var(--ribbon);
+  transition: transform 200ms ease;
+  text-align: left;
+}
+.archival .rarity-chapters button.active {
+  background:
+    linear-gradient(90deg, #0008, transparent 18%),
+    linear-gradient(#ffffff0b 1px, transparent 1px) 0 0 / 100% 3px,
+    color-mix(in srgb, var(--ribbon) 30%, #302425);
+  color: var(--ribbon);
+  border-right: 3px solid var(--ribbon);
+}
+.archival .rarity-chapters button.active::after {
+  display: none;
+}
+.archival .rarity-chapters button:hover {
+  transform: translateX(5px);
+}
+.archival .rarity-chapters button > span {
+  font-family: var(--display);
+  font-size: 20px;
+  line-height: 1;
+}
+.archival .rarity-chapters button > span > small {
+  display: block;
+  margin-top: 5px;
+  font-family: var(--body);
+  font-size: 8px;
+  letter-spacing: 0.14em;
+  color: inherit;
+  opacity: 0.66;
+}
+.archival .rarity-chapters .ribbon-count {
+  display: none;
+}
+.archival .archive-toolbar {
+  border-bottom: 0;
+}
+.archival .archive-imprint {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  color: #bba47e;
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  line-height: 1.3;
+}
+.archival .archive-imprint small {
+  display: block;
+  margin-top: 3px;
+  color: var(--chapter-accent);
+  letter-spacing: 0.12em;
+}
+.archival .chapter-seal {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 33px;
+  height: 33px;
+  border: 1px solid #a3855055;
+  outline: 1px solid #a3855020;
+  outline-offset: 3px;
+  border-radius: 50%;
+  overflow: hidden;
+  color: var(--chapter-accent);
+}
+.archival .chapter-seal::after {
+  content: '';
+  position: absolute;
+  inset: -10px;
+  background: linear-gradient(
+    115deg,
+    transparent 35%,
+    #ffefcba6 50%,
+    transparent 65%
+  );
+  transform: translateX(110%);
+  animation: seal-glint 380ms ease-out 1;
+}
+@keyframes seal-glint {
+  from {
+    transform: translateX(-110%);
+  }
+  to {
+    transform: translateX(110%);
+  }
+}
+
+.archival .publisher-seal {
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  object-fit: contain;
+  filter: drop-shadow(0 1px 2px #0008);
+}
+@media (max-width: 600px) {
+  .archival .publisher-seal {
+    width: 28px;
+    height: 28px;
+  }
+}
+.archival .brand .brand-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 0;
+  white-space: nowrap;
+}
+.archival .brand-credit {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.3em;
+  padding-left: 10px;
+  border-left: 1px solid #bfa57355;
+  color: #c2b391;
+  font: italic 500 0.875rem/1.2 var(--display);
+  letter-spacing: 0.015em;
+}
+.archival .brand-credit strong {
+  color: #e2c98e;
+  font-weight: 600;
+}
+.archival.fit-screen {
+  grid-template-rows: 46px minmax(0, 1fr);
+}
+.archival.fit-screen .book-workspace {
+  grid-area: 2 / 1 / 3 / -1;
+}
+.archival.fit-screen .book-cover {
+  left: calc(50% - 60px);
+  padding: 48px 112px 78px;
+}
+.archival.fit-screen .rarity-chapters {
+  left: calc(50% - 60px + var(--rendered-width, 800px) / 2 - 35px);
+  top: calc(50% - var(--rendered-height, 600px) / 2 + 58px);
+  width: 140px;
+}
+.archival.fit-screen .book-page {
+  min-height: 710px;
+  padding: 18px 36px 14px 32px;
+}
+.archival.fit-screen .book-page.page-right {
+  padding-left: 36px;
+  padding-right: 32px;
+}
+.archival.fit-screen .entry-main {
+  grid-template-columns: 72px minmax(0, 1fr);
+  gap: 15px;
+  margin: 5px 0 8px;
+}
+.archival.fit-screen .item-portrait {
+  min-height: 82px;
+}
+.archival.fit-screen .item-sprite {
+  width: 68px;
+  height: 82px;
+}
+.archival.fit-screen .portrait-seal {
+  width: 76px;
+  height: 76px;
+}
+.archival.fit-screen .entry-copy h2 {
+  font-size: 2.05rem;
+  line-height: 1;
+}
+.archival.fit-screen .curator-note {
+  font-size: 14px;
+  line-height: 1.35;
+  margin-bottom: 10px;
+}
+.archival.fit-screen .stat-lines > div {
+  font-size: 14px;
+  padding: 2px 0;
+  line-height: 1.3;
+}
+.archival.fit-screen .dense-page .stat-lines {
+  columns: 2;
+  column-gap: 20px;
+}
+.archival.fit-screen .dense-page .stat-lines > div {
+  break-inside: avoid;
+  gap: 7px;
+}
+.archival.fit-screen .dense-page .stat-lines dd {
+  max-width: 88px;
+}
+.archival.fit-screen .entry-effects li {
+  font-size: 14px;
+  line-height: 1.3;
+}
+.archival.fit-screen .entry-lore {
+  margin-top: 10px;
+  padding-top: 8px;
+}
+.archival.fit-screen .entry-lore blockquote {
+  font-size: 18px;
+  line-height: 1.25;
+}
+.archival.fit-screen .entry-footnote {
+  padding-top: 10px;
+}
+.archival.fit-screen .page-folio {
+  margin-top: 8px;
+  padding-bottom: 14px;
+}
+
+@media (max-width: 900px) {
+  .archival .book-cover {
+    background-image: url('/textures/archive-leaf.webp');
+    width: 100%;
+    margin-right: 0;
+    padding: 44px 138px 72px 28px;
+  }
+  .archival .leaf-face > .book-page {
+    background-image: url('/textures/archive-leaf.webp');
+    background-size: 125% 117%;
+    background-position: 10% 48%;
+  }
+  .archival .book-page {
+    min-height: 700px;
+    padding: 16px 20px 16px 28px;
+  }
+  .archival .book-stage {
+    padding-top: 60px;
+  }
+  .archival .rarity-chapters,
+  .archival.fit-screen .rarity-chapters {
+    top: 4px;
+    left: 0;
+    width: 100%;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 5px;
+  }
+  .archival .rarity-chapters button {
+    min-height: 39px;
+    justify-content: center;
+    padding: 6px;
+    gap: 5px;
+  }
+  .archival .rarity-chapters button > span {
+    font-size: 16px;
+  }
+  .archival .rarity-chapters button > span > small {
+    display: none;
+  }
+  .archival .rarity-chapters button > svg {
+    width: 15px;
+  }
+  .archival .rarity-chapters button.active {
+    border-right: 0;
+    border-bottom: 2px solid var(--ribbon);
+  }
+  .archival .rarity-chapters button:hover {
+    transform: translateY(3px);
+  }
+  .archival .page-corner-next {
+    right: 18%;
+    bottom: 10%;
+  }
+  .archival .page-corner-previous {
+    left: 3%;
+    bottom: 10%;
+  }
+  .archival:not(.fit-screen) .book-cover {
+    padding: 7% 20% 10% 4%;
+  }
+  .archival .archive-imprint > span:last-child {
+    display: none;
+  }
+  .archival.fit-screen .book-cover {
+    left: 50%;
+    top: calc(50% + 26px);
+    padding: 44px 138px 72px 28px;
+  }
+  .archival.fit-screen .book-page {
+    min-height: 600px;
+    padding: 12px 18px 12px 25px;
+  }
+  .archival.fit-screen .entry-main {
+    grid-template-columns: 70px minmax(0, 1fr);
+  }
+  .archival.fit-screen .item-sprite {
+    width: 64px;
+    height: 86px;
+  }
+}
+@media (max-width: 600px) {
+  .archival.fit-screen {
+    grid-template-rows: 38px 38px minmax(0, 1fr);
+  }
+  .archival.fit-screen .book-workspace {
+    grid-area: 3 / 1;
+  }
+  .archival .book-stage {
+    padding-top: 80px;
+  }
+  .archival .rarity-chapters,
+  .archival.fit-screen .rarity-chapters {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 4px;
+  }
+  .archival .rarity-chapters button {
+    min-height: 32px;
+  }
+  .archival.fit-screen .book-cover {
+    top: calc(50% + 38px);
+    padding: 40px 124px 72px 24px;
+  }
+  .archival.fit-screen .book-page {
+    padding: 12px 12px 12px 18px;
+  }
+  .archival.fit-screen .dense-page .stat-lines {
+    columns: 1;
+  }
+  .archival.fit-screen .stat-lines > div {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .archival.fit-screen .curator-note,
+  .archival.fit-screen .entry-effects li {
+    font-size: 15px;
+  }
+  .archival.fit-screen .entry-lore blockquote {
+    font-size: 19px;
+  }
+  .archival.fit-screen .dense-page .stat-lines dd {
+    max-width: 120px;
+  }
+  .archival.fit-screen .entry-copy h2 {
+    font-size: 2rem;
+  }
+  .archival.fit-screen .page-corner-next {
+    right: 18%;
+    bottom: 10%;
+  }
+  .archival.fit-screen .page-corner-previous {
+    left: 3%;
+    bottom: 10%;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .archival .chapter-seal::after {
+    animation: none;
+  }
+  .archival .page-corner > span,
+  .archival .rarity-chapters button {
+    transition: none;
+  }
+}
