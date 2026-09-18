@@ -1,5 +1,6 @@
 'use client';
 import EntryContents from '../scholar/entry-contents';
+import { useIndexWindow } from '../scholar/use-index-window';
 /* oxlint-disable next/no-html-link-for-pages */
 import { useCallback, useMemo, useState } from 'react';
 import Image from 'next/image';
@@ -11,6 +12,7 @@ import ScholarShell, {
   EntryNavigation,
   EntryState,
   IndexEntry,
+  IndexPagination,
 } from '../scholar/shell';
 import { useRecord } from '../scholar/use-record';
 import {
@@ -37,7 +39,6 @@ export default function Archive({
 }) {
   const [query, setQuery] = useState('');
   const [filter, setFilter] = useState('all');
-  const [limit, setLimit] = useState(40);
   const records = useMemo(
     () => entries.map((e) => ({ key: e.slug, file: e.file })),
     [entries],
@@ -63,11 +64,17 @@ export default function Archive({
   const position = results.findIndex((e) => e.slug === selected);
   const category = categories.find((c) => c.id === entry.category)!;
   const guide = entry.fieldGuide;
+  const windowed = useIndexWindow(
+    results,
+    selected,
+    results.findIndex((e) => e.slug === selected),
+  );
   return (
     <ScholarShell
       active="creatures"
       resetKey={selected}
       title="Creature Archive"
+      browse={{ label: 'creatures', count: results.length }}
       count={`${entries.length} records · Game ${version.replace(/\.0$/, '')}`}
       index={
         <>
@@ -75,7 +82,7 @@ export default function Archive({
             value={query}
             onChange={(v) => {
               setQuery(v);
-              setLimit(40);
+              windowed.setPage(null);
             }}
             label="Search creatures"
           />
@@ -85,7 +92,7 @@ export default function Archive({
               value={filter}
               onChange={(e) => {
                 setFilter(e.target.value);
-                setLimit(40);
+                windowed.setPage(null);
               }}
             >
               <option value="all">All creatures</option>
@@ -97,10 +104,12 @@ export default function Archive({
             </select>
           </label>
           <p className="scholar-eyebrow">{results.length} records</p>
-          {results.slice(0, limit).map((e) => (
+          {windowed.entries.map((e) => (
             <IndexEntry
               key={e.slug}
               active={e.slug === selected}
+              image={e.image ?? null}
+              portrait
               onClick={() => navigate(e.slug)}
             >
               <span>
@@ -113,15 +122,11 @@ export default function Archive({
             </IndexEntry>
           ))}
           {!results.length && <p>No creatures match this search.</p>}
-          {results.length > limit && (
-            <Button
-              className="scholar-load-more"
-              variant="outline"
-              onClick={() => setLimit((n) => n + 40)}
-            >
-              Show more creatures
-            </Button>
-          )}
+          <IndexPagination
+            page={windowed.page}
+            total={windowed.total}
+            onPage={windowed.setPage}
+          />
         </>
       }
     >

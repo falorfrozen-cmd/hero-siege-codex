@@ -34,9 +34,19 @@ fn main() {
             let nav_app = app.handle().clone();
             let qa = std::env::args().any(|arg| arg == "--self-test")
                 || std::env::var("ITEM_CODEX_QA").as_deref() == Ok("1");
+            // Use logical work-area dimensions so taskbars and display scaling
+            // cannot place the initial reading controls beyond the screen.
+            let (width, height) = app.primary_monitor()?.map(|monitor| {
+                let area = monitor.work_area();
+                let scale = monitor.scale_factor();
+                ((area.size.width as f64 / scale - 48.0).clamp(480.0, 1400.0),
+                 (area.size.height as f64 / scale - 80.0).clamp(360.0, 900.0))
+            }).unwrap_or((1100.0, 720.0));
             let mut builder = WebviewWindowBuilder::new(app, "main", WebviewUrl::App("index.html".into()))
                 .title(concat!("Hero Siege Item Codex — Test ", env!("CARGO_PKG_VERSION")))
-                .inner_size(1400.0, 900.0).min_inner_size(720.0, 540.0)
+                .inner_size(width, height).min_inner_size(width.min(720.0), height.min(540.0))
+                .theme(Some(tauri::Theme::Light))
+                .background_color(tauri::webview::Color(247, 244, 237, 255))
                 .center().visible(!qa).devtools(false)
                 .on_navigation(move |url| {
                     if external_allowed(url) { let _ = nav_app.opener().open_url(url.as_str(), None::<&str>); return false; }

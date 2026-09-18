@@ -6,11 +6,8 @@ export default function NotFound() {
       active=""
       title="The Index"
       count="Six volumes, one archive"
-      index={
-        <p className="scholar-caption">
-          Choose an archive from the navigation to continue browsing.
-        </p>
-      }
+      browse={{ label: 'archives', count: 6 }}
+      index={<ExploreArchives current="" />}
     >
       <article>
         <p className="scholar-eyebrow">Entry unavailable</p>

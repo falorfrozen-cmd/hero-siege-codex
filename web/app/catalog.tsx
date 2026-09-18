@@ -521,6 +521,7 @@ export default function Catalog({
       resetKey={visible[0]?.id}
       title="Item Archive"
       count="1,990 equipment records"
+      browse={{ label: 'items', count: indexedItems.length }}
       tools={
         <Button
           className="scholar-saved-control"
@@ -613,8 +614,12 @@ export default function Catalog({
                     ))}
                   </select>
                 </label>
-                <label className="scholar-checkbox">
+                <label
+                  className="scholar-checkbox"
+                  htmlFor="filter-original-lore"
+                >
                   <Checkbox
+                    id="filter-original-lore"
                     checked={view.filters.loreOnly}
                     onCheckedChange={(checked) => {
                       updateFilters({ loreOnly: checked === true });
@@ -652,6 +657,12 @@ export default function Catalog({
               <IndexEntry
                 key={item.id}
                 active={visible[0]?.id === item.id && !openingLink}
+                image={
+                  item.rarity === 'Runeword'
+                    ? '/emblems/runeword-seal.webp'
+                    : (item.image ?? null)
+                }
+                rarity={item.rarity}
                 onClick={() => chooseFromIndex(item)}
               >
                 <span>
@@ -765,24 +776,31 @@ export default function Catalog({
             mark={creatorMark}
             tools={
               <div className="scholar-reading-tools">
-                <label className="scholar-checkbox">
-                  <Checkbox
-                    checked={showLore}
-                    onCheckedChange={(checked) => {
-                      const show = checked === true;
-                      setShowLore(show);
-                      try {
-                        localStorage.setItem(
-                          LORE_PREFERENCE_KEY,
-                          show ? 'visible' : 'hidden',
-                        );
-                      } catch {
-                        setSessionOnly(true);
-                      }
-                    }}
-                  />
-                  Show lore
-                </label>
+                {visible[0].lore?.kind === 'Lore' &&
+                  !!visible[0].lore.text.trim() && (
+                    <label
+                      className="scholar-checkbox"
+                      htmlFor="show-original-lore"
+                    >
+                      <Checkbox
+                        id="show-original-lore"
+                        checked={showLore}
+                        onCheckedChange={(checked) => {
+                          const show = checked === true;
+                          setShowLore(show);
+                          try {
+                            localStorage.setItem(
+                              LORE_PREFERENCE_KEY,
+                              show ? 'visible' : 'hidden',
+                            );
+                          } catch {
+                            setSessionOnly(true);
+                          }
+                        }}
+                      />
+                      Show lore
+                    </label>
+                  )}
                 <Button
                   size="sm"
                   variant="ghost"
@@ -809,9 +827,7 @@ export default function Catalog({
           </Button>
         </EntryState>
       )}
-      <span role="status" className="sr-only">
-        {notice}
-      </span>
+      <output className="sr-only">{notice}</output>
       <Sheet
         open={drawer !== null}
         onOpenChange={(open) => {

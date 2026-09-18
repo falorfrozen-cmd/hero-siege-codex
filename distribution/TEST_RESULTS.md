@@ -1,27 +1,37 @@
-# Desktop Test 0.4.0 — verification
+# Desktop Test 0.5.0 — verification
 
-Release review: 18 September 2026. The exact website source is identified in `web-source.json`. This release replaces the old book interface with the Scholar’s Index across Items, Stats, Classes, Creatures, Relics and World.
+Release review: 18 September 2026. Website snapshot: `888939603820819ab321222f34fc27744c54e3d5` (UI release `2026.09.18-r3`). The exact snapshot is also recorded in `web-source.json`.
 
-## Scope
+## Included improvements
 
-The website production build, TypeScript, navigation/data suites and all 3,444 unified-search destinations have passed. Desktop TypeScript and link tests passed: 1,990 item links, 1,454 other archive links, all record files, 1,991 local asset references, and all 3,444 unified-search results round-trip through desktop links.
+The current Scholar’s Index is included across all six archives, including illustrated/paginated indexes, compact item reading layout, contextual filtered counts, conditional Show lore and corrected optional-section anchors. Report an issue includes a desktop entry link and the desktop/UI versions; it sends nothing automatically. Initial window dimensions account for the monitor work area and Windows scaling. The native window uses the light theme matching the ivory reader.
 
-## Compiled interface verification
+## Automated checks
 
-The production static bundle used by the desktop build was served locally in the browser. Mika retains all 15 properties; its original Attack Damage popover is readable. Item Copy link produces an hscodex link, and Ctrl+O opens it. Unified search distinguishes The Light of Dawn item from the quest and opens the quest with all nine objectives; Copy link preserves the world volume and entry. The Graxy_TV bookmark preserves its supplied Twitch and Discord links. Version 0.4.0 and the light theme are present in the rebuilt HTML. No browser console errors were recorded for this preview. These are browser checks, not native WebView2 UI automation.
+- Desktop TypeScript passes.
+- 1,990 unique item identities, all item images, variants, creator marks and invalid links pass.
+- 1,454 other archive links, their record files and 1,991 structured asset references pass.
+- Desktop issue reports preserve identity, variant zero and creator marks, identify version 0.5.0 and omit unknown query parameters. Invalid routes remain reportable.
+- Every one of the 3,638 public bundle files matches its source SHA-256. All 3,444 unified-search destinations round-trip through desktop links. The entry HTML, referenced boot assets and release title are present. Hosting/authentication files are not packaged.
+- Optimized Rust/Tauri release and the Windows x64 NSIS installer both build successfully. EXE file/product version is 0.5.0.
 
-The data remains a fixed snapshot. Creature encounter evidence was reviewed against 7.0.12.0. All 842 recorded English evidence texts still match installed game 7.0.13.0, but changed binaries prevent claiming current encounter behavior has been reverified. 25 appearances remain unconfirmed; no guessed combat or drop statistics were added.
+## Interface checks
 
-## Native build and launch
+The actual release EXE was launched on this Windows machine and inspected through Windows accessibility and a native screenshot. Its Class Archive renders Paladin with the painting separate from the description and Previous/Next visible. Native World Archive content and its navigation are also present. No startup error was written to the captured stderr log. This is a native launch/visual check, not a full installer or native end-to-end acceptance test.
 
-The optimized Tauri release and NSIS installer build both completed. The executable reports file/product version 0.4.0. Its hidden `--self-test` mode was launched with an isolated temporary profile; the process remained responsive and started a Microsoft Edge WebView2 child. The test process was stopped afterward. This is an initial launch smoke check, not a full native UI or installer acceptance test.
+The exact compiled static bundle was also checked in the browser:
 
-Release ZIPs include setup/portable binaries, this report, README, third-party notices and SHA-256 checksums.
+- At 720×540, Shadows retains all 19 properties. Document dimensions match the viewport and Previous/Next end at y=528.8, inside the screen.
+- Ctrl+O opens a desktop link to Mika, preserving the Graxy_TV marked entry and both supplied social destinations. All 15 properties remain present.
+- Report an issue opens from the collapsed navigation, includes both release identifiers and the correct hscodex link, and copies the exact preview text. At 720×540 its expanded dialog stays within x=72/y=16/w=576/bottom=524, without horizontal overflow.
+- At 1280×720, Strength, Exo/Supernova, Gurag, Vadjra and The Light of Dawn render correctly. Exo has 18 skills; the linked Supernova icon loads and its section starts at y=156.2 below the sticky contents control. The quest retains all nine objectives. Checked pages do not overflow horizontally; browser error logs are empty.
 
-## Tester coverage still needed
+## Distribution and remaining tester coverage
 
-The installer is not installed over the owner’s existing edition during packaging. Installation/uninstallation, Windows protocol registration, cold-launch links, physically disconnected operation, restart persistence and native window interaction require testing with this release. Browser viewport tests are not physical low-end-device tests.
+Setup and portable ZIPs include README, this report, provenance, dependency notices and SHA-256 checksums. All archive data, artwork, fonts and search are bundled. Internet is needed only for external social links and for setup to obtain Microsoft WebView2 if it is absent. The website's private access setting does not restrict the offline archive.
 
-Please test fresh Windows 10/11 x64 machines, display scaling and lower-end hardware. Setup can fetch Microsoft WebView2 if missing; that initial step needs internet. Archive data, illustrations, fonts and search are packaged locally. External Twitch and Discord links require internet.
+The installer was not installed over the owner's existing edition. Fresh-machine installation/uninstallation, Windows protocol registration, native cold-launch links, physically disconnected operation, restart persistence, different display scaling and low-end hardware still need tester coverage. Browser viewport checks do not claim physical-device FPS or universal rendering perfection.
 
-EXE and setup are unsigned. There is no automatic update or cloud synchronization. Previous-release test results are not represented as current verification.
+The snapshot is not a claim of complete current-game knowledge: encounter evidence was reviewed against 7.0.12.0; 25 appearances remain unconfirmed. Existing data limitations remain visible in About the records.
+
+The EXE and setup are unsigned. There is no automatic update or cloud synchronization. Previous-release results are not represented as current verification.

@@ -16,7 +16,10 @@ export default function EntryContents({
     const headings = Array.from(article.querySelectorAll<HTMLElement>('h2'));
     setSections(
       headings.map((heading, i) => {
-        if (!heading.id) heading.id = `${prefix}-section-${i}`;
+        // Reindex our generated anchors when optional sections appear/disappear.
+        // Keep explicit anchors (for example skill deep links) unchanged.
+        if (!heading.id || heading.id.startsWith(`${prefix}-section-`))
+          heading.id = `${prefix}-section-${i}`;
         heading.tabIndex = -1;
         const label = Array.from(heading.childNodes)
           .filter((node) => node.nodeType === Node.TEXT_NODE)

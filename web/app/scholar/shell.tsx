@@ -39,6 +39,8 @@ import { Input } from '@/components/ui/input';
 import Image from 'next/image';
 import GlobalSearch from './global-search';
 import ArchiveCoverage from './coverage';
+import IndexThumbnail from './index-thumbnail';
+import ReportIssue from './issue-report';
 
 export const volumes = [
   {
@@ -91,6 +93,7 @@ export const volumes = [
   },
 ];
 const IndexContext = createContext(() => {});
+const IndexOpenContext = createContext(false);
 export function useIndexSelection() {
   return useContext(IndexContext);
 }
@@ -113,6 +116,7 @@ export default function ScholarShell({
   active,
   title,
   count,
+  browse,
   index,
   children,
   tools,
@@ -121,6 +125,7 @@ export default function ScholarShell({
   active: string;
   title: string;
   count: string;
+  browse: { label: string; count: number };
   index: ReactNode;
   children: ReactNode;
   tools?: ReactNode;
@@ -187,6 +192,12 @@ export default function ScholarShell({
           <span>HERO SIEGE</span>
           <small>The Scholar’s Index</small>
           <ArchiveCoverage />
+          <ReportIssue
+            archive={title}
+            getEntry={() =>
+              content.current?.querySelector('h1')?.textContent?.trim() || title
+            }
+          />
         </SidebarFooter>
       </Sidebar>
       <div className="scholar-main">
@@ -210,30 +221,41 @@ export default function ScholarShell({
             aria-controls="archive-index"
           >
             <List size={17} />
-            {indexOpen ? 'Close index' : 'Browse entries'}
+            {indexOpen ? (
+              'Close index'
+            ) : (
+              <>
+                Browse {browse.label}
+                <small className="scholar-browse-count">
+                  {browse.count.toLocaleString('en-US')}
+                </small>
+              </>
+            )}
           </Button>
         </div>
         <div className="scholar-workspace" data-index-open={indexOpen}>
           <IndexContext.Provider value={selectEntry}>
-            <aside
-              className="scholar-index"
-              id="archive-index"
-              aria-label={`${title} index`}
-            >
-              <div className="scholar-index-heading">
-                <h2>{title}</h2>
-                <p>{count}</p>
-              </div>
-              {index}
-            </aside>
-            <main
-              ref={content}
-              id="archive-content"
-              className="scholar-content"
-              tabIndex={-1}
-            >
-              {children}
-            </main>
+            <IndexOpenContext.Provider value={indexOpen}>
+              <aside
+                className="scholar-index"
+                id="archive-index"
+                aria-label={`${title} index`}
+              >
+                <div className="scholar-index-heading">
+                  <h2>{title}</h2>
+                  <p>{count}</p>
+                </div>
+                {index}
+              </aside>
+              <main
+                ref={content}
+                id="archive-content"
+                className="scholar-content"
+                tabIndex={-1}
+              >
+                {children}
+              </main>
+            </IndexOpenContext.Provider>
           </IndexContext.Provider>
         </div>
       </div>
@@ -245,27 +267,115 @@ export function IndexEntry({
   active,
   children,
   onClick,
+  image,
+  portrait,
+  rarity,
   ...props
 }: {
   active?: boolean;
   children: ReactNode;
   onClick: () => void;
   title?: string;
+  image?: string | null;
+  portrait?: boolean;
+  rarity?: string;
 }) {
   const select = useContext(IndexContext);
+  const indexOpen = useContext(IndexOpenContext);
+  const root = useRef<HTMLButtonElement>(null);
+  useEffect(() => {
+    if (!active) return;
+    const frame = requestAnimationFrame(() => {
+      const node = root.current;
+      const pane = node?.closest<HTMLElement>('.scholar-index');
+      if (!node || !pane || !pane.clientHeight) return;
+      const row = node.getBoundingClientRect();
+      const viewport = pane.getBoundingClientRect();
+      if (row.bottom > viewport.bottom - 12)
+        pane.scrollBy({
+          top: row.bottom - viewport.bottom + 16,
+          behavior: 'instant',
+        });
+      else if (row.top < viewport.top + 12)
+        pane.scrollBy({
+          top: row.top - viewport.top - 16,
+          behavior: 'instant',
+        });
+    });
+    return () => cancelAnimationFrame(frame);
+  }, [active, indexOpen]);
   return (
     <button
+      ref={root}
       type="button"
       className="scholar-index-entry"
       aria-current={active ? 'true' : undefined}
+      data-rarity={rarity?.toLowerCase()}
       onClick={() => {
         onClick();
         select();
       }}
       {...props}
     >
+      {image !== undefined && (
+        <IndexThumbnail key={image} src={image} portrait={portrait} />
+      )}
       {children}
     </button>
+  );
+}
+export function IndexPagination({
+  page,
+  total,
+  onPage,
+}: {
+  page: number;
+  total: number;
+  onPage: (page: number) => void;
+}) {
+  const root = useRef<HTMLElement>(null);
+  function browse(next: number) {
+    const pane = root.current?.closest<HTMLElement>('.scholar-index');
+    onPage(next);
+    requestAnimationFrame(() => {
+      const first = pane?.querySelector('.scholar-index-entry');
+      if (!pane?.isConnected || !first) return;
+      pane.scrollBy({
+        top:
+          first.getBoundingClientRect().top -
+          pane.getBoundingClientRect().top -
+          16,
+        behavior: 'instant',
+      });
+    });
+  }
+  if (total <= 1) return null;
+  return (
+    <nav
+      ref={root}
+      className="scholar-index-pagination"
+      aria-label="Index pages"
+    >
+      <Button
+        variant="outline"
+        size="sm"
+        disabled={page === 0}
+        onClick={() => browse(page - 1)}
+      >
+        Previous
+      </Button>
+      <span>
+        {page + 1} / {total}
+      </span>
+      <Button
+        variant="outline"
+        size="sm"
+        disabled={page + 1 === total}
+        onClick={() => browse(page + 1)}
+      >
+        Next
+      </Button>
+    </nav>
   );
 }
 export function ArchiveSearch({
@@ -372,6 +482,14 @@ export function CopyEntry({ href, name }: { href: string; name: string }) {
   const [status, setStatus] = useState('');
   const [fallback, setFallback] = useState('');
   const attempt = useRef(0);
+  const feedback = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
+  useEffect(
+    () => () => {
+      clearTimeout(feedback.current);
+      attempt.current++;
+    },
+    [],
+  );
   async function copy() {
     const id = ++attempt.current;
     const url = sharedArchiveHref(new URL(href, window.location.origin).href);
@@ -380,6 +498,10 @@ export function CopyEntry({ href, name }: { href: string; name: string }) {
       if (id === attempt.current) {
         setStatus('Link copied');
         setFallback('');
+        clearTimeout(feedback.current);
+        feedback.current = setTimeout(() => {
+          if (id === attempt.current) setStatus('');
+        }, 2200);
       }
     } catch {
       if (id === attempt.current) {
@@ -395,6 +517,7 @@ export function CopyEntry({ href, name }: { href: string; name: string }) {
         size="sm"
         onClick={copy}
         aria-label={`Copy link to ${name}`}
+        data-copied={status === 'Link copied' || undefined}
       >
         {status === 'Link copied' ? (
           <Check size={16} />

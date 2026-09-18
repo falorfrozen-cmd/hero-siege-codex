@@ -1,5 +1,6 @@
 'use client';
 import EntryContents from '../scholar/entry-contents';
+import IndexThumbnail from '../scholar/index-thumbnail';
 /* oxlint-disable next/no-html-link-for-pages */
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
@@ -60,7 +61,7 @@ export default function ClassStudy({
   initialSkill,
 }: {
   entry: Entry;
-  classes: { slug: string; name: string }[];
+  classes: { slug: string; name: string; image?: string }[];
   initialSkill: string | null;
 }) {
   const [selected, setSelected] = useState(initialSkill ?? 'portrait');
@@ -96,14 +97,15 @@ export default function ClassStudy({
     } catch {
       /* Device preferences are optional. */
     }
-    setSelected(restored ?? 'portrait');
-    setReady(true);
-    if (restored && restored !== 'portrait')
-      requestAnimationFrame(() =>
+    const frame = requestAnimationFrame(() => {
+      setSelected(restored ?? 'portrait');
+      setReady(true);
+      if (restored && restored !== 'portrait')
         document
           .getElementById(`skill-${restored}`)
-          ?.scrollIntoView({ block: 'start' }),
-      );
+          ?.scrollIntoView({ block: 'start' });
+    });
+    return () => cancelAnimationFrame(frame);
   }, [entry.slug, entry.skills, initialSkill]);
   useEffect(() => {
     if (!ready) return;
@@ -145,6 +147,7 @@ export default function ClassStudy({
       active="classes"
       resetKey={entry.slug}
       title="Class Archive"
+      browse={{ label: 'skills', count: entry.skills.length }}
       count={`${classes.length} illustrated classes`}
       index={
         <>
@@ -157,13 +160,16 @@ export default function ClassStudy({
                 href={classEntryHref(c.slug)}
                 aria-current={c.slug === entry.slug ? 'page' : undefined}
               >
-                {c.name}
+                <IndexThumbnail src={c.image} portrait />
+                <span>{c.name}</span>
               </a>
             ))}
           </details>
           <ClassSkillSearch currentClass={entry.slug} onSelect={choose} />
           <IndexEntry
             active={selected === 'portrait'}
+            image={entry.image.replace('.webp', '-mobile.webp')}
+            portrait
             onClick={() => choose('portrait')}
           >
             Overview <small>{entry.name}</small>
@@ -175,16 +181,9 @@ export default function ClassStudy({
             <IndexEntry
               key={s.sourceKey}
               active={selected === skillKey(s)}
+              image={s.icon}
               onClick={() => choose(skillKey(s))}
             >
-              <Image
-                unoptimized
-                src={s.icon}
-                width={28}
-                height={28}
-                alt=""
-                loading="lazy"
-              />
               <span>
                 <small>{String(i + 1).padStart(2, '0')}</small>
                 {s.name}

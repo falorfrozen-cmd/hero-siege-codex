@@ -26,7 +26,7 @@ export type CreatureEntry = {
 export type CreatureIndexEntry = Pick<
   CreatureEntry,
   'slug' | 'name' | 'category' | 'location'
-> & { search: string; file: string };
+> & { search: string; file: string; image?: string | null };
 
 export function creatureHref(slug: string) {
   return `/creature-archive?creature=${encodeURIComponent(slug)}`;

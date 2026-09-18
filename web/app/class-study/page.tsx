@@ -53,7 +53,11 @@ export default async function ClassStudyPage({
         })),
       }}
       initialSkill={initialSkill}
-      classes={studies.map(({ slug, name }) => ({ slug, name }))}
+      classes={studies.map(({ slug, name, image }) => ({
+        slug,
+        name,
+        image: image.replace('.webp', '-mobile.webp'),
+      }))}
     />
   );
 }

@@ -12,6 +12,7 @@ export type RelicIndexEntry = {
   name: string;
   ability: string;
   file: string;
+  image?: string | null;
 };
 export const relicHref = (key: string) =>
   `/relic-archive?relic=${encodeURIComponent(key)}`;

@@ -25,4 +25,9 @@ for (const file of ['app/scholar/shell.tsx']) {
     return text.replace("'use client';", "'use client';\nimport { sharedArchiveHref } from '@desktop/links';");
   });
 }
-console.log('Applied three desktop-only share-link adapters.');
+edit('app/scholar/issue-report.tsx', text => {
+  const original = "from '@/lib/issue-report'";
+  if (!text.includes(original)) throw new Error('Issue report adapter mismatch.');
+  return text.replace(original, "from '@desktop/issue-report'");
+});
+console.log('Applied desktop sharing and issue-report adapters.');

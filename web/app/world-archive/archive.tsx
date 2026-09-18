@@ -1,5 +1,6 @@
 'use client';
 import EntryContents from '../scholar/entry-contents';
+import { useIndexWindow } from '../scholar/use-index-window';
 /* oxlint-disable next/no-html-link-for-pages */
 import { useCallback, useMemo, useState } from 'react';
 import { Compass, Feather } from 'lucide-react';
@@ -10,6 +11,7 @@ import ScholarShell, {
   EntryNavigation,
   EntryState,
   IndexEntry,
+  IndexPagination,
 } from '../scholar/shell';
 import { useRecord } from '../scholar/use-record';
 import {
@@ -45,7 +47,6 @@ export default function Archive({
   const [query, setQuery] = useState('');
   const [chapter, setChapter] = useState('all');
   const [size, setSize] = useState('all');
-  const [limit, setLimit] = useState(40);
   const isEther = initial.kind === 'ether';
   const href = useCallback(
     (key: string) => worldHref(initial.kind, key),
@@ -83,11 +84,17 @@ export default function Archive({
   const chapterPeers = volume.entries.filter(
     (e) => e.chapter === entry.chapter && e.key !== entry.key,
   );
+  const windowed = useIndexWindow(
+    results,
+    selected,
+    results.findIndex((e) => e.key === selected),
+  );
   return (
     <ScholarShell
       active="world"
       resetKey={selected}
       title="World Archive"
+      browse={{ label: isEther ? 'nodes' : 'quests', count: results.length }}
       count={
         isEther
           ? '217 Ether nodes · 15 chapters'
@@ -113,7 +120,7 @@ export default function Archive({
             value={query}
             onChange={(v) => {
               setQuery(v);
-              setLimit(40);
+              windowed.setPage(null);
             }}
             label={
               isEther ? 'Find a node or effect' : 'Find a quest or objective'
@@ -125,7 +132,7 @@ export default function Archive({
               value={chapter}
               onChange={(e) => {
                 setChapter(e.target.value);
-                setLimit(40);
+                windowed.setPage(null);
               }}
             >
               <option value="all">All chapters</option>
@@ -143,7 +150,7 @@ export default function Archive({
                 value={size}
                 onChange={(e) => {
                   setSize(e.target.value);
-                  setLimit(40);
+                  windowed.setPage(null);
                 }}
               >
                 <option value="all">All sizes</option>
@@ -153,7 +160,7 @@ export default function Archive({
             </label>
           )}
           <p className="scholar-eyebrow">{results.length} entries</p>
-          {results.slice(0, limit).map((e) => (
+          {windowed.entries.map((e) => (
             <IndexEntry
               key={e.key}
               active={e.key === selected}
@@ -169,15 +176,11 @@ export default function Archive({
             </IndexEntry>
           ))}
           {!results.length && <p>No entries match these filters.</p>}
-          {results.length > limit && (
-            <Button
-              className="scholar-load-more"
-              variant="outline"
-              onClick={() => setLimit((n) => n + 40)}
-            >
-              Show more entries
-            </Button>
-          )}
+          <IndexPagination
+            page={windowed.page}
+            total={windowed.total}
+            onPage={windowed.setPage}
+          />
         </>
       }
     >

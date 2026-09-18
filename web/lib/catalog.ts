@@ -53,7 +53,7 @@ export type Item = {
 export type IndexItem = Pick<
   Item,
   'id' | 'key' | 'variant' | 'name' | 'rarity' | 'category' | 'type'
->;
+> & { image?: string | null };
 export const CHAPTERS: Record<
   string,
   { numeral: string; subtitle: string; color: string }

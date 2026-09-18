@@ -1,5 +1,6 @@
 'use client';
 import EntryContents from '../scholar/entry-contents';
+import { useIndexWindow } from '../scholar/use-index-window';
 import { useCallback, useMemo, useState } from 'react';
 import Image from 'next/image';
 import { Gem } from 'lucide-react';
@@ -10,6 +11,7 @@ import ScholarShell, {
   EntryNavigation,
   EntryState,
   IndexEntry,
+  IndexPagination,
 } from '../scholar/shell';
 import { useRecord } from '../scholar/use-record';
 import {
@@ -29,7 +31,6 @@ export default function Archive({
   entries: RelicIndexEntry[];
 }) {
   const [query, setQuery] = useState('');
-  const [limit, setLimit] = useState(40);
   const readKey = useCallback(
     (params: URLSearchParams) => readRelicLink(params, entries),
     [entries],
@@ -56,11 +57,17 @@ export default function Archive({
     [entries, query],
   );
   const position = entries.findIndex((e) => e.key === selected);
+  const windowed = useIndexWindow(
+    results,
+    selected,
+    results.findIndex((e) => e.key === selected),
+  );
   return (
     <ScholarShell
       active="relics"
       resetKey={selected}
       title="Relic Archive"
+      browse={{ label: 'relics', count: results.length }}
       count={`${entries.length} curiosities & strange powers`}
       index={
         <>
@@ -68,15 +75,16 @@ export default function Archive({
             value={query}
             onChange={(v) => {
               setQuery(v);
-              setLimit(40);
+              windowed.setPage(null);
             }}
             label="Find a relic or ability"
           />
           <p className="scholar-eyebrow">{results.length} relics</p>
-          {results.slice(0, limit).map((e) => (
+          {windowed.entries.map((e) => (
             <IndexEntry
               key={e.key}
               active={e.key === selected}
+              image={e.image ?? null}
               onClick={() => navigate(e.key)}
             >
               <span>
@@ -86,15 +94,11 @@ export default function Archive({
             </IndexEntry>
           ))}
           {!results.length && <p>No relics match your search.</p>}
-          {results.length > limit && (
-            <Button
-              className="scholar-load-more"
-              variant="outline"
-              onClick={() => setLimit((n) => n + 40)}
-            >
-              Show more relics
-            </Button>
-          )}
+          <IndexPagination
+            page={windowed.page}
+            total={windowed.total}
+            onPage={windowed.setPage}
+          />
         </>
       }
     >
@@ -106,7 +110,7 @@ export default function Archive({
           {reader.error && <Button onClick={reader.retry}>Try again</Button>}
         </EntryState>
       ) : (
-        <article>
+        <article className="scholar-relic-record scholar-compact-record">
           <EntryContents entryKey={selected} />
           <p className="scholar-breadcrumb">
             <span>Items</span>

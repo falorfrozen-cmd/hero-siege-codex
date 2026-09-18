@@ -8,6 +8,7 @@ import { entryHref, type CreatorMark } from '@/lib/entry-links';
 import { StatLabel, type StatHelpHandle } from '../stat-glossary';
 import { CopyEntry } from './shell';
 import EntryContents from './entry-contents';
+import RarityEmblem from './rarity-emblem';
 
 export default function ItemRecord({
   item,
@@ -59,7 +60,10 @@ export default function ItemRecord({
         </figure>
         <div>
           <div className="scholar-item-kicker">
-            <span className="scholar-rarity">{item.rarity}</span>
+            <span className="scholar-rarity">
+              <RarityEmblem rarity={item.rarity} />
+              {item.rarity}
+            </span>
             {tools}
           </div>
           <h1>{item.name}</h1>

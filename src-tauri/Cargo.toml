@@ -1,6 +1,6 @@
 [package]
 name = "hero-siege-item-codex"
-version = "0.4.0"
+version = "0.5.0"
 description = "Offline test edition of the Hero Siege Item Codex"
 authors = ["FalorFrozen"]
 edition = "2021"

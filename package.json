@@ -1,11 +1,11 @@
 {
   "name": "hero-siege-item-codex-desktop",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "private": true,
   "type": "module",
   "scripts": {
     "build": "tauri build --bundles nsis",
-    "test": "node --experimental-strip-types scripts/test-links.mjs && node --experimental-strip-types scripts/test-archives.mjs",
+    "test": "node --experimental-strip-types scripts/test-links.mjs && node --experimental-strip-types scripts/test-archives.mjs && node scripts/test-report.mjs",
     "tauri": "tauri",
     "build:web": "vite build",
     "dev": "vite --port 5190"

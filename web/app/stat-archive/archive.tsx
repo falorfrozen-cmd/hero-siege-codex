@@ -103,6 +103,7 @@ export default function Archive({
       active="stats"
       resetKey={selected}
       title="Stat Archive"
+      browse={{ label: 'stats', count: results.length }}
       count={`${entries.length} original game descriptions`}
       index={
         <>
@@ -151,35 +152,37 @@ export default function Archive({
           <p>{error}</p>
         </EntryState>
       ) : (
-        <article>
+        <article className="scholar-stat-record scholar-compact-record">
           <EntryContents entryKey={selected} />
           <p className="scholar-breadcrumb">
             <span>Stats</span>
             <span>{category.label}</span>
           </p>
-          <header className="scholar-record-head">
-            <div className="scholar-stat-symbol">
-              <Symbol size={48} strokeWidth={1} />
-            </div>
-            <div>
-              <p className="scholar-eyebrow">{category.label}</p>
-              <h1>{entry.label}</h1>
-            </div>
-            <CopyEntry
-              key={entry.slug}
-              name={entry.label}
-              href={statArchiveHref(entry.sourceKey)}
-            />
-          </header>
-          <section
-            className="scholar-definition"
-            aria-label="Original game description"
-          >
-            <p className="scholar-eyebrow">Original game description</p>
-            <p>
-              <GameText text={entry.text} />
-            </p>
-          </section>
+          <div className="scholar-definition-card">
+            <header className="scholar-record-head">
+              <div className="scholar-stat-symbol">
+                <Symbol size={48} strokeWidth={1} />
+              </div>
+              <div>
+                <p className="scholar-eyebrow">{category.label}</p>
+                <h1>{entry.label}</h1>
+              </div>
+              <CopyEntry
+                key={entry.slug}
+                name={entry.label}
+                href={statArchiveHref(entry.sourceKey)}
+              />
+            </header>
+            <section
+              className="scholar-definition"
+              aria-label="Original game description"
+            >
+              <p className="scholar-eyebrow">Original game description</p>
+              <p>
+                <GameText text={entry.text} />
+              </p>
+            </section>
+          </div>
           <section className="scholar-related">
             <h2>Related descriptions</h2>
             <div className="scholar-related-grid">
