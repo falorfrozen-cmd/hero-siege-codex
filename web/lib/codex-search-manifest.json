@@ -1,0 +1,13 @@
+{
+  "path": "/search/codex.6acc4693ef2b.json",
+  "total": 3444,
+  "counts": {
+    "Items": 1990,
+    "Stats": 89,
+    "Classes": 24,
+    "Skills": 432,
+    "Creatures": 325,
+    "Relics": 167,
+    "World": 417
+  }
+}

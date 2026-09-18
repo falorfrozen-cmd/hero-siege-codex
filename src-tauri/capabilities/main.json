@@ -1,0 +1,6 @@
+{
+  "identifier": "main",
+  "description": "Local catalog events and entry links only",
+  "windows": ["main"],
+  "permissions": ["core:event:default", "deep-link:default"]
+}

@@ -1,0 +1,109 @@
+{
+  "snapshotVersion": "7.0.12.0",
+  "records": 325,
+  "illustrated": 300,
+  "guides": 180,
+  "currentReview": "18 September 2026: all 842 recorded English evidence texts still match the installed 7.0.13.0 files. The game binaries have changed; encounter behavior has not been reverified for that version.",
+  "unconfirmed": [
+    {
+      "slug": "skeleton",
+      "name": "Bone Champion"
+    },
+    {
+      "slug": "skeleton-archer",
+      "name": "Fallen Marksman"
+    },
+    {
+      "slug": "nautilus",
+      "name": "Nautilus"
+    },
+    {
+      "slug": "hollow-stump",
+      "name": "Hollow Stump"
+    },
+    {
+      "slug": "goblin-cannoneer",
+      "name": "Goblin Cannoneer"
+    },
+    {
+      "slug": "pyramid-guardian",
+      "name": "Pyramid Guardian"
+    },
+    {
+      "slug": "rift-grunt",
+      "name": "Rift Grunt"
+    },
+    {
+      "slug": "corrupted-monk",
+      "name": "Corrupted Monk"
+    },
+    {
+      "slug": "giant",
+      "name": "Astral Giant"
+    },
+    {
+      "slug": "flesh-plant",
+      "name": "Flesh Plant"
+    },
+    {
+      "slug": "spider-sibling",
+      "name": "Spider Sibling"
+    },
+    {
+      "slug": "rift-skeleton",
+      "name": "Rift Skeleton"
+    },
+    {
+      "slug": "ooze",
+      "name": "Nightmare Ooze"
+    },
+    {
+      "slug": "raging-bear-name-record",
+      "name": "Raging Bear"
+    },
+    {
+      "slug": "colossal-spider",
+      "name": "Ancient Spider"
+    },
+    {
+      "slug": "royal-skeleton",
+      "name": "Skeleton Knight"
+    },
+    {
+      "slug": "royal-archer",
+      "name": "Rattling Archer"
+    },
+    {
+      "slug": "fears-embodiment",
+      "name": "Fear\u2019s Embodiment"
+    },
+    {
+      "slug": "pagan-preacher",
+      "name": "Pagan Preacher"
+    },
+    {
+      "slug": "sacrilegious-legion",
+      "name": "Sacrilegious Legion"
+    },
+    {
+      "slug": "tentacle-zombie",
+      "name": "Reef Lurker"
+    },
+    {
+      "slug": "black-stone-defender",
+      "name": "Blackstone Defender"
+    },
+    {
+      "slug": "damien-head",
+      "name": "Damien's Head"
+    },
+    {
+      "slug": "rogue-champion",
+      "name": "Rogue Champion"
+    },
+    {
+      "slug": "mechanical-monstrosity",
+      "name": "Mechanical Monstrosity"
+    }
+  ]
+}

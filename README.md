@@ -1,44 +1,51 @@
-# Hero Siege Codex
+# Hero Siege Codex 0.5.0
 
-Explore items, classes, creatures, and the world.
+The first standalone Scholar's Index release, presented here as a complete application for review. See [REVIEW.md](REVIEW.md) for the application map and validation commands.
 
-An English offline reference archive for Hero Siege, created by **Falor**. This repository distributes Windows desktop builds and their release documentation.
+An English, offline Windows x64 test edition created by Falor. Uses the Scholar’s Index interface with an evergreen archive rail, readable ivory entries, on-page section navigation and unified search across 3,444 destinations. The exact website source commit is recorded in web-source.json.
 
-## Install with Hero Siege Toolkit
-
-1. Open [Hero Siege Toolkit](https://github.com/falorfrozen-cmd/hero-siege-offline-toolkit) and refresh its library while online.
-2. Search for **Hero Siege Codex**, then select **Install**.
-3. Select **Launch**. The downloaded archive works offline.
-
-Toolkit manages the Portable ZIP and verifies its checksum against its signed catalog. Existing Toolkit 1.0.5 installations can discover the entry without a Toolkit upgrade. It appears under **All** and search with the standard fallback icon.
-
-## Download separately
-
-[Download the latest desktop release](https://github.com/falorfrozen-cmd/hero-siege-codex/releases/latest).
-
-- **Portable ZIP:** extract the whole archive and run `hero-siege-item-codex.exe`.
-- **Setup:** installs for the current Windows user and registers `hscodex:` entry links. Toolkit users should use the Toolkit-managed portable edition instead.
-- **SHA256SUMS.txt:** checksums for the published downloads.
-
-Requires 64-bit Windows 10 or 11 and Microsoft Edge WebView2. Toolkit already uses WebView2. Standalone setup can download the runtime when it is missing.
-
-## Included in 0.5.0
+## Included
 
 - Item Archive: 1,990 equipment entries and 167 relics.
-- Stat Archive: 89 descriptions from the game's English text.
-- Class Archive: 24 illustrated classes and their skills.
-- Creature Archive: 325 entries with custom Codex illustrations and field-guide information.
-- World Archive: 217 Ether nodes and 200 quests.
-- Unified search, bookmarks, entry links, optional lore and the Scholar's Index interface.
+- Stat Archive: 89 original game descriptions.
+- Class Archive: 24 illustrated classes and their skill descriptions/icons.
+- Creature Archive: creatures, bosses, custom Codex illustrations and verified field-guide content.
+- World Archive: 217 Ether nodes and 200 quests with 310 objectives.
+- Unified search (Ctrl+K), illustrated paginated indexes, archive filters, reading positions, item bookmarks, Show lore and the Graxy_TV creator bookmark.
+- Compact item layouts, contextual archive counts and Report an issue with desktop links and both desktop/UI release numbers.
 
-The archive does not read or modify game saves and needs no running game or administrator access. Each release is a fixed data snapshot. Toolkit offers updates when a newer desktop package is published in its signed catalog; the app does not synchronize with the website.
+This fixed snapshot does not update or sync with the website, and does not read or modify game saves. Original records may include inactive event or legacy entries. Missing information remains labelled; this is not a claim to cover every game mechanic.
 
-Use **File > Open entry link...** or **Ctrl+O** to paste a shared entry link in either edition. The portable edition does not register the Windows link protocol. External social links require internet.
+## Install and run
 
-## Public test edition
+Recommended: run **HeroSiegeItemCodex-0.5.0-Setup.exe**, then launch **Hero Siege Item Codex** from the Start menu. Installation is for your Windows account.
 
-Version 0.5.0 is a public test build. Read the included `TEST_RESULTS.md` for completed checks and remaining device coverage. Missing or unconfirmed game information stays labelled in the archive; this is not a claim to document every current game mechanic.
+Alternatively, extract the portable ZIP and run **hero-siege-item-codex.exe**. Microsoft Edge WebView2 must already be installed. The setup version can download WebView2 from Microsoft if missing; this first step requires internet. The packaged archive works offline. Twitch and Discord open in your default browser and require internet.
 
-Use **Report an issue** inside the app to copy the entry and version information, then [open an issue](https://github.com/falorfrozen-cmd/hero-siege-codex/issues). Include your Windows version, display scaling, reproduction steps and a screenshot. Do not include personal saves or credentials.
+This test build is unsigned. Windows may identify it as an unknown publisher. Check the sender and supplied SHA-256 checksum before deciding whether to run it.
 
-The Windows executable is unsigned. Game data and original artwork belong to their respective owners; dependency notices and source-snapshot provenance are included in every ZIP. Unofficial fan project, not affiliated with Panic Art Studios.
+## Share an entry
+
+Copy buttons produce `hscodex:` links. An installed copy registers these links with Windows. Recipients need this version to open the new archives.
+
+In either edition, use **File → Open entry link…** or **Ctrl+O** to paste a link. This also accepts existing Item Codex website links. Item variants and creator bookmarks are preserved. Classes/skills, stats, creatures, relics, Ether and quests are supported.
+
+## Please test
+
+1. Open every archive, search for entries and use Previous/Next at both ends of each archive.
+2. Resize/maximize the window. Check dense items, long skills and the nine objectives in The Light of Dawn quest.
+3. Copy an entry, open it with Ctrl+O, then try an entry from another archive.
+4. Close/reopen and check item bookmarks, lore preference and reading positions.
+5. Disconnect internet, launch the app and browse several archives and images.
+
+Use **Report an issue** in the archive sidebar to copy a report with the entry and release numbers. Add your Windows version, display scaling, reproduction steps and a screenshot when sharing it with the maintainer. Nothing is submitted automatically. Do not send personal saves or credentials. Windows 10, fresh machines without WebView2 and low-end hardware still need wider testing.
+
+Unofficial fan archive. Game data and artwork remain attributed to their respective owners. Creature illustrations are the Codex's custom interpretations.
+
+## Development
+
+Requires Node.js, Rust MSVC, Visual Studio C++ Build Tools and WebView2. Use `npm ci`, `npm test`, `npx tsc --noEmit`, `npm run build` and `node scripts/test-bundle.mjs`. The bundle check compares every public file with the source and verifies all unified-search destinations. `scripts/package-release.ps1` produces setup and portable ZIPs with documentation and checksums.
+
+`scripts/sync-website.ps1` refreshes five website source directories and applies explicit desktop sharing adapters. Hosting/authentication files are never copied. `web-source.json` identifies the source commit. Each archive loads a bundled page module; the release EXE needs no local server.
+
+`--self-test` launches a hidden window with an isolated temporary WebView2 profile. Normal launches expose no debugging port.

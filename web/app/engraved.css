@@ -1,0 +1,587 @@
+/* Static metal and ink. Chapter colors are inherited from the game palette. */
+.archive-volumes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 12px 0 4px;
+  font-size: 14px;
+}
+.archive-volumes > span {
+  color: #ebd4a7;
+}
+.archive-volumes a {
+  color: #b7ac97;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+.archive-volumes a > span {
+  font-size: 12px;
+  color: #ba9d67;
+}
+.archive-volumes a:hover {
+  color: #f0dcae;
+}
+.archive-volumes a:focus-visible {
+  outline: 2px solid #e0c38b;
+  outline-offset: 4px;
+}
+.archive-volumes a[aria-current='page'] {
+  color: #ebd4a7;
+  border-bottom: 1px solid #c6a671;
+}
+.archive-volumes a {
+  min-height: 44px;
+  border-bottom: 1px solid transparent;
+}
+@media (max-width: 600px) {
+  .archive-volumes {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 12px;
+  }
+  .archive-volumes a {
+    justify-content: center;
+    font-size: 14px;
+    padding: 4px;
+  }
+  .archive-volumes a:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    padding-inline: 24px;
+  }
+}
+.reading-room {
+  --medallion-metal: color-mix(in srgb, var(--chapter-accent) 28%, #9b8053);
+  --medallion-light: #302e2a;
+  --medallion-dark: #181917;
+}
+.reading-room[data-rarity='angelic'] {
+  --medallion-light: #3c3827;
+  --medallion-dark: #1d1e15;
+}
+.reading-room[data-rarity='heroic'] {
+  --medallion-light: #293b31;
+  --medallion-dark: #141e19;
+}
+.reading-room[data-rarity='unholy'] {
+  --medallion-metal: color-mix(in srgb, var(--chapter-accent) 50%, #82718b);
+  --medallion-light: #382c42;
+  --medallion-dark: #1b1522;
+}
+.reading-room[data-rarity='satanic'] {
+  --medallion-light: #3c2925;
+  --medallion-dark: #231615;
+}
+.reading-room[data-rarity='runeword'] {
+  --medallion-metal: color-mix(in srgb, var(--chapter-accent) 45%, #797e92);
+  --medallion-light: #2c3345;
+  --medallion-dark: #171b28;
+}
+.reading-room .book-page .entry-main.engraved-nameplate {
+  display: grid;
+  grid-template-columns: 110px minmax(0, 1fr);
+  align-items: center;
+  gap: 0;
+  width: 100%;
+  max-width: 520px;
+  height: 110px;
+  aspect-ratio: auto;
+  margin: 5px auto 10px;
+}
+.reading-room .engraved-nameplate .item-portrait {
+  position: relative;
+  inset: auto;
+  width: 110px;
+  height: 110px;
+  padding: 6px;
+  border: 1px solid var(--medallion-metal);
+  border-radius: 50%;
+  background: linear-gradient(
+    145deg,
+    var(--medallion-light),
+    var(--medallion-dark) 75%
+  );
+  box-shadow:
+    inset 0 0 0 3px #171810,
+    inset 0 0 0 4px var(--medallion-metal),
+    0 1px 0 #fff3;
+  z-index: 1;
+}
+.reading-room .engraved-nameplate .item-portrait::before,
+.reading-room .engraved-nameplate .item-portrait::after {
+  content: none;
+}
+.reading-room .engraved-nameplate .item-sprite {
+  width: var(--sprite-size, 78%);
+  height: var(--sprite-size, 78%);
+  filter: none;
+  image-rendering: pixelated;
+  transition: none;
+  transform: none;
+}
+.reading-room .item-portrait[data-category='Weapon'],
+.reading-room .item-portrait[data-category='Ring'],
+.reading-room .item-portrait[data-category='Flask'],
+.reading-room .item-portrait[data-category='Key'] {
+  --sprite-size: 100%;
+}
+.reading-room .item-portrait[data-category='Shield'],
+.reading-room .item-portrait[data-category='Amulet'],
+.reading-room .item-portrait[data-category='Belt'] {
+  --sprite-size: 90%;
+}
+.reading-room .item-portrait[data-category='Runeword'] {
+  --sprite-size: 92%;
+}
+.reading-room .medallion-seal {
+  position: absolute;
+  right: -1px;
+  bottom: 0;
+  display: grid;
+  place-items: center;
+  width: 25px;
+  height: 25px;
+  border: 1px solid var(--medallion-metal);
+  border-radius: 50%;
+  color: var(--chapter-accent);
+  background: var(--medallion-dark);
+  box-shadow: 0 0 0 2px #e7d0a5;
+  pointer-events: none;
+}
+.reading-room .engraved-nameplate:hover .item-sprite {
+  transform: none;
+}
+.reading-room .engraved-nameplate .entry-copy {
+  position: relative;
+  inset: auto;
+  width: calc(100% + 24px);
+  margin-left: -24px;
+  height: 70px;
+  min-width: 0;
+  padding: 0;
+  border: 1px solid var(--medallion-metal);
+  border-radius: 6px 35px 35px 6px;
+  background: linear-gradient(
+    180deg,
+    var(--medallion-light),
+    var(--medallion-dark)
+  );
+  box-shadow:
+    inset 0 0 0 3px #171810,
+    inset 0 0 0 4px color-mix(in srgb, var(--medallion-metal) 45%, transparent),
+    0 1px 0 #fff3;
+  clip-path: none;
+}
+.reading-room .book-page .engraved-nameplate .entry-copy h2 {
+  width: calc(100% - 64px);
+  margin-left: 12px;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.13;
+  letter-spacing: -0.012em;
+  text-shadow: none;
+}
+.reading-room .book-page .page-running-head {
+  padding-bottom: 6px;
+  color: #705630;
+}
+.reading-room .book-page .item-identity {
+  min-height: 26px;
+  color: #5a4730;
+}
+.reading-room .book-page .entry-affiliation {
+  margin-bottom: 7px;
+}
+.reading-room .book-page .item-tags {
+  letter-spacing: 0.075em;
+}
+.reading-room .book-page .ruled-heading,
+.reading-room .book-page .small-label {
+  letter-spacing: 0.09em;
+  font-weight: 600;
+}
+.reading-room .book-page .ruled-heading::after {
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--chapter-ink) 40%, transparent),
+    transparent
+  );
+}
+.reading-room .book-page .ruled-heading small {
+  font-variant-numeric: tabular-nums;
+  color: #6b573c;
+}
+.reading-room .book-page .curator-note {
+  margin-bottom: 8px;
+  line-height: 1.33;
+}
+.reading-room .book-page .stat-lines {
+  column-gap: 16px;
+}
+.reading-room .book-page .stat-lines > div {
+  font-size: calc(19px * var(--entry-type));
+  line-height: 1.28;
+  gap: 8px;
+  padding-block: 1px;
+  border-bottom-style: solid;
+  border-color: #79603f29;
+}
+.reading-room .book-page .stat-lines dt {
+  position: relative;
+  padding-left: 8px;
+}
+.reading-room .book-page .signature-mark {
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  font-size: 5px;
+  margin: 0;
+}
+.reading-room .book-page .stat-lines dd {
+  font-weight: 650;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+.reading-room .book-page .stat-lines dd.stat-value-short {
+  max-width: none;
+  white-space: nowrap;
+}
+/* Combat properties share one ink; rarity belongs to the title and seals. */
+.reading-room .book-page .stat-lines dt,
+.reading-room .book-page .stat-lines dd,
+.reading-room .book-page .stat-lines .signature-stat dt,
+.reading-room .book-page .stat-lines .signature-stat dd,
+.reading-room .book-page .stat-lines .negative-stat dt,
+.reading-room .book-page .stat-lines .negative-stat dd,
+.reading-room .book-page .signature-mark,
+.reading-room .book-page .entry-effects li,
+.reading-room .book-page .entry-effects .effect-marker {
+  color: #302619;
+}
+.reading-room .book-page .entry-effects {
+  margin-top: 8px;
+}
+.reading-room .book-page .entry-effects ul {
+  gap: 4px;
+}
+.reading-room .book-page .entry-effects li {
+  line-height: 1.3;
+}
+.reading-room .book-page .entry-lore {
+  margin-top: 8px;
+  padding-top: 6px;
+  border-top-color: color-mix(in srgb, var(--chapter-ink) 28%, transparent);
+}
+.reading-room .book-page .entry-lore blockquote {
+  font-size: calc(20px * var(--entry-type));
+  line-height: 1.27;
+  color: #57432e;
+}
+.reading-room .book-page .narrative-lore blockquote::first-letter {
+  font-size: 2.5em;
+  line-height: 0.9;
+  padding: 3px 6px 0 0;
+  color: var(--chapter-ink);
+}
+.reading-room .book-page .entry-acquisition {
+  margin-top: 7px;
+  padding-top: 5px;
+}
+.reading-room .book-page .entry-footnote {
+  margin-top: 6px;
+}
+.reading-room .density-compact .entry-main.engraved-nameplate {
+  margin-block: 1px 6px;
+}
+.reading-room .density-compact .stat-lines > div {
+  padding-block: 1px;
+}
+.reading-room .density-compact .entry-effects,
+.reading-room .density-compact .entry-lore {
+  margin-top: 6px;
+}
+
+/* Shared engraving weight and brass finish for familiar, legible controls. */
+.reading-room .stat-help {
+  display: inline;
+  position: relative;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+  text-align: left;
+  cursor: help;
+  text-decoration: underline dotted #79603f65;
+  text-underline-offset: 3px;
+}
+.reading-room .stat-help-icon {
+  position: absolute;
+  left: -8px;
+  top: 0.25em;
+  width: 7px;
+  height: 7px;
+  opacity: 0.7;
+}
+.reading-room .stat-help:hover,
+.reading-room .stat-help[aria-expanded='true'] {
+  text-decoration-color: #302619;
+}
+.reading-room .stat-help:focus-visible {
+  outline: 2px solid #79603f;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+/* One shared note outside the book's clipping/scaling context. */
+.stat-explanation[data-slot='popover-content'] {
+  position: fixed;
+  inset: auto;
+  margin: 0;
+  z-index: 100;
+  width: min(360px, calc(100% - 32px));
+  max-height: calc(100dvh - 24px);
+  overflow-y: auto;
+  padding: 18px 20px 20px;
+  gap: 10px;
+  border: 1px solid #937547;
+  border-radius: 5px;
+  background: #f2e5c9;
+  color: #302619;
+  box-shadow:
+    0 10px 32px #0005,
+    inset 0 0 0 3px #e5d1aa;
+  font:
+    16px/1.55 'Manrope',
+    sans-serif;
+  animation: none;
+  transition: none;
+  transform: none;
+}
+.stat-explanation-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  color: #705838;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.stat-explanation [data-slot='popover-title'] {
+  font:
+    600 26px/1.1 'Cormorant Garamond',
+    serif;
+  padding-bottom: 10px;
+  margin: 10px 0;
+  border-bottom: 1px solid #95764c40;
+  overflow-wrap: anywhere;
+}
+.stat-explanation-body p {
+  margin: 0;
+}
+.stat-archive-reference {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-top: 10px;
+  color: #654716;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-size: 14px;
+}
+.stat-archive-reference:focus-visible {
+  outline: 2px solid #705838;
+  outline-offset: 3px;
+}
+.stat-help-close {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  margin: -7px -8px -7px 0;
+  border-radius: 50%;
+  color: #302619;
+}
+.stat-help-close:hover {
+  background: #92734320;
+}
+.stat-help-close:focus-visible,
+.stat-help-retry:focus-visible {
+  outline: 2px solid #705838;
+  outline-offset: 2px;
+}
+.stat-help-retry {
+  margin-top: 12px;
+  text-decoration: underline;
+}
+
+.reading-room .archive-actions > button > svg:first-child,
+.reading-room .show-lore-toggle > svg {
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+  padding: 4px;
+  border: 1px solid #b89b5c59;
+  border-radius: 50%;
+  color: #cfb47c;
+  background: #b7985010;
+  stroke-width: 1.6;
+}
+.reading-room .archive-actions > button,
+.reading-room .show-lore-toggle {
+  gap: 7px;
+}
+.reading-room .brand > span {
+  white-space: nowrap;
+}
+.reading-room .site-header {
+  align-items: center;
+}
+
+/* Cloth-like chapter tabs: game colors stay in the lettering and the seal. */
+.reading-room .rarity-chapters button,
+.reading-room .rarity-chapters button.active {
+  border: 1px solid #baa16d40;
+  border-left: 0;
+  border-radius: 0;
+  padding: 8px 18px 8px 18px;
+  min-height: 48px;
+  gap: 8px;
+  background: linear-gradient(90deg, #10100e, #26241f 18%, #1d1d19);
+  box-shadow:
+    inset 0 2px #dfc3880d,
+    inset 0 -2px #0005;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 8px) 50%, 100% 100%, 0 100%);
+  transition: none;
+  transform: none;
+}
+.reading-room .rarity-chapters button.active {
+  background: linear-gradient(90deg, #181710, #383427 18%, #29271e);
+  border-block-color: color-mix(in srgb, var(--ribbon) 60%, #796342);
+}
+.reading-room .rarity-chapters button > svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  border: 1px solid color-mix(in srgb, var(--ribbon) 40%, transparent);
+  border-radius: 50%;
+  padding: 3px;
+}
+.reading-room .rarity-chapters button > span {
+  font-size: 19px;
+}
+.reading-room .rarity-chapters button:hover {
+  background: #343023;
+  transform: none;
+}
+.reading-room .rarity-chapters button:focus-visible {
+  outline-offset: -4px;
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .reading-room .brand {
+    gap: 9px;
+  }
+  .reading-room .brand > span {
+    font-size: 18px;
+    letter-spacing: 0.08em;
+  }
+  .reading-room .publisher-seal {
+    width: 34px;
+    height: 34px;
+  }
+  .reading-room .brand .brand-meta {
+    font-size: 9px;
+    gap: 6px;
+  }
+  .reading-room .brand-credit {
+    font-size: 12px;
+    padding-left: 6px;
+  }
+  .reading-room .archive-actions > button,
+  .reading-room.fit-screen .archive-actions > button {
+    padding-inline: 7px;
+  }
+}
+@media (max-width: 900px) {
+  .reading-room .rarity-chapters button,
+  .reading-room .rarity-chapters button.active {
+    min-height: 39px;
+    padding: 5px 3px 7px;
+    gap: 4px;
+    border-left: 1px solid #baa16d40;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% calc(100% - 4px), 0 100%);
+  }
+  .reading-room .rarity-chapters button > span {
+    font-size: 15px;
+  }
+  .reading-room .rarity-chapters button > svg {
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+  }
+  .reading-room .book-navigation {
+    min-height: 46px;
+    padding-block: 3px;
+  }
+  .reading-room .turn-button,
+  .reading-room .reading-size {
+    min-height: 36px;
+    padding-block: 5px;
+  }
+}
+@media (max-width: 680px) and (min-width: 601px) {
+  .reading-room .archive-actions > button,
+  .reading-room.fit-screen .archive-actions > button {
+    padding-inline: 5px;
+    gap: 5px;
+    font-size: 13px;
+  }
+  .reading-room .show-lore-toggle {
+    font-size: 13px;
+    padding-inline: 8px;
+  }
+  .reading-room .rarity-chapters button > span {
+    font-size: 14px;
+  }
+  .reading-room .rarity-chapters button > svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+@media (max-width: 600px) {
+  .reading-room .brand > span {
+    font-size: 20px;
+    letter-spacing: 0.1em;
+  }
+  .reading-room .archive-actions > button > svg:first-child,
+  .reading-room .show-lore-toggle > svg {
+    width: 22px;
+    height: 22px;
+    padding: 3px;
+  }
+  .reading-room .archive-actions > button,
+  .reading-room.fit-screen .archive-actions > button {
+    padding-inline: 6px;
+  }
+  .reading-room .show-lore-toggle {
+    padding-inline: 7px;
+  }
+  .reading-room .rarity-chapters button,
+  .reading-room .rarity-chapters button.active {
+    min-height: 36px;
+    padding-bottom: 6px;
+  }
+  .reading-room .rarity-chapters button > span {
+    font-size: 16px;
+  }
+  .reading-room .rarity-chapters button > svg {
+    width: 22px;
+    height: 22px;
+  }
+}
