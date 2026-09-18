@@ -1,0 +1,28 @@
+.item-volumes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin: 8px auto 12px;
+  color: #817660;
+  font-size: 14px;
+}
+.item-volumes a {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  color: #b8aa91;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.item-volumes a[aria-current] {
+  color: #f0dab0;
+  border-color: #b99860;
+}
+.item-volumes a:hover {
+  color: #fff0d0;
+}
+.item-volumes a:focus-visible {
+  outline: 2px solid #d7b477;
+  outline-offset: 4px;
+}

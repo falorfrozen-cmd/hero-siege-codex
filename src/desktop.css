@@ -1,0 +1,9 @@
+.desktop-link-dialog { background: #f7f4ed; color: #263c32; border: 1px solid #a48a54; max-width: min(520px, calc(100vw - 24px)); }
+.desktop-link-dialog form { display: grid; gap: 14px; }
+.desktop-link-dialog label { font-size: 14px; }
+.desktop-link-dialog input { color: #263c32; }
+.desktop-link-dialog p[role=alert] { color: #942f39; font-size: 14px; }
+html, body, #root { margin: 0; min-height: 100%; }
+.boot { padding: 40px; font: 18px Georgia, serif; }
+.desktop-error { padding: clamp(24px, 6vw, 60px); color: #263c32; background: #f7f4ed; min-height: 100vh; }
+.desktop-error a { color: #255c47; text-decoration: underline; }

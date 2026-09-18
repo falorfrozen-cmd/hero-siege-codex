@@ -1,6 +1,6 @@
 # Publishing a desktop package
 
-This is a distribution repository. Keep the website, authentication configuration and local build workspace out of it. Publish built desktop packages as release assets, together with their documentation and checksums.
+This repository contains the complete desktop source and distributes Windows builds. The checked-in web/ snapshot is part of the offline application. Keep website hosting state, authentication configuration and local build output out of the repository. Publish built desktop packages as release assets, together with their documentation and checksums.
 
 ## Asset contract
 

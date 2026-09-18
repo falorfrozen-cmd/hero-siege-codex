@@ -1,0 +1,311 @@
+.archival {
+  isolation: isolate;
+  position: relative;
+}
+.archival::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background: radial-gradient(
+    ellipse at 50% 45%,
+    color-mix(in srgb, var(--chapter-accent) 14%, transparent),
+    transparent 75%
+  );
+}
+.archival .chapter-seal {
+  background: color-mix(in srgb, var(--chapter-accent) 10%, #121214);
+}
+.archival .portrait-seal {
+  border-color: color-mix(in srgb, var(--chapter-accent) 35%, #645132);
+}
+.archival .site-header,
+.archival .archive-toolbar,
+.archival .book-navigation,
+.archival .site-footer {
+  position: relative;
+  z-index: 1;
+}
+.rarity-atmosphere {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  background: #0b0b10;
+}
+.scene-layer {
+  position: absolute;
+  inset: 0;
+  background-position: center;
+  background-size: cover;
+}
+.scene-current {
+  animation: scene-arrive 400ms ease-out both;
+}
+.rarity-atmosphere::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    #05070adc,
+    #09090c12 24%,
+    #07070920 74%,
+    #050608df
+  );
+}
+@keyframes scene-arrive {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.archival .site-header {
+  color: #f0e4cc;
+  text-shadow: 0 2px 5px #000;
+}
+.archival .archive-toolbar {
+  background: linear-gradient(90deg, #0b0c11b5, transparent 85%);
+  border-radius: 5px;
+}
+.archival .book-navigation {
+  background: #090a0cc7;
+  border-radius: 5px;
+  padding-inline: 8px;
+}
+.archival .book-page::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--chapter-accent) 14%, transparent),
+    transparent 8%,
+    transparent 92%,
+    color-mix(in srgb, var(--chapter-accent) 9%, transparent)
+  );
+}
+.archival .entry-copy h2 {
+  color: var(--chapter-ink);
+}
+.archival[data-rarity='angelic'] {
+  --chapter-ink: #5c5919;
+}
+.archival[data-rarity='unholy'] {
+  --chapter-ink: #533257;
+}
+.archival[data-rarity='heroic'] {
+  --chapter-ink: #075a37;
+}
+.archival[data-rarity='satanic'] {
+  --chapter-ink: #712d2c;
+}
+.archival[data-rarity='runeword'] {
+  --chapter-ink: #393b6a;
+}
+.archival[data-rarity='normal'] {
+  --chapter-ink: #483d31;
+}
+.archival[data-rarity='unholy'] .portrait-seal {
+  border-style: double;
+  border-width: 3px;
+}
+.archival[data-rarity='heroic'] .portrait-seal {
+  border-radius: 40% 40% 48% 48%;
+}
+.archival[data-rarity='satanic'] .portrait-seal {
+  outline-color: #712d2c40;
+}
+.archival[data-rarity='runeword'] .portrait-seal {
+  border-radius: 12px;
+  outline-color: #393b6a35;
+}
+.archival[data-rarity='normal'] .portrait-seal {
+  outline: none;
+  opacity: 0.65;
+}
+.archival.opening-entry .book-cover {
+  visibility: hidden;
+}
+.opening-entry-message {
+  position: absolute;
+  z-index: 10;
+  inset: 80px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #e2c99e;
+  text-align: center;
+  padding: 24px;
+}
+.opening-entry-message h2 {
+  font: 500 2rem/1.1 var(--display);
+  margin: 0;
+}
+.opening-entry-message p {
+  margin: 0;
+  max-width: 420px;
+  font-size: 14px;
+}
+.opening-entry-message > div {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.discovery-panel {
+  padding: 14px 0 25px;
+}
+.discovery-selection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.discovery-selection button {
+  padding: 10px;
+  border: 1px solid #62543e;
+  background: #17191a;
+  color: #c7bba5;
+  border-radius: 4px;
+  font: 500 1.1rem/1.2 var(--display);
+  text-align: left;
+}
+.discovery-selection button[aria-pressed='true'] {
+  border-color: #d7bb85;
+  background: #3a3022;
+  color: #ffe7b2;
+}
+.discovery-selection small {
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+.discovery-intro h3 {
+  font: 500 2rem/1.1 var(--display);
+  margin: 7px 0 12px;
+  color: #f1dfba;
+}
+.discovery-intro > p {
+  font-size: 14px;
+  line-height: 1.65;
+  color: #c0baa9;
+}
+.copy-entry-link {
+  margin-top: 14px;
+  min-height: 40px;
+}
+.manual-entry-link {
+  display: grid;
+  gap: 6px;
+  margin-top: 12px;
+  font-size: 14px;
+}
+.discovery-heading {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  padding: 25px 0 12px;
+  margin-top: 22px;
+  border-top: 1px solid #a1824738;
+  color: #d7bb85;
+}
+.discovery-heading h3 {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+.related-entries {
+  display: grid;
+  gap: 8px;
+}
+.related-entry {
+  display: grid;
+  grid-template-columns: 7px 1fr 17px;
+  align-items: center;
+  gap: 13px;
+  padding: 14px 12px;
+  text-align: left;
+  background: #1c1e1ed9;
+  border: 1px solid #4d4636;
+  border-radius: 5px;
+}
+.related-entry:hover {
+  background: #302c23;
+  border-color: #b09a69;
+}
+.related-dot {
+  width: 6px;
+  height: 28px;
+  border-radius: 3px;
+}
+.related-entry strong {
+  display: block;
+  color: #ede0c4;
+  font: 500 1.25rem/1.15 var(--display);
+}
+.related-entry small {
+  display: block;
+  color: #a6a598;
+  font-size: 12px;
+  margin-top: 6px;
+}
+.related-entry em {
+  display: block;
+  color: #d7bb85;
+  font-size: 12px;
+  font-style: normal;
+  margin-top: 5px;
+}
+.discovery-state {
+  display: block;
+  color: #b9b3a3;
+  font-size: 14px;
+  line-height: 1.6;
+}
+@media (max-width: 900px) {
+  .scene-layer {
+    background-position: 25% center;
+  }
+}
+@media (max-width: 600px) {
+  .archival .archive-imprint {
+    display: none;
+  }
+  .archival.fit-screen .archive-actions {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .archival.fit-screen .archive-actions > button {
+    padding: 4px 5px;
+    font-size: 12px;
+    gap: 4px;
+  }
+  .archival .archive-tabs [data-slot='tabs-list'] {
+    gap: 10px;
+  }
+  .archival .archive-tabs [data-slot='tabs-trigger'] {
+    font-size: 12px;
+    padding-inline: 2px;
+  }
+  .rarity-atmosphere::after {
+    background: linear-gradient(
+      #05070ae8,
+      #09090c44 26%,
+      #07070944 75%,
+      #050608eb
+    );
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .scene-current {
+    animation: none;
+  }
+}

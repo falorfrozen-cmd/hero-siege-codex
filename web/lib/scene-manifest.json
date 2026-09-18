@@ -1,0 +1,38 @@
+{
+  "angelic": {
+    "desktop": "/scenes/angelic-desktop.dfab227294.webp",
+    "desktopBytes": 56680,
+    "mobile": "/scenes/angelic-mobile.347b5efedf.webp",
+    "mobileBytes": 18858
+  },
+  "unholy": {
+    "desktop": "/scenes/unholy-desktop.9627e6a315.webp",
+    "desktopBytes": 51832,
+    "mobile": "/scenes/unholy-mobile.2020990b18.webp",
+    "mobileBytes": 17164
+  },
+  "heroic": {
+    "desktop": "/scenes/heroic-desktop.3d92b35971.webp",
+    "desktopBytes": 63814,
+    "mobile": "/scenes/heroic-mobile.84405e34c4.webp",
+    "mobileBytes": 23118
+  },
+  "satanic": {
+    "desktop": "/scenes/satanic-desktop.8b07f7e0cc.webp",
+    "desktopBytes": 51596,
+    "mobile": "/scenes/satanic-mobile.4ed853c860.webp",
+    "mobileBytes": 17378
+  },
+  "runeword": {
+    "desktop": "/scenes/runeword-desktop.208c8da18c.webp",
+    "desktopBytes": 60218,
+    "mobile": "/scenes/runeword-mobile.0c0f09ab32.webp",
+    "mobileBytes": 19672
+  },
+  "normal": {
+    "desktop": "/scenes/normal-desktop.7d78d42893.webp",
+    "desktopBytes": 47458,
+    "mobile": "/scenes/normal-mobile.5e1dbc22ac.webp",
+    "mobileBytes": 18778
+  }
+}
