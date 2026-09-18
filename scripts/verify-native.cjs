@@ -1,178 +1,239 @@
-const { chromium } = require('C:/Users/falor/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
 const fs = require('node:fs');
 const path = require('node:path');
 const assert = require('node:assert/strict');
-const root = path.resolve(__dirname, '..');
-const manifest = JSON.parse(fs.readFileSync(path.join(root, 'web/lib/catalog-manifest.json')));
-const records = manifest.chapters.flatMap(c => JSON.parse(fs.readFileSync(path.join(root, 'web/public', c.path))));
+const { connect, readyItem, openLink, itemLink, root, output } = require('./native-qa.cjs');
+const manifest = require('../web/lib/catalog-manifest.json');
+const chapters = new Map(manifest.chapters.map(chapter => [chapter.name,
+  JSON.parse(fs.readFileSync(path.join(root, 'web/public', chapter.path), 'utf8'))]));
+const records = [...chapters.values()].flat();
 const report = { checks: [], errors: [], externalRequests: [], geometry: [] };
 const mark = name => { report.checks.push(name); console.log('PASS', name); };
-let browser;
+let browser, context, page, cdp;
+
 (async () => {
-  browser = await chromium.connectOverCDP('http://127.0.0.1:9238');
-  const context = browser.contexts()[0];
-  const page = context.pages().find(p => p.url().includes('tauri.localhost'));
-  page.setDefaultTimeout(12000);
+  ({ browser, context, page } = await connect());
   page.on('pageerror', error => report.errors.push(error.message));
   page.on('console', message => { if (message.type() === 'error') report.errors.push(message.text()); });
-  page.on('request', request => { if (/^https?:/.test(request.url()) && !request.url().includes('tauri.localhost') && !request.url().includes('ipc.localhost')) report.externalRequests.push(request.url()); });
-  const ready = async () => {
-    await page.waitForFunction(() => !!document.querySelector('.book-entry') && !document.querySelector('.opening-entry') && !document.querySelector('.book-cover[aria-busy="true"]') && !document.querySelector('.book-spread[inert]'));
-    await page.evaluate(() => document.fonts.ready);
-  };
+  page.on('request', request => {
+    const url = new URL(request.url());
+    if (['http:', 'https:'].includes(url.protocol) && !['tauri.localhost', 'ipc.localhost'].includes(url.hostname)) {
+      report.externalRequests.push(url.href);
+    }
+  });
+  const entry = () => page.locator('.scholar-item-record');
   const open = async (row, extra = '') => {
-    const link = `hscodex://entry?item=${encodeURIComponent(row.key)}${row.variant === null ? '' : '&variant=' + row.variant}${extra}`;
-    await page.keyboard.press('Control+o');
-    await page.getByLabel('Entry link', { exact: true }).fill(link);
-    await page.getByRole('button', { name: 'Open entry', exact: true }).click();
-    await page.waitForSelector(`.book-entry[data-item-id="${row.id}"]`);
-    await ready();
-    return link;
+    await openLink(page, itemLink(row, extra));
+    await readyItem(page, row.id);
+    assert.equal(await entry().locator('h1').innerText(), row.name);
   };
-  const geometry = async (label) => {
+  const closeDialog = async () => {
+    await page.keyboard.press('Escape');
+    await page.getByRole('dialog').waitFor({ state: 'hidden' });
+  };
+  const imagesReady = () => page.waitForFunction(() =>
+    [...document.querySelectorAll('.scholar-item-record img')].every(img => img.complete && img.naturalWidth > 0));
+  const geometry = async label => {
     const result = await page.evaluate(() => {
-      const box = el => { const b = el.getBoundingClientRect(); return { x: b.x, y: b.y, width: b.width, height: b.height, right: b.right, bottom: b.bottom }; };
+      const box = el => {
+        const b = el.getBoundingClientRect();
+        return { x: b.x, y: b.y, width: b.width, height: b.height, right: b.right, bottom: b.bottom };
+      };
+      const pane = document.querySelector('#archive-content');
+      const article = pane.querySelector('.scholar-item-record');
       return {
-        viewport: [innerWidth, innerHeight], scroll: [document.documentElement.scrollWidth, document.documentElement.scrollHeight], book: box(document.querySelector('.book-cover')),
-        entries: [...document.querySelectorAll('.book-entry')].map(el => ({ name: el.querySelector('h2').textContent, entry: box(el), window: box(el.parentElement), heading: box(el.querySelector('h2')), properties: el.querySelectorAll('.stat-lines > div').length })),
+        viewport: [innerWidth, innerHeight],
+        scroll: [document.documentElement.scrollWidth, document.documentElement.scrollHeight],
+        pane: box(pane), article: box(article),
+        readerWidth: [pane.clientWidth, pane.scrollWidth],
+        navigation: [...document.querySelectorAll('[aria-label="Entry navigation"] button')].map(box),
+        properties: [...article.querySelectorAll('.scholar-properties > div')].map(box),
       };
     });
     report.geometry.push({ label, ...result });
     assert.ok(result.scroll[0] <= result.viewport[0] + 1 && result.scroll[1] <= result.viewport[1] + 1, `${label}: document overflow`);
-    for (const entry of result.entries) {
-      assert.ok(entry.entry.bottom <= entry.window.bottom + 2, `${label}: entry clipped ${entry.name}`);
-      assert.ok(entry.entry.x >= entry.window.x - 1 && entry.entry.right <= entry.window.right + 2, `${label}: margin overflow ${entry.name}`);
+    assert.ok(result.readerWidth[1] <= result.readerWidth[0] + 1, `${label}: horizontal reader overflow`);
+    for (const box of [result.article, ...result.properties]) {
+      assert.ok(box.x >= result.pane.x - 1 && box.right <= result.pane.right + 1, `${label}: content escapes reader margins`);
     }
+    assert.equal(result.navigation.length, 2);
+    for (const box of result.navigation) {
+      assert.ok(box.width > 0 && box.height > 0 && box.x >= 0 && box.y >= 0
+        && box.right <= result.viewport[0] + 1 && box.bottom <= result.viewport[1] + 1, `${label}: navigation outside viewport`);
+    }
+    // Scholar's Index scrolls inside its reader; a tall article is intentional.
   };
 
   await context.setOffline(true);
   await page.reload();
-  await ready();
-  assert.equal(await page.evaluate(() => navigator.onLine), false);
-  assert.equal(await page.evaluate(() => !!window.__TAURI_INTERNALS__), true);
-  mark('Actual release EXE boots and reloads offline in WebView2');
-
-  for (const chapter of manifest.chapters) {
-    await page.locator('.rarity-chapters button').filter({ hasText: chapter.name }).click();
-    await page.waitForFunction(name => document.querySelector('.codex')?.dataset.rarity === name.toLowerCase(), chapter.name);
-    await ready();
-    await page.waitForFunction(() => [...document.querySelectorAll('.book-entry img')].every(img => img.complete && img.naturalWidth > 0));
-    const history = await page.evaluate(() => window.history.length);
-    for (let i = 0; i < 2; i++) { await page.getByRole('button', { name: 'Next', exact: true }).click(); await ready(); }
-    for (let i = 0; i < 2; i++) { await page.getByRole('button', { name: 'Previous', exact: true }).click(); await ready(); }
-    assert.equal(await page.evaluate(() => window.history.length), history, 'Page turns must not fill browser history');
-    await geometry(chapter.name);
-    mark(`${chapter.name}: offline data/images, page turns, fixed book layout`);
-  }
-
   const mika = records.find(row => row.key === 'w_melee_st_mikas_zweihander');
   const shadows = records.find(row => row.key === 'rings_signet_of_shadows');
   const tomi = records.find(row => /Tomi/.test(row.name));
   const longest = records.filter(row => row.rarity === 'Heroic').sort((a, b) => b.name.length - a.name.length)[0];
-  assert.ok(shadows && tomi);
-  const cdp = await context.newCDPSession(page);
-  for (const size of [[1400, 880], [1280, 680], [760, 560]]) {
-    await cdp.send('Emulation.setDeviceMetricsOverride', { width: size[0], height: size[1], deviceScaleFactor: 1, mobile: false });
+  assert.ok(mika && shadows && tomi && longest, 'Required acceptance fixtures exist');
+  await open(mika);
+  assert.equal(await page.evaluate(() => navigator.onLine), false);
+  mark('Actual release EXE reloads and opens a desktop entry offline in WebView2');
+
+  cdp = await context.newCDPSession(page);
+  const resize = (width, height) => cdp.send('Emulation.setDeviceMetricsOverride', { width, height, deviceScaleFactor: 1, mobile: false });
+  await resize(1400, 880);
+  for (const chapter of manifest.chapters) {
+    const rows = chapters.get(chapter.name);
+    await page.getByRole('combobox', { name: 'Rarity', exact: true }).selectOption(chapter.name);
+    await readyItem(page, rows[0].id);
+    await imagesReady();
+    assert.equal(await entry().getAttribute('data-rarity'), chapter.name.toLowerCase());
+    assert.equal(await page.getByRole('button', { name: 'Previous entry', exact: true }).isDisabled(), true);
+    const history = await page.evaluate(() => window.history.length);
+    for (const [direction, index] of [['Next', 1], ['Next', 2], ['Previous', 1], ['Previous', 0]]) {
+      await page.getByRole('button', { name: `${direction} entry`, exact: true }).click();
+      await readyItem(page, rows[index].id);
+    }
+    assert.equal(await page.evaluate(() => window.history.length), history, 'Entry turns must not fill browser history');
+    await geometry(chapter.name);
+    mark(`${chapter.name}: offline data/artwork, exact next/previous entries, bounded reader`);
+  }
+
+  for (const size of [[1400, 880], [1280, 680], [720, 540]]) {
+    await resize(...size);
     for (const row of [mika, shadows, tomi, longest]) {
       await open(row);
+      await imagesReady();
       for (const show of [true, false]) {
-        const toggle = page.locator('.show-lore-toggle');
-        if ((await toggle.getAttribute('aria-pressed') === 'true') !== show) await toggle.click();
-        await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
-        const entry = page.locator(`.book-entry[data-item-id="${row.id}"]`);
-        assert.equal(await entry.locator('.stat-lines > div').count(), row.stats.length);
-        assert.equal(await entry.locator('.entry-lore').count(), show && row.lore ? 1 : 0);
+        const toggle = page.getByRole('checkbox', { name: 'Show lore', exact: true });
+        const toggleAvailable = row.lore?.kind === 'Lore' && !!row.lore.text.trim();
+        assert.equal(await toggle.count(), toggleAvailable ? 1 : 0);
+        if (toggleAvailable) await toggle.setChecked(show);
+        const loreVisible = !!row.lore && (show || row.lore.kind !== 'Lore');
+        await page.waitForFunction(visible => !!document.querySelector('.scholar-lore') === visible, loreVisible);
+        const values = await entry().locator('.scholar-properties > div').evaluateAll(nodes => nodes.map(node => ({
+          label: node.querySelector('dt').textContent.trim(), value: node.querySelector('dd').textContent.trim(),
+        })));
+        assert.deepEqual(values, row.stats.map(stat => ({ label: stat.label, value: stat.value })), `${row.name}: every recorded property and value`);
+        assert.deepEqual(await entry().locator('.scholar-effects li').allTextContents(), row.effects.map(effect => effect.text));
+        if (loreVisible) assert.equal(await entry().locator('.scholar-lore blockquote').textContent(), row.lore.text);
         await geometry(`${size.join('x')} ${row.name}, lore ${show}`);
       }
     }
-    await page.screenshot({ path: path.join(root, 'qa', `native-${size.join('x')}.png`) });
-    mark(`${size.join('x')}: Mika, Shadows, Tomi, long Heroic title; all properties, lore on/off, no document scroll`);
+    await page.screenshot({ path: path.join(output, `native-${size.join('x')}.png`) });
+    mark(`${size.join('x')}: Mika, Shadows, Tomi, long Heroic title; exact properties/effects, conditional lore, visible navigation`);
   }
-  await cdp.send('Emulation.clearDeviceMetricsOverride');
+  await resize(1400, 880);
 
-  await page.getByRole('textbox', { name: 'Search all items' }).fill('Angul Auxana');
-  await page.locator('.search-results button').filter({ hasText: 'Angul Auxana' }).click();
-  await ready();
-  assert.match(page.url(), /item=runeword_angul_auxana/);
-  await page.waitForFunction(() => document.querySelector('.item-sprite')?.getAttribute('src')?.includes('runeword'));
-  mark('Offline global search and shared Runeword artwork');
+  const runeword = records.find(row => row.key === 'runeword_angul_auxana');
+  assert.ok(runeword);
+  await page.getByRole('textbox', { name: 'Search all items', exact: true }).fill('Angul Auxana');
+  await page.locator('.scholar-index-entry').filter({ hasText: runeword.name }).click();
+  await readyItem(page, runeword.id);
+  await imagesReady();
+  assert.equal(await entry().locator('img').getAttribute('src'), '/emblems/runeword-seal.webp');
+  mark('Offline item-index search opens the exact Runeword with shared artwork');
 
-  await open(mika);
-  await page.getByRole('button', { name: 'Filters', exact: true }).click();
-  await page.getByRole('combobox', { name: 'Item category' }).click();
-  await page.getByRole('option', { name: 'Ring', exact: true }).click();
-  await ready();
-  assert.ok((await page.locator('.item-identity').allTextContents()).every(text => text.includes('Ring')));
-  await page.getByRole('button', { name: 'Filters', exact: true }).click();
-  mark('Category filter operates offline');
+  await page.getByRole('button', { name: 'Search all archives', exact: true }).click();
+  await page.getByRole('textbox', { name: 'Search the whole Codex', exact: true }).fill(mika.name);
+  await page.getByRole('region', { name: 'Codex search results', exact: true }).getByRole('button').filter({ hasText: mika.name }).click();
+  await readyItem(page, mika.id);
+  mark('Unified Codex search navigates to the exact item offline');
+
+  await page.getByRole('combobox', { name: 'Category', exact: true }).selectOption('Ring');
+  const rings = chapters.get('Angelic').filter(row => row.category === 'Ring');
+  await readyItem(page, rings[0].id);
+  assert.equal(await page.locator('.scholar-index-entry').count(), rings.length);
+  assert.deepEqual(await page.locator('.scholar-index-entry small').allTextContents(), rings.map(row => row.type));
+  mark('Category filter limits both index and reader to the matching items');
 
   const normal = records.find(row => row.key === 'amulets_normal_golden_amulet' && row.variant === 0);
+  assert.ok(normal);
   const creatorExtra = '&creator=graxy_tv&mark=w_melee_st_mikas_zweihander';
   await open(normal, creatorExtra);
-  await page.getByRole('button', { name: 'Discover', exact: true }).click();
-  await page.getByRole('button', { name: 'Copy entry link', exact: true }).click();
-  const share = await page.locator('.manual-entry-link input').inputValue();
-  const parsed = new URL(share);
-  assert.equal(parsed.protocol, 'hscodex:');
-  assert.equal(parsed.searchParams.get('variant'), '0');
-  assert.equal(parsed.searchParams.get('creator'), 'graxy_tv');
-  assert.equal(parsed.searchParams.get('mark'), mika.key);
-  await page.keyboard.press('Escape');
-  mark('Copy entry link preserves variant 0 and the creator bookmark');
+  // Exercise the manual-copy fallback without changing the OS clipboard.
+  await page.evaluate(() => {
+    Object.defineProperty(navigator, 'clipboard', { configurable: true, value: {
+      writeText: async () => { throw new DOMException('QA clipboard disabled', 'NotAllowedError'); },
+    } });
+  });
+  await page.getByRole('button', { name: `Copy link to ${normal.name}`, exact: true }).click();
+  const share = new URL(await page.getByRole('textbox', { name: 'Entry link to copy', exact: true }).inputValue());
+  assert.equal(share.protocol, 'hscodex:');
+  assert.equal(share.searchParams.get('item'), normal.key);
+  assert.equal(share.searchParams.get('variant'), '0');
+  assert.equal(share.searchParams.get('creator'), 'graxy_tv');
+  assert.equal(share.searchParams.get('mark'), mika.key);
+  mark('Copy-link fallback preserves variant zero and creator bookmark');
 
-  await page.getByRole('button', { name: /Graxy_TV bookmark/ }).click();
-  await ready();
-  assert.match(page.url(), /item=w_melee_st_mikas_zweihander/);
-  const links = await page.locator('.creator-social-link').evaluateAll(nodes => nodes.map(n => n.href));
-  const allHrefs = await page.locator('a[href^="https:"]').evaluateAll(nodes => nodes.map(n => n.href));
-  assert.ok(allHrefs.includes('https://www.twitch.tv/graxy_tv'));
-  assert.ok(allHrefs.includes('https://discord.gg/fDtXAQu5c3'));
-  await page.getByRole('button', { name: /Graxy_TV bookmark/ }).click();
+  await page.locator('.scholar-creator').getByRole('button').click();
+  await readyItem(page, mika.id);
+  assert.equal(await page.locator('.scholar-creator').getByRole('link', { name: 'Twitch', exact: true }).getAttribute('href'), 'https://www.twitch.tv/graxy_tv');
+  assert.equal(await page.locator('.scholar-creator').getByRole('link', { name: 'Discord', exact: true }).getAttribute('href'), 'https://discord.gg/fDtXAQu5c3');
+  await page.getByRole('button', { name: 'Creator bookmark', exact: true }).click();
   await page.getByRole('button', { name: 'Copy bookmarked link', exact: true }).click();
-  assert.match(await page.locator('#creator-entry-link').inputValue(), /^hscodex:\/\/entry\?item=w_melee_st_mikas_zweihander&creator=graxy_tv&mark=w_melee_st_mikas_zweihander$/);
-  await page.keyboard.press('Escape');
-  mark('Creator ribbon return, bookmarked link and Twitch/Discord targets');
+  assert.equal(await page.getByLabel('Entry and creator bookmark', { exact: true }).inputValue(), itemLink(mika, creatorExtra));
+  await closeDialog();
+  mark('Creator bar returns to its mark and exposes the correct share/social links');
 
-  await page.getByRole('button', { name: `Bookmark ${mika.name}`, exact: true }).click();
+  const save = entry().getByRole('button', { name: /^(Bookmark |Remove bookmark for )/ });
+  if (await save.getAttribute('aria-pressed') !== 'true') await save.click();
+  await page.getByRole('checkbox', { name: 'Show lore', exact: true }).setChecked(false);
   await page.reload();
-  await ready();
-  assert.equal(await page.getByRole('button', { name: `Remove bookmark for ${mika.name}`, exact: true }).count(), 1);
-  assert.equal(await page.locator('.show-lore-toggle').getAttribute('aria-pressed'), 'false');
-  mark('Bookmarks, creator mark, reading position and lore preference survive reload');
+  await readyItem(page, mika.id);
+  assert.equal(await entry().getByRole('button', { name: `Remove bookmark for ${mika.name}`, exact: true }).getAttribute('aria-pressed'), 'true');
+  assert.equal(await page.getByRole('checkbox', { name: 'Show lore', exact: true }).isChecked(), false);
+  assert.equal(await page.locator('.scholar-lore').count(), 0);
+  assert.equal(new URL(page.url()).searchParams.get('mark'), mika.key);
+  await page.getByRole('button', { name: /^Saved entries \(/ }).click();
+  await page.locator('.scholar-bookmark-row strong').filter({ hasText: mika.name }).waitFor();
+  await closeDialog();
+  mark('Saved entry, current item, creator mark and lore preference survive reload');
 
   await page.getByRole('button', { name: 'Discover', exact: true }).click();
-  const related = page.locator('.related-entry:not([disabled])');
-  await related.first().click();
-  await ready();
-  assert.ok(!page.url().includes('item=' + mika.key + '&'));
-  mark('Discover follows a related entry');
+  const related = page.locator('.related-entry:not([disabled])').first();
+  await related.waitFor();
+  const targetName = await related.locator('strong').innerText();
+  const relatedIds = [...(mika.setRecord?.pieces || []), ...mika.related.map(relation => relation.id)];
+  const target = records.find(row => row.id !== mika.id && row.name === targetName && relatedIds.includes(row.id));
+  assert.ok(target, 'Discover result is a recorded relation');
+  await related.click();
+  await readyItem(page, target.id);
+  mark('Discover opens a recorded related entry');
 
   await page.keyboard.press('Control+o');
-  await page.getByLabel('Entry link', { exact: true }).fill('https://example.com/?item=x');
-  await page.getByRole('button', { name: 'Open entry', exact: true }).click();
-  assert.ok(await page.locator('.desktop-link-dialog [role="alert"]').isVisible());
-  await page.keyboard.press('Escape');
-  await open({ key: 'missing_test_entry', variant: null, id: -123 }).catch(async error => {
-    await page.getByRole('heading', { name: 'Entry unavailable' }).waitFor();
-    assert.equal(await page.locator('.book-entry').count(), 0);
-  });
-  await page.getByRole('button', { name: 'Browse the archive', exact: true }).click();
-  await ready();
-  mark('Invalid origin and unknown item links are rejected without showing the wrong entry');
+  const dialog = page.getByRole('dialog', { name: 'Open entry link', exact: true });
+  await dialog.getByLabel('Entry link', { exact: true }).fill('https://example.com/?item=x');
+  await dialog.getByRole('button', { name: 'Open entry', exact: true }).click();
+  await dialog.getByRole('alert').waitFor();
+  await closeDialog();
+  await openLink(page, 'hscodex://entry?item=missing_test_entry');
+  await page.getByRole('heading', { name: 'Entry unavailable', exact: true }).waitFor();
+  assert.equal(await entry().count(), 0, 'An invalid link must not display another item');
+  await page.getByRole('button', { name: 'Open Angelic items', exact: true }).click();
+  await readyItem(page, chapters.get('Angelic')[0].id);
+  mark('Invalid origin and unknown item links fail explicitly and can recover');
 
   await open(normal, creatorExtra);
   await open(mika, creatorExtra);
   await page.goBack();
-  await page.waitForSelector(`.book-entry[data-item-id="${normal.id}"]`);
+  await readyItem(page, normal.id);
+  assert.equal(new URL(page.url()).searchParams.get('variant'), '0');
+  assert.equal(new URL(page.url()).searchParams.get('creator'), 'graxy_tv');
   await page.goForward();
-  await page.waitForSelector(`.book-entry[data-item-id="${mika.id}"]`);
-  await ready();
-  mark('Entry history back/forward restores exact item and creator');
-  await page.screenshot({ path: path.join(root, 'qa/native-creator-final.png') });
+  await readyItem(page, mika.id);
+  assert.equal(new URL(page.url()).searchParams.get('mark'), mika.key);
+  mark('Back/forward restores exact item identities and creator marks');
+  await page.screenshot({ path: path.join(output, 'native-creator-final.png') });
   assert.deepEqual(report.errors, []);
   assert.deepEqual(report.externalRequests, []);
-  mark('No renderer errors or external catalog requests throughout offline tests');
-})().catch(error => { report.failure = error.stack; console.error(error); process.exitCode = 1; }).finally(async () => {
-  fs.writeFileSync(path.join(root, 'qa/native-report.json'), JSON.stringify(report, null, 2));
+  mark('No renderer errors or external catalog requests throughout offline checks');
+})().catch(error => {
+  report.failure = error.stack;
+  console.error(error);
+  process.exitCode = 1;
+}).finally(async () => {
+  // Restore the QA process even on failure. CDP disconnection leaves the EXE
+  // running; close-qa.ps1 closes only the explicitly captured QA process ID.
+  if (page && report.failure) await page.screenshot({ path: path.join(output, 'native-failure.png') }).catch(() => {});
+  if (cdp) await cdp.send('Emulation.clearDeviceMetricsOverride').catch(() => {});
+  if (context) await context.setOffline(false).catch(() => {});
   if (browser) await browser.close();
+  fs.mkdirSync(output, { recursive: true });
+  fs.writeFileSync(path.join(output, 'native-report.json'), JSON.stringify(report, null, 2));
 });

@@ -4,12 +4,12 @@ Version **0.5.0** is the first source release of this standalone Scholar's Index
 
 The complete tracked desktop snapshot comes from `060758e6e8cfa39aad8390b070ec0d873af2b705`. No earlier desktop source commits or comparison baseline are part of this branch's history. The shared ancestor is the repository's initial distribution-documentation commit.
 
-## Review the two commits
+## Review structure
 
 1. **Bundled archive data and artwork:** offline images, fonts, data files, desktop icons and dependency notices.
 2. **Complete desktop application:** all runtime code, UI, build configuration, tests and documentation.
 
-This grouping keeps the code review readable while retaining every asset required for a self-contained build. GitHub collapses generated reference material by default. All files remain available in the branch tree; use the code commit and the entry points below when the overall diff is large.
+These two initial commits keep the code review readable while retaining every asset required for a self-contained build. Focused review corrections follow them in separate commits. GitHub collapses generated reference material by default. All files remain available in the branch tree; use the code commit and the entry points below when the overall diff is large.
 
 ## Application map
 
@@ -41,7 +41,9 @@ node scripts/test-bundle.mjs
 
 Use `npm run dev` for the browser preview, or `npm run build` for the Windows installer. A browser preview does not replace native testing.
 
-The checked-in `web/` snapshot contains everything needed to build this application. `scripts/sync-website.ps1` is a maintainer import operation requiring a separate website checkout; do not run it merely to review this release. The optional native QA helpers contain maintainer-specific paths and are not part of the portable source-check sequence above. See `distribution/TEST_RESULTS.md` for precisely which release checks were completed.
+The checked-in `web/` snapshot contains everything needed to build this application. `scripts/sync-website.ps1` is a maintainer import operation requiring a separate website checkout; do not run it merely to review this release.
+
+The optional native QA helpers use the repository's pinned Playwright dependency and target the current Scholar's Index. Run them against a Windows release EXE using [the native QA instructions](scripts/NATIVE_QA.md). They are separate from `npm test` because they require a running WebView2 application. See `distribution/TEST_RESULTS.md` for the original release checks and `scripts/NATIVE_QA.md` for the subsequent native review verification.
 
 ## Release status
 
